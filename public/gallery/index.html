@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html style="display: none;" lang="zh">
+    <head>
+    <meta charset="utf-8">
+    <!--
+        © Material Theme
+        https://github.com/viosey/hexo-theme-material
+        Version: 1.4.0 -->
+    <script>window.materialVersion = "1.4.0"</script>
+
+    <!-- Title -->
+    
+    <title>
+        
+            gallery | 
+        
+        Jzxer&#39;s Blog
+    </title>
+
+    <!-- dns prefetch -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    <!-- Meta & Info -->
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="theme-color" content="#6C6CE5">
+    <meta name="author" content="Jzxer">
+    <meta name="description" itemprop="description" content="web全栈工程师,音乐,电吉他,摇滚,html,css,javascript">
+    <meta name="keywords" content="js,前端,javascript,html,vue">
+
+    <!-- Site Verification -->
+    
+    
+
+    <!-- Favicons -->
+    <link rel="icon shortcut" type="image/ico" href="/img/favicon.ico">
+    <link rel="icon" sizes="192x192" href="/img/favicon.png">
+    <link rel="apple-touch-icon" href="/img/favicon.png">
+
+    <!--iOS -->
+    <meta name="apple-mobile-web-app-title" content="Title">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="480">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Jzxer&#39;s Blog">
+
+    <!-- The Open Graph protocol -->
+    <meta property="og:url" content="">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="gallery | Jzxer&#39;s Blog">
+    <meta property="og:image" content="/img/favicon.png" />
+    <meta property="og:description" content="web全栈工程师,音乐,电吉他,摇滚,html,css,javascript">
+    
+
+    
+
+    <!-- The Twitter Card protocol -->
+    <meta name="twitter:title" content="gallery | Jzxer&#39;s Blog">
+    <meta name="twitter:description" content="web全栈工程师,音乐,电吉他,摇滚,html,css,javascript">
+    <meta name="twitter:image" content="/img/favicon.png">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="" />
+
+    <!-- Add canonical link for SEO -->
+    
+        <link rel="canonical" href="/gallery/index.html" />
+    
+
+    <!-- Structured-data for SEO -->
+    
+        
+
+
+
+    
+
+    <!--[if lte IE 9]>
+        <link rel="stylesheet" href="/css/ie-blocker.css">
+
+        
+            <script src="/js/ie-blocker.zhCN.js"></script>
+        
+    <![endif]-->
+
+    <!-- Import lsloader -->
+    <script>(function(){window.lsloader={jsRunSequence:[],jsnamemap:{},cssnamemap:{}};lsloader.removeLS=function(key){try{localStorage.removeItem(key)}catch(e){}};lsloader.setLS=function(key,val){try{localStorage.setItem(key,val)}catch(e){}};lsloader.getLS=function(key){var val="";try{val=localStorage.getItem(key)}catch(e){val=""}return val};versionString="/*"+materialVersion+"*/";lsloader.clean=function(){try{var keys=[];for(var i=0;i<localStorage.length;i++){keys.push(localStorage.key(i))}keys.forEach(function(key){var data=lsloader.getLS(key);if(data&&data.indexOf(versionString)===-1){lsloader.removeLS(key)}})}catch(e){}};lsloader.clean();lsloader.load=function(jsname,jspath,cssonload){cssonload=cssonload||function(){};var code;code=this.getLS(jsname);if(code&&code.indexOf(versionString)===-1){this.removeLS(jsname);this.requestResource(jsname,jspath,cssonload);return}if(code){var versionNumber=code.split(versionString)[0];if(versionNumber!=jspath){console.log("reload:"+jspath);this.removeLS(jsname);this.requestResource(jsname,jspath,cssonload);return}code=code.split(versionString)[1];if(/\.js?.+$/.test(versionNumber)){this.jsRunSequence.push({name:jsname,code:code});this.runjs(jspath,jsname,code)}else{document.getElementById(jsname).appendChild(document.createTextNode(code));cssonload()}}else{this.requestResource(jsname,jspath,cssonload)}};lsloader.requestResource=function(name,path,cssonload){var that=this;if(/\.js?.+$/.test(path)){this.iojs(path,name,function(path,name,code){that.setLS(name,path+versionString+code);that.runjs(path,name,code)})}else if(/\.css?.+$/.test(path)){this.iocss(path,name,function(code){document.getElementById(name).appendChild(document.createTextNode(code));that.setLS(name,path+versionString+code)},cssonload)}};lsloader.iojs=function(path,jsname,callback){var that=this;that.jsRunSequence.push({name:jsname,code:""});try{var xhr=new XMLHttpRequest;xhr.open("get",path,true);xhr.onreadystatechange=function(){if(xhr.readyState==4){if(xhr.status>=200&&xhr.status<300||xhr.status==304){if(xhr.response!=""){callback(path,jsname,xhr.response);return}}that.jsfallback(path,jsname)}};xhr.send(null)}catch(e){that.jsfallback(path,jsname)}};lsloader.iocss=function(path,jsname,callback,cssonload){var that=this;try{var xhr=new XMLHttpRequest;xhr.open("get",path,true);xhr.onreadystatechange=function(){if(xhr.readyState==4){if(xhr.status>=200&&xhr.status<300||xhr.status==304){if(xhr.response!=""){callback(xhr.response);cssonload();return}}that.cssfallback(path,jsname,cssonload)}};xhr.send(null)}catch(e){that.cssfallback(path,jsname,cssonload)}};lsloader.iofonts=function(path,jsname,callback,cssonload){var that=this;try{var xhr=new XMLHttpRequest;xhr.open("get",path,true);xhr.onreadystatechange=function(){if(xhr.readyState==4){if(xhr.status>=200&&xhr.status<300||xhr.status==304){if(xhr.response!=""){callback(xhr.response);cssonload();return}}that.cssfallback(path,jsname,cssonload)}};xhr.send(null)}catch(e){that.cssfallback(path,jsname,cssonload)}};lsloader.runjs=function(path,name,code){if(!!name&&!!code){for(var k in this.jsRunSequence){if(this.jsRunSequence[k].name==name){this.jsRunSequence[k].code=code}}}if(!!this.jsRunSequence[0]&&!!this.jsRunSequence[0].code&&this.jsRunSequence[0].status!="failed"){var script=document.createElement("script");script.appendChild(document.createTextNode(this.jsRunSequence[0].code));script.type="text/javascript";document.getElementsByTagName("head")[0].appendChild(script);this.jsRunSequence.shift();if(this.jsRunSequence.length>0){this.runjs()}}else if(!!this.jsRunSequence[0]&&this.jsRunSequence[0].status=="failed"){var that=this;var script=document.createElement("script");script.src=this.jsRunSequence[0].path;script.type="text/javascript";this.jsRunSequence[0].status="loading";script.onload=function(){that.jsRunSequence.shift();if(that.jsRunSequence.length>0){that.runjs()}};document.body.appendChild(script)}};lsloader.tagLoad=function(path,name){this.jsRunSequence.push({name:name,code:"",path:path,status:"failed"});this.runjs()};lsloader.jsfallback=function(path,name){if(!!this.jsnamemap[name]){return}else{this.jsnamemap[name]=name}for(var k in this.jsRunSequence){if(this.jsRunSequence[k].name==name){this.jsRunSequence[k].code="";this.jsRunSequence[k].status="failed";this.jsRunSequence[k].path=path}}this.runjs()};lsloader.cssfallback=function(path,name,cssonload){if(!!this.cssnamemap[name]){return}else{this.cssnamemap[name]=1}var link=document.createElement("link");link.type="text/css";link.href=path;link.rel="stylesheet";link.onload=link.onerror=cssonload;var root=document.getElementsByTagName("script")[0];root.parentNode.insertBefore(link,root)};lsloader.runInlineScript=function(scriptId,codeId){var code=document.getElementById(codeId).innerText;this.jsRunSequence.push({name:scriptId,code:code});this.runjs()};lsloader.loadCombo=function(jslist){var updateList="";var requestingModules={};for(var k in jslist){var LS=this.getLS(jslist[k].name);if(!!LS){var version=LS.split(versionString)[0];var code=LS.split(versionString)[1]}else{var version=""}if(version==jslist[k].path){this.jsRunSequence.push({name:jslist[k].name,code:code,path:jslist[k].path})}else{this.jsRunSequence.push({name:jslist[k].name,code:null,path:jslist[k].path,status:"comboloading"});requestingModules[jslist[k].name]=true;updateList+=(updateList==""?"":";")+jslist[k].path}}var that=this;if(!!updateList){var xhr=new XMLHttpRequest;xhr.open("get",combo+updateList,true);xhr.onreadystatechange=function(){if(xhr.readyState==4){if(xhr.status>=200&&xhr.status<300||xhr.status==304){if(xhr.response!=""){that.runCombo(xhr.response,requestingModules);return}}else{for(var i in that.jsRunSequence){if(requestingModules[that.jsRunSequence[i].name]){that.jsRunSequence[i].status="failed"}}that.runjs()}}};xhr.send(null)}this.runjs()};lsloader.runCombo=function(comboCode,requestingModules){comboCode=comboCode.split("/*combojs*/");comboCode.shift();for(var k in this.jsRunSequence){if(!!requestingModules[this.jsRunSequence[k].name]&&!!comboCode[0]){this.jsRunSequence[k].status="comboJS";this.jsRunSequence[k].code=comboCode[0];this.setLS(this.jsRunSequence[k].name,this.jsRunSequence[k].path+versionString+comboCode[0]);comboCode.shift()}}this.runjs()}})();</script>
+
+    <!-- Import CSS & jQuery -->
+    
+        <style id="css/material.min.css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("css/material.min.css","/css/material.min.css?fJTiM/K1J3dWIruo3pxtAw==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";})</script>
+        <style id="css/style.min.css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("css/style.min.css","/css/style.min.css?oCSEO3ST+aEypEwttTDI9g==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";})</script>
+        
+        
+            <style>
+    
+    
+    
+    
+    .footer-sns-weibo {
+        background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgY2xhc3M9Imljb24iIHZpZXdCb3g9IjAgMCAxMDI0IDEwMjQiPjxwYXRoIGQ9Ik0xMzUuMiA3OWMtOC42IDMtMjIuOCAxMi40LTMyLjggMjEuOC04LjIgNy44LTIyLjIgMzEtMjQuNiA0MC42LTEgNC4yLTEuNiAxNjctMS42IDM2NC42IDAgMjg0LjguNCAzNTguNCAyLjYgMzY0IDEuNCAzLjggNi44IDEzIDEyIDIwLjQgOC44IDEyLjggMjQgMjUuNCA0MS44IDM1IDYgMy40IDI3IDMuNiAzNjcuNCAzLjYgMjg2LjIgMCAzNjIuNi0uNiAzNjktMi42IDE5LjgtNi4yIDUxLjItMzcuNiA1Ny40LTU3LjQgMi02LjQgMi42LTgyLjYgMi42LTM2OFYxNDFsLTQuMi05Yy0xMS42LTI0LTM5LjItNDkuOC01OC4yLTU0LjItNC4yLTEtMTY4LjYtMS42LTM2NS42LTEuNi0zMDAgMC0zNTkuMi40LTM2NS44IDIuOHptNTU4LjYgMTY5YzguNiAxLjIgMTYuNCA0IDI0IDguNiA2LjIgMy42IDE1LjIgOC4yIDIwLjIgMTAuMiA1LjggMi4yIDE0LjYgOC44IDI1IDE4LjggMjUuNCAyNC44IDMyLjggMzQuOCAzNy44IDUxIDIuNiA4IDcuNCAxOS44IDEwLjggMjYuNCA3LjggMTQuNiAxMS42IDQyLjYgOS40IDY5LTEgMTQuMi0yLjIgMTguNi03LjQgMjYuNC0zLjIgNS4yLTkgMTIuMi0xMi44IDE1LjYtMTMuOCAxMi0zNCA1LjgtMzguOC0xMi0xLjYtNi0xLjQtMTEuNCAxLjItMjMuNCA0LjItMjAgMy00Ni0yLjYtNTguNi0yLjItNS04LTEyLjYtMTIuOC0xNi44LTQuOC00LjItMTQuNi0xNi40LTIxLjgtMjYuOC03LjItMTAuNi0xNS4yLTIwLjgtMTgtMjIuOC0yLjgtMi0xMi42LTYtMjItOS0xNC40LTQuNC0yMC44LTUuNC00My01LjYtMjgtLjItMzEuNC0xLjItNDIuNC0xMS42LTcuNC03LTguNi0xNS42LTMuOC0yNS4yIDctMTMuMiAxNi40LTE2IDU0LjItMTYgMTYuNiAwIDM1LjguOCA0Mi44IDEuOHptLTIxMy42IDc1LjZjMjAuMiAxNS40IDIwLjYgMTYuNCAyMiA0OCAuNiAxNSAxLjggMjkgMi42IDMxIDIuOCA2LjIgMTEgNi42IDIxLjYuNiA1LjQtMy4yIDE0LTUuOCAyMC02LjQgNS44LS42IDE4LjgtMi40IDI5LTQuMiAxNy4yLTMgMTkuNC0zIDM2IC40IDMyIDYuNiAzNS44IDkuMiA0NC4yIDMxLjYgNS4yIDE0IDUuNCAyMS40IDEuMiAzMi44LTIuMiA1LjQtMi44IDExLTIgMTUuNCAxLjggMTAgMTcuNiAyMy40IDM1IDMwLjIgMTEuMiA0LjIgMTYuMiA3LjYgMjcgMTkgMTkuMiAxOS44IDIwLjIgMjMgMjAgNTktLjIgMzUtLjQgMzUuNC0xOS44IDYzLjYtMTMuOCAxOS44LTMyLjQgMzguNi00OSA1MC01IDMuNC0xMi4yIDguOC0xNS44IDEyLTMuOCAzLjItMTEuNiA4LTE3LjIgMTAuNC01LjYgMi42LTE0LjYgNy40LTE5LjggMTAuNi01LjIgMy40LTE1LjggNy42LTIzLjggOS40LTggMi0yMS4yIDYuNi0yOS42IDEwLjItMjIuNCAxMC0zNi4yIDExLjItMTIxLjggMTAuNGwtNzUtLjYtMTktOC40Yy0xMC42LTQuNi0yNS40LTkuOC0zMy0xMS42LTcuNi0xLjYtMTgtNS44LTIzLTlzLTE0LjItOC0yMC40LTEwLjhjLTE4LTgtNTkuNC00Ni4yLTY2LTYxLjItMi4yLTUtNy40LTE0LjQtMTEuNC0yMC44bC03LjItMTJWNTQ5bDcuNi0xMy42YzQuMi03LjQgOS40LTE4LjYgMTEuNi0yNC44IDMuOC0xMS40IDEzLjQtMjcuOCAyNC44LTQyLjYgMjAuMi0yNi4yIDM4LjQtNDYuOCA1My02MCA5LjItOC4yIDIxLTE4LjYgMjYtMjMuMiA1LTQuNCAxMy4yLTExIDE4LjYtMTQuNiA1LjItMy40IDkuNC03LjIgOS40LTggMC0xIDUuNi00LjYgMTIuNi04LjIgNi44LTMuOCAxNi40LTkuNiAyMS40LTEzLjIgNS0zLjYgMTQuNC04IDIxLTkuOCA2LjYtMiAxNy44LTYuNiAyNS0xMC4yIDEyLTYuMiAxNC40LTYuOCAzMi40LTYuOGgxOS40bDEyLjQgOS42em0yMDMuNiAxMy4yYzMgMS42IDYuNiA0LjQgOCA2IDEuNiAxLjggOS40IDcgMTcuNCAxMS42IDE3IDkuNiAxOSAxMyAyNCA0MiAzLjQgMjAuNCAyLjYgMzIuMi0zLjQgNDMuOC03LjYgMTUuMi0yMi44IDIwLjYtMzEuMiAxMS4yLTctNy42LTkuMi0xMy44LTEwLjYtMjkuNi0xLjItMTMuMi0yLjQtMTYuNC05LjYtMjcuMi0xMS0xNi0xNi44LTIwLjYtMjcuMi0yMC42LTEwIDAtMjQtNi4yLTI3LTExLjYtNS44LTEwLjguNC0yNC42IDEyLjQtMjguNCA4LjYtMi42IDQwLjItLjggNDcuMiAyLjh6Ii8+PHBhdGggZD0iTTQyNCA0NzcuNGMtMzIuNiAzLjYtNDcuOCA3LTYxLjggMTMuOC04IDQtMTkgOC40LTI0LjIgMTAtNS4yIDEuNi0xMi40IDUtMTYuMiA3LjgtMy44IDIuNi0xMSA3LjYtMTYuMiAxMS0xMy40IDguOC0zNSAzMy4yLTM4LjggNDQtMS44IDUtNS40IDE0LjQtOC4yIDIxLTguOCAyMS4yLTguMiAyNi44IDQgNTMgMTAuNiAyMi42IDExIDIzLjIgMjcuNiAzNi40IDIxIDE2LjggMjMuNiAxOC40IDUwLjggMjguMiAyMC4yIDcuMiAyNC42IDggNTQgMTAgMTcuNiAxLjIgNDUuNiAyLjIgNjIgMi4ybDMwIC4yIDE3LjQtOC40YzkuNi00LjYgMjIuNC05LjYgMjguMi0xMS40IDYtMS44IDE1LjQtNi4yIDIwLjgtMTAgNS40LTMuNiAxMy40LTguNiAxNy42LTEwLjggOS4yLTQuNiAzOS0zNC40IDM5LTM5IDAtMS42IDMuOC0xMC4yIDguNC0xOC44IDcuOC0xNC4yIDguNi0xNi44IDguNC0yOS42LS4yLTEyLjgtMS0xNS44LTEwLjYtMzQuNi0xMy40LTI2LjItMzAuNC00My42LTUwLjItNTEuNC03LjItMi44LTE2LjItNy0yMC05LjYtMTEuNC03LjYtMTcuNi05LjItNDguOC0xMi40LTI3LjYtMi44LTU2LjYtMy40LTczLjItMS42em0zOS40IDQ0LjRjMTEuMiAyLjIgMjIuNiA1IDI1IDYuNCA3IDMuNiAyNiAyMS44IDMwLjggMjkuNCA4LjYgMTMuNCAxMSA1NCA0LjYgNzctMi42IDkuNi0xOC44IDI3LjYtMzkuNCA0NC4yLTE1LjYgMTIuNC0xNyAxMy0yOS44IDE0LTcuNi44LTIyLjQgMi4yLTMzIDMuNi0yMi42IDIuNi00NS42IDEtNTMuOC0zLjgtMy4yLTItOC02LjgtMTAuOC0xMC44LTIuNi00LjItOC40LTEwLjQtMTIuOC0xMy44LTguMi02LjgtMTMuNC0xNi40LTE5LjQtMzctMy44LTEzLjItMi44LTIxLjggNS4yLTQ3LjYgMy4yLTEwLjQgNi0xNC42IDE3LjQtMjUuOCAxMi40LTEyLjIgMjMuOC0yMi4yIDMzLjItMjkuNiA0LTMgMzguNi05LjQgNTMuNC05LjggNSAwIDE4LjIgMS42IDI5LjQgMy42eiIvPjxwYXRoIGQ9Ik0zODcuMiA2MDZjLTEyLjIgMy44LTE4LjIgMTMuNC0xNSAyNC42IDUuOCAyMS4yIDI3LjggMjUuOCA0MC42IDguNiA2LjYtOC44IDcuOC0xNi4yIDQuMi0yNC00LjgtMTAuMi0xNS40LTEzLjQtMjkuOC05LjJ6Ii8+PC9zdmc+);
+    }
+    
+    
+    
+    
+    .footer-sns-github {
+        background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgY2xhc3M9Imljb24iIHZpZXdCb3g9IjAgMCAxMDI0IDEwMjQiPjxwYXRoIGQ9Ik0xMzguNCA3OGMtNi40IDEuNC0yNi40IDE0LjItMzYgMjIuOC04IDcuMi0yMiAyOS44LTI0LjQgMzkuMi0xLjYgNi40LTIgMTEzLjItMS42IDM2OCAuNiAyOTkuNCAxIDM1OS44IDMuNCAzNjQgMTEgMjAuMiAyMS42IDMyLjQgMzcuMiA0MyAxNS42IDEwLjYgMTcuMiAxMS4yIDM0LjIgMTMuMiAxMC42IDEuMiA2My40IDEuNiAxMjcuNiAxLjRsMTA5LjYtLjYgNi02LjggNi4yLTYuOC0xLjItMjUuMmMtLjgtMTUuOC0uMi0zMy40IDEuNC00Ny4yIDMtMjUuNCAxLjQtMzYuMi02LTQzLjItNS00LjYtNi4yLTQuOC0zMC42LTQuMi0yNy42LjgtMjQgMS42LTY4LjgtMTYtOC42LTMuNC0yMi42LTE4LTI4LjQtMjkuOC0xMS40LTIyLjgtMjctNDUtMzkuMi01NS42LTE0LTEyLjItMTkuOC0yMC44LTE5LjgtMjguNiAwLTExLjYgMTMuNi0xMi42IDMzLjItMi40IDE2LjYgOC44IDIwLjggMTIuNCA0MC44IDM2LjIgMjQuMiAyOC42IDMxIDMzLjYgNTQgMzkuNiAxNS4yIDQgNDIuMiAzIDUxLjQtMS44IDktNC42IDE4LTE1LjIgMjQuNC0yOS4yIDExLjQtMjQuMiA3LjQtMzEuMi0yMC42LTM2LjgtOS44LTItMjkuMi04LTQzLjQtMTMuNC00MC40LTE1LjgtNjQuNi0zNy40LTg1LjQtNzYuMi0xMS42LTIxLjgtMTUuNC0zMy0xOC4yLTUzLjYtNC4yLTMyLjItNC44LTYwLjItMS40LTg0IDMuNC0yMy44IDYuOC0zMi44IDIwLjItNTQgNC02IDguOC0xNS42IDExLTIxLjQgMy44LTEwIDMuOC0xMS42IDEtMzAtNS4yLTM0LjItMy4yLTUyLjQgNy42LTcwLjIgNy4yLTEyLjIgMTUtMTcuMiAyNC4yLTE1LjggMTIuOCAyLjIgNTIgMTcuNCA2Ni44IDI2LjIgMjYgMTUgMjkgMTUuNCA4Mi40IDcuMiAyNC42LTMuOCAzMy44LTQuMiA2MC0zLjIgMTcgLjYgNDEuNCAzIDU0IDUuMiAzOC40IDYuNiA0OS42IDUuMiA3My0xMCA2LjYtNC4yIDE3LjQtOS40IDI0LTExLjYgNi42LTIuMiAxNi01LjggMjEtOC4yIDEzLTYgMjgtNS42IDM1LjYuOCAxMi40IDEwLjQgMTguNiA0MS40IDE0LjQgNzEuNi00LjQgMzAuNi0zIDM5LjQgOC40IDUzLjggMy40IDQuNCAxMS4yIDE5LjIgMTcuNCAzMy4yTDc3NSA0NDN2NzhsLTEwIDI4Yy0xNS4yIDQzLjItMzYuOCA3My4yLTY2LjIgOTIuOC0xMy40IDguOC01NyAyNS40LTc2LjggMjktMjguMiA1LjItMzMuMiAxMi42LTIyIDMyLjIgMTEuMiAxOS40IDEyLjQgMzIuOCAxMS42IDEyOS42bC0uNiA4NS44IDUuNCA0LjZjMy42IDMgOS4yIDUuMiAxNiA2IDUuOC44IDYwLjIgMSAxMjAuNi42IDEwOC40LS42IDExMC4yLS42IDExOS01IDI0LTExLjYgNDAtMjcuNCA1MS42LTUwLjZsNS40LTExIC42LTM0N2MuNC0yMjMtLjItMzUzLjQtMS40LTM2NS0yLTE3LTIuNi0xOC42LTEzLTM0LTEwLjYtMTUuNC0yMi44LTI2LjItNDMuMi0zNy4yLTQuMi0yLjQtNjQuNi0yLjgtMzY2LTMuMi0xOTguNiAwLTM2NCAuNC0zNjcuNiAxLjR6Ii8+PC9zdmc+);
+    }
+    
+    
+    .footer-sns-linkedin {
+        background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgY2xhc3M9Imljb24iIHZpZXdCb3g9IjAgMCAxMDI0IDEwMjQiPjxwYXRoIGQ9Ik0xNDEgNzcuOGMtNy40IDEuOC0xMS4yIDMuOC0yNi44IDE0LjItMTIuNCA4LjQtMjEuNiAxOC44LTMxLjYgMzdMNzcgMTM5bC0uNiAzNTljLS40IDI1NC40LjIgMzYxLjYgMS42IDM2Ny44IDMuNiAxNC40IDIwLjYgMzYuOCAzNS44IDQ3LjYgNy4yIDUgMTYuMiAxMC40IDE5LjYgMTIgNS40IDIuMiA2Ny42IDIuNiAzNzEuMiAyLjJsMzY0LjYtLjYgMTEuOC03YzE1LTkgMzAtMjQgMzktMzlsNy0xMS44LjYtMzYyLjZjLjQtMjk3IDAtMzYzLjgtMi4yLTM3MC0xLjQtNC4yLTYuOC0xNC0xMS44LTIyLTcuNi0xMS40LTEyLjQtMTYuMi0yNC40LTI0LjQtOC40LTUuNi0xOS0xMS0yMy44LTEyLjItOS44LTIuMi03MTUtMi40LTcyNC40LS4yek0yOTIuMiAxOTZjMTYgNS40IDI1LjQgMTEuNiAzNS42IDIzLjQgMjYuNCAzMC42IDI3LjYgNjMuNCAzLjggOTgtNi40IDkuNC0yNS4yIDIzLjItMzguMiAyOC0xMi44IDQuNi00MC4yIDQuMi01MS44LS44LTQzLTE5LjItNjIuOC02NC42LTQ1LTEwMy40IDE4LTM5IDU3LjgtNTcuOCA5NS42LTQ1LjJ6bTQwMyAyMDBjMjAuMiAzLjQgMjYgNS40IDM4LjYgMTIuNiAzMy42IDE5LjIgNDguMiAzOS4yIDYwIDgyLjQgNi44IDI0LjQgOCA1MSA4LjQgMTc1LjIuMiAxMzAuMi40IDEyOC4yLTExLjIgMTMzLjQtMy42IDEuNi0yMC40IDIuNC01My42IDIuNC00NC42IDAtNDktLjQtNTQuOC00LTMuNi0yLjItNy02LTcuNi04LjQtLjYtMi42LTEuNC01Mi44LTEuNi0xMTEuNi0uNi0xMDEuMi0xLTEwNy44LTQuOC0xMjEuNC03LTI0LjYtMTkuNi00MS0zOC4yLTQ5LjgtMTcuMi04LjItNDcuOC00LjgtNjYuOCA3LjQtMTguNiAxMi0zMS40IDMzLTM1LjYgNTgtMS4yIDcuNi0yIDUzLjgtMiAxMTMuNCAwIDEwOS4yIDAgMTA5LTExIDExNC0zLjYgMS42LTIwLjYgMi40LTU0LjggMi40LTQ3IDAtNTAtLjItNTQuOC00LTMtMi40LTYtNy02LjgtMTAuNi0uOC0zLjYtMS4yLTkwLjQtLjYtMTkzbDEtMTg2LjggNS42LTQuOGM1LjYtNC44IDUuOC00LjggNTMuNC00LjggMzEuMiAwIDQ5LjYuOCA1Mi44IDIuMiA2IDIuOCA4LjYgOSAxMC40IDI0LjggMi40IDIzIDExLjggMjUuMiAyOC40IDcgMTEuOC0xMi44IDI5LjYtMjUuMiA0NC40LTMwLjggMjUuMi05LjQgNjQuNC0xMS40IDEwMS4yLTUuMnptLTM3NC40IDRjMTIgNC42IDExLjQtNi40IDExLjQgMjAxIC4yIDE4MC44IDAgMTg5LjYtMy42IDE5My40LTIgMi4yLTUuOCA0LjgtOC40IDUuOC0yLjYgMS4yLTI2LjIgMi01Mi42IDItNTEuOCAwLTU2LjYtMS02MS40LTExLjYtMS42LTMuNC0yLjItNjEuNC0yLjItMTkwLjggMC0xNzAuNC4yLTE4Ni42IDMuNC0xOTEuOCAxLjgtMy4yIDUuMi02LjYgNy40LTcuOCA1LjQtMi42IDk5LjItMi44IDEwNi0uMnoiLz48L3N2Zz4=);
+    }
+    
+    
+    
+    
+</style>
+
+        
+        <!-- Config CSS -->
+
+<!-- Other Styles -->
+<style>
+  body, html {
+    font-family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+  }
+
+  a {
+    color: #0098A6;
+  }
+
+  .mdl-card__media,
+  #search-label,
+  #search-form-label:after,
+  #scheme-Paradox .hot_tags-count,
+  #scheme-Paradox .sidebar_archives-count,
+  #scheme-Paradox .sidebar-colored .sidebar-header,
+  #scheme-Paradox .sidebar-colored .sidebar-badge{
+    background-color: #272822 !important;
+  }
+
+  /* Sidebar User Drop Down Menu Text Color */
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover,
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus {
+    color: #272822 !important;
+  }
+
+  #post_entry-right-info,
+  .sidebar-colored .sidebar-nav li:hover > a,
+  .sidebar-colored .sidebar-nav li:hover > a i,
+  .sidebar-colored .sidebar-nav li > a:hover,
+  .sidebar-colored .sidebar-nav li > a:hover i,
+  .sidebar-colored .sidebar-nav li > a:focus i,
+  .sidebar-colored .sidebar-nav > .open > a,
+  .sidebar-colored .sidebar-nav > .open > a:hover,
+  .sidebar-colored .sidebar-nav > .open > a:focus,
+  #ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a {
+    color: #272822 !important;
+  }
+
+  .toTop {
+    background: #272822 !important;
+  }
+
+  .material-layout .material-post>.material-nav,
+  .material-layout .material-index>.material-nav,
+  .material-nav a {
+    color: #272822;
+  }
+
+  #scheme-Paradox .MD-burger-layer {
+    background-color: #272822;
+  }
+
+  #scheme-Paradox #post-toc-trigger-btn {
+    color: #272822;
+  }
+
+  .post-toc a:hover {
+    color: #0098A6;
+    text-decoration: underline;
+  }
+
+</style>
+
+
+<!-- Theme Background Related-->
+
+    <style>
+      body{
+        background-image: url(/img/bg.jpg);
+      }
+    </style>
+
+
+
+
+<!-- Fade Effect -->
+
+    <style>
+      .fade {
+        transition: all 800ms linear;
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        -o-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        opacity: 1;
+      }
+
+      .fade.out{
+        opacity: 0;
+      }
+    </style>
+
+
+<!-- Import Font -->
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+
+
+        <script>lsloader.load("js/jquery.min.js","/js/jquery.min.js?ezyEvm8ST5CGfpA+kFFi1g==")</script>
+    
+    
+    <script>function Queue(){this.dataStore=[];this.offer=b;this.poll=d;this.execNext=a;this.debug=false;this.startDebug=c;function b(e){if(this.debug){console.log("Offered a Queued Function.")}if(typeof e==="function"){this.dataStore.push(e)}else{console.log("You must offer a function.")}}function d(){if(this.debug){console.log("Polled a Queued Function.")}return this.dataStore.shift()}function a(){var e=this.poll();if(e!==undefined){if(this.debug){console.log("Run a Queued Function.")}e()}}function c(){this.debug=true}}var queue=new Queue();</script>
+
+    <!-- Analytics -->
+    
+
+    <!-- Custom Head -->
+    
+</head>
+
+
+    
+        <!-- Single Gallery Page -->
+        
+    <link rel="stylesheet" href="/css/gallery.min.css">
+
+
+<body>
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <h1>
+                <a href="/"><strong>Jzxer's Blog</strong></a> - gallery
+            </h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#footer" class="icon fa-info-circle">
+                            ©&nbsp;Jzxer
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main -->
+        <div id="main">
+            
+                
+                    <article class="thumb">
+                        <a href="http://orjedzer5.bkt.clouddn.com/psb.jpg" class="image lazy" data-original="http://orjedzer5.bkt.clouddn.com/psb.jpg"><img class="lazy" data-original="http://orjedzer5.bkt.clouddn.com/psb.jpg" alt="木屋乐队合照" /></a>
+                        <h2>木屋乐队合照</h2>
+                        <p>虽然解散，但是曾经拥有</p>
+                    </article>
+                
+                    <article class="thumb">
+                        <a href="http://orjedzer5.bkt.clouddn.com/2.png" class="image lazy" data-original="http://orjedzer5.bkt.clouddn.com/2.png"><img class="lazy" data-original="http://orjedzer5.bkt.clouddn.com/2.png" alt="2017.04.10" /></a>
+                        <h2>2017.04.10</h2>
+                        <p>2014级研一608</p>
+                    </article>
+                
+                    <article class="thumb">
+                        <a href="http://orjedzer5.bkt.clouddn.com/3.jpg" class="image lazy" data-original="http://orjedzer5.bkt.clouddn.com/3.jpg"><img class="lazy" data-original="http://orjedzer5.bkt.clouddn.com/3.jpg" alt="德普" /></a>
+                        <h2>德普</h2>
+                        <p>成功的演员和艺术家</p>
+                    </article>
+                
+                    <article class="thumb">
+                        <a href="http://orjedzer5.bkt.clouddn.com/4.jpg" class="image lazy" data-original="http://orjedzer5.bkt.clouddn.com/4.jpg"><img class="lazy" data-original="http://orjedzer5.bkt.clouddn.com/4.jpg" alt="2017.04.03" /></a>
+                        <h2>2017.04.03</h2>
+                        <p>骑车爬梅岭（作死）</p>
+                    </article>
+                
+                    <article class="thumb">
+                        <a href="http://orjedzer5.bkt.clouddn.com/6.jpg" class="image lazy" data-original="http://orjedzer5.bkt.clouddn.com/6.jpg"><img class="lazy" data-original="http://orjedzer5.bkt.clouddn.com/6.jpg" alt="2017.03.08" /></a>
+                        <h2>2017.03.08</h2>
+                        <p>骑着小黄车去种田</p>
+                    </article>
+                
+                    <article class="thumb">
+                        <a href="http://orjedzer5.bkt.clouddn.com/7.jpg" class="image lazy" data-original="http://orjedzer5.bkt.clouddn.com/7.jpg"><img class="lazy" data-original="http://orjedzer5.bkt.clouddn.com/7.jpg" alt="2017.01.18" /></a>
+                        <h2>2017.01.18</h2>
+                        <p>许多年不见的初中同学</p>
+                    </article>
+                
+                    <article class="thumb">
+                        <a href="http://orjedzer5.bkt.clouddn.com/8.jpg" class="image lazy" data-original="http://orjedzer5.bkt.clouddn.com/8.jpg"><img class="lazy" data-original="http://orjedzer5.bkt.clouddn.com/8.jpg" alt="2016.12.31" /></a>
+                        <h2>2016.12.31</h2>
+                        <p>我的跨年方式</p>
+                    </article>
+                
+                    <article class="thumb">
+                        <a href="http://orjedzer5.bkt.clouddn.com/9.jpg" class="image lazy" data-original="http://orjedzer5.bkt.clouddn.com/9.jpg"><img class="lazy" data-original="http://orjedzer5.bkt.clouddn.com/9.jpg" alt="我的另一半生命" /></a>
+                        <h2>我的另一半生命</h2>
+                        <p>samick GTR，橘子，epphone，RP155</p>
+                    </article>
+                
+                    <article class="thumb">
+                        <a href="http://orjedzer5.bkt.clouddn.com/10.jpg" class="image lazy" data-original="http://orjedzer5.bkt.clouddn.com/10.jpg"><img class="lazy" data-original="http://orjedzer5.bkt.clouddn.com/10.jpg" alt="三哥" /></a>
+                        <h2>三哥</h2>
+                        <p>记得是初中war3认识的</p>
+                    </article>
+                
+                    <article class="thumb">
+                        <a href="http://orjedzer5.bkt.clouddn.com/12.jpg" class="image lazy" data-original="http://orjedzer5.bkt.clouddn.com/12.jpg"><img class="lazy" data-original="http://orjedzer5.bkt.clouddn.com/12.jpg" alt="2016.10.28" /></a>
+                        <h2>2016.10.28</h2>
+                        <p>英语俱乐部出演</p>
+                    </article>
+                
+                    <article class="thumb">
+                        <a href="http://orjedzer5.bkt.clouddn.com/14.jpg" class="image lazy" data-original="http://orjedzer5.bkt.clouddn.com/14.jpg"><img class="lazy" data-original="http://orjedzer5.bkt.clouddn.com/14.jpg" alt="艰苦的环境" /></a>
+                        <h2>艰苦的环境</h2>
+                        <p>虽艰苦 但快乐</p>
+                    </article>
+                
+                    <article class="thumb">
+                        <a href="http://orjedzer5.bkt.clouddn.com/16.jpg" class="image lazy" data-original="http://orjedzer5.bkt.clouddn.com/16.jpg"><img class="lazy" data-original="http://orjedzer5.bkt.clouddn.com/16.jpg" alt="2016.12.29" /></a>
+                        <h2>2016.12.29</h2>
+                        <p>建筑工程学院表演</p>
+                    </article>
+                
+                    <article class="thumb">
+                        <a href="http://orjedzer5.bkt.clouddn.com/psb%20%281%29.jpg" class="image lazy" data-original="http://orjedzer5.bkt.clouddn.com/psb%20%281%29.jpg"><img class="lazy" data-original="http://orjedzer5.bkt.clouddn.com/psb%20%281%29.jpg" alt="2016.12.30" /></a>
+                        <h2>2016.12.30</h2>
+                        <p>软件信工学院出演</p>
+                    </article>
+                
+                    <article class="thumb">
+                        <a href="http://orjedzer5.bkt.clouddn.com/psb%20%282%29.jpg" class="image lazy" data-original="http://orjedzer5.bkt.clouddn.com/psb%20%282%29.jpg"><img class="lazy" data-original="http://orjedzer5.bkt.clouddn.com/psb%20%282%29.jpg" alt="2016.05.04" /></a>
+                        <h2>2016.05.04</h2>
+                        <p>最后那个就素偶</p>
+                    </article>
+                
+                    <article class="thumb">
+                        <a href="http://orjedzer5.bkt.clouddn.com/psb%20%283%29.jpg" class="image lazy" data-original="http://orjedzer5.bkt.clouddn.com/psb%20%283%29.jpg"><img class="lazy" data-original="http://orjedzer5.bkt.clouddn.com/psb%20%283%29.jpg" alt="2016.01.16" /></a>
+                        <h2>2016.01.16</h2>
+                        <p>赚钱不易 且花且珍惜</p>
+                    </article>
+                
+                    <article class="thumb">
+                        <a href="http://orjedzer5.bkt.clouddn.com/psb%20%285%29.jpg" class="image lazy" data-original="http://orjedzer5.bkt.clouddn.com/psb%20%285%29.jpg"><img class="lazy" data-original="http://orjedzer5.bkt.clouddn.com/psb%20%285%29.jpg" alt="2015.11.05" /></a>
+                        <h2>2015.11.05</h2>
+                        <p>店面装修的时候</p>
+                    </article>
+                
+                    <article class="thumb">
+                        <a href="http://orjedzer5.bkt.clouddn.com/psb%20%286%29.jpg" class="image lazy" data-original="http://orjedzer5.bkt.clouddn.com/psb%20%286%29.jpg"><img class="lazy" data-original="http://orjedzer5.bkt.clouddn.com/psb%20%286%29.jpg" alt="2014.10.18" /></a>
+                        <h2>2014.10.18</h2>
+                        <p>真是一个好天气</p>
+                    </article>
+                
+                    <article class="thumb">
+                        <a href="http://orjedzer5.bkt.clouddn.com/psb%20%287%29.jpg" class="image lazy" data-original="http://orjedzer5.bkt.clouddn.com/psb%20%287%29.jpg"><img class="lazy" data-original="http://orjedzer5.bkt.clouddn.com/psb%20%287%29.jpg" alt="2014.9.25" /></a>
+                        <h2>2014.9.25</h2>
+                        <p>刚进大学就要和外教嘎英语</p>
+                    </article>
+                
+                    <article class="thumb">
+                        <a href="http://orjedzer5.bkt.clouddn.com/psb%20%289%29.jpg" class="image lazy" data-original="http://orjedzer5.bkt.clouddn.com/psb%20%289%29.jpg"><img class="lazy" data-original="http://orjedzer5.bkt.clouddn.com/psb%20%289%29.jpg" alt="2013.06.27" /></a>
+                        <h2>2013.06.27</h2>
+                        <p>鼓浪屿之行</p>
+                    </article>
+                
+            
+        </div>
+        <!-- Footer -->
+        <!--
+        <footer id="footer" class="panel">
+          <div class="inner split">
+            <div>
+              <section>
+                <h2>Magna feugiat sed adipiscing</h2>
+                <p>Nulla consequat, ex ut suscipit rutrum, mi dolor tincidunt erat, et scelerisque turpis ipsum eget quis orci mattis aliquet. Maecenas fringilla et ante at lorem et ipsum. Dolor nulla eu bibendum sapien. Donec non pharetra dui. Nulla consequat, ex ut suscipit rutrum, mi dolor tincidunt erat, et scelerisque turpis ipsum.</p>
+              </section>
+              <section>
+                <h2>Follow me on ...</h2>
+                <ul class="icons">
+                  <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                  <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+                  <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+                  <li><a href="#" class="icon fa-github"><span class="label">GitHub</span></a></li>
+                  <li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+                  <li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                  <li><a href="#" class="icon fa-telegram"><span class="label">Telegram</span></a></li>
+                </ul>
+              </section>
+              <p class="copyright">
+                &copy; Design: <a href="#">Gallery</a>.
+              </p>
+            </div>
+            <div>
+              <section>
+                <h2>Get in touch</h2>
+                <form method="post" action="#">
+                  <div class="field half first">
+                    <input type="text" name="name" id="name" placeholder="Name" />
+                  </div>
+                  <div class="field half">
+                    <input type="text" name="email" id="email" placeholder="Email" />
+                  </div>
+                  <div class="field">
+                    <textarea name="message" id="message" rows="4" placeholder="Message"></textarea>
+                  </div>
+                  <ul class="actions">
+                    <li><input type="submit" value="Send" class="special" /></li>
+                    <li><input type="reset" value="Reset" /></li>
+                  </ul>
+                </form>
+              </section>
+            </div>
+          </div>
+        </footer>
+        -->
+
+    </div>
+
+    <!-- Scripts -->
+    
+        <script src="/js/jquery.min.js"></script>
+        <script src="/js/gallery/gallery.js"></script>
+        <script src="/js/lazyload.min.js"></script>
+    
+
+    <script>
+        queue.offer(function(){
+            $('.lazy').lazyload({
+              effect: 'fadeIn',
+              event: 'scrollstop'
+            });
+        })
+        <!-- Start Queue -->
+        $(document).ready(function(){
+            setInterval(function(){
+                queue.execNext();
+            },200);
+        });
+    </script>
+</body>
+
+    
+</html>

@@ -5,7 +5,7 @@ tags: [css, web前端]
 categories: web前端
 ---
 
-### 关于 css 的一些命名规范
+## 关于 css 的一些命名规范
 * css设计模式：SMACSS
 * BEM 命名规范
 * javascript Hook
