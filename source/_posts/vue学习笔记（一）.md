@@ -1,7 +1,8 @@
 ---
 title: vue学习笔记（一）
 date: 2017-06-18 22:47:47
-tags:
+tags: [vue生命周期]
+categories: vue
 ---
 
 ## vue的实例对象与生命周期

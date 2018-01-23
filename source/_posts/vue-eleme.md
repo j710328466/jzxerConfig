@@ -1,8 +1,8 @@
 ---
 title: vue-eleme
 date: 2017-07-05 21:51:12
-tags: [vue, web前端]
-categories: web前端
+tags: [vue, nodeJS]
+categories: web项目
 ---
 
 ### 准备工作

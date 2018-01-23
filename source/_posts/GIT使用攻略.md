@@ -1,8 +1,8 @@
 ---
 title: git使用技巧
 date: 2017-04-15 19:59:16
-tags: [git, github]
-categories: git
+tags: [git]
+categories: 版本管理
 ---
 
 # 流程

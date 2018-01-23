@@ -2,7 +2,7 @@
 title: material主题使用攻略
 date: 2017-02-15 19:59:16
 tags: [hexo]
-categories: 随记
+categories: 博客搭建
 ---
 
 ## 安装[Material]

@@ -1,7 +1,8 @@
 ---
 title: sticky-footer
 date: 2017-07-02 20:30:52
-tags: [web前端]
+tags: [sticky布局]
+categories: CSS
 ---
 
 今天，我想讲讲关于stick-footer布局技巧，它的内容大概就是当你页面大小为100%时，希望底部定位一个 X 按钮啥的，不管文本内容不够，或者是文本内容超过屏幕时，这个按钮位置总在文本的下方

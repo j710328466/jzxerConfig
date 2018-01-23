@@ -1,7 +1,8 @@
 ---
 title: js中的一些方法和函数
 date: 2017-10-22 09:45:11
-tags: [js]
+tags: [js methods]
+categories: web前端
 ---
 
 ## 原生 JS 一些方法和函数

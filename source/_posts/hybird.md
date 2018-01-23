@@ -1,7 +1,8 @@
 ---
 title: hybird
 date: 2017-10-11 16:56:01
-tags: [web前端, hybird]
+tags: [hybird]
+categories: APP
 ---
 
 ### app分为几类？

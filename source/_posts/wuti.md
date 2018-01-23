@@ -1,7 +1,8 @@
 ---
 title: wuti
 date: 2017-07-31 22:59:35
-tags: [music]
+tags: [指弹]
+categories: 音乐
 ---
 
 ### 无题

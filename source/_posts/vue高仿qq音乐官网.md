@@ -1,8 +1,8 @@
 ---
 title: vue高仿qq音乐官网
 date: 2017-06-15 18:36:30
-tags: [vue, vuex, vue-router, axios]
-categories: web前端
+tags: [vue, vuex, vue-router]
+categories: web项目
 top: true
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Amani-间奏
 date: 2017-03-28 10:26:12
-tags: [音乐, 自录]
+tags: [音乐]
 categories: 音乐
 ---
 

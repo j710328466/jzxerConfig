@@ -1,7 +1,8 @@
 ---
 title: 正则表达式
 date: 2017-06-30 10:26:35
-tags: [正则, js]
+tags: [正则]
+categories: JS
 ---
 
 ### 正则的介绍

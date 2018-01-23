@@ -1,8 +1,8 @@
 ---
 title: vscode 配置插件推荐
 date: 2017-12-26 11:06:19
-tags: [web前端, vscode]
-categories: vscode
+tags: [vscode]
+categories: IDE
 ---
 
 ## vscode 配置

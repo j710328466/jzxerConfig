@@ -1,7 +1,8 @@
 ---
 title: 'div,section,article'
 date: 2017-06-28 17:24:19
-tags: [web前端, 语义化]
+tags: [语义化]
+categories: HTML
 ---
 
 ## div

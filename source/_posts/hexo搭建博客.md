@@ -1,7 +1,7 @@
 ---
 title: hexo 搭建博客初体验
-tags: [hexo, github]
-categories: hexo
+tags: [hexo]
+categories: 博客搭建
 ---
 
 # hexo 搭建博客初体验

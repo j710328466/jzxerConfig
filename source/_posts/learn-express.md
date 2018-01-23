@@ -1,8 +1,8 @@
 ---
 title: learn express
 date: 2017-12-20 10:27:29
-tags: [web前端, express]
-categories: express
+tags: [express]
+categories: nodeJS
 ---
 
 ## 深入了解express

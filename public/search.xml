@@ -3,6 +3,76 @@
   
     
     <entry>
+      <title><![CDATA[用vue撸一个二手商城]]></title>
+      <url>/%E7%94%A8vue%E6%92%B8%E4%B8%80%E4%B8%AA%E4%BA%8C%E6%89%8B%E5%95%86%E5%9F%8E.html</url>
+      <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h2 id="开发背景"><a href="#开发背景" class="headerlink" title="开发背景"></a>开发背景</h2><p>一直想尝试下全栈开发，想尝试一下，选题的初衷是自己对资源共享和二手市场的前景非常看好<br><br>共享资源的概念是有利于社会进步，并且是思维的一种跨越；未来一定是一个更美好的社会，我们需要做的就是让那一天尽早的到来</p>
+<h2 id="技术栈"><a href="#技术栈" class="headerlink" title="技术栈"></a>技术栈</h2><h3 id="前端"><a href="#前端" class="headerlink" title="前端"></a>前端</h3><ul>
+<li>vue + vue-router + vuex</li>
+<li>axios </li>
+<li>muse-ui</li>
+</ul>
+<h3 id="后端"><a href="#后端" class="headerlink" title="后端"></a>后端</h3><ul>
+<li>express + nodeJS</li>
+</ul>
+<h3 id="打包"><a href="#打包" class="headerlink" title="打包"></a>打包</h3><ul>
+<li>webpack</li>
+</ul>
+<h3 id="数据库"><a href="#数据库" class="headerlink" title="数据库"></a>数据库</h3><ul>
+<li>MongoDB</li>
+</ul>
+<p>## </p>
+]]></content>
+      
+        <categories>
+            
+            <category> web前端 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> mongoDB </tag>
+            
+            <tag> 全栈开发 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[PWA初窥]]></title>
+      <url>/PWA%E5%88%9D%E7%AA%A5.html</url>
+      <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h1 id="PWA"><a href="#PWA" class="headerlink" title="PWA"></a>PWA</h1><h2 id="介绍-Progressive-Web-Apps"><a href="#介绍-Progressive-Web-Apps" class="headerlink" title="介绍 Progressive Web Apps"></a>介绍 Progressive Web Apps</h2><p>当然，并不是所有的 Web 都叫做 PWA。根据 google 定义，PWA 应该具有一下特性：</p>
+<ul>
+<li>渐进式：能确保每个用户都能打开网页</li>
+<li>响应式：PC，手机，平板，不管哪种格式，网页格式都能完美适配</li>
+<li>离线应用：支持用户在没网的条件下也能打开网页，这里就需要 Service Worker 的帮助</li>
+<li>APP 化：能够像 APP 一样和用户进行交互</li>
+<li>常更新：一旦 Web 网页有什么改动，都能立即在用户端体现出来</li>
+<li>安全：安全第一，给自己的网站加上一把绿锁–HTTPS</li>
+<li>可搜索：能够被引擎搜索到推送：做到在不打开网页的前提下，推送新的消息</li>
+<li>可安装：能够将 Web 想 APP 一样添加到桌面</li>
+<li>可跳转：只要通过一个连接就可以跳转到你的 Web 页面。</li>
+</ul>
+]]></content>
+      
+        <categories>
+            
+            <category> web前端 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> PWA </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[ubuntu下搭建一个nodejs+nginx+mongodb服务器]]></title>
       <url>/ubuntu%E4%B8%8B%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AAnodejs-nginx-mongodb%E6%9C%8D%E5%8A%A1%E5%99%A8.html</url>
       <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h2 id="ubuntu-使用方法"><a href="#ubuntu-使用方法" class="headerlink" title="ubuntu 使用方法"></a>ubuntu 使用方法</h2><pre><code>首先输入fdisk -l命令后,发现/dev/vdb，说明实例含有数据盘，需要挂载
@@ -84,6 +154,20 @@ usr/local/nginx/sbin/nginx   -v
 </code></pre><p>测试nginx安装成功<br>wget <a href="http://127.0.0.1" target="_blank" rel="noopener">http://127.0.0.1</a> （会下载一个默认的html文件，直接ls查看当前目录可看到）</p>
 ]]></content>
       
+        <categories>
+            
+            <category> 服务器 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> nodejs </tag>
+            
+            <tag> ubuntu </tag>
+            
+        </tags>
         
     </entry>
     
@@ -121,14 +205,12 @@ usr/local/nginx/sbin/nginx   -v
       
         <categories>
             
-            <category> vscode </category>
+            <category> IDE </category>
             
         </categories>
         
         
         <tags>
-            
-            <tag> web前端 </tag>
             
             <tag> vscode </tag>
             
@@ -266,14 +348,12 @@ img.src = base64Data;
       
         <categories>
             
-            <category> express </category>
+            <category> nodeJS </category>
             
         </categories>
         
         
         <tags>
-            
-            <tag> web前端 </tag>
             
             <tag> express </tag>
             
@@ -411,16 +491,16 @@ babel-preset-react
       
         <categories>
             
-            <category> web前端 </category>
+            <category> web项目 </category>
             
         </categories>
         
         
         <tags>
             
-            <tag> web前端 </tag>
-            
             <tag> react </tag>
+            
+            <tag> webpack </tag>
             
         </tags>
         
@@ -535,7 +615,7 @@ babel-preset-react
         
         <tags>
             
-            <tag> coding </tag>
+            <tag> CStyle </tag>
             
         </tags>
         
@@ -593,10 +673,16 @@ babel-preset-react
 <p>#### </p>
 ]]></content>
       
+        <categories>
+            
+            <category> web前端 </category>
+            
+        </categories>
+        
         
         <tags>
             
-            <tag> css </tag>
+            <tag> 兼容性 </tag>
             
             <tag> 前端 </tag>
             
@@ -727,10 +813,16 @@ if (isIE){
 }
 </code></pre>]]></content>
       
+        <categories>
+            
+            <category> web前端 </category>
+            
+        </categories>
+        
         
         <tags>
             
-            <tag> js </tag>
+            <tag> js methods </tag>
             
         </tags>
         
@@ -796,10 +888,16 @@ if (isIE){
 </blockquote>
 ]]></content>
       
+        <categories>
+            
+            <category> 生活 </category>
+            
+        </categories>
+        
         
         <tags>
             
-            <tag> 领悟 </tag>
+            <tag> 哲理 </tag>
             
         </tags>
         
@@ -850,10 +948,14 @@ if (isIE){
 </ul>
 ]]></content>
       
+        <categories>
+            
+            <category> APP </category>
+            
+        </categories>
+        
         
         <tags>
-            
-            <tag> web前端 </tag>
             
             <tag> hybird </tag>
             
@@ -902,10 +1004,14 @@ if (isIE){
 </ul>
 <h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3>]]></content>
       
+        <categories>
+            
+            <category> web前端 </category>
+            
+        </categories>
+        
         
         <tags>
-            
-            <tag> web前端 </tag>
             
             <tag> 面试 </tag>
             
@@ -932,14 +1038,14 @@ if (isIE){
       
         <categories>
             
-            <category> 极简主义 </category>
+            <category> 生活 </category>
             
         </categories>
         
         
         <tags>
             
-            <tag> 创业 </tag>
+            <tag> SC </tag>
             
         </tags>
         
@@ -951,39 +1057,16 @@ if (isIE){
       <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>暂时未上线~</p>
 ]]></content>
       
+        <categories>
+            
+            <category> nodeJS </category>
+            
+        </categories>
         
-    </entry>
-    
-    <entry>
-      <title><![CDATA[如何成为一名合格的CEO]]></title>
-      <url>/%E5%A6%82%E4%BD%95%E6%88%90%E4%B8%BA%E4%B8%80%E5%90%8D%E5%90%88%E6%A0%BC%E7%9A%84CEO.html</url>
-      <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h3 id="集中精力抓到要害问题"><a href="#集中精力抓到要害问题" class="headerlink" title="集中精力抓到要害问题"></a>集中精力抓到要害问题</h3><ul>
-<li>好的ceo善于俯视整个公司，确定最优先要做的事前，然后重点突破，一两件事就能使公司发生巨大的变化。如果你能抓住公司面临问题的要害之处，人们才会洗耳恭听</li>
-</ul>
-<h3 id="销售能力"><a href="#销售能力" class="headerlink" title="销售能力"></a>销售能力</h3><ul>
-<li>ceo 必须具备推销能力，把东西推销给客户和投资者，或者把革命思想推荐给公司</li>
-</ul>
-<h3 id="对财务的敏感"><a href="#对财务的敏感" class="headerlink" title="对财务的敏感"></a>对财务的敏感</h3><ul>
-<li>读懂数据，把纸上的东西和实际的公司情况结合起来，不仅仅是预算问题，也需要思考盈利的驱动力问题。</li>
-</ul>
-<h3 id="有策略头脑"><a href="#有策略头脑" class="headerlink" title="有策略头脑"></a>有策略头脑</h3><ul>
-<li>策略就是选择公司将参与角逐的竞技场，然后建立与这场竞争想关的优势。这样会考验你如何适应游戏规则并在游戏中获胜</li>
-</ul>
-<h3 id="管理变革的能力"><a href="#管理变革的能力" class="headerlink" title="管理变革的能力"></a>管理变革的能力</h3><ul>
-<li>在整个公司的变革，犹如管理一个部门，但要困难的多，你的行动要有号召力。你必须为人们树立一个榜样，挑选真确的管理团队，确定可能妨碍或阻止你的层层挑战</li>
-</ul>
-<h3 id="领导能力"><a href="#领导能力" class="headerlink" title="领导能力"></a>领导能力</h3><ul>
-<li>领导需要精力和激情。你必须先感召你自己，然后感召其他人。但激情也不是无根无据的滥用，一个坚定的长远目标很重要。</li>
-</ul>
-<h3 id="个性魅力"><a href="#个性魅力" class="headerlink" title="个性魅力"></a>个性魅力</h3><ul>
-<li>伟大的ceo知道什么时候用逻辑推理，什么时候相信自己的直觉，他们知道什么时候应该采取什么措施，什么时候听之任之，他知道什么时候管什么时候不要管。</li>
-</ul>
-]]></content>
-      
         
         <tags>
             
-            <tag> 职场 </tag>
+            <tag> koa </tag>
             
         </tags>
         
@@ -1173,10 +1256,14 @@ if (isIE){
 </ul>
 ]]></content>
       
+        <categories>
+            
+            <category> web前端 </category>
+            
+        </categories>
+        
         
         <tags>
-            
-            <tag> web前端 </tag>
             
             <tag> 面试 </tag>
             
@@ -1204,12 +1291,16 @@ if (isIE){
 </blockquote>
 ]]></content>
       
+        <categories>
+            
+            <category> JS </category>
+            
+        </categories>
+        
         
         <tags>
             
-            <tag> web前端 </tag>
-            
-            <tag> js </tag>
+            <tag> commonjs </tag>
             
         </tags>
         
@@ -1287,12 +1378,16 @@ if (isIE){
 </ul>
 ]]></content>
       
+        <categories>
+            
+            <category> 生活 </category>
+            
+        </categories>
+        
         
         <tags>
             
-            <tag> 创业 </tag>
-            
-            <tag> 理想 </tag>
+            <tag> 哲理 </tag>
             
         </tags>
         
@@ -1334,14 +1429,18 @@ if (isIE){
       
         <categories>
             
-            <category> web前端 </category>
+            <category> storage </category>
             
         </categories>
         
         
         <tags>
             
-            <tag> 数据 </tag>
+            <tag> sessionStorage </tag>
+            
+            <tag> localStotage </tag>
+            
+            <tag> cookies </tag>
             
         </tags>
         
@@ -1352,10 +1451,16 @@ if (isIE){
       <url>/wuti.html</url>
       <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h3 id="无题"><a href="#无题" class="headerlink" title="无题"></a>无题</h3><div id="dplayer1" class="dplayer" style="margin-bottom: 20px;"></div><script>var dplayer1 = new DPlayer({"element":document.getElementById("dplayer1"),"autoplay":1,"theme":"#fff","loop":1,"video":{"url":"http://orjedzer5.bkt.clouddn.com//video/mp4/wuti.mp4"},"danmaku":{"api":"http://dplayer.daoapp.io","id":"4","token":"tokendemo"}});</script><!-- dplayer used1 -->]]></content>
       
+        <categories>
+            
+            <category> 音乐 </category>
+            
+        </categories>
+        
         
         <tags>
             
-            <tag> music </tag>
+            <tag> 指弹 </tag>
             
         </tags>
         
@@ -1413,10 +1518,16 @@ if (isIE){
 </ul>
 ]]></content>
       
+        <categories>
+            
+            <category> 生活 </category>
+            
+        </categories>
+        
         
         <tags>
             
-            <tag> 领悟 </tag>
+            <tag> 哲理 </tag>
             
         </tags>
         
@@ -1432,16 +1543,18 @@ if (isIE){
       
         <categories>
             
-            <category> 异步 </category>
+            <category> JS </category>
             
         </categories>
         
         
         <tags>
             
-            <tag> web前端 </tag>
+            <tag> 同步 </tag>
             
-            <tag> js </tag>
+            <tag> 异步 </tag>
+            
+            <tag> es6 </tag>
             
         </tags>
         
@@ -1515,16 +1628,14 @@ a:hover {}
       
         <categories>
             
-            <category> web前端 </category>
+            <category> CSS </category>
             
         </categories>
         
         
         <tags>
             
-            <tag> web前端 </tag>
-            
-            <tag> css </tag>
+            <tag> css命名规范 </tag>
             
         </tags>
         
@@ -1594,16 +1705,16 @@ a:hover {}
       
         <categories>
             
-            <category> web前端 </category>
+            <category> web项目 </category>
             
         </categories>
         
         
         <tags>
             
-            <tag> web前端 </tag>
-            
             <tag> vue </tag>
+            
+            <tag> nodeJS </tag>
             
         </tags>
         
@@ -1730,10 +1841,16 @@ body {
 </blockquote>
 ]]></content>
       
+        <categories>
+            
+            <category> CSS </category>
+            
+        </categories>
+        
         
         <tags>
             
-            <tag> web前端 </tag>
+            <tag> sticky布局 </tag>
             
         </tags>
         
@@ -1798,10 +1915,16 @@ body {
 </ul>
 ]]></content>
       
+        <categories>
+            
+            <category> 生活 </category>
+            
+        </categories>
+        
         
         <tags>
             
-            <tag> 随记 </tag>
+            <tag> 人生感悟 </tag>
             
         </tags>
         
@@ -1817,10 +1940,14 @@ body {
 </code></pre><p>### </p>
 ]]></content>
       
+        <categories>
+            
+            <category> JS </category>
+            
+        </categories>
+        
         
         <tags>
-            
-            <tag> js </tag>
             
             <tag> 正则 </tag>
             
@@ -1840,10 +1967,14 @@ body {
 <p>div &lt; section &lt; article ，语义是从无到有，逐渐增强的。div 无任何语义，仅仅用作样式化或者脚本化，对于一段主题性的内容，则就适用 section，而假如这段内容可以脱离上下文，作为完整的独立存在的一段内容，则就适用 article。原则上来说，能使用 article 的时候，也是可以使用 section 的，但是实际上，假如使用 article 更合适，那么就不要使用 section 。</p>
 ]]></content>
       
+        <categories>
+            
+            <category> HTML </category>
+            
+        </categories>
+        
         
         <tags>
-            
-            <tag> web前端 </tag>
             
             <tag> 语义化 </tag>
             
@@ -1903,7 +2034,7 @@ body {
       
         <categories>
             
-            <category> web前端 </category>
+            <category> HTML </category>
             
         </categories>
         
@@ -2012,81 +2143,18 @@ var speed = leng/(time/interval)  //每次位移量，就是一共调用多少�
 </blockquote>
 ]]></content>
       
+        <categories>
+            
+            <category> JS </category>
+            
+        </categories>
+        
         
         <tags>
-            
-            <tag> js </tag>
             
             <tag> 轮播图 </tag>
             
         </tags>
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[vue学习笔记（一）]]></title>
-      <url>/vue%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89.html</url>
-      <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h2 id="vue的实例对象与生命周期"><a href="#vue的实例对象与生命周期" class="headerlink" title="vue的实例对象与生命周期"></a>vue的实例对象与生命周期</h2><h3 id="vue-的生命周期图"><a href="#vue-的生命周期图" class="headerlink" title="vue 的生命周期图"></a>vue 的生命周期图</h3><p><img src="http://images.cnblogs.com/cnblogs_com/fly_dragon/276813/o_lifecycle-%E6%A0%87%E6%B3%A8%E7%89%88%E6%9C%AC.png" alt=""></p>
-<ul>
-<li><p>beforeCreate</p>
-<blockquote>
-<p>在实例初始化之后，数据观测(data observer) 和 event/watcher 事件配置之前被调用。</p>
-</blockquote>
-</li>
-<li><p>created</p>
-<blockquote>
-<p>实例已经创建完成之后被调用。在这一步，实例已完成以下的配置：数据观测(data observer)，属性和方法的运算， watch/event 事件回调。然而，挂载阶段还没开始，$el 属性目前不可见。</p>
-</blockquote>
-</li>
-<li><p>beforeMount</p>
-<blockquote>
-<p>在挂载开始之前被调用：相关的 render 函数首次被调用。</p>
-</blockquote>
-</li>
-<li><p>mounted</p>
-<blockquote>
-<p>el 被新创建的 vm.$el 替换，并挂载到实例上去之后调用该钩子。如果 root 实例挂载了一个文档内元素，当 mounted 被调用时 vm.$el 也在文档内。</p>
-</blockquote>
-</li>
-<li><p>beforeUpdate</p>
-<blockquote>
-<p> 数据更新时调用，发生在虚拟 DOM 重新渲染和打补丁之前。 你可以在这个钩子中进一步地更改状态，这不会触发附加的重渲染过程。</p>
-</blockquote>
-</li>
-<li><p>updated</p>
-<blockquote>
-<p> 由于数据更改导致的虚拟 DOM 重新渲染和打补丁，在这之后会调用该钩子。<br>当这个钩子被调用时，组件 DOM 已经更新，所以你现在可以执行依赖于 DOM 的操作。然而在大多数情况下，你应该避免在此期间更改状态，因为这可能会导致更新无限循环。<br> 该钩子在服务器端渲染期间不被调用。</p>
-</blockquote>
-</li>
-<li><p>beforeDestroy</p>
-<blockquote>
-<p> 实例销毁之前调用。在这一步，实例仍然完全可用。</p>
-</blockquote>
-</li>
-<li><p>destroyed</p>
-<blockquote>
-<p> Vue 实例销毁后调用。调用后，Vue 实例指示的所有东西都会解绑定，所有的事件监听器会被移除，所有的子实例也会被销毁。 该钩子在服务器端渲染期间不被调用。</p>
-</blockquote>
-</li>
-</ul>
-<h2 id="实例对象"><a href="#实例对象" class="headerlink" title="实例对象"></a>实例对象</h2><h3 id="data"><a href="#data" class="headerlink" title="data"></a>data</h3><ul>
-<li>类型是Object或者Function。<blockquote>
-<p>var vm = new Vue({<br>data: data<br>})</p>
-</blockquote>
-</li>
-</ul>
-<h3 id="computed"><a href="#computed" class="headerlink" title="computed"></a>computed</h3><ul>
-<li>介绍<br>Vue的计算属性（computed)的属性会自动混入Vue的实例中。所有 getter 和 setter 的 this 上下文自动地绑定为 Vue 实例。这就很强大了，再计算属性中定义的函数里面可以直接使用指向了 vue 实例的 this</li>
-</ul>
-<h3 id="methods"><a href="#methods" class="headerlink" title="methods"></a>methods</h3><ul>
-<li>类型: { [key: string]: Function }<br>methods 将被混入到 Vue 实例中。可以直接通过 VM 实例访问这些方法，或者在指令表达式中使用。方法中的 this 自动绑定为 Vue 实例。</li>
-</ul>
-<h3 id="watch"><a href="#watch" class="headerlink" title="watch"></a>watch</h3><ul>
-<li>类型： { [key: string]: string | Function | Object }<br>一个对象，键是需要观察的表达式，值是对应回调函数。值也可以是方法名，或者包含选项的对象。Vue 实例将会在实例化时调用 $watch()，遍历 watch 对象的每一个属性。</li>
-</ul>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>Vue的实例封装的还是挺有艺术性的，很符合开发者的思维规范，它的生命周期也非常清晰，使用起来也非常方便。MVVM双向绑定思想也是吊的可以</p>
-]]></content>
-      
         
     </entry>
     
@@ -2141,9 +2209,9 @@ var speed = leng/(time/interval)  //每次位移量，就是一共调用多少�
         
         <tags>
             
-            <tag> 服务器 </tag>
-            
             <tag> windows </tag>
+            
+            <tag> 腾讯云 </tag>
             
         </tags>
         
@@ -2198,16 +2266,53 @@ $ hexo deploy
       
         <categories>
             
-            <category> hexo </category>
+            <category> 博客搭建 </category>
             
         </categories>
         
         
         <tags>
             
-            <tag> github </tag>
-            
             <tag> hexo </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[vuex 使用技巧]]></title>
+      <url>/vuex-%E6%A8%A1%E5%9D%97%E4%BB%8B%E7%BB%8D.html</url>
+      <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h2 id="Action"><a href="#Action" class="headerlink" title="Action"></a>Action</h2><p>提供方法和API请求,类似于mutation</p>
+<blockquote>
+<p>mutation  修改 state 只能是同步的</p>
+<ul>
+<li>action 充满了各种异步 api<pre><code>actions: {
+  increment (context) {
+      context.commit(&#39;increment&#39;)
+ }
+}
+另一种写法
+increment({commit}) {
+  commit(&#39;increment&#39;)
+}
+</code></pre></li>
+</ul>
+</blockquote>
+<h2 id="分发-Action"><a href="#分发-Action" class="headerlink" title="分发 Action"></a>分发 Action</h2><blockquote>
+<p>store.dispatch(‘increment’)</p>
+</blockquote>
+]]></content>
+      
+        <categories>
+            
+            <category> vue </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> vuex </tag>
             
         </tags>
         
@@ -2311,61 +2416,18 @@ npm run start
       
         <categories>
             
-            <category> web前端 </category>
+            <category> web项目 </category>
             
         </categories>
         
         
         <tags>
             
-            <tag> vue </tag>
-            
             <tag> vuex </tag>
+            
+            <tag> vue </tag>
             
             <tag> vue-router </tag>
-            
-            <tag> axios </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[vuex 使用技巧]]></title>
-      <url>/vuex-%E6%A8%A1%E5%9D%97%E4%BB%8B%E7%BB%8D.html</url>
-      <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h2 id="Action"><a href="#Action" class="headerlink" title="Action"></a>Action</h2><p>提供方法和API请求,类似于mutation</p>
-<blockquote>
-<p>mutation  修改 state 只能是同步的</p>
-<ul>
-<li>action 充满了各种异步 api<pre><code>actions: {
-  increment (context) {
-      context.commit(&#39;increment&#39;)
- }
-}
-另一种写法
-increment({commit}) {
-  commit(&#39;increment&#39;)
-}
-</code></pre></li>
-</ul>
-</blockquote>
-<h2 id="分发-Action"><a href="#分发-Action" class="headerlink" title="分发 Action"></a>分发 Action</h2><blockquote>
-<p>store.dispatch(‘increment’)</p>
-</blockquote>
-]]></content>
-      
-        <categories>
-            
-            <category> web前端 </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> vue </tag>
-            
-            <tag> vuex </tag>
             
         </tags>
         
@@ -2474,7 +2536,7 @@ ls
       
         <categories>
             
-            <category> git </category>
+            <category> 版本管理 </category>
             
         </categories>
         
@@ -2482,8 +2544,6 @@ ls
         <tags>
             
             <tag> git </tag>
-            
-            <tag> github </tag>
             
         </tags>
         
@@ -2504,8 +2564,6 @@ ls
         <tags>
             
             <tag> 音乐 </tag>
-            
-            <tag> 自录 </tag>
             
         </tags>
         
@@ -2563,6 +2621,12 @@ ls
 </blockquote>
 ]]></content>
       
+        <categories>
+            
+            <category> web前端 </category>
+            
+        </categories>
+        
         
         <tags>
             
@@ -2575,7 +2639,72 @@ ls
     <entry>
       <title><![CDATA[一些不可思议的的事]]></title>
       <url>/%E4%B8%80%E4%BA%9B%E4%B8%8D%E5%8F%AF%E6%80%9D%E8%AE%AE%E7%9A%84%E7%9A%84%E4%BA%8B.html</url>
-      <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>1.没有一张纸可对折超过7次<br>2.根据统计每年骡仔所杀的人比飞机失事所死的人还多<br>3.人睡觉比坐着看电视所消耗的卡路里还多<br>4.Wright’sBrother发明飞机后第一次试飞的路程比一架波音747飞机的飞机翼还短<br>5.很多人每朝起来都喝一杯咖啡提神，但其实一个苹果比一杯咖啡还有效<br>6.你的家中多数尘埃都是你的死皮<br>7.洋娃娃Barbie 全名是Barabra Millicent Roberts<br>8.希特拉的妈妈在怀有希特拉曾认真地考虑堕胎，不过被医说服，结果把他生下来<br>9.玛丽莲梦露有6只脚趾<br>10.降落伞的发明人把第一次乘坐降落伞的机会让给了一只狗<br>11.印度尼西亚竹节虫是全世界最大的昆虫，有些光是身长就有一呎长<br>12.其实，河马跑得比人快<br>13.珍珠在醋中会溶<br>14.一只70磅的章鱼可以穿过一个仅一枚银币大小的洞，因为他们没有脊椎<br>15.你有可能将一只牛拉上楼梯，但牛是不懂下楼梯的<br>16.猪不能仰头望天空<br>17.’quick brown fox jumps over the lazy dog’可以用尽26个字母<br>18.鸭的叫声是不会有回音的，暂时没有人知何解<br>19.蜗牛可不吃东西睡3年<br>20.著名影星Tommy Lee Jones与美国副总统曾经是哈佛大学同房<br>21.如果一个月中，第一天是星期日，那个月便出现黑色星期五<br>22.把石头放在微波炉中加热会爆炸<br>23.1,111,111 x 1,111,111 = 1234567654321<br>24.唯一一个有15英文字母而又不会重复是的英文字’uncopyrightable’<br>25.猫可发出超过100个音，狗却只能发10个音<br>26.愈黑的环境下，猫的排尿次数会增加<br>27.将一个硬币向上抛1000次，字向上的次数是495次，不是500次，因为公较重<br>28.根据牛津字典世界上最长的英文字是’pneumonoultramicroscopicsilicovolcanoconiosis’<br>29.人体的胃每2个星期便会更新一次分泌物，否则它会自我消化<br>30.可乐原是绿色的<br>31.虎鲨的胚胎在母亲的子宫里需经过激烈的搏斗，胜利者就是可以活着出生的小虎鲨<br>32.走路上班的人最高比率的省是阿拉斯加<br>33.如果Barbie是人类，她是身形是39-23-33<br>34.美国平均每小时在空中的人有61000人<br>35.只有一种食物不会变坏:蜜糖<br>36.在加勒比海附近有一种蚝是会爬榭的<br>37.世界上最年轻的父母在1910年出现，一个8岁及另一个9岁的中国人<br>38.人顃的鼻及耳是毕生都不断长大<br>39.下午摘下的玫瑰比清晨摘下的玫瑰更能持久不枯萎<br>41.乳牛听音乐时可以供应更多牛奶<br>42.一条长颈鹿的舌头有2尺长<br>43.大象可用头来站立<br>44.蚂蚁早上醒来会抓痒<br>45.伟大发明家爱迪生是怕黑的<br>46.世上最老的金鱼是41岁，名叫Fred<br>47.爱因斯坦9岁时不能流利说话，他妈妈曾经一度以为他是弱智<br>48.阿拉伯的女人可以因为丈夫不为她倒咖啡而提出离婚<br>49.只有55%的美国人知道太阳是一个星体<br>50.多数唇膏是有鱼鳞的<br>51.长颈鹿没办法咳嗽<br>52.猫头鹰是唯一能够分辨蓝色的鸟类<br>53.一只鲸鱼一分钟心跳只有九下<br>54.我们喝到肚子里头的水已经有三亿岁了<br>55.只有百分之三十的人可以放大缩小自己的鼻孔<br>56.一只牡蛎的性别会由男变女，此后一生中还会变个几次<br>57.根据一项1845年由英国通过的法律，自杀是非常严重的罪，最重可以处以吊死的极刑<br>58.在太空中航天员是没办法哭的，因为没有地心引力，眼泪流不出来<br>59.一只变色龙的舌头是它自己身体的两倍长<br>60.最常用牙签的人是美国人<br>61.一个正常人的眼部肌肉一天平均要动上一万到一万五千次<br>62.大象死后还会保持站立姿势<br>63.有些昆虫没有头还可以再活上一年<br>64.达尔文光是画蒙那莉萨的嘴唇就花上十二年<br>65.玻璃破掉时，玻璃碎片的时速最高可达每小时三千英哩 </p>
+      <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><ol>
+<li>没有一张纸可对折超过7次 </li>
+<li>根据统计每年骡仔所杀的人比飞机失事所死的人还多 </li>
+<li>人睡觉比坐着看电视所消耗的卡路里还多 </li>
+<li>Wright’sBrother发明飞机后第一次试飞的路程比一架波音747飞机的飞机翼还短 </li>
+<li>很多人每朝起来都喝一杯咖啡提神，但其实一个苹果比一杯咖啡还有效 </li>
+<li>你的家中多数尘埃都是你的死皮 </li>
+<li>洋娃娃Barbie 全名是Barabra Millicent Roberts</li>
+<li>希特拉的妈妈在怀有希特拉曾认真地考虑堕胎，不过被医说服，结果把他生下来 </li>
+<li>玛丽莲梦露有6只脚趾 </li>
+<li>降落伞的发明人把第一次乘坐降落伞的机会让给了一只狗</li>
+<li>印度尼西亚竹节虫是全世界最大的昆虫，有些光是身长就有一呎长</li>
+<li>其实，河马跑得比人快 </li>
+<li>珍珠在醋中会溶 </li>
+<li>一只70磅的章鱼可以穿过一个仅一枚银币大小的洞，因为他们没有脊椎 </li>
+<li>你有可能将一只牛拉上楼梯，但牛是不懂下楼梯的 </li>
+<li>猪不能仰头望天空 </li>
+<li>‘quick brown fox jumps over the lazy dog’可以用尽26个字母 </li>
+<li>鸭的叫声是不会有回音的，暂时没有人知何解 </li>
+<li>蜗牛可不吃东西睡3年 </li>
+<li>著名影星Tommy Lee Jones与美国副总统曾经是哈佛大学同房 </li>
+<li>如果一个月中，第一天是星期日，那个月便出现黑色星期五 </li>
+<li>把石头放在微波炉中加热会爆炸 </li>
+<li>1,111,111 x 1,111,111 = 1234567654321 </li>
+<li>唯一一个有15英文字母而又不会重复是的英文字’uncopyrightable’ </li>
+<li>猫可发出超过100个音，狗却只能发10个音 </li>
+<li>愈黑的环境下，猫的排尿次数会增加 </li>
+<li>将一个硬币向上抛1000次，字向上的次数是495次，不是500次，因为公较重 </li>
+<li>根据牛津字典世界上最长的英文字是’pneumonoultramicroscopicsilicovolcanoconiosis’ </li>
+<li>人体的胃每2个星期便会更新一次分泌物，否则它会自我消化 </li>
+<li>可乐原是绿色的 </li>
+<li>虎鲨的胚胎在母亲的子宫里需经过激烈的搏斗，胜利者就是可以活着出生的小虎鲨 </li>
+<li>走路上班的人最高比率的省是阿拉斯加 </li>
+<li>如果Barbie是人类，她是身形是39-23-33 </li>
+<li>美国平均每小时在空中的人有61000人 </li>
+<li>只有一种食物不会变坏:蜜糖 </li>
+<li>在加勒比海附近有一种蚝是会爬榭的 </li>
+<li>世界上最年轻的父母在1910年出现，一个8岁及另一个9岁的中国人 </li>
+<li>人顃的鼻及耳是毕生都不断长大 </li>
+<li>下午摘下的玫瑰比清晨摘下的玫瑰更能持久不枯萎 </li>
+<li>乳牛听音乐时可以供应更多牛奶 </li>
+<li>一条长颈鹿的舌头有2尺长 </li>
+<li>大象可用头来站立 </li>
+<li>蚂蚁早上醒来会抓痒 </li>
+<li>伟大发明家爱迪生是怕黑的 </li>
+<li>世上最老的金鱼是41岁，名叫Fred </li>
+<li>爱因斯坦9岁时不能流利说话，他妈妈曾经一度以为他是弱智 </li>
+<li>阿拉伯的女人可以因为丈夫不为她倒咖啡而提出离婚 </li>
+<li>只有55%的美国人知道太阳是一个星体 </li>
+<li>多数唇膏是有鱼鳞的 </li>
+<li>长颈鹿没办法咳嗽 </li>
+<li>猫头鹰是唯一能够分辨蓝色的鸟类 </li>
+<li>一只鲸鱼一分钟心跳只有九下 </li>
+<li>我们喝到肚子里头的水已经有三亿岁了 </li>
+<li>只有百分之三十的人可以放大缩小自己的鼻孔 </li>
+<li>一只牡蛎的性别会由男变女，此后一生中还会变个几次 </li>
+<li>根据一项1845年由英国通过的法律，自杀是非常严重的罪，最重可以处以吊死的极刑 </li>
+<li>在太空中航天员是没办法哭的，因为没有地心引力，眼泪流不出来 </li>
+<li>一只变色龙的舌头是它自己身体的两倍长 </li>
+<li>最常用牙签的人是美国人 </li>
+<li>一个正常人的眼部肌肉一天平均要动上一万到一万五千次 </li>
+<li>大象死后还会保持站立姿势 </li>
+<li>有些昆虫没有头还可以再活上一年 </li>
+<li>达尔文光是画蒙那莉萨的嘴唇就花上十二年 </li>
+<li>玻璃破掉时，玻璃碎片的时速最高可达每小时三千英哩 </li>
+</ol>
 <blockquote>
 <p>世间真是无奇不有….</p>
 </blockquote>
@@ -2583,14 +2712,14 @@ ls
       
         <categories>
             
-            <category> 随记 </category>
+            <category> 生活 </category>
             
         </categories>
         
         
         <tags>
             
-            <tag> 随记 </tag>
+            <tag> 趣事 </tag>
             
         </tags>
         
@@ -2651,7 +2780,7 @@ ls
             
             <tag> 电吉他 </tag>
             
-            <tag> 即兴 </tag>
+            <tag> 即兴原理 </tag>
             
         </tags>
         
@@ -2774,7 +2903,7 @@ layout: tags
       
         <categories>
             
-            <category> 随记 </category>
+            <category> 博客搭建 </category>
             
         </categories>
         
@@ -2801,9 +2930,9 @@ layout: tags
         
         <tags>
             
-            <tag> 音乐 </tag>
+            <tag> beyond </tag>
             
-            <tag> 自录 </tag>
+            <tag> rock </tag>
             
         </tags>
         
@@ -2823,9 +2952,9 @@ layout: tags
         
         <tags>
             
-            <tag> 音乐 </tag>
+            <tag> beyond </tag>
             
-            <tag> 自录 </tag>
+            <tag> rock </tag>
             
         </tags>
         
@@ -2836,10 +2965,16 @@ layout: tags
       <url>/%E6%A2%A6%E4%B8%AD%E7%9A%84%E5%A9%9A%E7%A4%BC.html</url>
       <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><div id="dplayer4" class="dplayer" style="margin-bottom: 20px;"></div><script>var dplayer4 = new DPlayer({"element":document.getElementById("dplayer4"),"autoplay":1,"theme":"#fff","loop":1,"video":{"url":"http://orjedzer5.bkt.clouddn.com/%E6%A2%A6%E4%B8%AD%E7%9A%84%E5%A9%9A%E7%A4%BC.mp4"},"danmaku":{"api":"http://dplayer.daoapp.io","id":"4","token":"tokendemo"}});</script><!-- dplayer used1 -->]]></content>
       
+        <categories>
+            
+            <category> 音乐 </category>
+            
+        </categories>
+        
         
         <tags>
             
-            <tag> 音乐 </tag>
+            <tag> 指弹 </tag>
             
             <tag> 古典 </tag>
             

@@ -1,8 +1,8 @@
 ---
 title: simpleCountry
 date: 2017-09-14 10:39:24
-tags: [创业]
-categories: 极简主义
+tags: [SC]
+categories: 生活
 ---
 
 ### 简介

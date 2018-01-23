@@ -1,8 +1,8 @@
 ---
 title: urlMaker
 date: 2017-12-18 16:38:42
-tags: [react, web前端]
-categories: web前端
+tags: [react, webpack]
+categories: web项目
 ---
 
 # urlMaker 开发流程

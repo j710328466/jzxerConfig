@@ -1,7 +1,7 @@
 ---
 title: 搭一个windows云服务器
 date: 2017-06-16 22:02:51
-tags: [服务器, windows]
+tags: [windows, 腾讯云]
 categories: 服务器
 ---
 

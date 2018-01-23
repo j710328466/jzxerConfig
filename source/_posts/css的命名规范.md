@@ -1,8 +1,8 @@
 ---
 title: css的命名规范
 date: 2017-07-17 10:51:20
-tags: [css, web前端]
-categories: web前端
+tags: [css命名规范]
+categories: CSS
 ---
 
 ## 关于 css 的一些命名规范

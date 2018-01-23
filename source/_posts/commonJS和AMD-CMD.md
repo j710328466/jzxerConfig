@@ -1,7 +1,8 @@
 ---
 title: commonJS和AMD/CMD
 date: 2017-08-23 16:49:51
-tags: [web前端, js]
+tags: [commonjs]
+categories: JS
 ---
 
 ## 一. CommonJS

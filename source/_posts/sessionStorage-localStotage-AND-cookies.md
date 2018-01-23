@@ -1,8 +1,8 @@
 ---
 title: sessionStorage localStotage AND cookies
 date: 2017-08-16 11:57:16
-tags: [数据]
-categories: web前端
+tags: [sessionStorage, localStotage, cookies]
+categories: storage
 ---
 
 ### sessionStorage

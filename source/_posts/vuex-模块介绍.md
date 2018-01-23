@@ -1,8 +1,8 @@
 ---
 title: vuex 使用技巧
 date: 2017-06-15 18:36:30
-tags: [vue, vuex]
-categories: web前端
+tags: [vuex]
+categories: vue
 ---
 
 ## Action
