@@ -1,7 +1,7 @@
 ---
 title: vue学习笔记（一）
 date: 2017-06-18 22:47:47
-tags: [vue生命周期]
+tags: [vue]
 categories: vue
 ---
 

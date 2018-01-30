@@ -2,7 +2,7 @@
 title: 如何成为一名合格的CEO
 date: 2017-08-28 13:14:49
 tags: [职场]
-categories: 生活
+categories: 生活
 ---
 
 ### 集中精力抓到要害问题

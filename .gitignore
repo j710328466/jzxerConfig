@@ -1,4 +1,9 @@
+# file
+public
 node_modules
 yarn.lock
 dist
+
+# doc
+.gitignore
 .deploy_git

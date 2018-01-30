@@ -9,15 +9,15 @@ date: 2017-06-15 19:12:44
 
 ### 工作经历
 * 南昌·午逅科技
-任务职责：完成移动端 H5 页面开发
 
-工作目的：还原设计师给的设计稿，调整兼容性问题
-> 2017.06 -- 2017.09
+    任务职责：完成移动端 H5 页面开发
 
-### 期望工作
-> 前端开发  
-> 可全职可兼职
-> 5k~10K
+    工作目的：还原设计师给的设计稿，调整兼容性问题
+    > 2017.06 -- 2017.09
+
+* 杭州·机蜜
+    任务职责：前端业务，公共工具开发
+    > 2017.10 -- 至今
 
 ### 个人作品
 * [vue仿QQ音乐](https://github.com/j710328466/vue-qqmusic)
@@ -26,23 +26,23 @@ date: 2017-06-15 19:12:44
 
 ### 技术栈
 前端
-> Vuejs  
-> JavaScript(ES5 ES6) 
-> HTML5 CSS/CSS3  
-> SASS(SCSS)
-> 熟悉各种框架（bootstrap, semantic-ui, mint-ui, element-ui等)
+* Vuejs React 
+* JavaScript(ES5 ES6) 
+* HTML5 CSS/CSS3  
+* SASS(SCSS)
+* 熟悉各种框架（bootstrap, semantic-ui, mint-ui, element-ui等)
 
 后端
-> Nodejs(ExpressJS,KoaJS)
+* Nodejs(ExpressJS,KoaJS)
 
 数据库
-> MongoDB
+* MongoDB
 
 自动化构建
-> webpack gulp
+* webpack gulp parcel
 
 版本管理
-> GIT SVN
+* GIT SVN
 
 目前学习计划
 > 基于vue的SSR框架nuxt
@@ -51,17 +51,16 @@ date: 2017-06-15 19:12:44
 ### 兴趣爱好
 > 看书 
 > 健身
-> 吉他 (靠 “谱”)
+> 摇滚乐 (靠 “谱”)
 
 ### 自我介绍
-本⼈是软件⼯程学⽣. 喜欢折腾爱好音乐沉迷前端能独立思考解决问题性格还不错 (读完很累吧)
-* 个人tag 
+本⼈是软件⼯程学⽣. 喜欢折腾爱好音乐沉迷前端能独立思考解决问题性格貌似还不错 (读完很累吧~)
+* tag 
 > 行动派: 认准一件事就会全力以赴,不达目的不罢休
-> 艺术派：前端工程师能将艺术与编程完美结合的一种职业, so, 我选择了它
-
+> 艺术派：前端工程师能将艺术与编程完美结合的一种职业, so, 热爱它吧
 ### 联系方式
 > qq: 710328466
-> tel: 15216030330(中午和晚上一般都关机，我在睡觉...)
-> [blog](http://jzxer.cn/)
+> tel: 15216030330(中午和晚上一般都关机，我要睡觉...)
+> [blog](http://blog.jzxer.cn/)
 
 {% aplayer "初学者" "薛之谦" "http://orjedzer5.bkt.clouddn.com/%E5%88%9D%E5%AD%A6%E8%80%85.mp3" "autoplay" %}
