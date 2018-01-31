@@ -1667,7 +1667,7 @@ if (isIE){
     <entry>
       <title><![CDATA[wuti]]></title>
       <url>/wuti.html</url>
-      <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h3 id="无题"><a href="#无题" class="headerlink" title="无题"></a>无题</h3><div id="dplayer2" class="dplayer" style="margin-bottom: 20px;"></div><script>var dplayer2 = new DPlayer({"element":document.getElementById("dplayer2"),"autoplay":1,"theme":"#fff","loop":1,"video":{"url":"http://orjedzer5.bkt.clouddn.com//video/mp4/wuti.mp4"},"danmaku":{"api":"http://dplayer.daoapp.io","id":"4","token":"tokendemo"}});</script><!-- dplayer used1 -->]]></content>
+      <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h3 id="无题"><a href="#无题" class="headerlink" title="无题"></a>无题</h3><div id="dplayer1" class="dplayer" style="margin-bottom: 20px;"></div><script>var dplayer1 = new DPlayer({"element":document.getElementById("dplayer1"),"autoplay":1,"theme":"#fff","loop":1,"video":{"url":"http://orjedzer5.bkt.clouddn.com//video/mp4/wuti.mp4"},"danmaku":{"api":"http://dplayer.daoapp.io","id":"4","token":"tokendemo"}});</script><!-- dplayer used1 -->]]></content>
       
         <categories>
             
@@ -3238,7 +3238,7 @@ layout: tags
     <entry>
       <title><![CDATA[光辉岁月-间奏]]></title>
       <url>/%E5%85%89%E8%BE%89%E5%B2%81%E6%9C%88-%E9%97%B4%E5%A5%8F.html</url>
-      <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><div id="dplayer1" class="dplayer" style="margin-bottom: 20px;"></div><script>var dplayer1 = new DPlayer({"element":document.getElementById("dplayer1"),"autoplay":1,"theme":"#fff","loop":1,"video":{"url":"http://orjedzer5.bkt.clouddn.com/%E5%85%89%E8%BE%89%E5%B2%81%E6%9C%88%EF%BC%88%E9%97%B4%E5%A5%8F%EF%BC%89.mp4"},"danmaku":{"api":"http://dplayer.daoapp.io","id":"2","token":"tokendemo"}});</script><!-- dplayer used1 -->]]></content>
+      <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><div id="dplayer2" class="dplayer" style="margin-bottom: 20px;"></div><script>var dplayer2 = new DPlayer({"element":document.getElementById("dplayer2"),"autoplay":1,"theme":"#fff","loop":1,"video":{"url":"http://orjedzer5.bkt.clouddn.com/%E5%85%89%E8%BE%89%E5%B2%81%E6%9C%88%EF%BC%88%E9%97%B4%E5%A5%8F%EF%BC%89.mp4"},"danmaku":{"api":"http://dplayer.daoapp.io","id":"2","token":"tokendemo"}});</script><!-- dplayer used1 -->]]></content>
       
         <categories>
             
