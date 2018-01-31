@@ -3,6 +3,48 @@
   
     
     <entry>
+      <title><![CDATA[深入浅出 Ajax]]></title>
+      <url>/%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BA-Ajax.html</url>
+      <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script>]]></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[如何理解yield和*函数]]></title>
+      <url>/%E5%A6%82%E4%BD%95%E7%90%86%E8%A7%A3yield%E5%92%8C-%E5%87%BD%E6%95%B0.html</url>
+      <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h2 id="Koa1"><a href="#Koa1" class="headerlink" title="Koa1"></a>Koa1</h2><h3 id="什么是-Generator"><a href="#什么是-Generator" class="headerlink" title="什么是 Generator"></a>什么是 Generator</h3><pre><code>function *test() {
+
+}
+
+test()    //  -&gt; [Object Generator]
+</code></pre><blockquote>
+<p>generator 函数可以只运行函数的一部分，以及控制何时运行剩余的部分。<br>```<br>function *learn() {<br>  yield 1<br>  yield 2<br>  return 3<br>}<br>let learnGen = learn()</p>
+</blockquote>
+<p>learnGen.next()  //  -&gt; {“done”: false, “value”: 1}</p>
+<pre><code>&gt; 再次调用会运行到下一个 yield 处
+</code></pre><p>learnGen.next()  //  -&gt; {“done”: false, “value”: 2}<br>learnGen.next()  //  -&gt; {“done”: true, “value”: 3}<br>```</p>
+<h3 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h3><p>可以通过 <code>yield</code> 和 <code>*</code> 的结合实现类似 <code>await</code> <code>async</code> 的效果的效果</p>
+]]></content>
+      
+        <categories>
+            
+            <category> JS </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> generator </tag>
+            
+            <tag> yield </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[我所追求的狼性]]></title>
       <url>/%E6%88%91%E6%89%80%E8%BF%BD%E6%B1%82%E7%9A%84%E7%8B%BC%E6%80%A7.html</url>
       <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h1 id="狼道"><a href="#狼道" class="headerlink" title="狼道"></a>狼道</h1><p>虽然在普通人看来，狼是一个贬义的存在，’狼子野心’,’狼狈为奸’。<br><br><br>但在大自然中，狼群相对于其他生物来说，更富有智慧，更有团结力。狼对机会的把握概率为80%，而人类只有35%左右，几十头狼就可以干翻白羊大军，如果在战场上，这是非常可怕的，所以我们可以从狼的身上学到很多可贵的精神和品质。</p>
@@ -1625,7 +1667,7 @@ if (isIE){
     <entry>
       <title><![CDATA[wuti]]></title>
       <url>/wuti.html</url>
-      <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h3 id="无题"><a href="#无题" class="headerlink" title="无题"></a>无题</h3><div id="dplayer1" class="dplayer" style="margin-bottom: 20px;"></div><script>var dplayer1 = new DPlayer({"element":document.getElementById("dplayer1"),"autoplay":1,"theme":"#fff","loop":1,"video":{"url":"http://orjedzer5.bkt.clouddn.com//video/mp4/wuti.mp4"},"danmaku":{"api":"http://dplayer.daoapp.io","id":"4","token":"tokendemo"}});</script><!-- dplayer used1 -->]]></content>
+      <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h3 id="无题"><a href="#无题" class="headerlink" title="无题"></a>无题</h3><div id="dplayer2" class="dplayer" style="margin-bottom: 20px;"></div><script>var dplayer2 = new DPlayer({"element":document.getElementById("dplayer2"),"autoplay":1,"theme":"#fff","loop":1,"video":{"url":"http://orjedzer5.bkt.clouddn.com//video/mp4/wuti.mp4"},"danmaku":{"api":"http://dplayer.daoapp.io","id":"4","token":"tokendemo"}});</script><!-- dplayer used1 -->]]></content>
       
         <categories>
             
@@ -3196,7 +3238,7 @@ layout: tags
     <entry>
       <title><![CDATA[光辉岁月-间奏]]></title>
       <url>/%E5%85%89%E8%BE%89%E5%B2%81%E6%9C%88-%E9%97%B4%E5%A5%8F.html</url>
-      <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><div id="dplayer2" class="dplayer" style="margin-bottom: 20px;"></div><script>var dplayer2 = new DPlayer({"element":document.getElementById("dplayer2"),"autoplay":1,"theme":"#fff","loop":1,"video":{"url":"http://orjedzer5.bkt.clouddn.com/%E5%85%89%E8%BE%89%E5%B2%81%E6%9C%88%EF%BC%88%E9%97%B4%E5%A5%8F%EF%BC%89.mp4"},"danmaku":{"api":"http://dplayer.daoapp.io","id":"2","token":"tokendemo"}});</script><!-- dplayer used1 -->]]></content>
+      <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><div id="dplayer1" class="dplayer" style="margin-bottom: 20px;"></div><script>var dplayer1 = new DPlayer({"element":document.getElementById("dplayer1"),"autoplay":1,"theme":"#fff","loop":1,"video":{"url":"http://orjedzer5.bkt.clouddn.com/%E5%85%89%E8%BE%89%E5%B2%81%E6%9C%88%EF%BC%88%E9%97%B4%E5%A5%8F%EF%BC%89.mp4"},"danmaku":{"api":"http://dplayer.daoapp.io","id":"2","token":"tokendemo"}});</script><!-- dplayer used1 -->]]></content>
       
         <categories>
             
