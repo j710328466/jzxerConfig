@@ -2655,45 +2655,6 @@ $ hexo deploy
     </entry>
     
     <entry>
-      <title><![CDATA[vuex 使用技巧]]></title>
-      <url>/vuex-%E6%A8%A1%E5%9D%97%E4%BB%8B%E7%BB%8D.html</url>
-      <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h2 id="Action"><a href="#Action" class="headerlink" title="Action"></a>Action</h2><p>提供方法和API请求,类似于mutation</p>
-<blockquote>
-<p>mutation  修改 state 只能是同步的</p>
-<ul>
-<li>action 充满了各种异步 api<pre><code>actions: {
-  increment (context) {
-      context.commit(&#39;increment&#39;)
- }
-}
-另一种写法
-increment({commit}) {
-  commit(&#39;increment&#39;)
-}
-</code></pre></li>
-</ul>
-</blockquote>
-<h2 id="分发-Action"><a href="#分发-Action" class="headerlink" title="分发 Action"></a>分发 Action</h2><blockquote>
-<p>store.dispatch(‘increment’)</p>
-</blockquote>
-]]></content>
-      
-        <categories>
-            
-            <category> vue </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> vuex </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
       <title><![CDATA[vue高仿qq音乐官网]]></title>
       <url>/vue%E9%AB%98%E4%BB%BFqq%E9%9F%B3%E4%B9%90%E5%AE%98%E7%BD%91.html</url>
       <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>一直想做一个vue项目 然后呢 我就做了</p>
@@ -2803,6 +2764,45 @@ npm run start
             <tag> vuex </tag>
             
             <tag> vue-router </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[vuex 使用技巧]]></title>
+      <url>/vuex-%E6%A8%A1%E5%9D%97%E4%BB%8B%E7%BB%8D.html</url>
+      <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h2 id="Action"><a href="#Action" class="headerlink" title="Action"></a>Action</h2><p>提供方法和API请求,类似于mutation</p>
+<blockquote>
+<p>mutation  修改 state 只能是同步的</p>
+<ul>
+<li>action 充满了各种异步 api<pre><code>actions: {
+  increment (context) {
+      context.commit(&#39;increment&#39;)
+ }
+}
+另一种写法
+increment({commit}) {
+  commit(&#39;increment&#39;)
+}
+</code></pre></li>
+</ul>
+</blockquote>
+<h2 id="分发-Action"><a href="#分发-Action" class="headerlink" title="分发 Action"></a>分发 Action</h2><blockquote>
+<p>store.dispatch(‘increment’)</p>
+</blockquote>
+]]></content>
+      
+        <categories>
+            
+            <category> vue </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> vuex </tag>
             
         </tags>
         
@@ -3361,12 +3361,6 @@ layout: tags
   
     
     <entry>
-      <title><![CDATA[gallery]]></title>
-      <url>/gallery/index.html</url>
-      <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script>]]></content>
-    </entry>
-    
-    <entry>
       <title><![CDATA[个人简介]]></title>
       <url>/about/index.html</url>
       <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>姓名：江志雄<br>性别：你猜<br>专业：软件工程</p>
@@ -3446,6 +3440,12 @@ layout: tags
 			window.aplayers.push(ap);
 		</script>
 ]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[gallery]]></title>
+      <url>/gallery/index.html</url>
+      <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script>]]></content>
     </entry>
     
     <entry>
