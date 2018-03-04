@@ -66,9 +66,12 @@ markdown 语法提示插件
 "background.useDefault": false,
     "background.enabled": true,
     "background.customImages": [
-        "file:///Users/mac/Desktop/1.png"
+        "file:///Users/mac/Desktop/improve/1.jpg"
     ],
     "background.style": {
-        "opacity": 0.6
+        "opacity": 0.1,
+        "width": "1600px",
+        "height": "1150px"
     }
 ```
+> ps: 超级超级吃 CPU 慎用！！

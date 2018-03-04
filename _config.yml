@@ -62,7 +62,7 @@ time_format: HH:mm:ss
 
 search:
   path: search.xml
-  field: post
+  field: all
 
 # Pagination
 ## Set per_page to 0 to disable pagination

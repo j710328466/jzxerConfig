@@ -3,6 +3,78 @@
   
     
     <entry>
+      <title><![CDATA[你的一生，究竟为什么而活]]></title>
+      <url>/%E4%BD%A0%E7%9A%84%E4%B8%80%E7%94%9F%EF%BC%8C%E7%A9%B6%E7%AB%9F%E4%B8%BA%E4%BB%80%E4%B9%88%E8%80%8C%E6%B4%BB.html</url>
+      <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h1 id="启示录"><a href="#启示录" class="headerlink" title="启示录"></a>启示录</h1><p>此时，我看了一个小动画，一只老鼠，从追赶火车，到追寻幸福的过程，途中经历了很多东西：生意、豪车、酗酒、嗑药、陷入迷幻，为了金钱而工作最终成为大多数人中的一员。平庸一生</p>
+<h2 id="幸福是什么"><a href="#幸福是什么" class="headerlink" title="幸福是什么"></a>幸福是什么</h2><p>幸福对我来说，就是能做自己喜欢的事，追求自己的梦想，而我的理想，就是能够为这个社会留下点什么，带上我的音乐梦，为他人带去欢乐，一个人的一生不应该平庸，我们来到这个世界，一定是为了让我们能够实现自己的价值，每个人都不一样，每个人都存在过，人活着的意义是什么，不就是为了追寻自己的理想吗？<br><br><br>我们现在大多数人，处于不知道自己想要什么，而且不知道对自己来说什么才是真正的幸福。想不平庸，却不愿意全力以赴。最后就像片中的老鼠一样。最后还是回到了起点。</p>
+<h2 id="我的幸福"><a href="#我的幸福" class="headerlink" title="我的幸福"></a>我的幸福</h2><ul>
+<li>能追求自己的音乐理想，写自己的歌；</li>
+<li>花切，去做一些酷一些的事；</li>
+<li>尝试新的东西，锻炼自己的胆识；</li>
+<li>能苦中作乐，对生活充满激情与乐观；</li>
+<li>三十岁之前有房子，车子，建立自己的公司；</li>
+<li>三十五岁之前拥有自己的爱人，孩子；</li>
+<li>四十岁之前自己的公司成型，并且能为他人投资；</li>
+<li>四十五岁之前能让家族复兴；</li>
+<li>六十岁之前退休，去享受生活，享受音乐；<blockquote>
+<p>不甘平庸才是我们每个人应该的追求；</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>有梦想有目标的生活，才是最幸福的，未来虽然不可预测，但是我们能为我们即将到来的未来做做好准备，不要太享受生活，即使目前的生活很安逸，也要追求更安逸的生活，人都是向上看的，只有你敢想敢做，没有什么事情是做不了的，如果做不到，就是你没有尽全力！</p>
+]]></content>
+      
+        <categories>
+            
+            <category> 生活 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 幸福 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[JS常见的十大错误]]></title>
+      <url>/JS%E5%B8%B8%E8%A7%81%E7%9A%84%E5%8D%81%E5%A4%A7%E9%94%99%E8%AF%AF.html</url>
+      <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h1 id="1-Uncaught-TypeError-Cannot-read-property"><a href="#1-Uncaught-TypeError-Cannot-read-property" class="headerlink" title="1. Uncaught TypeError: Cannot read property"></a>1. Uncaught TypeError: Cannot read property</h1><p>发生这种情况的原因很多，但常见的一种是在渲染 UI 组件时对于状态的初始化操作不当。</p>
+<h1 id="2-TypeError-‘undefined’-is-not-an-object"><a href="#2-TypeError-‘undefined’-is-not-an-object" class="headerlink" title="2. TypeError: ‘undefined’ is not an object"></a>2. TypeError: ‘undefined’ is not an object</h1><p>这是在 Safari 中读取属性或调用未定义对象上的方法时发生的错误。这与 1 中提到的 Chrome 的错误基本相同，但 Safari 使用了不同的错误消息提示语。</p>
+<h1 id="3-TypeError-null-is-not-an-object"><a href="#3-TypeError-null-is-not-an-object" class="headerlink" title="3. TypeError: null is not an object"></a>3. TypeError: null is not an object</h1><p>这是在 Safari 中读取属性或调用空对象上的方法时发生的错误。</p>
+<blockquote>
+<p>在 JavaScript 中，null 和 undefined 是不一样的，这就是为什么我们看到两个不同的错误信息。undefined 通常是一个尚未分配的变量，而 null 表示该值为空。 要验证它们不相等，请尝试使用严格的相等运算符 ===</p>
+</blockquote>
+<h1 id="4-unknown-Script-error"><a href="#4-unknown-Script-error" class="headerlink" title="4. (unknown): Script error"></a>4. (unknown): Script error</h1><p>当未捕获的 JavaScript 错误（通过window.onerror处理程序引发的错误，而不是捕获在try-catch中）被浏览器的跨域策略限制时，会产生这类的脚本错误。这是一种浏览器安全措施，旨在防止跨域传递数据，否则将不允许进行通信。</p>
+<h1 id="5-TypeError-Object-doesn’t-support-property"><a href="#5-TypeError-Object-doesn’t-support-property" class="headerlink" title="5. TypeError: Object doesn’t support property"></a>5. TypeError: Object doesn’t support property</h1><p>这是您在调用未定义的方法时发生在 IE 中的错误。 您可以在 IE 开发者控制台中进行测试。</p>
+<h1 id="6-TypeError-‘undefined’-is-not-a-function"><a href="#6-TypeError-‘undefined’-is-not-a-function" class="headerlink" title="6. TypeError: ‘undefined’ is not a function"></a>6. TypeError: ‘undefined’ is not a function</h1><p>当您调用未定义的函数时，这是 Chrome 中产生的错误。 </p>
+<h1 id="7-Uncaught-RangeError-Maximum-call-stack"><a href="#7-Uncaught-RangeError-Maximum-call-stack" class="headerlink" title="7. Uncaught RangeError: Maximum call stack"></a>7. Uncaught RangeError: Maximum call stack</h1><p>这是 Chrome 在一些情况下会发生的错误。 一个是当你调用一个不终止的递归函数。</p>
+<h1 id="8-TypeError-Cannot-read-property-‘length’"><a href="#8-TypeError-Cannot-read-property-‘length’" class="headerlink" title="8. TypeError: Cannot read property ‘length’"></a>8. TypeError: Cannot read property ‘length’</h1><p>这是 Chrome 中发生的错误，因为读取未定义变量的长度属性。</p>
+<h1 id="9-Uncaught-TypeError-Cannot-set-property"><a href="#9-Uncaught-TypeError-Cannot-set-property" class="headerlink" title="9. Uncaught TypeError: Cannot set property"></a>9. Uncaught TypeError: Cannot set property</h1><p>当我们尝试访问一个未定义的变量时，它总是返回 undefined，我们不能获取或设置任何未定义的属性。 在这种情况下，应用程序将抛出 “Uncaught TypeError: Cannot set property”。</p>
+<h1 id="10-ReferenceError-event-is-not-defined"><a href="#10-ReferenceError-event-is-not-defined" class="headerlink" title="10. ReferenceError: event is not defined"></a>10. ReferenceError: event is not defined</h1><p>当您尝试访问未定义的变量或超出当前范围的变量时，会引发此错误。</p>
+]]></content>
+      
+        <categories>
+            
+            <category> web前端 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> js </tag>
+            
+            <tag> error </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[深入浅出 Ajax]]></title>
       <url>/%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BA-Ajax.html</url>
       <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script>]]></content>
@@ -61,6 +133,7 @@ test()    //  -&gt; [Object Generator]
 <blockquote>
 <p>寄语：我们不缺乏成功的信念，但是我们绝对不会成为痴心妄想的傻瓜。狼群在面对枪口的时候，适当转移也是明智的选择。</p>
 </blockquote>
+<h2 id="弹性的性格"><a href="#弹性的性格" class="headerlink" title="弹性的性格"></a>弹性的性格</h2><p>大丈夫能屈能伸，正如司马懿在诸葛亮的嘲讽下任然能够放下面子穿上女人的衣服，精明的野心家不会因为愤怒或是心情影响自己的理智，陶渊明的不为五斗米折腰品质固然可贵，但是换个角度思考，这样做的后果是百姓失去了一个好官，自己的前途受损！这样的结果真的是他想要的？如果当时他性格能够弹性一点，成就绝对不止这一点。至少留给后辈的作品会更丰富吧。</p>
 ]]></content>
       
         <categories>
@@ -373,12 +446,17 @@ usr/local/nginx/sbin/nginx   -v
 <pre><code>&quot;background.useDefault&quot;: false,
     &quot;background.enabled&quot;: true,
     &quot;background.customImages&quot;: [
-        &quot;file:///Users/mac/Desktop/1.png&quot;
+        &quot;file:///Users/mac/Desktop/improve/1.jpg&quot;
     ],
     &quot;background.style&quot;: {
-        &quot;opacity&quot;: 0.6
+        &quot;opacity&quot;: 0.1,
+        &quot;width&quot;: &quot;1600px&quot;,
+        &quot;height&quot;: &quot;1150px&quot;
     }
-</code></pre>]]></content>
+</code></pre><blockquote>
+<p>ps: 超级超级吃 CPU 慎用！！</p>
+</blockquote>
+]]></content>
       
         <categories>
             
@@ -2577,6 +2655,45 @@ $ hexo deploy
     </entry>
     
     <entry>
+      <title><![CDATA[vuex 使用技巧]]></title>
+      <url>/vuex-%E6%A8%A1%E5%9D%97%E4%BB%8B%E7%BB%8D.html</url>
+      <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h2 id="Action"><a href="#Action" class="headerlink" title="Action"></a>Action</h2><p>提供方法和API请求,类似于mutation</p>
+<blockquote>
+<p>mutation  修改 state 只能是同步的</p>
+<ul>
+<li>action 充满了各种异步 api<pre><code>actions: {
+  increment (context) {
+      context.commit(&#39;increment&#39;)
+ }
+}
+另一种写法
+increment({commit}) {
+  commit(&#39;increment&#39;)
+}
+</code></pre></li>
+</ul>
+</blockquote>
+<h2 id="分发-Action"><a href="#分发-Action" class="headerlink" title="分发 Action"></a>分发 Action</h2><blockquote>
+<p>store.dispatch(‘increment’)</p>
+</blockquote>
+]]></content>
+      
+        <categories>
+            
+            <category> vue </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> vuex </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[vue高仿qq音乐官网]]></title>
       <url>/vue%E9%AB%98%E4%BB%BFqq%E9%9F%B3%E4%B9%90%E5%AE%98%E7%BD%91.html</url>
       <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>一直想做一个vue项目 然后呢 我就做了</p>
@@ -2686,45 +2803,6 @@ npm run start
             <tag> vuex </tag>
             
             <tag> vue-router </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[vuex 使用技巧]]></title>
-      <url>/vuex-%E6%A8%A1%E5%9D%97%E4%BB%8B%E7%BB%8D.html</url>
-      <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h2 id="Action"><a href="#Action" class="headerlink" title="Action"></a>Action</h2><p>提供方法和API请求,类似于mutation</p>
-<blockquote>
-<p>mutation  修改 state 只能是同步的</p>
-<ul>
-<li>action 充满了各种异步 api<pre><code>actions: {
-  increment (context) {
-      context.commit(&#39;increment&#39;)
- }
-}
-另一种写法
-increment({commit}) {
-  commit(&#39;increment&#39;)
-}
-</code></pre></li>
-</ul>
-</blockquote>
-<h2 id="分发-Action"><a href="#分发-Action" class="headerlink" title="分发 Action"></a>分发 Action</h2><blockquote>
-<p>store.dispatch(‘increment’)</p>
-</blockquote>
-]]></content>
-      
-        <categories>
-            
-            <category> vue </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> vuex </tag>
             
         </tags>
         
@@ -3280,5 +3358,107 @@ layout: tags
     </entry>
     
   
+  
+    
+    <entry>
+      <title><![CDATA[gallery]]></title>
+      <url>/gallery/index.html</url>
+      <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script>]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[个人简介]]></title>
+      <url>/about/index.html</url>
+      <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>姓名：江志雄<br>性别：你猜<br>专业：软件工程</p>
+<h3 id="工作经历"><a href="#工作经历" class="headerlink" title="工作经历"></a>工作经历</h3><ul>
+<li><p>南昌·午逅科技</p>
+<p>  任务职责：完成移动端 H5 页面开发</p>
+<p>  工作目的：还原设计师给的设计稿，调整兼容性问题</p>
+<blockquote>
+<p>2017.06 – 2017.09</p>
+</blockquote>
+</li>
+<li><p>杭州·机蜜<br>  任务职责：前端业务，公共工具开发</p>
+<blockquote>
+<p>2017.10 – 至今</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="个人作品"><a href="#个人作品" class="headerlink" title="个人作品"></a>个人作品</h3><ul>
+<li><a href="https://github.com/j710328466/vue-qqmusic" target="_blank" rel="noopener">vue仿QQ音乐</a></li>
+<li><a href="http://jzxer.cn/water/" target="_blank" rel="noopener">水灵</a></li>
+<li>微信小程序：蛋糕定制demo（未完成。。。）</li>
+</ul>
+<h3 id="技术栈"><a href="#技术栈" class="headerlink" title="技术栈"></a>技术栈</h3><p>前端</p>
+<ul>
+<li>Vuejs React </li>
+<li>JavaScript(ES5 ES6) </li>
+<li>HTML5 CSS/CSS3  </li>
+<li>SASS(SCSS)</li>
+<li>熟悉各种框架（bootstrap, semantic-ui, mint-ui, element-ui等)</li>
+</ul>
+<p>后端</p>
+<ul>
+<li>Nodejs(ExpressJS,KoaJS)</li>
+</ul>
+<p>数据库</p>
+<ul>
+<li>MongoDB</li>
+</ul>
+<p>自动化构建</p>
+<ul>
+<li>webpack gulp parcel</li>
+</ul>
+<p>版本管理</p>
+<ul>
+<li>GIT SVN</li>
+</ul>
+<p>目前学习计划</p>
+<blockquote>
+<p>基于vue的SSR框架nuxt<br>nodeJS / koa2</p>
+</blockquote>
+<h3 id="兴趣爱好"><a href="#兴趣爱好" class="headerlink" title="兴趣爱好"></a>兴趣爱好</h3><blockquote>
+<p>看书<br>健身<br>摇滚乐 (靠 “谱”)</p>
+</blockquote>
+<h3 id="自我介绍"><a href="#自我介绍" class="headerlink" title="自我介绍"></a>自我介绍</h3><p>本⼈是软件⼯程学⽣. 喜欢折腾爱好音乐沉迷前端能独立思考解决问题性格貌似还不错 (读完很累吧~)</p>
+<ul>
+<li>tag <blockquote>
+<p>行动派: 认准一件事就会全力以赴,不达目的不罢休<br>艺术派：前端工程师能将艺术与编程完美结合的一种职业, so, 热爱它吧</p>
+<h3 id="联系方式"><a href="#联系方式" class="headerlink" title="联系方式"></a>联系方式</h3><p>qq: 710328466<br>tel: 15216030330(中午和晚上一般都关机，我要睡觉…)<br><a href="http://blog.jzxer.cn/" target="_blank" rel="noopener">blog</a></p>
+</blockquote>
+</li>
+</ul>
+<div id="aplayer0" class="aplayer" style="margin-bottom: 20px;"></div>
+		<script>
+			var ap = new APlayer({
+				element: document.getElementById("aplayer0"),
+				narrow: false,
+				autoplay: true,
+				showlrc: 0,
+				music: {
+					title: "初学者",
+					author: "薛之谦",
+					url: "http://orjedzer5.bkt.clouddn.com/%E5%88%9D%E5%AD%A6%E8%80%85.mp3",
+					pic: "",
+				}
+			});
+			window.aplayers || (window.aplayers = []);
+			window.aplayers.push(ap);
+		</script>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[tags]]></title>
+      <url>/tags/index.html</url>
+      <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script>]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[links]]></title>
+      <url>/links/index.html</url>
+      <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script>]]></content>
+    </entry>
+    
   
 </search>
