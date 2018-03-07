@@ -3,6 +3,96 @@
   
     
     <entry>
+      <title><![CDATA[redis环境搭建]]></title>
+      <url>/redis%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA.html</url>
+      <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><p><a href="https://redis.io/" target="_blank" rel="noopener">官方网站</a></p>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><pre><code>解压
+tar zxvf redis-4.0.8.tar.gz
+移动文件夹
+mv redis-4.0.8 /usr/local/
+打开该文件夹
+cd /usr/local/redis-4.0.8/
+编译测试
+sudo make test
+编译安装
+sudo make install
+</code></pre><h2 id="启动"><a href="#启动" class="headerlink" title="启动"></a>启动</h2><pre><code>redis-server
+</code></pre><h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><pre><code>新建目录
+sudo mkdir  redis-4.0.8/bin
+sudo mkdir  redis-4.0.8/etc
+sudo mkdir  redis-4.0.8/db
+拷贝文件
+cp src/mkreleasehdr.sh bin
+cp src/redis-benchmark bin
+cp src/redis-check-rdb bin
+cp src/redis-cli bin
+cp src/redis-server bin
+</code></pre><h2 id="修改redis-conf"><a href="#修改redis-conf" class="headerlink" title="修改redis.conf"></a>修改redis.conf</h2><pre><code>#修改为守护模式
+daemonize yes
+#设置进程锁文件
+pidfile /usr/local/redis-3.2.8/redis.pid
+#端口
+port 6379
+#客户端超时时间
+timeout 300
+#日志级别
+loglevel debug
+#日志文件位置
+logfile /usr/local/redis-3.2.8/log-redis.log
+#设置数据库的数量，默认数据库为0，可以使用SELECT &lt;dbid&gt;命令在连接上指定数据库id
+databases 16
+##指定在多长时间内，有多少次更新操作，就将数据同步到数据文件，可以多个条件配合
+#save &lt;seconds&gt; &lt;changes&gt;
+#Redis默认配置文件中提供了三个条件：
+save 900 1
+save 300 10
+save 60 10000
+#指定存储至本地数据库时是否压缩数据，默认为yes，Redis采用LZF压缩，如果为了节省CPU时间，
+#可以关闭该#选项，但会导致数据库文件变的巨大
+rdbcompression yes
+#指定本地数据库文件名
+dbfilename dump.rdb
+#指定本地数据库路径
+dir /usr/local/redis-3.2.8/db/
+#指定是否在每次更新操作后进行日志记录，Redis在默认情况下是异步的把数据写入磁盘，如果不开启，可能
+#会在断电时导致一段时间内的数据丢失。因为 redis本身同步数据文件是按上面save条件来同步的，所以有
+#的数据会在一段时间内只存在于内存中
+appendonly no
+#指定更新日志条件，共有3个可选值：
+#no：表示等操作系统进行数据缓存同步到磁盘（快）
+#always：表示每次更新操作后手动调用fsync()将数据写到磁盘（慢，安全）
+#everysec：表示每秒同步一次（折衷，默认值）
+appendfsync everysec
+</code></pre><h2 id="启动服务"><a href="#启动服务" class="headerlink" title="启动服务"></a>启动服务</h2><pre><code>启动
+./bin/redis-server etc/redis.conf
+查看日志
+tail -f log-redis.log
+OK
+./bin/redis-cli
+</code></pre><h2 id="基本命令"><a href="#基本命令" class="headerlink" title="基本命令"></a>基本命令</h2><pre><code>查看所有数据
+keys *
+插入键值对
+set a b
+查看数据
+get a
+</code></pre>]]></content>
+      
+        <categories>
+            
+            <category> 数据库 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> redis </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[你的一生，究竟为什么而活]]></title>
       <url>/%E4%BD%A0%E7%9A%84%E4%B8%80%E7%94%9F%EF%BC%8C%E7%A9%B6%E7%AB%9F%E4%B8%BA%E4%BB%80%E4%B9%88%E8%80%8C%E6%B4%BB.html</url>
       <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h1 id="启示录"><a href="#启示录" class="headerlink" title="启示录"></a>启示录</h1><p>此时，我看了一个小动画，一只老鼠，从追赶火车，到追寻幸福的过程，途中经历了很多东西：生意、豪车、酗酒、嗑药、陷入迷幻，为了金钱而工作最终成为大多数人中的一员。平庸一生</p>
