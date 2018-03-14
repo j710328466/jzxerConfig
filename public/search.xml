@@ -3,6 +3,147 @@
   
     
     <entry>
+      <title><![CDATA[js常见的九种设计模式]]></title>
+      <url>/js%E5%B8%B8%E8%A7%81%E7%9A%84%E4%B9%9D%E7%A7%8D%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F.html</url>
+      <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><p>设计模式(DP)是一套被反复使用，多数人知晓的、经过分类编目的、代码设计经验的总结。</p>
+<h2 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h2><ul>
+<li>单体模式</li>
+<li>单例模式</li>
+<li>工厂模式</li>
+<li>观察者模式（发布订阅者模式）</li>
+<li>策略模式</li>
+<li>模块模式</li>
+<li>模板模式</li>
+<li>代理模式</li>
+<li>外观模式</li>
+</ul>
+<blockquote>
+<p>设计模式目前有23种，目前只列举出了在实战中比较常用的几种。</p>
+</blockquote>
+<h2 id="九种"><a href="#九种" class="headerlink" title="九种"></a>九种</h2><h3 id="单体模式"><a href="#单体模式" class="headerlink" title="单体模式"></a>单体模式</h3><h4 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h4><p>单体是一个用来划分命名空间并将一批相关的属性和方法组织在一起的对象，如果它可以被实例化，那么它只能被实例化一次。</p>
+<h4 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h4><ol>
+<li>可以用来划分命名空间，从而清除全局变量所带来的危险。</li>
+<li>利用分支技术来封装浏览器之间的差异。</li>
+<li>可以把代码组织的更为一体。</li>
+</ol>
+<h4 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h4><pre class=" language-js"><code class="language-js"><span class="token keyword">var</span> Singleton <span class="token operator">=</span> <span class="token punctuation">{</span>
+  attribute<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  method1<span class="token punctuation">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+  method2<span class="token punctuation">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h4 id="应用场景"><a href="#应用场景" class="headerlink" title="应用场景"></a>应用场景</h4><p>单体模式我们平时应用的比较多，相当于我们把代码封装在一起，只暴露一个入口，防止对全局的污染。</p>
+<h3 id="单例模式"><a href="#单例模式" class="headerlink" title="单例模式"></a>单例模式</h3><h4 id="概念-1"><a href="#概念-1" class="headerlink" title="概念"></a>概念</h4><p>单例模式定义了一个对象的创建过程，此对象只有一个单独的实例，并提供一个访问它的全局访问点。也可以说单例就是保证一个类只有一个实例，实现的方法一般是先判断实例存在与否，如果存在直接返回，如果不存在就创建了再返回，这就确保了一个类只有一个实例对象。</p>
+<h4 id="代码实现-1"><a href="#代码实现-1" class="headerlink" title="代码实现"></a>代码实现</h4><pre class=" language-js"><code class="language-js"><span class="token keyword">var</span> single <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> unique
+
+  <span class="token keyword">function</span> getInstance <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment" spellcheck="true">// 如果该实例存在，则直接返回，否则就对其实例化</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>unique <span class="token operator">===</span> undefined<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      unique <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Construct</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> unique
+  <span class="token punctuation">}</span>
+  <span class="token keyword">function</span> Construct <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment" spellcheck="true">//生成单例的构造函数的代码</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">return</span> <span class="token punctuation">{</span>
+    getInstance
+  <span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+<p>上面的代码中，unique 便是返回对象的引用，而 getinstance 便是静态方法获得实例。 Construct 便是创建实例的构造函数。<br>可以通过 single.getInstance() 来获取到单例，并且每次调用均获取到同一个单例。这是 单例模式 所实现的效果。</p>
+<h4 id="应用场景-1"><a href="#应用场景-1" class="headerlink" title="应用场景"></a>应用场景</h4><p>单例模式是一种常用的模式，有一些对象我们往往只需要一个，比如全局缓存、浏览器的 window 对象。</p>
+<ol>
+<li>可以用它来划分命名空间。</li>
+<li>借助单例模式，可以把代码组织的更为一致，方便阅读和维护。</li>
+</ol>
+<h3 id="工厂模式"><a href="#工厂模式" class="headerlink" title="工厂模式"></a>工厂模式</h3><h4 id="概念-2"><a href="#概念-2" class="headerlink" title="概念"></a>概念</h4><p>提供创建对象的接口，根据参数产生相应的对象，就是把成员对象的创建工作交给一个外部对象，好处在于消除对象之间的耦合。</p>
+<h4 id="分类-1"><a href="#分类-1" class="headerlink" title="分类"></a>分类</h4><ul>
+<li>简单工厂模式：使用一个类，通常为单体，来生成实例。</li>
+<li>复杂工厂模式：将其成员对象的实例化推到子类中，子类可以重写父类接口的方法以便创建的时候指定自己的对象类型。父类只对创建过程中的一般性问题进行处理，这些处理会被子类继承，子类之间是相互独立的，具体的业务逻辑会放在子类中进行编写。</li>
+</ul>
+<h4 id="代码实现-2"><a href="#代码实现-2" class="headerlink" title="代码实现"></a>代码实现</h4><p>简单工厂模式</p>
+<pre class=" language-js"><code class="language-js"><span class="token keyword">var</span> XHRFactory <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+XHRFactory<span class="token punctuation">.</span>createXMLHttp <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> XMLHttp <span class="token operator">=</span> <span class="token keyword">null</span>
+
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>window<span class="token punctuation">.</span>XMLHttpRequest<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    XMLHttp <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">XMLHttpRequest</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>window<span class="token punctuation">.</span>ActiveObject<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    XMLHttp <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ActiveXObject</span><span class="token punctuation">(</span><span class="token string">'Microsoft.XMLHTTP'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">return</span> XMLHttp
+<span class="token punctuation">}</span>
+
+<span class="token keyword">var</span> Ajax <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> XMLHttp <span class="token operator">=</span> XHRFactory<span class="token punctuation">.</span><span class="token function">createXMLHttp</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>复杂工厂模式：先设计一个抽象类，这个类不能被实例化，只能用来派生子类，最后通过对子类的拓展实现工厂方法。</p>
+<pre class=" language-js"><code class="language-js"><span class="token keyword">var</span> XHRF <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+XHRF<span class="token punctuation">.</span>prototype <span class="token operator">=</span> <span class="token punctuation">{</span>
+  createFactory<span class="token punctuation">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">Error</span><span class="token punctuation">(</span><span class="token string">'this is an abstract class'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">var</span> XHRH <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">// 子类继承父类</span>
+<span class="token function">extend</span><span class="token punctuation">(</span>XHRH<span class="token punctuation">,</span> XHRF<span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true">// 把父类原型传递给子类，实现继承</span>
+XHRH<span class="token punctuation">.</span>prototype <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">XHRF</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true">// 重置子类原型的构造器为子类自身</span>
+XHRH<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>constructor <span class="token operator">=</span> XHRH
+
+<span class="token comment" spellcheck="true">// 重新定义createFactory 方法</span>
+XHRH<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>createFactory <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> XMLHttp <span class="token operator">=</span> <span class="token keyword">null</span>
+
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>window<span class="token punctuation">.</span>XMLHrrpRequest<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    XMLHttp <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">XMLHttpRequest</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>window<span class="token punctuation">.</span>ActiveXObject<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    XMLHttp <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ActiveXObject</span><span class="token punctuation">(</span><span class="token string">'Microsoft.XMLHTTP'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">return</span> XMLHttp
+<span class="token punctuation">}</span>
+</code></pre>
+<h4 id="应用场景-2"><a href="#应用场景-2" class="headerlink" title="应用场景"></a>应用场景</h4><ol>
+<li>对象的构建十分复杂</li>
+<li>需要依赖具体环境创建不同实例</li>
+<li>处理大量具有相同属性的小对象</li>
+</ol>
+<h4 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h4><ol>
+<li>弱化对象间的耦合，防止代码重复。</li>
+<li>重复性的代码可以放在父类中去编写，子类继承于父类的所有成员属性和方法，子类只专注于实现自己的业务逻辑。</li>
+</ol>
+<h4 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a>缺点</h4><p>当工厂增加到一定程度的时候，提高了代码的复杂度，可读性下降。而且没有解决对象的识别问题，既怎么知道一个对象的类型。</p>
+]]></content>
+      
+        <categories>
+            
+            <category> web前端 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> js methods </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[redis环境搭建]]></title>
       <url>/redis%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA.html</url>
       <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><p><a href="https://redis.io/" target="_blank" rel="noopener">官方网站</a></p>
@@ -1167,7 +1308,9 @@ if (isIE){
         
         <tags>
             
-            <tag> js methods </tag>
+            <tag> js </tag>
+            
+            <tag> methods </tag>
             
         </tags>
         
@@ -2745,6 +2888,45 @@ $ hexo deploy
     </entry>
     
     <entry>
+      <title><![CDATA[vuex 使用技巧]]></title>
+      <url>/vuex-%E6%A8%A1%E5%9D%97%E4%BB%8B%E7%BB%8D.html</url>
+      <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h2 id="Action"><a href="#Action" class="headerlink" title="Action"></a>Action</h2><p>提供方法和API请求,类似于mutation</p>
+<blockquote>
+<p>mutation  修改 state 只能是同步的</p>
+<ul>
+<li>action 充满了各种异步 api<pre><code>actions: {
+  increment (context) {
+      context.commit(&#39;increment&#39;)
+ }
+}
+另一种写法
+increment({commit}) {
+  commit(&#39;increment&#39;)
+}
+</code></pre></li>
+</ul>
+</blockquote>
+<h2 id="分发-Action"><a href="#分发-Action" class="headerlink" title="分发 Action"></a>分发 Action</h2><blockquote>
+<p>store.dispatch(‘increment’)</p>
+</blockquote>
+]]></content>
+      
+        <categories>
+            
+            <category> vue </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> vuex </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[vue高仿qq音乐官网]]></title>
       <url>/vue%E9%AB%98%E4%BB%BFqq%E9%9F%B3%E4%B9%90%E5%AE%98%E7%BD%91.html</url>
       <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>一直想做一个vue项目 然后呢 我就做了</p>
@@ -2854,45 +3036,6 @@ npm run start
             <tag> vuex </tag>
             
             <tag> vue-router </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[vuex 使用技巧]]></title>
-      <url>/vuex-%E6%A8%A1%E5%9D%97%E4%BB%8B%E7%BB%8D.html</url>
-      <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h2 id="Action"><a href="#Action" class="headerlink" title="Action"></a>Action</h2><p>提供方法和API请求,类似于mutation</p>
-<blockquote>
-<p>mutation  修改 state 只能是同步的</p>
-<ul>
-<li>action 充满了各种异步 api<pre><code>actions: {
-  increment (context) {
-      context.commit(&#39;increment&#39;)
- }
-}
-另一种写法
-increment({commit}) {
-  commit(&#39;increment&#39;)
-}
-</code></pre></li>
-</ul>
-</blockquote>
-<h2 id="分发-Action"><a href="#分发-Action" class="headerlink" title="分发 Action"></a>分发 Action</h2><blockquote>
-<p>store.dispatch(‘increment’)</p>
-</blockquote>
-]]></content>
-      
-        <categories>
-            
-            <category> vue </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> vuex </tag>
             
         </tags>
         
@@ -3451,6 +3594,12 @@ layout: tags
   
     
     <entry>
+      <title><![CDATA[links]]></title>
+      <url>/links/index.html</url>
+      <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script>]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[个人简介]]></title>
       <url>/about/index.html</url>
       <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>姓名：江志雄<br>性别：你猜<br>专业：软件工程</p>
@@ -3541,12 +3690,6 @@ layout: tags
     <entry>
       <title><![CDATA[tags]]></title>
       <url>/tags/index.html</url>
-      <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script>]]></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[links]]></title>
-      <url>/links/index.html</url>
       <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script>]]></content>
     </entry>
     
