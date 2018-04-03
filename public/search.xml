@@ -3,6 +3,45 @@
   
     
     <entry>
+      <title><![CDATA[如何规划自己的工作和生活]]></title>
+      <url>/%E5%A6%82%E4%BD%95%E8%A7%84%E5%88%92%E8%87%AA%E5%B7%B1%E7%9A%84%E5%B7%A5%E4%BD%9C%E5%92%8C%E7%94%9F%E6%B4%BB.html</url>
+      <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>人人都在说工作-生活平衡，但好像都不敢真正拥有它，移动互联网，正在让工作和生活的边界变得越来越模糊…</p>
+<h2 id="花时间做规划"><a href="#花时间做规划" class="headerlink" title="花时间做规划"></a>花时间做规划</h2><p>给自己的时间做规划，不意味着你可以更放松，反而需要更严格的时间规划，尝试对时间概念有一个精准的定位。</p>
+<ul>
+<li>明确目标：包括工作目标，生活目标。</li>
+<li>给事情做优先级：按重要程度划分。</li>
+<li>细化目标所需时间：精确目标实现所需时间，大到年月、小到分时。</li>
+</ul>
+<blockquote>
+<p>越忙越乱，越乱越忙</p>
+</blockquote>
+<h2 id="形成日常惯例，减少意志力的损耗"><a href="#形成日常惯例，减少意志力的损耗" class="headerlink" title="形成日常惯例，减少意志力的损耗"></a>形成日常惯例，减少意志力的损耗</h2><p>给自己每周、每月、每年定下固定活动时间分配，让它自然而然的形成惯例。</p>
+<blockquote>
+<p>越来越多的人认为，只有不断工作才能证明自己有能力、有责任心</p>
+</blockquote>
+<h2 id="有效地休闲"><a href="#有效地休闲" class="headerlink" title="有效地休闲"></a>有效地休闲</h2><p>休闲时间不在长短，而在于质量。高质量的休闲让你体验到的是放松，而不是无聊和空虚。</p>
+<p>休闲的必要性：放松可以让人们正在接下来的工作中效率更高。并且放松可以用更宽广的思路与抽象的方式去思考，容易产生有创造力的洞察力。</p>
+<blockquote>
+<p>长时间的工作会降低人们的创造力，提高心脏病、抑郁症的发生率。</p>
+</blockquote>
+]]></content>
+      
+        <categories>
+            
+            <category> 生活 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 哲理 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[js常见的九种设计模式]]></title>
       <url>/js%E5%B8%B8%E8%A7%81%E7%9A%84%E4%B9%9D%E7%A7%8D%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F.html</url>
       <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><p>设计模式(DP)是一套被反复使用，多数人知晓的、经过分类编目的、代码设计经验的总结。</p>
@@ -2888,45 +2927,6 @@ $ hexo deploy
     </entry>
     
     <entry>
-      <title><![CDATA[vuex 使用技巧]]></title>
-      <url>/vuex-%E6%A8%A1%E5%9D%97%E4%BB%8B%E7%BB%8D.html</url>
-      <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h2 id="Action"><a href="#Action" class="headerlink" title="Action"></a>Action</h2><p>提供方法和API请求,类似于mutation</p>
-<blockquote>
-<p>mutation  修改 state 只能是同步的</p>
-<ul>
-<li>action 充满了各种异步 api<pre><code>actions: {
-  increment (context) {
-      context.commit(&#39;increment&#39;)
- }
-}
-另一种写法
-increment({commit}) {
-  commit(&#39;increment&#39;)
-}
-</code></pre></li>
-</ul>
-</blockquote>
-<h2 id="分发-Action"><a href="#分发-Action" class="headerlink" title="分发 Action"></a>分发 Action</h2><blockquote>
-<p>store.dispatch(‘increment’)</p>
-</blockquote>
-]]></content>
-      
-        <categories>
-            
-            <category> vue </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> vuex </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
       <title><![CDATA[vue高仿qq音乐官网]]></title>
       <url>/vue%E9%AB%98%E4%BB%BFqq%E9%9F%B3%E4%B9%90%E5%AE%98%E7%BD%91.html</url>
       <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>一直想做一个vue项目 然后呢 我就做了</p>
@@ -3036,6 +3036,45 @@ npm run start
             <tag> vuex </tag>
             
             <tag> vue-router </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[vuex 使用技巧]]></title>
+      <url>/vuex-%E6%A8%A1%E5%9D%97%E4%BB%8B%E7%BB%8D.html</url>
+      <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h2 id="Action"><a href="#Action" class="headerlink" title="Action"></a>Action</h2><p>提供方法和API请求,类似于mutation</p>
+<blockquote>
+<p>mutation  修改 state 只能是同步的</p>
+<ul>
+<li>action 充满了各种异步 api<pre><code>actions: {
+  increment (context) {
+      context.commit(&#39;increment&#39;)
+ }
+}
+另一种写法
+increment({commit}) {
+  commit(&#39;increment&#39;)
+}
+</code></pre></li>
+</ul>
+</blockquote>
+<h2 id="分发-Action"><a href="#分发-Action" class="headerlink" title="分发 Action"></a>分发 Action</h2><blockquote>
+<p>store.dispatch(‘increment’)</p>
+</blockquote>
+]]></content>
+      
+        <categories>
+            
+            <category> vue </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> vuex </tag>
             
         </tags>
         
@@ -3594,12 +3633,6 @@ layout: tags
   
     
     <entry>
-      <title><![CDATA[links]]></title>
-      <url>/links/index.html</url>
-      <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script>]]></content>
-    </entry>
-    
-    <entry>
       <title><![CDATA[个人简介]]></title>
       <url>/about/index.html</url>
       <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>姓名：江志雄<br>性别：你猜<br>专业：软件工程</p>
@@ -3684,6 +3717,12 @@ layout: tags
     <entry>
       <title><![CDATA[gallery]]></title>
       <url>/gallery/index.html</url>
+      <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script>]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[links]]></title>
+      <url>/links/index.html</url>
       <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script>]]></content>
     </entry>
     

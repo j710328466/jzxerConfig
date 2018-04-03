@@ -4,65 +4,82 @@ date: 2017-12-26 11:06:19
 tags: [vscode]
 categories: IDE
 ---
+# vscode 配置
 
-## vscode 配置
 
-### 插件
+## auto-Open Markdown
 
-#### auto-Open Markdown
 markdown 预览插件
 
-#### beautify
+## beautify
+
 让代码更符合规范
 
-#### Bracket Pair Colorizer
+## Bracket Pair Colorizer
+
 括号上色插件，神器推荐
 
-#### vscode-ext-color-highlight
+## vscode-ext-color-highlight
+
 颜色上色插件
 
-#### color-picker
+## color-picker
+
 取色插件
 
-#### cssrem
+## cssrem
+
 rem转换工具
 
-#### Debugger for Chrome 
+## Debugger for Chrome
+
 debugger插件，正在学怎么用
 
-#### ESlint
+## ESlint
+
 代码规范插件
 
-#### file-icons
+## file-icons
+
 图标插件
 
-#### git History
+## git History
+
 查看历史修改记录插件
 
-#### hopscotch
+## hopscotch
+
 可爱的代码颜色风格
 
-#### html css support 
+## html css support
+
 应该改支持代码提示插件吧
 
-#### markdownlint
+## markdownlint
+
 markdown 语法提示插件
 
-#### path autocomplete
+## path autocomplete
+
 路径补全插件
 
-#### react native tools
+## react native tools
+
 暂时没用上
 
-#### react-native 
+## react-native
+
 也没用上
 
-#### settings sync
-插件备份工具，貌似是神器，目前没用过
+## settings sync
 
-#### background
+插件备份工具，神器
+
+## background
+
 一款美化插件配置如下：
-```
+
+```js
 "background.useDefault": false,
     "background.enabled": true,
     "background.customImages": [
@@ -74,4 +91,5 @@ markdown 语法提示插件
         "height": "1150px"
     }
 ```
+
 > ps: 超级超级吃 CPU 慎用！！
