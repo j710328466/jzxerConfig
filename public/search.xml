@@ -3,6 +3,262 @@
   
     
     <entry>
+      <title><![CDATA[node连接阿里云redis]]></title>
+      <url>/node%E8%BF%9E%E6%8E%A5%E9%98%BF%E9%87%8C%E4%BA%91redis.html</url>
+      <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h1 id="node-连接云-redis"><a href="#node-连接云-redis" class="headerlink" title="node 连接云 redis"></a>node 连接云 redis</h1><h2 id="1-要求"><a href="#1-要求" class="headerlink" title="1. 要求"></a>1. 要求</h2><ol>
+<li>若 Redis 实例属于专有网络（VPC），ECS 必须与 Redis 实例属于同一个 VPC。</li>
+<li>若 Redis 实例属于经典网络，ECS 必须与 Redis 实例属于同一节点（地域）。</li>
+<li>若 Redis 实例开启了 IP 白名单，必须将 ECS 的内网地址加入白名单列表内。</li>
+</ol>
+<h2 id="2-在云服务器-ECS-Linux-中安装-rinetd"><a href="#2-在云服务器-ECS-Linux-中安装-rinetd" class="headerlink" title="2. 在云服务器 ECS Linux 中安装 rinetd"></a>2. 在云服务器 ECS Linux 中安装 rinetd</h2><p>redis-cli -h 101.132.156.228 -a  r-uf60a44b13666134:’123456Jzx’</p>
+<pre class=" language-js"><code class="language-js">wget http<span class="token punctuation">:</span><span class="token operator">/</span><span class="token operator">/</span>www<span class="token punctuation">.</span>boutell<span class="token punctuation">.</span>com<span class="token operator">/</span>rinetd<span class="token operator">/</span>http<span class="token operator">/</span>rinetd<span class="token punctuation">.</span>tar<span class="token punctuation">.</span>gz<span class="token operator">&amp;&amp;</span>tar <span class="token operator">-</span>xvf rinetd<span class="token punctuation">.</span>tar<span class="token punctuation">.</span>gz<span class="token operator">&amp;&amp;</span>cd rinetd
+sed <span class="token operator">-</span>i <span class="token string">'s/65536/65535/g'</span> rinetd<span class="token punctuation">.</span>c <span class="token punctuation">(</span>修改端口范围<span class="token punctuation">)</span>
+mkdir <span class="token operator">/</span>usr<span class="token operator">/</span>man<span class="token operator">&amp;&amp;</span>make<span class="token operator">&amp;&amp;</span>make install
+</code></pre>
+<blockquote>
+<p>注意：rinetd 安装包下载地址不确保下载可用性，您可以自行搜索安装包进行下载使用。</p>
+</blockquote>
+<h2 id="3-打开配置文件-rinetd-conf"><a href="#3-打开配置文件-rinetd-conf" class="headerlink" title="3. 打开配置文件 rinetd.conf"></a>3. 打开配置文件 rinetd.conf</h2><p>vi /etc/rinetd.conf</p>
+<h2 id="4-在配置文件中输入如下内容"><a href="#4-在配置文件中输入如下内容" class="headerlink" title="4. 在配置文件中输入如下内容"></a>4. 在配置文件中输入如下内容</h2><pre class=" language-js"><code class="language-js"><span class="token number">0.0</span><span class="token punctuation">.</span><span class="token number">0.0</span> <span class="token number">6379</span> Redis 的链接地址 <span class="token number">6379</span>
+logfile <span class="token operator">/</span><span class="token keyword">var</span><span class="token operator">/</span>log<span class="token operator">/</span>rinetd<span class="token punctuation">.</span>log
+</code></pre>
+<blockquote>
+<p>说明：您可以使用 cat /etc/rinetd.conf命令来检验配置文件是否修改正确。</p>
+</blockquote>
+<h2 id="5-执行如下命令启动-rinetd"><a href="#5-执行如下命令启动-rinetd" class="headerlink" title="5. 执行如下命令启动 rinetd"></a>5. 执行如下命令启动 rinetd</h2><pre class=" language-js"><code class="language-js">rinetd
+</code></pre>
+<blockquote>
+<p>注意<br>○ 您可以通过 echo rinetd &gt;&gt;/etc/rc.local 将 rinetd 设置为自启动。<br>○ 若遇到绑定报错，可以执行 pkill rinetd 结束进程，再执行 rinetd启动进程 rinetd。<br>○ rinetd 正常启动后， 执行netstat -anp | grep 6379 确认服务是否正常运行。</p>
+</blockquote>
+<h2 id="6-在本地进行验证测试"><a href="#6-在本地进行验证测试" class="headerlink" title="6. 在本地进行验证测试"></a>6. 在本地进行验证测试</h2><pre class=" language-m"><code class="language-m">您可以在本地通过 redis-cli 连接 ECS Linux 服务器后进行登录验证，比如安装了 rinetd 的服务器的 IP 是 1.1.1.1，即redis-cli -h 1.1.1.1 -a Redis的实例ID:Redis密码。或者通过 telent 连接 ECS Linux 服务器后进行操作验证。假设 ECS Linux 服务器的 IP 是 1.1.1.1，即 telnet 1.1.1.1 6379。
+连接上 ECS Linux 服务器后，输入连接 Redis 的密码：auth Redis的连接密码。
+进行数据写入及查询验证。
+</code></pre>
+<h2 id="7-客户端连接-Redis"><a href="#7-客户端连接-Redis" class="headerlink" title="7. 客户端连接 Redis"></a>7. 客户端连接 Redis</h2><pre class=" language-js"><code class="language-js"><span class="token keyword">const</span> redis <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'redis'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+      RDS_PORT <span class="token operator">=</span> <span class="token number">6379</span><span class="token punctuation">,</span>
+      RDS_PWD <span class="token operator">=</span> <span class="token string">'密码'</span><span class="token punctuation">,</span>
+      RDS_HOST <span class="token operator">=</span> <span class="token string">'服务器ip'</span><span class="token punctuation">,</span>
+      RDS_OPTS <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+      client <span class="token operator">=</span> redis<span class="token punctuation">.</span><span class="token function">createClient</span><span class="token punctuation">(</span>RDS_PORT<span class="token punctuation">,</span> RDS_HOST<span class="token punctuation">,</span> RDS_OPTS<span class="token punctuation">)</span>
+
+client<span class="token punctuation">.</span><span class="token function">auth</span><span class="token punctuation">(</span>RDS_PWD<span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'通过认证'</span><span class="token punctuation">)</span>
+  client<span class="token punctuation">.</span><span class="token keyword">set</span><span class="token punctuation">(</span><span class="token string">'author'</span><span class="token punctuation">,</span> <span class="token string">'jzx'</span><span class="token punctuation">,</span> redis<span class="token punctuation">.</span>print<span class="token punctuation">)</span>
+  client<span class="token punctuation">.</span><span class="token keyword">get</span><span class="token punctuation">(</span><span class="token string">'author'</span><span class="token punctuation">,</span> redis<span class="token punctuation">.</span>print<span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre>
+<h2 id="8-小结"><a href="#8-小结" class="headerlink" title="8. 小结"></a>8. 小结</h2><ul>
+<li>注意 ECS 若本地 redis-server 打开则先关闭，否则转发的并不是云 redis，而是本地 ECS 服务, 命令如下面给出所示。</li>
+</ul>
+<pre class=" language-t"><code class="language-t">/etc/init.d/redis-server stop
+/etc/init.d/redis-server start
+/etc/init.d/redis-server restart
+</code></pre>
+<ul>
+<li>将 ECS 安全组设置里 redis 端口开放，如：6379。</li>
+</ul>
+]]></content>
+      
+        <categories>
+            
+            <category> 数据库 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> redis </tag>
+            
+            <tag> 阿里云 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[学生思维]]></title>
+      <url>/%E5%AD%A6%E7%94%9F%E6%80%9D%E7%BB%B4.html</url>
+      <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h1 id="学生思维"><a href="#学生思维" class="headerlink" title="学生思维"></a>学生思维</h1><h2 id="1-认为准备好了再做"><a href="#1-认为准备好了再做" class="headerlink" title="1. 认为准备好了再做"></a>1. 认为准备好了再做</h2><p>持续认为自己还没准备好，遇到新的挑战（机会），本能的觉得自己没学过，回避，很多时候，是你有了责任，有了目标，才会让自己更强大，而不是自己强大了再做某事。</p>
+<blockquote>
+<p>永远让事情推自己走，而不是让自己跟着事情走。</p>
+</blockquote>
+<h2 id="2-被动接受，而不是主动获取"><a href="#2-被动接受，而不是主动获取" class="headerlink" title="2. 被动接受，而不是主动获取"></a>2. 被动接受，而不是主动获取</h2><p>习惯老师留作业。但是工作了，很多时候要自己发挥，等着布置作业那是泯然众人的做法。在职场上有突破的，往往都更主动，他们不会羞涩于请教，不会因为担心麻烦人而影响工作，他们只是在聚焦如何让工作做得更好，所以积极主动。</p>
+<blockquote>
+<p>不要小看主动的力量。</p>
+</blockquote>
+<h2 id="3-不愿意面对不可预期的逆境"><a href="#3-不愿意面对不可预期的逆境" class="headerlink" title="3. 不愿意面对不可预期的逆境"></a>3. 不愿意面对不可预期的逆境</h2><p>很多人习惯了学生时代的感觉，习惯了有确定性的事物，却不知道，工作中有很多不确定性。你总说在面对各种未知的问题，有问题就要解决问题。有些人面对这样的逆境，不够坚韧，总选择逃避，很难承担重任，职场发展就会受限。</p>
+<h2 id="4-小孩子脾气"><a href="#4-小孩子脾气" class="headerlink" title="4. 小孩子脾气"></a>4. 小孩子脾气</h2><p>不要把无知当个性，不要把口无遮拦当直爽。其他人没有那么多时间了解你丰富的内心，大家更想配合好把事情做完。有个性和脾气不是不可以，但那是建立在自身的本事和成绩上的。</p>
+<blockquote>
+<p>恃才傲物还可以接受，没能力还以自我为中心只会被人嫌弃。</p>
+</blockquote>
+<h2 id="5-过于放大自己的价值"><a href="#5-过于放大自己的价值" class="headerlink" title="5. 过于放大自己的价值"></a>5. 过于放大自己的价值</h2><p>自信心不强经常遇到，但还有另一种极端的情况，就是过于放大自己的价值。在一个新组织里，既有自己的努力，又有组织提供的机会。我们常常说要从小事做起，其实就是在积攒人品，让别人逐步信任你。其实我们往往没有想象中那么重要，只是大家积累起来的信任链条。</p>
+<blockquote>
+<p>不吭不卑才是合适的作风。</p>
+</blockquote>
+<h2 id="6-懒于改变"><a href="#6-懒于改变" class="headerlink" title="6. 懒于改变"></a>6. 懒于改变</h2><p>很多人习惯了按部就班，习惯了在一条轨道上，有什么想法也只是说说而已，并没有勇气去落地执行，只是在等待,这样的人则完全没有任何魄力。</p>
+<blockquote>
+<p>只是等待，没有任何结果。</p>
+</blockquote>
+<h2 id="7-给自己画一条线"><a href="#7-给自己画一条线" class="headerlink" title="7. 给自己画一条线"></a>7. 给自己画一条线</h2><p>我是学…的，我是做…的，所以我不能…。往往希望自己能从他人那里得到一些肯定。其实如果信心坚定，大部分工作都是有可能性的。总能找到很多成功的和失败的例子。最后发现其实还是在于自己。</p>
+<blockquote>
+<p>没有那么多鸿沟拦着你，是你自己拦着自己。</p>
+</blockquote>
+<h2 id="8-没有意识到要和优秀的人在一起"><a href="#8-没有意识到要和优秀的人在一起" class="headerlink" title="8. 没有意识到要和优秀的人在一起"></a>8. 没有意识到要和优秀的人在一起</h2><p>读书的时候，好学生和一般的学生，多少会有点距离。在社会里，工作上要去拉近这个距离。时常看看优秀的人在做什么，看到好的点，学习到自己这里，这是好事。</p>
+<blockquote>
+<p>见贤思齐焉。</p>
+</blockquote>
+<h2 id="9-不知道衡量-10-年总收入"><a href="#9-不知道衡量-10-年总收入" class="headerlink" title="9. 不知道衡量 10 年总收入"></a>9. 不知道衡量 10 年总收入</h2><p>刚入职场，很多学生会比 offer、 收入…等等。不是说不应该在意，而是优先级高的应该是自己的成长值能增加多少，能不能通过自己的努力，把自己作为一个产品给做出来。衡量自己未来的 10 年收入，不仅仅是经济，还有能力、资历的，不争一城一地的得失，将重点放到经营自己这个产品上来。</p>
+<blockquote>
+<p>投资自己，让自己不断增值，才是正事。</p>
+</blockquote>
+<h2 id="10-小红花意识"><a href="#10-小红花意识" class="headerlink" title="10. 小红花意识"></a>10. 小红花意识</h2><p>人都希望被表扬。有的时候就要忍受阶段性的在角落，可能很辛苦，作出了成绩没人认同很委屈，稍微作出了点事就想收到认同。其实，这往往需要时间、需要积累和沉淀。很多事你是在为自己做，做多了，大概率会有好结果，即使不是立刻就有。</p>
+<blockquote>
+<p>自己的行为过于依赖周围人的反应，反而会打乱自己的节奏。</p>
+</blockquote>
+<h2 id="11-连他都可以"><a href="#11-连他都可以" class="headerlink" title="11. 连他都可以"></a>11. 连他都可以</h2><p>在学校里，你成绩可能比人家好，在社会上，可能人家混的比你好。社会和学校有他们自己的规则，不要在比较重蹉跎。</p>
+<blockquote>
+<p>按照自己的节奏，一步一步让自己变得更好。</p>
+</blockquote>
+<h2 id="12-不会保护自己"><a href="#12-不会保护自己" class="headerlink" title="12. 不会保护自己"></a>12. 不会保护自己</h2><p>这个世界存在坏人，因为利益、嫉妒、扭曲的心理…学校可能环境相对简单，但是工作中，情况就要复杂很多。比如你是医生，就要做好医闹的准备。在公司工作，该有的流程，留下邮件的，都得有。</p>
+<h2 id="13-伸手党意识"><a href="#13-伸手党意识" class="headerlink" title="13. 伸手党意识"></a>13. 伸手党意识</h2><p>在请他人帮忙处理前，自己先尽力找到处理问题的办法。实在不行再开口，又或者是时间周期短，加急的情况。</p>
+<h2 id="14-理性投资消费"><a href="#14-理性投资消费" class="headerlink" title="14. 理性投资消费"></a>14. 理性投资消费</h2><p>常常有人说我穷、没钱。大多数人是家境可以，但是该消费的地方不消费，例如：学习和自我提升。不该消费的地方大手笔，例如：电脑要最新，手机要最新。更多体现的是一种攀比心理。如何领先他人抓住机遇，也体现在如何正确和理性的投资。</p>
+<h2 id="15-做为新人不够谦虚"><a href="#15-做为新人不够谦虚" class="headerlink" title="15. 做为新人不够谦虚"></a>15. 做为新人不够谦虚</h2><p>说话的方式和语气要基于自己的资历。出现与自己资历不对称的气场。容易起反作用。但这并不是说要唯唯诺诺，保持谦虚，是一种态度。</p>
+<h2 id="16-认识人多就是资源"><a href="#16-认识人多就是资源" class="headerlink" title="16. 认识人多就是资源"></a>16. 认识人多就是资源</h2><p>所谓人脉，其实不是认识的人越多越好，而是要和事情，和自己能力匹配，大家基于共同的事情，兴趣认识，主要是一起讨论和学习，当然还有认识彼此。</p>
+<blockquote>
+<p>要让这个状态成为自然的结果，而不是刻意为之。</p>
+</blockquote>
+<h2 id="17-缺乏职场必要的沟通"><a href="#17-缺乏职场必要的沟通" class="headerlink" title="17. 缺乏职场必要的沟通"></a>17. 缺乏职场必要的沟通</h2><p>通过书面的、语言的沟通，把自己的观点表达的有条理并且富有逻辑，讲明白了事情，但是又不会引起反感，如果身边有这样的人，可以向他们学习学习。</p>
+<h2 id="18-锚定在周围人身上"><a href="#18-锚定在周围人身上" class="headerlink" title="18. 锚定在周围人身上"></a>18. 锚定在周围人身上</h2><p>在一个行业里，应该去和整个行业最优秀的人做比较，经常跳出来，看看最好的人在做什么，不要把自己局限住，把自己的目标设高点，就算达不到，也要往上爬。</p>
+<h2 id="19-缺乏自己判断，容易被他人影响"><a href="#19-缺乏自己判断，容易被他人影响" class="headerlink" title="19. 缺乏自己判断，容易被他人影响"></a>19. 缺乏自己判断，容易被他人影响</h2><p>跳出他人的观点，敢于对各种观点质疑。取其精华，抛弃糟蹋。</p>
+<h2 id="20-没有能力边界的概念"><a href="#20-没有能力边界的概念" class="headerlink" title="20. 没有能力边界的概念"></a>20. 没有能力边界的概念</h2><p>有时候总是说，凡是努力就会成功，如果没有成功，就是努力的还不够。但是随着成长，就会发现，有些事情就是自己不擅长做的。就像高中成绩，总有好的和不好的课程。有时候我们还是把自己能力边界之内的事情做好结果会更好。</p>
+<blockquote>
+<p>聚焦自己能力之内的，不要意想天开，认为自己无所不能。</p>
+</blockquote>
+]]></content>
+      
+        <categories>
+            
+            <category> 生活 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 学生思维 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Travis CI 实现自动化部署]]></title>
+      <url>/Travis-CI-%E5%AE%9E%E7%8E%B0%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2.html</url>
+      <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script>]]></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[正则表达式]]></title>
+      <url>/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F.html</url>
+      <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h1 id="正则的介绍"><a href="#正则的介绍" class="headerlink" title="正则的介绍"></a>正则的介绍</h1><p>  正则表达式(Regular Expression)是一种文本模式，包括普通字符（例如，a 到 z 之间的字母）和特殊字符（称为”元字符”）。<br>  正则表达式使用单个字符串来描述、匹配一系列匹配某个句法规则的字符串。<br>  正则表达式是烦琐的，但它是强大的，学会之后的应用会让你除了提高效率外，会给你带来绝对的成就感。</p>
+<h2 id="修饰符"><a href="#修饰符" class="headerlink" title="修饰符"></a>修饰符</h2><h3 id="i"><a href="#i" class="headerlink" title="i"></a>i</h3><p>  执行对大小写不敏感的匹配。</p>
+<h3 id="g"><a href="#g" class="headerlink" title="g"></a>g</h3><p>  执行全局匹配（所有，而不是找到一个后停止匹配）。</p>
+<h3 id="m"><a href="#m" class="headerlink" title="m"></a>m</h3><p>  执行多行匹配。</p>
+<h2 id="方括号"><a href="#方括号" class="headerlink" title="方括号"></a>方括号</h2><h3 id="abc"><a href="#abc" class="headerlink" title="[abc]"></a>[abc]</h3><p>  查找方括号之间的任何字符。</p>
+<h3 id="abc-1"><a href="#abc-1" class="headerlink" title="[^abc]"></a>[^abc]</h3><p>  查找任何不在方括号内的字符。</p>
+<h3 id="0-9"><a href="#0-9" class="headerlink" title="[0-9]"></a>[0-9]</h3><p>  查找任何从 0 至 9 的数字。</p>
+<h3 id="a-z"><a href="#a-z" class="headerlink" title="[a-z]"></a>[a-z]</h3><p>  查找任何从小写 a 到 z 的字符。</p>
+<h3 id="A-Z"><a href="#A-Z" class="headerlink" title="[A-Z]"></a>[A-Z]</h3><p>  查找任何从大写 A 到 Z 的字符。</p>
+<h3 id="A-z"><a href="#A-z" class="headerlink" title="[A-z]"></a>[A-z]</h3><p>  查找任何从大写 A 到小写 z 的字符。</p>
+<h3 id="adgk"><a href="#adgk" class="headerlink" title="[adgk]"></a>[adgk]</h3><p>  查找括号中给定的字符集。</p>
+<h3 id="adgk-1"><a href="#adgk-1" class="headerlink" title="[^adgk]"></a>[^adgk]</h3><p>  查找除括号内之外的所有字符。</p>
+<h3 id="red-blue-green"><a href="#red-blue-green" class="headerlink" title="[red|blue|green]"></a>[red|blue|green]</h3><p>  查找任何指定的选项。</p>
+<h2 id="元字符"><a href="#元字符" class="headerlink" title="元字符"></a>元字符</h2><h3 id="‘-’"><a href="#‘-’" class="headerlink" title="‘.’"></a>‘.’</h3><p>  查找单个字符，除了换行符和结束符。</p>
+<h3 id="w"><a href="#w" class="headerlink" title="\w"></a>\w</h3><p>  查找单词字符。</p>
+<h3 id="W"><a href="#W" class="headerlink" title="\W"></a>\W</h3><p>  查找非单词字符。</p>
+<h3 id="d"><a href="#d" class="headerlink" title="\d"></a>\d</h3><p>  查找数字。</p>
+<h3 id="D"><a href="#D" class="headerlink" title="\D"></a>\D</h3><p>  查找非数字。</p>
+<h3 id="s"><a href="#s" class="headerlink" title="\s"></a>\s</h3><p>  查找空白字符。</p>
+<h3 id="S"><a href="#S" class="headerlink" title="\S"></a>\S</h3><p>  查找非空白字符。</p>
+<h3 id="b"><a href="#b" class="headerlink" title="\b"></a>\b</h3><p>  匹配单词边界。</p>
+<h3 id="B"><a href="#B" class="headerlink" title="\B"></a>\B</h3><p>  匹配非单词边界。</p>
+<h3 id="0"><a href="#0" class="headerlink" title="\0"></a>\0</h3><p>  查找null字符。</p>
+<h3 id="n"><a href="#n" class="headerlink" title="\n"></a>\n</h3><p>  查找换行符。</p>
+<h3 id="f"><a href="#f" class="headerlink" title="\f"></a>\f</h3><p>  查找换页符。</p>
+<h3 id="r"><a href="#r" class="headerlink" title="\r"></a>\r</h3><p>  查找回车符。</p>
+<h3 id="t"><a href="#t" class="headerlink" title="\t"></a>\t</h3><p>  查找制表符。</p>
+<h3 id="v"><a href="#v" class="headerlink" title="\v"></a>\v</h3><p>  查找垂直制表符。</p>
+<h3 id="xxx"><a href="#xxx" class="headerlink" title="\xxx"></a>\xxx</h3><p>  查找以八进制 xxx 规定的字符。</p>
+<h3 id="xdd"><a href="#xdd" class="headerlink" title="\xdd"></a>\xdd</h3><p>  查找以十六进制 dd 规定的字符。</p>
+<h3 id="uxxxx"><a href="#uxxxx" class="headerlink" title="\uxxxx"></a>\uxxxx</h3><p>  查找以十六进制 xxxx 规定的 Uicode 字符。</p>
+<h2 id="量词"><a href="#量词" class="headerlink" title="量词"></a>量词</h2><h3 id="n-1"><a href="#n-1" class="headerlink" title="n+"></a>n+</h3><p>  匹配任何包含至少一个 n 的字符串。</p>
+<blockquote>
+<p>eg: /a+/ 匹配 “candy” 中的 “a”， “caaaaaandy” 中的 “a”。</p>
+</blockquote>
+<h3 id="n-2"><a href="#n-2" class="headerlink" title="n*"></a>n*</h3><p>  匹配任何包含零个或多个 n 的字符串。</p>
+<blockquote>
+<p>eg: /bo*/ 匹配 “a ghost booooed ” 中的 “boooo”，“hell by” 中的 ”b”。</p>
+</blockquote>
+<h3 id="n？"><a href="#n？" class="headerlink" title="n？"></a>n？</h3><p>  匹配任何包含零个或一个 n 的字符串。</p>
+<blockquote>
+<p>eg: /e?le?/ 匹配 “angel” 中的 “el”，“angle” 中的 “le”。</p>
+</blockquote>
+<h3 id="n-X"><a href="#n-X" class="headerlink" title="n(X)"></a>n(X)</h3><p>  匹配包含 X个 n 的序列的字符串。</p>
+<blockquote>
+<p>eg: /a(2)/ 不匹配 “candy” 中的 “a”，但是匹配 “caandy”，“caaandy”。</p>
+</blockquote>
+<h3 id="n-X-1"><a href="#n-X-1" class="headerlink" title="n{X,}"></a>n{X,}</h3><p>  X 是一个正整数，前面的模式 n 连续出现至少 X 次匹配。</p>
+<blockquote>
+<p>/a{2,}/ 不匹配 “candy”，匹配 “caandy” 和 “caaaandy” 中的所有 “a“。</p>
+</blockquote>
+<h3 id="n-X-Y"><a href="#n-X-Y" class="headerlink" title="n{X, Y}"></a>n{X, Y}</h3><p>  n 出现至少 X 次，至多 Y 次。</p>
+<blockquote>
+<p>/a{1,3} 匹配 ”candy“ 的 ”a“，”caandy“ 中的 ”aa“，“caaaandy” 前三个 “a”。</p>
+</blockquote>
+<h3 id="n-3"><a href="#n-3" class="headerlink" title="n$"></a>n$</h3><p>  匹配任何以 n 结尾的字符串。</p>
+<h3 id="n-4"><a href="#n-4" class="headerlink" title="^n"></a>^n</h3><p>  匹配任何以 n 开头的字符串。</p>
+<h3 id="n-5"><a href="#n-5" class="headerlink" title="?=n"></a>?=n</h3><p>  匹配任何其后紧接指定 n 的字符串。</p>
+<h3 id="n-6"><a href="#n-6" class="headerlink" title="?!n"></a>?!n</h3><p>  匹配任何其后没有指定 n 的字符串。</p>
+<h2 id="RegExp-对象方法"><a href="#RegExp-对象方法" class="headerlink" title="RegExp 对象方法"></a>RegExp 对象方法</h2><h3 id="compile"><a href="#compile" class="headerlink" title="compile"></a>compile</h3><p>  编译正则表达式。</p>
+<h3 id="exec"><a href="#exec" class="headerlink" title="exec"></a>exec</h3><p>  检索字符串中指定的值。返回找到的值，并确定其位置。</p>
+<h3 id="test"><a href="#test" class="headerlink" title="test"></a>test</h3><p>  检索字符串中指定的值，返回 true or false。</p>
+<h2 id="String-对象的正则方法"><a href="#String-对象的正则方法" class="headerlink" title="String 对象的正则方法"></a>String 对象的正则方法</h2><h3 id="search"><a href="#search" class="headerlink" title="search"></a>search</h3><p>  检索与正则表达式相匹配的值。</p>
+<blockquote>
+<p>eg: str.search(“blue”) 返回的是 blue 出现的字符下标(大小写敏感)。</p>
+</blockquote>
+<h3 id="match"><a href="#match" class="headerlink" title="match"></a>match</h3><p>  找到一个或者多个正则表达式的匹配。</p>
+<blockquote>
+<p>eg: str.match(/ain/g) 返回所有出现的 ain (大小写敏感)。</p>
+</blockquote>
+<h3 id="replace"><a href="#replace" class="headerlink" title="replace"></a>replace</h3><p>  替换与正则表达式匹配的字串。</p>
+<blockquote>
+<p>eg: str.replace(/blue/g,”red”) 替换所有 blue 为 red。</p>
+</blockquote>
+<h3 id="split"><a href="#split" class="headerlink" title="split"></a>split</h3><p>  把字符串分割为字符串数组。</p>
+<blockquote>
+<p>string.split(separator,limit) 在 separator 指定位置分割, 返回内容不超过 limit 长度。</p>
+</blockquote>
+]]></content>
+      
+        <categories>
+            
+            <category> JS </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 正则表达式 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[如何规划自己的工作和生活]]></title>
       <url>/%E5%A6%82%E4%BD%95%E8%A7%84%E5%88%92%E8%87%AA%E5%B7%B1%E7%9A%84%E5%B7%A5%E4%BD%9C%E5%92%8C%E7%94%9F%E6%B4%BB.html</url>
       <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>人人都在说工作-生活平衡，但好像都不敢真正拥有它，移动互联网，正在让工作和生活的边界变得越来越模糊…</p>
@@ -185,19 +441,21 @@ XHRH<span class="token punctuation">.</span>prototype<span class="token punctuat
     <entry>
       <title><![CDATA[redis环境搭建]]></title>
       <url>/redis%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA.html</url>
-      <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><p><a href="https://redis.io/" target="_blank" rel="noopener">官方网站</a></p>
-<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><pre><code>解压
-tar zxvf redis-4.0.8.tar.gz
+      <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h1 id="redis-环境搭建"><a href="#redis-环境搭建" class="headerlink" title="redis 环境搭建"></a>redis 环境搭建</h1><h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><p><a href="https://redis.io/" target="_blank" rel="noopener">官方网站</a></p>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><pre class=" language-js"><code class="language-js">解压
+tar zxvf redis<span class="token number">-4.0</span><span class="token punctuation">.</span><span class="token number">8</span><span class="token punctuation">.</span>tar<span class="token punctuation">.</span>gz
 移动文件夹
-mv redis-4.0.8 /usr/local/
+mv redis<span class="token number">-4.0</span><span class="token punctuation">.</span><span class="token number">8</span> <span class="token operator">/</span>usr<span class="token regex">/local/</span>
 打开该文件夹
-cd /usr/local/redis-4.0.8/
+cd <span class="token operator">/</span>usr<span class="token operator">/</span>local<span class="token regex">/redis-4.0.8/</span>
 编译测试
 sudo make test
 编译安装
 sudo make install
-</code></pre><h2 id="启动"><a href="#启动" class="headerlink" title="启动"></a>启动</h2><pre><code>redis-server
-</code></pre><h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><pre><code>新建目录
+</code></pre>
+<h2 id="启动"><a href="#启动" class="headerlink" title="启动"></a>启动</h2><pre class=" language-js"><code class="language-js">redis<span class="token operator">-</span>server
+</code></pre>
+<h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><pre class=" language-t"><code class="language-t">新建目录
 sudo mkdir  redis-4.0.8/bin
 sudo mkdir  redis-4.0.8/etc
 sudo mkdir  redis-4.0.8/db
@@ -207,7 +465,8 @@ cp src/redis-benchmark bin
 cp src/redis-check-rdb bin
 cp src/redis-cli bin
 cp src/redis-server bin
-</code></pre><h2 id="修改redis-conf"><a href="#修改redis-conf" class="headerlink" title="修改redis.conf"></a>修改redis.conf</h2><pre><code>#修改为守护模式
+</code></pre>
+<h2 id="修改redis-conf"><a href="#修改redis-conf" class="headerlink" title="修改redis.conf"></a>修改redis.conf</h2><pre class=" language-t"><code class="language-t">#修改为守护模式
 daemonize yes
 #设置进程锁文件
 pidfile /usr/local/redis-3.2.8/redis.pid
@@ -219,10 +478,10 @@ timeout 300
 loglevel debug
 #日志文件位置
 logfile /usr/local/redis-3.2.8/log-redis.log
-#设置数据库的数量，默认数据库为0，可以使用SELECT &lt;dbid&gt;命令在连接上指定数据库id
+#设置数据库的数量，默认数据库为0，可以使用SELECT <dbid>命令在连接上指定数据库id
 databases 16
 ##指定在多长时间内，有多少次更新操作，就将数据同步到数据文件，可以多个条件配合
-#save &lt;seconds&gt; &lt;changes&gt;
+#save <seconds> <changes>
 #Redis默认配置文件中提供了三个条件：
 save 900 1
 save 300 10
@@ -243,19 +502,22 @@ appendonly no
 #always：表示每次更新操作后手动调用fsync()将数据写到磁盘（慢，安全）
 #everysec：表示每秒同步一次（折衷，默认值）
 appendfsync everysec
-</code></pre><h2 id="启动服务"><a href="#启动服务" class="headerlink" title="启动服务"></a>启动服务</h2><pre><code>启动
+</code></pre>
+<h2 id="启动服务"><a href="#启动服务" class="headerlink" title="启动服务"></a>启动服务</h2><pre class=" language-t"><code class="language-t">启动
 ./bin/redis-server etc/redis.conf
 查看日志
 tail -f log-redis.log
 OK
 ./bin/redis-cli
-</code></pre><h2 id="基本命令"><a href="#基本命令" class="headerlink" title="基本命令"></a>基本命令</h2><pre><code>查看所有数据
+</code></pre>
+<h2 id="基本命令"><a href="#基本命令" class="headerlink" title="基本命令"></a>基本命令</h2><pre class=" language-redis"><code class="language-redis">查看所有数据
 keys *
 插入键值对
 set a b
 查看数据
 get a
-</code></pre>]]></content>
+</code></pre>
+]]></content>
       
         <categories>
             
@@ -563,8 +825,7 @@ var starNickName = &#39;${starNickname}&#39;
     <entry>
       <title><![CDATA[PWA初窥]]></title>
       <url>/PWA%E5%88%9D%E7%AA%A5.html</url>
-      <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h1 id="PWA"><a href="#PWA" class="headerlink" title="PWA"></a>PWA</h1><h2 id="介绍-Progressive-Web-Apps"><a href="#介绍-Progressive-Web-Apps" class="headerlink" title="介绍 Progressive Web Apps"></a>介绍 Progressive Web Apps</h2><p>当然，并不是所有的 Web 都叫做 PWA。根据 google 定义，PWA 应该具有一下特性：</p>
-<ul>
+      <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h1 id="Progressive-Web-Apps"><a href="#Progressive-Web-Apps" class="headerlink" title="Progressive Web Apps"></a>Progressive Web Apps</h1><h2 id="特性"><a href="#特性" class="headerlink" title="特性"></a>特性</h2><ul>
 <li>渐进式：能确保每个用户都能打开网页</li>
 <li>响应式：PC，手机，平板，不管哪种格式，网页格式都能完美适配</li>
 <li>离线应用：支持用户在没网的条件下也能打开网页，这里就需要 Service Worker 的帮助</li>
@@ -575,6 +836,34 @@ var starNickName = &#39;${starNickname}&#39;
 <li>可安装：能够将 Web 想 APP 一样添加到桌面</li>
 <li>可跳转：只要通过一个连接就可以跳转到你的 Web 页面。</li>
 </ul>
+<h2 id="配置文件"><a href="#配置文件" class="headerlink" title="配置文件"></a>配置文件</h2><pre class=" language-json"><code class="language-json">minifest.json 内容
+<span class="token punctuation">{</span>
+  <span class="token property">"short_name"</span><span class="token operator">:</span> <span class="token string">"pwa"</span><span class="token punctuation">,</span>
+  <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"pwa - demo"</span><span class="token punctuation">,</span> // 应用名称
+  <span class="token property">"icons"</span><span class="token operator">:</span> <span class="token punctuation">[</span> // 应用显示图标，根据容器大小适配
+    <span class="token punctuation">{</span>
+      <span class="token property">"src"</span><span class="token operator">:</span> <span class="token string">"assets/imgs/48.png"</span><span class="token punctuation">,</span>
+      <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"image/png"</span><span class="token punctuation">,</span>
+      <span class="token property">"sizes"</span><span class="token operator">:</span> <span class="token string">"48x48"</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">"src"</span><span class="token operator">:</span> <span class="token string">"assets/imgs/96.png"</span><span class="token punctuation">,</span>
+      <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"image/png"</span><span class="token punctuation">,</span>
+      <span class="token property">"sizes"</span><span class="token operator">:</span> <span class="token string">"96x96"</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">"src"</span><span class="token operator">:</span> <span class="token string">"assets/imgs/192.png"</span><span class="token punctuation">,</span>
+      <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"image/png"</span><span class="token punctuation">,</span>
+      <span class="token property">"sizes"</span><span class="token operator">:</span> <span class="token string">"192x192"</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token property">"background_color"</span><span class="token operator">:</span> <span class="token string">"#2196F3"</span><span class="token punctuation">,</span> // 刚打开页面时的背景
+  <span class="token property">"theme_color"</span><span class="token operator">:</span> <span class="token string">"#2196F3"</span><span class="token punctuation">,</span> // 主题颜色
+  <span class="token property">"display"</span><span class="token operator">:</span> <span class="token string">"standalone"</span><span class="token punctuation">,</span> //独立显示
+  <span class="token property">"start_url"</span><span class="token operator">:</span> <span class="token string">"index.html?launcher=true"</span> // 启动的页面
+<span class="token punctuation">}</span>
+</code></pre>
+<p>待续…</p>
 ]]></content>
       
         <categories>
@@ -694,36 +983,37 @@ usr/local/nginx/sbin/nginx   -v
     <entry>
       <title><![CDATA[vscode 配置插件推荐]]></title>
       <url>/vscode-%E9%85%8D%E7%BD%AE%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90.html</url>
-      <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h2 id="vscode-配置"><a href="#vscode-配置" class="headerlink" title="vscode 配置"></a>vscode 配置</h2><p></p>
-<h3 id="插件"><a href="#插件" class="headerlink" title="插件"></a>插件</h3><h4 id="auto-Open-Markdown"><a href="#auto-Open-Markdown" class="headerlink" title="auto-Open Markdown"></a>auto-Open Markdown</h4><p>markdown 预览插件</p>
-<h4 id="beautify"><a href="#beautify" class="headerlink" title="beautify"></a>beautify</h4><p>让代码更符合规范</p>
-<h4 id="Bracket-Pair-Colorizer"><a href="#Bracket-Pair-Colorizer" class="headerlink" title="Bracket Pair Colorizer"></a>Bracket Pair Colorizer</h4><p>括号上色插件，神器推荐</p>
-<h4 id="vscode-ext-color-highlight"><a href="#vscode-ext-color-highlight" class="headerlink" title="vscode-ext-color-highlight"></a>vscode-ext-color-highlight</h4><p>颜色上色插件</p>
-<h4 id="color-picker"><a href="#color-picker" class="headerlink" title="color-picker"></a>color-picker</h4><p>取色插件</p>
-<h4 id="cssrem"><a href="#cssrem" class="headerlink" title="cssrem"></a>cssrem</h4><p>rem转换工具</p>
-<h4 id="Debugger-for-Chrome"><a href="#Debugger-for-Chrome" class="headerlink" title="Debugger for Chrome"></a>Debugger for Chrome</h4><p>debugger插件，正在学怎么用</p>
-<h4 id="ESlint"><a href="#ESlint" class="headerlink" title="ESlint"></a>ESlint</h4><p>代码规范插件</p>
-<h4 id="file-icons"><a href="#file-icons" class="headerlink" title="file-icons"></a>file-icons</h4><p>图标插件</p>
-<h4 id="git-History"><a href="#git-History" class="headerlink" title="git History"></a>git History</h4><p>查看历史修改记录插件</p>
-<h4 id="hopscotch"><a href="#hopscotch" class="headerlink" title="hopscotch"></a>hopscotch</h4><p>可爱的代码颜色风格</p>
-<h4 id="html-css-support"><a href="#html-css-support" class="headerlink" title="html css support"></a>html css support</h4><p>应该改支持代码提示插件吧</p>
-<h4 id="markdownlint"><a href="#markdownlint" class="headerlink" title="markdownlint"></a>markdownlint</h4><p>markdown 语法提示插件</p>
-<h4 id="path-autocomplete"><a href="#path-autocomplete" class="headerlink" title="path autocomplete"></a>path autocomplete</h4><p>路径补全插件</p>
-<h4 id="react-native-tools"><a href="#react-native-tools" class="headerlink" title="react native tools"></a>react native tools</h4><p>暂时没用上</p>
-<h4 id="react-native"><a href="#react-native" class="headerlink" title="react-native"></a>react-native</h4><p>也没用上</p>
-<h4 id="settings-sync"><a href="#settings-sync" class="headerlink" title="settings sync"></a>settings sync</h4><p>插件备份工具，貌似是神器，目前没用过</p>
-<h4 id="background"><a href="#background" class="headerlink" title="background"></a>background</h4><p>一款美化插件配置如下：</p>
-<pre><code>&quot;background.useDefault&quot;: false,
-    &quot;background.enabled&quot;: true,
-    &quot;background.customImages&quot;: [
-        &quot;file:///Users/mac/Desktop/improve/1.jpg&quot;
-    ],
-    &quot;background.style&quot;: {
-        &quot;opacity&quot;: 0.1,
-        &quot;width&quot;: &quot;1600px&quot;,
-        &quot;height&quot;: &quot;1150px&quot;
-    }
-</code></pre><blockquote>
+      <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h1 id="vscode-配置"><a href="#vscode-配置" class="headerlink" title="vscode 配置"></a>vscode 配置</h1><p></p>
+<h2 id="auto-Open-Markdown"><a href="#auto-Open-Markdown" class="headerlink" title="auto-Open Markdown"></a>auto-Open Markdown</h2><p>markdown 预览插件</p>
+<h2 id="beautify"><a href="#beautify" class="headerlink" title="beautify"></a>beautify</h2><p>让代码更符合规范</p>
+<h2 id="Bracket-Pair-Colorizer"><a href="#Bracket-Pair-Colorizer" class="headerlink" title="Bracket Pair Colorizer"></a>Bracket Pair Colorizer</h2><p>括号上色插件，神器推荐</p>
+<h2 id="vscode-ext-color-highlight"><a href="#vscode-ext-color-highlight" class="headerlink" title="vscode-ext-color-highlight"></a>vscode-ext-color-highlight</h2><p>颜色上色插件</p>
+<h2 id="color-picker"><a href="#color-picker" class="headerlink" title="color-picker"></a>color-picker</h2><p>取色插件</p>
+<h2 id="cssrem"><a href="#cssrem" class="headerlink" title="cssrem"></a>cssrem</h2><p>rem转换工具</p>
+<h2 id="Debugger-for-Chrome"><a href="#Debugger-for-Chrome" class="headerlink" title="Debugger for Chrome"></a>Debugger for Chrome</h2><p>debugger插件，正在学怎么用</p>
+<h2 id="ESlint"><a href="#ESlint" class="headerlink" title="ESlint"></a>ESlint</h2><p>代码规范插件</p>
+<h2 id="file-icons"><a href="#file-icons" class="headerlink" title="file-icons"></a>file-icons</h2><p>图标插件</p>
+<h2 id="git-History"><a href="#git-History" class="headerlink" title="git History"></a>git History</h2><p>查看历史修改记录插件</p>
+<h2 id="hopscotch"><a href="#hopscotch" class="headerlink" title="hopscotch"></a>hopscotch</h2><p>可爱的代码颜色风格</p>
+<h2 id="html-css-support"><a href="#html-css-support" class="headerlink" title="html css support"></a>html css support</h2><p>应该改支持代码提示插件吧</p>
+<h2 id="markdownlint"><a href="#markdownlint" class="headerlink" title="markdownlint"></a>markdownlint</h2><p>markdown 语法提示插件</p>
+<h2 id="path-autocomplete"><a href="#path-autocomplete" class="headerlink" title="path autocomplete"></a>path autocomplete</h2><p>路径补全插件</p>
+<h2 id="react-native-tools"><a href="#react-native-tools" class="headerlink" title="react native tools"></a>react native tools</h2><p>暂时没用上</p>
+<h2 id="react-native"><a href="#react-native" class="headerlink" title="react-native"></a>react-native</h2><p>也没用上</p>
+<h2 id="settings-sync"><a href="#settings-sync" class="headerlink" title="settings sync"></a>settings sync</h2><p>插件备份工具，神器</p>
+<h2 id="background"><a href="#background" class="headerlink" title="background"></a>background</h2><p>一款美化插件配置如下：</p>
+<pre class=" language-js"><code class="language-js"><span class="token string">"background.useDefault"</span><span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    <span class="token string">"background.enabled"</span><span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token string">"background.customImages"</span><span class="token punctuation">:</span> <span class="token punctuation">[</span>
+        <span class="token string">"file:///Users/mac/Desktop/improve/1.jpg"</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token string">"background.style"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        <span class="token string">"opacity"</span><span class="token punctuation">:</span> <span class="token number">0.1</span><span class="token punctuation">,</span>
+        <span class="token string">"width"</span><span class="token punctuation">:</span> <span class="token string">"1600px"</span><span class="token punctuation">,</span>
+        <span class="token string">"height"</span><span class="token punctuation">:</span> <span class="token string">"1150px"</span>
+    <span class="token punctuation">}</span>
+</code></pre>
+<blockquote>
 <p>ps: 超级超级吃 CPU 慎用！！</p>
 </blockquote>
 ]]></content>
@@ -2499,31 +2789,6 @@ body {
     </entry>
     
     <entry>
-      <title><![CDATA[正则表达式]]></title>
-      <url>/zzbds.html</url>
-      <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h3 id="正则的介绍"><a href="#正则的介绍" class="headerlink" title="正则的介绍"></a>正则的介绍</h3><pre><code>正则表达式(Regular Expression)是一种文本模式，包括普通字符（例如，a 到 z 之间的字母）和特殊字符（称为&quot;元字符&quot;）。
-正则表达式使用单个字符串来描述、匹配一系列匹配某个句法规则的字符串。
-正则表达式是烦琐的，但它是强大的，学会之后的应用会让你除了提高效率外，会给你带来绝对的成就感。只要认真阅读本教程，加上应用的时候进行一定的参考，掌握正则表达式不是问题。
-许多程序设计语言都支持利用正则表达式进行字符串操作。
-</code></pre><p>### </p>
-]]></content>
-      
-        <categories>
-            
-            <category> JS </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> 正则 </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
       <title><![CDATA[div,section,article]]></title>
       <url>/div-section-article.html</url>
       <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h2 id="div"><a href="#div" class="headerlink" title="div"></a>div</h2><p>div在html早期版本就支持了，section和article是html5提出的两个语义化标签。如果只是针对一个块内容做样式化，三者并无区别。</p>
@@ -2927,6 +3192,45 @@ $ hexo deploy
     </entry>
     
     <entry>
+      <title><![CDATA[vuex 使用技巧]]></title>
+      <url>/vuex-%E6%A8%A1%E5%9D%97%E4%BB%8B%E7%BB%8D.html</url>
+      <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h2 id="Action"><a href="#Action" class="headerlink" title="Action"></a>Action</h2><p>提供方法和API请求,类似于mutation</p>
+<blockquote>
+<p>mutation  修改 state 只能是同步的</p>
+<ul>
+<li>action 充满了各种异步 api<pre><code>actions: {
+  increment (context) {
+      context.commit(&#39;increment&#39;)
+ }
+}
+另一种写法
+increment({commit}) {
+  commit(&#39;increment&#39;)
+}
+</code></pre></li>
+</ul>
+</blockquote>
+<h2 id="分发-Action"><a href="#分发-Action" class="headerlink" title="分发 Action"></a>分发 Action</h2><blockquote>
+<p>store.dispatch(‘increment’)</p>
+</blockquote>
+]]></content>
+      
+        <categories>
+            
+            <category> vue </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> vuex </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[vue高仿qq音乐官网]]></title>
       <url>/vue%E9%AB%98%E4%BB%BFqq%E9%9F%B3%E4%B9%90%E5%AE%98%E7%BD%91.html</url>
       <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>一直想做一个vue项目 然后呢 我就做了</p>
@@ -3036,45 +3340,6 @@ npm run start
             <tag> vuex </tag>
             
             <tag> vue-router </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[vuex 使用技巧]]></title>
-      <url>/vuex-%E6%A8%A1%E5%9D%97%E4%BB%8B%E7%BB%8D.html</url>
-      <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h2 id="Action"><a href="#Action" class="headerlink" title="Action"></a>Action</h2><p>提供方法和API请求,类似于mutation</p>
-<blockquote>
-<p>mutation  修改 state 只能是同步的</p>
-<ul>
-<li>action 充满了各种异步 api<pre><code>actions: {
-  increment (context) {
-      context.commit(&#39;increment&#39;)
- }
-}
-另一种写法
-increment({commit}) {
-  commit(&#39;increment&#39;)
-}
-</code></pre></li>
-</ul>
-</blockquote>
-<h2 id="分发-Action"><a href="#分发-Action" class="headerlink" title="分发 Action"></a>分发 Action</h2><blockquote>
-<p>store.dispatch(‘increment’)</p>
-</blockquote>
-]]></content>
-      
-        <categories>
-            
-            <category> vue </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> vuex </tag>
             
         </tags>
         
@@ -3715,6 +3980,12 @@ layout: tags
     </entry>
     
     <entry>
+      <title><![CDATA[tags]]></title>
+      <url>/tags/index.html</url>
+      <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script>]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[gallery]]></title>
       <url>/gallery/index.html</url>
       <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script>]]></content>
@@ -3723,12 +3994,6 @@ layout: tags
     <entry>
       <title><![CDATA[links]]></title>
       <url>/links/index.html</url>
-      <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script>]]></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[tags]]></title>
-      <url>/tags/index.html</url>
       <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script>]]></content>
     </entry>
     

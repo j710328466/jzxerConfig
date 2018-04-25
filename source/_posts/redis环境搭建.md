@@ -4,11 +4,15 @@ date: 2018-03-07 10:35:17
 tags: [redis]
 categories: 数据库
 ---
+# redis 环境搭建
+
 ## 下载
+
 [官方网站](https://redis.io/)
 
 ## 安装
-```
+
+```js
 解压
 tar zxvf redis-4.0.8.tar.gz
 移动文件夹
@@ -22,12 +26,14 @@ sudo make install
 ```
 
 ## 启动
-```
+
+```js
 redis-server
 ```
 
 ## 配置
-```
+
+```t
 新建目录
 sudo mkdir  redis-4.0.8/bin
 sudo mkdir  redis-4.0.8/etc
@@ -41,7 +47,8 @@ cp src/redis-server bin
 ```
 
 ## 修改redis.conf
-```
+
+```t
 #修改为守护模式
 daemonize yes
 #设置进程锁文件
@@ -81,7 +88,8 @@ appendfsync everysec
 ```
 
 ## 启动服务
-```
+
+```t
 启动
 ./bin/redis-server etc/redis.conf
 查看日志
@@ -91,7 +99,8 @@ OK
 ```
 
 ## 基本命令
-```
+
+```redis
 查看所有数据
 keys *
 插入键值对
@@ -99,4 +108,5 @@ keys *
 查看数据
 get a
 ```
+
 
