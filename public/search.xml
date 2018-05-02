@@ -3,6 +3,240 @@
   
     
     <entry>
+      <title><![CDATA[cookie和session]]></title>
+      <url>/cookie%E5%92%8Csession.html</url>
+      <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><h2 id="cookie"><a href="#cookie" class="headerlink" title="cookie"></a>cookie</h2><p>cookie 是 HTTP 协议的一部分，处理分为以下几步：</p>
+<ol>
+<li><p>服务器向客户端发送 cookie，一般为 name=value 形式。</p>
+</li>
+<li><p>浏览器将 cookie 储存。</p>
+</li>
+<li><p>每次请求浏览器都会将 cookie 发给服务器。</p>
+</li>
+</ol>
+<h3 id="cookie-的属性"><a href="#cookie-的属性" class="headerlink" title="cookie 的属性"></a>cookie 的属性</h3><pre class=" language-js"><code class="language-js">res<span class="token punctuation">.</span><span class="token function">cookie</span><span class="token punctuation">(</span><span class="token string">'isVisit'</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  <span class="token comment" spellcheck="true">// 储存的时间</span>
+  maxAge<span class="token punctuation">:</span> <span class="token number">10</span> <span class="token operator">*</span> <span class="token number">1000</span><span class="token punctuation">,</span>
+  <span class="token comment" spellcheck="true">// 为 true 时只在https中生效</span>
+  secure<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token comment" spellcheck="true">// 影响路径</span>
+  path<span class="token punctuation">:</span> <span class="token string">'localhost'</span><span class="token punctuation">,</span>
+  <span class="token comment" spellcheck="true">// 是否支持 js 读取，可以预防 XSS</span>
+  httpOnly<span class="token punctuation">:</span> <span class="token boolean">true</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre>
+<blockquote>
+<p>isVisit 是 key 值，1 是 value。</p>
+</blockquote>
+<h3 id="cookie-的弊端"><a href="#cookie-的弊端" class="headerlink" title="cookie 的弊端"></a>cookie 的弊端</h3><p>数据在客户端就可以被修改，数据很容易被伪造，而且数据太多会影响传输效率。</p>
+<h2 id="session"><a href="#session" class="headerlink" title="session"></a>session</h2><p>针对 cookie 的缺点，session 解决了这些问题，session 保存在服务端，它的运作是通过 session_id 进行，这个值一般存在客户端的 cookie 中。</p>
+<h3 id="session-属性"><a href="#session-属性" class="headerlink" title="session 属性"></a>session 属性</h3><pre class=" language-js"><code class="language-js">app<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span><span class="token function">sessionParser</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  name<span class="token punctuation">:</span> <span class="token string">'author'</span><span class="token punctuation">,</span>
+  <span class="token comment" spellcheck="true">// 储存位置: 默认 cookie</span>
+  <span class="token comment" spellcheck="true">// store: new redisStore(),</span>
+  <span class="token comment" spellcheck="true">// 编码字符串</span>
+  secret<span class="token punctuation">:</span> <span class="token string">'recommand 128 bytes random string'</span><span class="token punctuation">,</span>
+  cookie<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    maxAge<span class="token punctuation">:</span> <span class="token number">60</span> <span class="token operator">*</span> <span class="token number">1000</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token comment" spellcheck="true">//每次请求都重设一个cookie</span>
+  rolling<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+  resave<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token comment" spellcheck="true">// 是指无论有没有session cookie，每次请求都设置个session cookie ，默认给个标示为 connect.sid</span>
+  saveUninitialized<span class="token punctuation">:</span> <span class="token boolean">false</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre>
+<h3 id="signedCookie"><a href="#signedCookie" class="headerlink" title="signedCookie"></a>signedCookie</h3><p>就是签名，专业点就是 “信息摘要算法“，例如我有一些数据想存在 cookie 中，如何保证不被篡改？</p>
+<p>比如我们用 dotcom_user 字段设置了个值 jzxer， cookie值应该是：</p>
+<pre class=" language-json"><code class="language-json">> <span class="token punctuation">{</span> dotcom_user<span class="token operator">:</span> 'jzxer' <span class="token punctuation">}</span>
+</code></pre>
+<p>这样如果验证和更改，安全性都不是很高。</p>
+<p>我们可以这样处理，设置一个 secrit_string 和 dotcom_user 做个算法(不同的账户签名不同)</p>
+<blockquote>
+<p>sha1(secrit_string + dotcom_user) === ‘4850a42e3bc0d39c978770392cbd8dc2923e3d1d’</p>
+</blockquote>
+<p>然后把 cookie 变成这样：</p>
+<pre class=" language-json"><code class="language-json"><span class="token punctuation">{</span>
+  dotcom_user<span class="token operator">:</span> 'jzxer'<span class="token punctuation">,</span>
+  dotcom_user.sig<span class="token operator">:</span> '4850a42e3bc0d39c978770392cbd8dc2923e3d1d'
+<span class="token punctuation">}</span>
+</code></pre>
+<p>这样一来信息就无法伪造了，一旦更改了 cookie 中的值，就会和服务器的冲突，破解的成本也太高。</p>
+]]></content>
+      
+        <categories>
+            
+            <category> 本地储存 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> cookie </tag>
+            
+            <tag> session </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[线上部署：heroku]]></title>
+      <url>/%E7%BA%BF%E4%B8%8A%E9%83%A8%E7%BD%B2%EF%BC%9Aheroku.html</url>
+      <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><p>heroku 是一个自动部署工具，可以在代码发布后马上线上跑起来，对于一个刚入门的 node 新手有利于促进你的开发热情。</p>
+<h2 id="1-注册一个账号"><a href="#1-注册一个账号" class="headerlink" title="1. 注册一个账号"></a>1. 注册一个账号</h2><p><a href="https://www.heroku.com" target="_blank" rel="noopener">heroku</a></p>
+<blockquote>
+<p>注意邮箱项目可以填写阿里云邮箱，目前qq邮箱和163邮箱不支持注册。</p>
+</blockquote>
+<h2 id="2-配置文件：Procfile"><a href="#2-配置文件：Procfile" class="headerlink" title="2. 配置文件：Procfile"></a>2. 配置文件：Procfile</h2><p>给 heroku 指明入口文件，配置内容如下：</p>
+<pre class=" language-js"><code class="language-js">web<span class="token punctuation">:</span> node app<span class="token punctuation">.</span>js
+</code></pre>
+<h2 id="3-下载工具包"><a href="#3-下载工具包" class="headerlink" title="3. 下载工具包"></a>3. 下载工具包</h2><p><a href="https://devcenter.heroku.com/articles/getting-started-with-nodejs#set-up" target="_blank" rel="noopener">下载链接</a></p>
+<h2 id="4-登录账户"><a href="#4-登录账户" class="headerlink" title="4. 登录账户"></a>4. 登录账户</h2><pre class=" language-js"><code class="language-js">heroku login
+</code></pre>
+<h2 id="5-创建远程仓库"><a href="#5-创建远程仓库" class="headerlink" title="5. 创建远程仓库"></a>5. 创建远程仓库</h2><pre class=" language-js"><code class="language-js">heroku create
+</code></pre>
+<blockquote>
+<p>此时会给出一个仓库地址，留给下文用。</p>
+</blockquote>
+<h2 id="6-推送到远端"><a href="#6-推送到远端" class="headerlink" title="6. 推送到远端"></a>6. 推送到远端</h2><pre class=" language-js"><code class="language-js">git push <span class="token string">'给的仓库地址.git'</span> master
+</code></pre>
+<h2 id="7-测试项目"><a href="#7-测试项目" class="headerlink" title="7. 测试项目"></a>7. 测试项目</h2><p>输入以下命令打开推送的内容</p>
+<pre class=" language-js"><code class="language-js">heroku open
+</code></pre>
+<h2 id="8-插件"><a href="#8-插件" class="headerlink" title="8. 插件"></a>8. 插件</h2><p>heroku 有很多插件可供链接，</p>
+]]></content>
+      
+        <categories>
+            
+            <category> nodeJS </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> heroku </tag>
+            
+            <tag> 自动化 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[nginx配置和问题处理]]></title>
+      <url>/nginx%E9%85%8D%E7%BD%AE%E5%92%8C%E9%97%AE%E9%A2%98%E5%A4%84%E7%90%86.html</url>
+      <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h1 id="nginx-介绍"><a href="#nginx-介绍" class="headerlink" title="nginx 介绍"></a>nginx 介绍</h1><p>Nginx (“engine x”) 是一个高性能的 HTTP 和 反向代理服务器，也是一个 IMAP/POP3/SMTP 代理服务器。 Nginx 是由 Igor Sysoev 为俄罗斯访问量第二的 Rambler.ru 站点开发的，第一个公开版本0.1.0发布于2004年10月4日。其将源代码以类BSD许可证的形式发布，因它的稳定性、丰富的功能集、示例配置文件和低系统资源的消耗而闻名。</p>
+<p>尽管Node.JS的性能不错，但处理静态事务确实不是他的专长，如：gzip编码，静态文件，HTTP缓存，SSL处理，负载平衡和反向代理及多站点代理等，都可以通过nginx来完成，从而减小node.js的负载，并通过nginx强大的缓存来节省您网站的流量从而提高网站的加载速度。</p>
+<h2 id="查看-nginx-进程"><a href="#查看-nginx-进程" class="headerlink" title="查看 nginx 进程"></a>查看 nginx 进程</h2><pre class=" language-t"><code class="language-t">ps aux|grep nginx
+</code></pre>
+<h2 id="nginx-conf-配置"><a href="#nginx-conf-配置" class="headerlink" title="nginx.conf 配置"></a>nginx.conf 配置</h2><pre class=" language--t"><code class="language--t">server {
+                listen       3001;
+                server_name  localhost;
+
+                #charset koi8-r;
+
+                #access_log  logs/host.access.log  main;
+
+                location / {
+                        root   html;
+                        index  index.html index.htm;
+                }
+        }
+</code></pre>
+<blockquote>
+<p>大约 36 行的位置，端口号可以设置其他，最好不要用80，设置好之后重启。</p>
+</blockquote>
+<h2 id="nginx-问题总结"><a href="#nginx-问题总结" class="headerlink" title="nginx 问题总结"></a>nginx 问题总结</h2><h3 id="ubuntu-下卸载不干净"><a href="#ubuntu-下卸载不干净" class="headerlink" title="ubuntu 下卸载不干净"></a>ubuntu 下卸载不干净</h3><pre class=" language-t"><code class="language-t">sudo apt-get remove nginx nginx-common # 卸载删除除了配置文件以外的所有文件。
+
+sudo apt-get purge nginx nginx-common # 卸载所有东东，包括删除配置文件。
+
+sudo apt-get autoremove # 在上面命令结束后执行，主要是卸载删除Nginx的不再被使用的依赖包。
+
+sudo apt-get remove nginx-full nginx-common #卸载删除两个主要的包。
+
+sudo service nginx restart  #重启nginx
+</code></pre>
+]]></content>
+      
+        <categories>
+            
+            <category> 代理 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> nginx </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[nodeJS性能处理（一）]]></title>
+      <url>/nodeJS%E6%80%A7%E8%83%BD%E5%A4%84%E7%90%86%E4%B8%80.html</url>
+      <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><p>目前市面上有很多后台纯 node 的项目，但是用 node 做后端还是有一系列的问题，比如稳定性，安全性，抛开这两块还要优化性能，如何提高用户的访问速度，在网络不佳（2G）的情况下如何能正常访问项目，都是一系列需要考虑的问题。本章内容针对安全性给出相关技巧。</p>
+<h2 id="1-不要用-Eval"><a href="#1-不要用-Eval" class="headerlink" title="1. 不要用 Eval"></a>1. 不要用 Eval</h2><p>eval 的作用是将用户输入的字符串转化为可执行的代码，类似欺骗的效果，这样的坏处是会受到 XSS 攻击。</p>
+<h2 id="2-使用-strict-模式"><a href="#2-使用-strict-模式" class="headerlink" title="2. 使用 strict 模式"></a>2. 使用 strict 模式</h2><p>严格模式下的变量声明会抛出一些隐藏的错误。</p>
+<pre class=" language-js"><code class="language-js"><span class="token string">'use strict'</span>
+<span class="token keyword">var</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span>
+  a<span class="token punctuation">:</span> <span class="token string">'1'</span><span class="token punctuation">,</span>
+  a<span class="token punctuation">:</span> <span class="token string">'2'</span>
+<span class="token punctuation">}</span>
+<span class="token comment" spellcheck="true">// 抛出错误 syntax error</span>
+</code></pre>
+<h2 id="3-使用-Eslint-测试代码规范"><a href="#3-使用-Eslint-测试代码规范" class="headerlink" title="3. 使用 Eslint 测试代码规范"></a>3. 使用 Eslint 测试代码规范</h2><p>可以使我们早期捕获一些 bug，并及时修正。</p>
+<h2 id="4-全面测试"><a href="#4-全面测试" class="headerlink" title="4. 全面测试"></a>4. 全面测试</h2><p>测试很重要，不但单元要测试，还要全面测试，例如用 mocha 测试代码覆盖率。</p>
+<h2 id="5-Unix-下不要直接使用-sudo-node-app-js"><a href="#5-Unix-下不要直接使用-sudo-node-app-js" class="headerlink" title="5. Unix 下不要直接使用 sudo node app.js"></a>5. Unix 下不要直接使用 sudo node app.js</h2><p>这样如果产生错误，会让整个系统宕机，可以使用 nginx 反向代理。</p>
+<h2 id="6-避免-shell-command-注入"><a href="#6-避免-shell-command-注入" class="headerlink" title="6. 避免 shell command 注入"></a>6. 避免 shell command 注入</h2><pre class=" language--t"><code class="language--t">child_process.exec('ls', function (err, data) {
+    console.log(data);
+});
+</code></pre>
+<p>上面的 child_process.exec 调用的是 /bin/sh ,也就是执行了一个解释器。</p>
+<blockquote>
+<p>为了避免这个问题，我们可以使用：child_process.execFile。</p>
+</blockquote>
+<h2 id="7-临时文件"><a href="#7-临时文件" class="headerlink" title="7. 临时文件"></a>7. 临时文件</h2><p>创建文件时，处理上传的文件要注意，这些文件可能会吃掉你的磁盘所有空间。</p>
+<blockquote>
+<p>使用 Streams。</p>
+</blockquote>
+<h2 id="8-加密-Web-应用"><a href="#8-加密-Web-应用" class="headerlink" title="8. 加密 Web 应用"></a>8. 加密 Web 应用</h2><p>用 https 代替 http，请求的过程可以添加签名头。</p>
+<h2 id="9-Reflected-Cross-Site-Scripting"><a href="#9-Reflected-Cross-Site-Scripting" class="headerlink" title="9. Reflected Cross Site Scripting"></a>9. Reflected Cross Site Scripting</h2><p>也就是跨站脚本攻击，就是但用户发送一段数据，如果在未做任何处理的情况下直接插入 DOM，这可能会出现安全问题，例如：</p>
+<pre class=" language-js"><code class="language-js"><span class="token comment" spellcheck="true">//用户输入的数据中带脚本，如果不做处理，会被执行。</span>
+Im human <span class="token operator">&lt;</span>script<span class="token operator">></span><span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">'I‘m hacker'</span><span class="token punctuation">)</span><span class="token operator">&lt;</span>script<span class="token operator">></span>
+</code></pre>
+<blockquote>
+<p>处理方式：1. 对插入的数据进行验证，除去 HTML。</p>
+</blockquote>
+<h2 id="10-看好你的-cookie"><a href="#10-看好你的-cookie" class="headerlink" title="10. 看好你的 cookie"></a>10. 看好你的 cookie</h2><p>默认情况下，cookie 可以通过 js 在同一个域中读取，这就有可能会被跨站点脚本攻击，而且可能被第三方库读取。为了处理这种情况，我们可以在 cookies 上使用 HTTPOnly，这个标签可以让 js 无法读取。</p>
+<h2 id="11-内容安全策略（CSP）"><a href="#11-内容安全策略（CSP）" class="headerlink" title="11. 内容安全策略（CSP）"></a>11. 内容安全策略（CSP）</h2><p>附加的安全层，可以检测和缓解某类攻击，例如：XSS、数据注入。启用方法如下：</p>
+<pre class=" language--t"><code class="language--t">Content-Security-Policy: default-src 'self' *.mydomain.com
+</code></pre>
+<h2 id="12-Cross-Site-Request-Forgery"><a href="#12-Cross-Site-Request-Forgery" class="headerlink" title="12. Cross-Site Request Forgery"></a>12. Cross-Site Request Forgery</h2><p>跨站请求伪造是一种迫使终端用户在他目前已验证授权的Web应用程序中执行其它的actions。node 社区已实现，可以使用同步令牌模式处理。</p>
+]]></content>
+      
+        <categories>
+            
+            <category> nodeJS </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 性能 </tag>
+            
+            <tag> 安全 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[node连接阿里云redis]]></title>
       <url>/node%E8%BF%9E%E6%8E%A5%E9%98%BF%E9%87%8C%E4%BA%91redis.html</url>
       <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h1 id="node-连接云-redis"><a href="#node-连接云-redis" class="headerlink" title="node 连接云 redis"></a>node 连接云 redis</h1><h2 id="1-要求"><a href="#1-要求" class="headerlink" title="1. 要求"></a>1. 要求</h2><ol>
@@ -3192,45 +3426,6 @@ $ hexo deploy
     </entry>
     
     <entry>
-      <title><![CDATA[vuex 使用技巧]]></title>
-      <url>/vuex-%E6%A8%A1%E5%9D%97%E4%BB%8B%E7%BB%8D.html</url>
-      <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h2 id="Action"><a href="#Action" class="headerlink" title="Action"></a>Action</h2><p>提供方法和API请求,类似于mutation</p>
-<blockquote>
-<p>mutation  修改 state 只能是同步的</p>
-<ul>
-<li>action 充满了各种异步 api<pre><code>actions: {
-  increment (context) {
-      context.commit(&#39;increment&#39;)
- }
-}
-另一种写法
-increment({commit}) {
-  commit(&#39;increment&#39;)
-}
-</code></pre></li>
-</ul>
-</blockquote>
-<h2 id="分发-Action"><a href="#分发-Action" class="headerlink" title="分发 Action"></a>分发 Action</h2><blockquote>
-<p>store.dispatch(‘increment’)</p>
-</blockquote>
-]]></content>
-      
-        <categories>
-            
-            <category> vue </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> vuex </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
       <title><![CDATA[vue高仿qq音乐官网]]></title>
       <url>/vue%E9%AB%98%E4%BB%BFqq%E9%9F%B3%E4%B9%90%E5%AE%98%E7%BD%91.html</url>
       <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>一直想做一个vue项目 然后呢 我就做了</p>
@@ -3340,6 +3535,45 @@ npm run start
             <tag> vuex </tag>
             
             <tag> vue-router </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[vuex 使用技巧]]></title>
+      <url>/vuex-%E6%A8%A1%E5%9D%97%E4%BB%8B%E7%BB%8D.html</url>
+      <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h2 id="Action"><a href="#Action" class="headerlink" title="Action"></a>Action</h2><p>提供方法和API请求,类似于mutation</p>
+<blockquote>
+<p>mutation  修改 state 只能是同步的</p>
+<ul>
+<li>action 充满了各种异步 api<pre><code>actions: {
+  increment (context) {
+      context.commit(&#39;increment&#39;)
+ }
+}
+另一种写法
+increment({commit}) {
+  commit(&#39;increment&#39;)
+}
+</code></pre></li>
+</ul>
+</blockquote>
+<h2 id="分发-Action"><a href="#分发-Action" class="headerlink" title="分发 Action"></a>分发 Action</h2><blockquote>
+<p>store.dispatch(‘increment’)</p>
+</blockquote>
+]]></content>
+      
+        <categories>
+            
+            <category> vue </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> vuex </tag>
             
         </tags>
         
@@ -3980,8 +4214,8 @@ layout: tags
     </entry>
     
     <entry>
-      <title><![CDATA[tags]]></title>
-      <url>/tags/index.html</url>
+      <title><![CDATA[links]]></title>
+      <url>/links/index.html</url>
       <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script>]]></content>
     </entry>
     
@@ -3992,8 +4226,8 @@ layout: tags
     </entry>
     
     <entry>
-      <title><![CDATA[links]]></title>
-      <url>/links/index.html</url>
+      <title><![CDATA[tags]]></title>
+      <url>/tags/index.html</url>
       <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script>]]></content>
     </entry>
     
