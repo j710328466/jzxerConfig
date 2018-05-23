@@ -1,9 +1,7 @@
-#file
-public
-node_modules
-yarn.lock
-dist
-footprint
-
-# doc
-.deploy_git
+.DS_Store
+Thumbs.db
+db.json
+*.log
+node_modules/
+public/
+.deploy*/
