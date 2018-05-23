@@ -1096,9 +1096,9 @@
       
         <tags>
             
-            <tag> vuex </tag>
-            
             <tag> vue </tag>
+            
+            <tag> vuex </tag>
             
             <tag> vue-router </tag>
             
@@ -1310,7 +1310,7 @@
       <title>个人简介</title>
       <link href="/about/index.html"/>
       <url>/about/index.html</url>
-      <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>姓名：江志雄<br>性别：你猜<br>专业：软件工程</p><h3 id="工作经历"><a href="#工作经历" class="headerlink" title="工作经历"></a>工作经历</h3><ul><li><p>南昌·午逅科技</p><p>  任务职责：完成移动端 H5 页面开发</p><p>  工作目的：还原设计师给的设计稿，调整兼容性问题</p><blockquote><p>2017.06 – 2017.09</p></blockquote></li><li><p>杭州·机蜜<br>  任务职责：前端业务，公共工具开发</p><blockquote><p>2017.10 – 至今</p></blockquote></li></ul><h3 id="个人作品"><a href="#个人作品" class="headerlink" title="个人作品"></a>个人作品</h3><ul><li><a href="https://github.com/j710328466/vue-qqmusic" target="_blank" rel="noopener">vue仿QQ音乐</a></li><li><a href="http://jzxer.cn/water/" target="_blank" rel="noopener">水灵</a></li><li>微信小程序：蛋糕定制demo（未完成。。。）</li></ul><h3 id="技术栈"><a href="#技术栈" class="headerlink" title="技术栈"></a>技术栈</h3><p>前端</p><ul><li>Vuejs React </li><li>JavaScript(ES5 ES6) </li><li>HTML5 CSS/CSS3  </li><li>SASS(SCSS)</li><li>熟悉各种框架（bootstrap, semantic-ui, mint-ui, element-ui等)</li></ul><p>后端</p><ul><li>Nodejs(ExpressJS,KoaJS)</li></ul><p>数据库</p><ul><li>MongoDB</li></ul><p>自动化构建</p><ul><li>webpack gulp parcel</li></ul><p>版本管理</p><ul><li>GIT SVN</li></ul><p>目前学习计划</p><blockquote><p>基于vue的SSR框架nuxt<br>nodeJS / koa2</p></blockquote><h3 id="兴趣爱好"><a href="#兴趣爱好" class="headerlink" title="兴趣爱好"></a>兴趣爱好</h3><blockquote><p>看书<br>健身<br>摇滚乐 (靠 “谱”)</p></blockquote><h3 id="自我介绍"><a href="#自我介绍" class="headerlink" title="自我介绍"></a>自我介绍</h3><p>本⼈是软件⼯程学⽣. 喜欢折腾爱好音乐沉迷前端能独立思考解决问题性格貌似还不错 (读完很累吧~)</p><ul><li>tag <blockquote><p>行动派: 认准一件事就会全力以赴,不达目的不罢休<br>艺术派：前端工程师能将艺术与编程完美结合的一种职业, so, 热爱它吧</p></blockquote><h3 id="联系方式"><a href="#联系方式" class="headerlink" title="联系方式"></a>联系方式</h3><blockquote><p>qq: 710328466<br>tel: 15216030330(中午和晚上一般都关机，我要睡觉…)<br><a href="http://blog.jzxer.cn/" target="_blank" rel="noopener">blog</a></p></blockquote></li></ul>        <div id="aplayer-JmHBzUsY" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">            <pre class="aplayer-lrc-content"></pre>        </div>        <script>          var ap = new APlayer({            element: document.getElementById("aplayer-JmHBzUsY"),            narrow: false,            autoplay: true,            showlrc: false,            music: {              title: "初学者",              author: "薛之谦",              url: "http://orjedzer5.bkt.clouddn.com/%E5%88%9D%E5%AD%A6%E8%80%85.mp3",              pic: "",              lrc: ""            }          });          window.aplayers || (window.aplayers = []);          window.aplayers.push(ap);        </script>]]></content>
+      <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>姓名：江志雄<br>性别：你猜<br>专业：软件工程</p><h3 id="工作经历"><a href="#工作经历" class="headerlink" title="工作经历"></a>工作经历</h3><ul><li><p>南昌·午逅科技</p><p>  任务职责：完成移动端 H5 页面开发</p><p>  工作目的：还原设计师给的设计稿，调整兼容性问题</p><blockquote><p>2017.06 – 2017.09</p></blockquote></li><li><p>杭州·机蜜<br>  任务职责：前端业务，公共工具开发</p><blockquote><p>2017.10 – 至今</p></blockquote></li></ul><h3 id="个人作品"><a href="#个人作品" class="headerlink" title="个人作品"></a>个人作品</h3><ul><li><a href="https://github.com/j710328466/vue-qqmusic" target="_blank" rel="noopener">vue仿QQ音乐</a></li><li><a href="http://jzxer.cn/water/" target="_blank" rel="noopener">水灵</a></li><li>微信小程序：蛋糕定制demo（未完成。。。）</li></ul><h3 id="技术栈"><a href="#技术栈" class="headerlink" title="技术栈"></a>技术栈</h3><p>前端</p><ul><li>Vuejs React </li><li>JavaScript(ES5 ES6) </li><li>HTML5 CSS/CSS3  </li><li>SASS(SCSS)</li><li>熟悉各种框架（bootstrap, semantic-ui, mint-ui, element-ui等)</li></ul><p>后端</p><ul><li>Nodejs(ExpressJS,KoaJS)</li></ul><p>数据库</p><ul><li>MongoDB</li></ul><p>自动化构建</p><ul><li>webpack gulp parcel</li></ul><p>版本管理</p><ul><li>GIT SVN</li></ul><p>目前学习计划</p><blockquote><p>基于vue的SSR框架nuxt<br>nodeJS / koa2</p></blockquote><h3 id="兴趣爱好"><a href="#兴趣爱好" class="headerlink" title="兴趣爱好"></a>兴趣爱好</h3><blockquote><p>看书<br>健身<br>摇滚乐 (靠 “谱”)</p></blockquote><h3 id="自我介绍"><a href="#自我介绍" class="headerlink" title="自我介绍"></a>自我介绍</h3><p>本⼈是软件⼯程学⽣. 喜欢折腾爱好音乐沉迷前端能独立思考解决问题性格貌似还不错 (读完很累吧~)</p><ul><li>tag <blockquote><p>行动派: 认准一件事就会全力以赴,不达目的不罢休<br>艺术派：前端工程师能将艺术与编程完美结合的一种职业, so, 热爱它吧</p></blockquote><h3 id="联系方式"><a href="#联系方式" class="headerlink" title="联系方式"></a>联系方式</h3><blockquote><p>qq: 710328466<br>tel: 15216030330(中午和晚上一般都关机，我要睡觉…)<br><a href="http://blog.jzxer.cn/" target="_blank" rel="noopener">blog</a></p></blockquote></li></ul>        <div id="aplayer-dfvbDxnB" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">            <pre class="aplayer-lrc-content"></pre>        </div>        <script>          var ap = new APlayer({            element: document.getElementById("aplayer-dfvbDxnB"),            narrow: false,            autoplay: true,            showlrc: false,            music: {              title: "初学者",              author: "薛之谦",              url: "http://orjedzer5.bkt.clouddn.com/%E5%88%9D%E5%AD%A6%E8%80%85.mp3",              pic: "",              lrc: ""            }          });          window.aplayers || (window.aplayers = []);          window.aplayers.push(ap);        </script>]]></content>
     </entry>
     
     <entry>
@@ -1328,16 +1328,16 @@
     </entry>
     
     <entry>
-      <title>tags</title>
-      <link href="/tags/index.html"/>
-      <url>/tags/index.html</url>
+      <title>timeline</title>
+      <link href="/timeline/index.html"/>
+      <url>/timeline/index.html</url>
       <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
     </entry>
     
     <entry>
-      <title>timeline</title>
-      <link href="/timeline/index.html"/>
-      <url>/timeline/index.html</url>
+      <title>tags</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
       <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
     </entry>
     
