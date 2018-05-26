@@ -6,7 +6,8 @@ categories: 服务器
 ---
 
 ## ubuntu 使用方法
-```
+
+```json
 首先输入fdisk -l命令后,发现/dev/vdb，说明实例含有数据盘，需要挂载
 
 运行fdisk /dev/vdb，对数据盘进行分区，依次输入n,p,1，然后按两次回车，最后输入wq，进行分区
@@ -21,14 +22,11 @@ categories: 服务器
 
 运行mount /dev/vdb1 /mnt 挂载新分区，然后执行df -h 查看分区，如果出现数据盘信息，说明挂载成功，就可以开始使用新分区
 
-作者：wuyumumu
-链接：https://www.jianshu.com/p/8fb738cd8672
-來源：简书
-著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
 ```
 
 ## nodejs 安装
-```
+
+```js
 sudo apt-get update
 
 sudo apt-get install nodejs
@@ -38,8 +36,10 @@ sudo apt-get install npm
 > 特别注意：Ubuntu中可执行的名字是 nodejs 而不是node
 
 ### 额外工具 n
+
 一款管理nodejs版本的工具
-```
+
+```js
 升级node.js到最新稳定版
 
 n stable
@@ -50,7 +50,8 @@ n latest
 ```
 
 ## 安装Nginx
-```
+
+```js
 安装gcc g++的依赖库
 apt-get install build-essential
 apt-get install libtool
@@ -76,7 +77,7 @@ tar -zxvf nginx-1.13.4.tar.gz
 cd nginx-1.13.4
 
 #配置：
-./configure --prefix=/usr/local/nginx 
+./configure --prefix=/usr/local/nginx
 
 #编辑nginx：
 make
@@ -89,7 +90,7 @@ sudo make install
 sudo /usr/local/nginx/sbin/nginx -c /usr/local/nginx/conf/nginx.conf
 
 #查看nginx进程：
-ps -ef|grep nginx 
+ps -ef|grep nginx
 
 #查看nginx版本(根目录下执行)
 usr/local/nginx/sbin/nginx   -v

@@ -1,66 +1,72 @@
 ---
 title: 个人简介
 date: 2017-06-15 19:12:44
+comment: false
 ---
 
 姓名：江志雄
-性别：你猜
+英文名：Feax
+性别：你看我头像女的吗？
 专业：软件工程
 
-### 工作经历
+## 工作经历
+
 * 南昌·午逅科技
-
-    任务职责：完成移动端 H5 页面开发
-
-    工作目的：还原设计师给的设计稿，调整兼容性问题
-    > 2017.06 -- 2017.09
+    任务职责：H5 活动模块。
+> 2017.06 -- 2017.09
 
 * 杭州·机蜜
-    任务职责：前端业务，公共工具开发
-    > 2017.10 -- 至今
+    任务职责：各大平台模块、活动模块、协议模块、公共组件模块...
+> 2017.10 -- 至今
 
-### 个人作品
-* [vue仿QQ音乐](https://github.com/j710328466/vue-qqmusic)
-* [水灵](http://jzxer.cn/water/)
-* 微信小程序：蛋糕定制demo（未完成。。。）
+## 技术栈
 
-### 技术栈
-前端
-* Vuejs React 
-* JavaScript(ES5 ES6) 
-* HTML5 CSS/CSS3  
-* SASS(SCSS)
-* 熟悉各种框架（bootstrap, semantic-ui, mint-ui, element-ui等)
+前端技术框架很多，取其精华，抛弃糟蹋，该处只介绍我目前比较青睐的，并且以后会深入研究的个人技术方案。
 
-后端
-* Nodejs(ExpressJS,KoaJS)
+### 前端
 
-数据库
+* Vue.Js React.Js
+* JavaScript(ES5 ES6)
+* HTML5 CSS/CSS3
+* Stylus
+
+### 后端
+
+* Nodejs(Expres.Js、Koa2.Js)
+
+### 数据库
+
 * MongoDB
+* Redis
 
-自动化构建
-* webpack gulp parcel
+### 自动化工具
 
-版本管理
-* GIT SVN
+* webpack
+* gulp
+* parcel
 
-目前学习计划
-> 基于vue的SSR框架nuxt
-> nodeJS / koa2
+### 版本管理
 
-### 兴趣爱好
-> 看书 
+* GIT
+
+### 代码规范
+
+* ESlint
+
+## 兴趣爱好
+
+> 看书
 > 健身
-> 摇滚乐 (靠 “谱”)
+> 摇滚
 
-### 自我介绍
-本⼈是软件⼯程学⽣. 喜欢折腾爱好音乐沉迷前端能独立思考解决问题性格貌似还不错 (读完很累吧~)
-* tag 
-> 行动派: 认准一件事就会全力以赴,不达目的不罢休
-> 艺术派：前端工程师能将艺术与编程完美结合的一种职业, so, 热爱它吧
-### 联系方式
-> qq: 710328466
-> tel: 15216030330(中午和晚上一般都关机，我要睡觉...)
-> [blog](http://blog.jzxer.cn/)
+## 自我介绍
 
-{% aplayer "初学者" "薛之谦" "http://orjedzer5.bkt.clouddn.com/%E5%88%9D%E5%AD%A6%E8%80%85.mp3" "autoplay" %}
+介绍这东西大都是虚的，你需要的是和我面对面的交流和长时间的相处。
+
+## 未来的目标
+
+* 专注于自己喜欢的领域，然后精通它。
+* 做一个能影响别人的人。
+* 世界这么大，我要亲自去看看。
+
+{% aplayer "日落大道" "梁博" "http://orjedzer5.bkt.clouddn.com/blog/song/%E6%A2%81%E5%8D%9A%20%E6%97%A5%E8%90%BD%E5%A4%A7%E9%81%93.mp3" "autoplay" %}

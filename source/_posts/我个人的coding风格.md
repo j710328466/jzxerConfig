@@ -1,7 +1,7 @@
 ---
 title: 我个人的coding风格
 date: 2017-11-26 13:46:13
-tags: [CStyle]
+tags: [CodingStyle, 未完成 ]
 categories: web前端
 ---
 
@@ -43,7 +43,7 @@ categories: web前端
 * react组件内容编写顺序：
         1. static 开头类的属性，eg：defaultProps， propTypes
         2. 构造函数 constructor
-        3. getter/setter 
+        3. getter/setter
         4. 组件生命周期
         5. _开头的私有方法
         6. 事件监听方法
@@ -51,7 +51,8 @@ categories: web前端
         8. render
 
 > EXP(以 react 为例):
-``` 
+
+```js 
     //组件
     class Exp extends Component {
         //初始化
@@ -71,7 +72,6 @@ categories: web前端
         getter() {
 
         }
-        
         // 即将挂载
         componentWillMount () {
             localStorage.getItem('username')
@@ -99,7 +99,6 @@ categories: web前端
                 //第二个 if 语句
                 if (allNumber || first || secound || third || monday || sunday || 
                         satarday) {
-                    
                     //第三个 if 语句
                     if () {
                         function act (ppt) {}
@@ -108,9 +107,7 @@ categories: web前端
                         }
                     }
             } else {
-                
             }
         }
     }
-        
 ```

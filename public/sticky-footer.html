@@ -47,7 +47,7 @@
         
             sticky-footer | 
         
-        Jzxer&#39;s Blog
+        Feax&#39;s Blog
     </title>
 
     <!-- Favicons -->
@@ -216,11 +216,11 @@
 
     <!-- WebAPP Icons -->
     <meta name="mobile-web-app-capable" content="yes">
-    <meta name="application-name" content="Jzxer&#39;s Blog">
-    <meta name="msapplication-starturl" content="/sticky-footer.html">
+    <meta name="application-name" content="Feax&#39;s Blog">
+    <meta name="msapplication-starturl" content="http://blog.jzxer.cn/sticky-footer.html">
     <meta name="msapplication-navbutton-color" content="#70c2cd">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-title" content="Jzxer&#39;s Blog">
+    <meta name="apple-mobile-web-app-title" content="Feax&#39;s Blog">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <link rel="apple-touch-icon" href="/img/favicon.png">
 
@@ -230,18 +230,22 @@
 
     <!-- RSS -->
     
+        
+            <link rel=alternate type="application/atom+xml" href="/atom.xml">
+        
+    
 
     <!-- The Open Graph protocol -->
-    <meta property="og:url" content="/sticky-footer.html">
+    <meta property="og:url" content="http://blog.jzxer.cn/sticky-footer.html">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="sticky-footer | Jzxer&#39;s Blog">
+    <meta property="og:title" content="sticky-footer | Feax&#39;s Blog">
     <meta property="og:image" content="/img/favicon.png">
     <meta property="og:description" content="web全栈工程师,摇滚,vue,vuex,react,webpack,git,koa2">
     <meta property="og:article:tag" content="sticky布局"> 
 
     
         <meta property="article:published_time" content="Sun Jul 02 2017 20:30:52 GMT+0800">
-        <meta property="article:modified_time" content="Mon Jan 22 2018 14:03:03 GMT+0800">
+        <meta property="article:modified_time" content="Fri May 25 2018 15:41:37 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -249,7 +253,7 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="/sticky-footer.html" />
+        <link rel="canonical" href="http://blog.jzxer.cn/sticky-footer.html" />
     
 
     <!-- Structured-data for SEO -->
@@ -261,13 +265,13 @@
 {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    "mainEntityOfPage": "/sticky-footer.html",
+    "mainEntityOfPage": "http://blog.jzxer.cn/sticky-footer.html",
     "headline": "sticky-footer",
     "datePublished": "Sun Jul 02 2017 20:30:52 GMT+0800",
-    "dateModified": "Mon Jan 22 2018 14:03:03 GMT+0800",
+    "dateModified": "Fri May 25 2018 15:41:37 GMT+0800",
     "author": {
         "@type": "Person",
-        "name": "Jzxer",
+        "name": "Feax",
         "image": {
             "@type": "ImageObject",
             "url": "/img/avatar.png"
@@ -276,7 +280,7 @@
     },
     "publisher": {
         "@type": "Organization",
-        "name": "Jzxer&#39;s Blog",
+        "name": "Feax&#39;s Blog",
         "logo": {
             "@type":"ImageObject",
             "url": "/img/favicon.png"
@@ -357,7 +361,7 @@
     </button>
 
     <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
-        <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#实现思路"><span class="post-toc-number">1.</span> <span class="post-toc-text">实现思路</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#四种实现方法"><span class="post-toc-number">2.</span> <span class="post-toc-text">四种实现方法</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#容器使用负的-margin-bottom"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">容器使用负的 margin bottom</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#底部使用负的-margin-top"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">底部使用负的 margin top</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#calc-版本"><span class="post-toc-number">2.3.</span> <span class="post-toc-text">calc 版本</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#flexbox-版本"><span class="post-toc-number">2.4.</span> <span class="post-toc-text">flexbox 版本</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#grid-版本"><span class="post-toc-number">2.5.</span> <span class="post-toc-text">grid 版本</span></a></li></ol></li></ol>
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#实现思路"><span class="post-toc-number">1.</span> <span class="post-toc-text">实现思路</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#四种实现方法"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">四种实现方法</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#容器使用负的-margin-bottom"><span class="post-toc-number">1.1.1.</span> <span class="post-toc-text">容器使用负的 margin bottom</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#底部使用负的-margin-top"><span class="post-toc-number">1.1.2.</span> <span class="post-toc-text">底部使用负的 margin top</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#calc-版本"><span class="post-toc-number">1.1.3.</span> <span class="post-toc-text">calc 版本</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#flexbox-版本"><span class="post-toc-number">1.1.4.</span> <span class="post-toc-text">flexbox 版本</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#grid-版本"><span class="post-toc-number">1.1.5.</span> <span class="post-toc-text">grid 版本</span></a></li></ol></li></ol></li></ol>
     </ul>
     
 
@@ -407,7 +411,7 @@
     </div>
     <!-- Author Name & Date -->
     <div>
-        <strong>Jzxer</strong>
+        <strong>Feax</strong>
         <span>7月 02, 2017</span>
     </div>
 
@@ -430,7 +434,7 @@
 <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-qrcode-button">
     <li class="mdl-menu__item">在其它设备中阅读本文章</li>
     
-        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAK4AAACuCAAAAACKZ2kyAAABiUlEQVR42u3aQZKEIAwFUO9/6ZkD9Ig/ZBSsfqysahseLlIk4fh51ThwcXFxcXFxN+Ae8fj81x9TD9+cXAsXF3cR9yKUDHFnxHyTFxvGxcVdyj0LKOPns/eTecbv4OLivoubhDBcXNxv5uZpEi4u7hu5SUIyxm2Xq+Hi4ja4eXjqPz9a38XFxZ3illuewQJ52Lq9J4yLi9u4z5AEmvEhJj++5BvGxcXdhzsG9Rur1cCHi4v7PLcabqqtlDF6/IFwcXFXcecOMdVAlhyGCnEXFxf3Zm4eXOYKqdUDUyHu4uLi3satljX7ZdByyxYXF3cbbl4MnbuSVZgHFxd3KTe/rNkpklavbeHi4q7l5seaamCaK7/i4uKu4s6lLp0myngeXFzcHbitENNowBSKrbi4uIu4/RJnOaV5JvnBxcX917LIXLmzn/ZMFkxxcXG34eYN1+rFDlxc3LdzkwJH/isuLu5u3OpiefG0szFcXNxV3Gpyki+fBKzyEQcXF/dm7v4DFxcXFxcXd9H4Bcq5b4X9mlhDAAAAAElFTkSuQmCC">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAAB8klEQVR42u3aS27CUAwFUPa/6XZaCYVe24Q28ckIQYB3MrD8e3zd4npgYGBgYGBgYPwbxiO+Dn/u6dOf7xx9+nxP9QwYGBjbGL+EthYj/1bvDBgYGDsZRwHu6J7Xh8h51TNgYGBg5Izk/Wr6iIGBgXFGwM2D7PwxYWBgYOQFZxJeq0H2o7U4BgbGBRl5U/681x+db2BgYFyKUV5xiEeSk7HB6TsjGBgYl2Lkga+aOPbWLwr/i4GBsYbxOmi+bqvl9yffKjfyMDAwFjOipnxrIeO9aSIGBgZGLynMy+BJqMXAwNjGmC+B5cetDizLtTgGBsZNGdUAmqSA1fBafY2BgbGNkRefeQMuP3qyXjaab2BgYNyCkSxSFArL1jizh8HAwNjDyNO7vNTsFa75w8LAwNjJiL42OEovAR0VsRgYGDdl5IOBXvqYNONG8w0MDIwFjPIKaXHw2RttFopYDAyMZYxJqK2OCvLhAQYGxk7GvCjNk7w8vEYDAwwMjDWMahDsBdN8bJAEegwMjJ2MfJSYtPjn6xpRqw4DA2MlI0njeqsV1ZD9hmULDAwMjHiokD+OctmMgYGBUTx63oBLwm40UsXAwFjJSIrYPB3stdIKv4yBgbGM0VuAmCeIycM6Zb6BgYFxKcZ1LwwMDAwMDAyMP72+AUipeJUM68Q6AAAAAElFTkSuQmCC">
     
 </ul>
 
@@ -471,7 +475,7 @@
 
     <!-- Share Weibo -->
     
-        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=sticky-footer&url=/sticky-footer.html&pic=/img/favicon.ico&searchPic=false&style=simple" target="_blank">
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=sticky-footer&url=http://blog.jzxer.cn/sticky-footer.html&pic=http://blog.jzxer.cn/img/favicon.ico&searchPic=false&style=simple" target="_blank">
             <li class="mdl-menu__item">
                 分享到微博
             </li>
@@ -480,7 +484,7 @@
 
     <!-- Share Twitter -->
     
-        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=sticky-footer&url=/sticky-footer.html&via=Jzxer" target="_blank">
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=sticky-footer&url=http://blog.jzxer.cn/sticky-footer.html&via=Feax" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Twitter
             </li>
@@ -489,7 +493,7 @@
 
     <!-- Share Facebook -->
     
-        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=/sticky-footer.html" target="_blank">
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://blog.jzxer.cn/sticky-footer.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Facebook
             </li>
@@ -498,7 +502,7 @@
 
     <!-- Share Google+ -->
     
-        <a class="post_share-link" href="https://plus.google.com/share?url=/sticky-footer.html" target="_blank">
+        <a class="post_share-link" href="https://plus.google.com/share?url=http://blog.jzxer.cn/sticky-footer.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Google+
             </li>
@@ -507,7 +511,7 @@
 
     <!-- Share LinkedIn -->
     
-        <a class="post_share-link" href="https://www.linkedin.com/shareArticle?mini=true&url=/sticky-footer.html&title=sticky-footer" target="_blank">
+        <a class="post_share-link" href="https://www.linkedin.com/shareArticle?mini=true&url=http://blog.jzxer.cn/sticky-footer.html&title=sticky-footer" target="_blank">
             <li class="mdl-menu__item">
                 分享到 LinkedIn
             </li>
@@ -516,7 +520,7 @@
 
     <!-- Share QQ -->
     
-        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=Jzxer&#39;s Blog&title=sticky-footer&summary=web全栈工程师,摇滚,vue,vuex,react,webpack,git,koa2&pics=/img/favicon.ico&url=/sticky-footer.html" target="_blank">
+        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=Feax&#39;s Blog&title=sticky-footer&summary=web全栈工程师,摇滚,vue,vuex,react,webpack,git,koa2&pics=http://blog.jzxer.cn/img/favicon.ico&url=http://blog.jzxer.cn/sticky-footer.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 QQ
             </li>
@@ -537,14 +541,15 @@
     
         <p>今天，我想讲讲关于stick-footer布局技巧，它的内容大概就是当你页面大小为100%时，希望底部定位一个 X 按钮啥的，不管文本内容不够，或者是文本内容超过屏幕时，这个按钮位置总在文本的下方</p>
 <ul>
-<li>like this<br><img src="http://img0.tuicool.com/fuANjiq.png!web" alt=""></li>
+<li>like this</li>
 </ul>
-<h3 id="实现思路"><a href="#实现思路" class="headerlink" title="实现思路"></a>实现思路</h3><ul>
-<li>首先是个包裹了 footer 之外其他元素的容器，将它的最小大小设置为100%<br><br></li>
-<li>然后给这个footer一个负的 magin-top 因为如果该容器最小大小为100%，会将footer元素挤出容器外，你这个时候就要想办法把该元素‘重回战场’<br><br></li>
+<p><img src="http://img0.tuicool.com/fuANjiq.png!web" alt="demo"></p>
+<h2 id="实现思路"><a href="#实现思路" class="headerlink" title="实现思路"></a>实现思路</h2><ul>
+<li>首先是个包裹了 footer 之外其他元素的容器，将它的最小大小设置为100%</li>
+<li>然后给这个footer一个负的 magin-top 因为如果该容器最小大小为100%，会将footer元素挤出容器外，你这个时候就要想办法把该元素‘重回战场’</li>
 <li>sticky-footer 就是这个意思，让他完美保持在底部，而又不会影响主要内容的显示</li>
 </ul>
-<h3 id="四种实现方法"><a href="#四种实现方法" class="headerlink" title="四种实现方法"></a>四种实现方法</h3><h4 id="容器使用负的-margin-bottom"><a href="#容器使用负的-margin-bottom" class="headerlink" title="容器使用负的 margin bottom"></a>容器使用负的 margin bottom</h4><pre><code>&lt;body&gt;
+<h3 id="四种实现方法"><a href="#四种实现方法" class="headerlink" title="四种实现方法"></a>四种实现方法</h3><h4 id="容器使用负的-margin-bottom"><a href="#容器使用负的-margin-bottom" class="headerlink" title="容器使用负的 margin bottom"></a>容器使用负的 margin bottom</h4><pre><code class="html">&lt;body&gt;
   &lt;div class=&quot;wrapper&quot;&gt;
 
       content
@@ -569,7 +574,8 @@ html, body {
 .push {
   height: 50px;
 }
-</code></pre><h4 id="底部使用负的-margin-top"><a href="#底部使用负的-margin-top" class="headerlink" title="底部使用负的 margin top"></a>底部使用负的 margin top</h4><pre><code>&lt;body&gt;
+</code></pre>
+<h4 id="底部使用负的-margin-top"><a href="#底部使用负的-margin-top" class="headerlink" title="底部使用负的 margin top"></a>底部使用负的 margin top</h4><pre><code class="html">&lt;body&gt;
   &lt;div class=&quot;content&quot;&gt;
     &lt;div class=&quot;content-inside&quot;&gt;
       content
@@ -593,7 +599,8 @@ html, body {
   height: 50px;
   margin-top: -50px;
 }
-</code></pre><h4 id="calc-版本"><a href="#calc-版本" class="headerlink" title="calc 版本"></a>calc 版本</h4><pre><code>&lt;body&gt;
+</code></pre>
+<h4 id="calc-版本"><a href="#calc-版本" class="headerlink" title="calc 版本"></a>calc 版本</h4><pre><code class="html">&lt;body&gt;
   &lt;div class=&quot;content&quot;&gt;
     content
   &lt;/div&gt;
@@ -606,10 +613,11 @@ html, body {
 .footer {
   height: 50px;
 }
-</code></pre><blockquote>
+</code></pre>
+<blockquote>
 <p>calc中的 70px，和50px是假定了content中最后一个元素有个20px的margin bottom，你不必在意这些~</p>
 </blockquote>
-<h4 id="flexbox-版本"><a href="#flexbox-版本" class="headerlink" title="flexbox 版本"></a>flexbox 版本</h4><pre><code>&lt;body&gt;
+<h4 id="flexbox-版本"><a href="#flexbox-版本" class="headerlink" title="flexbox 版本"></a>flexbox 版本</h4><pre><code class="html">&lt;body&gt;
   &lt;div class=&quot;content&quot;&gt;
     content
   &lt;/div&gt;
@@ -627,10 +635,11 @@ body {
 .content {
   flex: 1;
 }
-</code></pre><blockquote>
+</code></pre>
+<blockquote>
 <p>flexbox版本同样很简单，并且相比前面三种方式，它不需要知道footer的高度，避免了Magic Number的尴尬。</p>
 </blockquote>
-<h4 id="grid-版本"><a href="#grid-版本" class="headerlink" title="grid 版本"></a>grid 版本</h4><pre><code>&lt;body&gt;
+<h4 id="grid-版本"><a href="#grid-版本" class="headerlink" title="grid 版本"></a>grid 版本</h4><pre><code class="html">&lt;body&gt;
   &lt;div class=&quot;content&quot;&gt;
     content
   &lt;/div&gt;
@@ -648,7 +657,8 @@ body {
   grid-row-start: 2;
   grid-row-end: 3;
 }
-</code></pre><blockquote>
+</code></pre>
+<blockquote>
 <p>Chrome Canary 或者 Firefox Developer Edition才能看到效果。</p>
 </blockquote>
 
@@ -656,10 +666,10 @@ body {
                 <blockquote style="margin: 2em 0 0;padding: 0.5em 1em;border-left: 3px solid #F44336;background-color: #F5F5F5;list-style: none;">
                     <p><strong>
                          
-                            <a href="#" target="_blank">出自 Feax</a>
+                            <a href="#" target="_blank">转载请注明出处，谢谢！</a>
                         </strong>
                         <br>
-                        <strong>本文链接：</strong><a href="/sticky-footer.html">/sticky-footer.html</a>
+                        <strong>本文链接：</strong><a href="http://blog.jzxer.cn/sticky-footer.html">http://blog.jzxer.cn/sticky-footer.html</a>
                     </p>
                 </blockquote>
         
@@ -704,7 +714,7 @@ body {
             <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
     <!-- Prev Nav -->
     
-        <a href="/vue-eleme.html" id="post_nav-newer" class="prev-content">
+        <a href="/css的命名规范.html" id="post_nav-newer" class="prev-content">
             <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
                 <i class="material-icons">arrow_back</i>
             </button>
@@ -756,7 +766,7 @@ body {
 
     <!-- Sidebar Avatar -->
     <div class="sidebar-image">
-        <img src="/img/avatar.png" alt="Jzxer's avatar">
+        <img src="/img/avatar.png" alt="Feax's avatar">
     </div>
 
     <!-- Sidebar Email -->
@@ -796,8 +806,6 @@ body {
             </a>
         </li>
         
-            <li class="divider"></li>
-        
     
 
     <!-- Archives  -->
@@ -812,11 +820,9 @@ body {
             </a>
             <ul class="dropdown-menu">
             <li>
-                <a class="sidebar_archives-link" href="/archives/2018/04/">四月 2018<span class="sidebar_archives-count">8</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/03/">三月 2018<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/02/">二月 2018<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/01/">一月 2018<span class="sidebar_archives-count">6</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/12/">十二月 2017<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/11/">十一月 2017<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/10/">十月 2017<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/09/">九月 2017<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/08/">八月 2017<span class="sidebar_archives-count">5</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/07/">七月 2017<span class="sidebar_archives-count">8</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/06/">六月 2017<span class="sidebar_archives-count">8</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/04/">四月 2017<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/03/">三月 2017<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/02/">二月 2017<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/01/">一月 2017<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2016/11/">十一月 2016<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2016/08/">八月 2016<span class="sidebar_archives-count">1</span></a>
+                <a class="sidebar_archives-link" href="/archives/2018/04/">四月 2018<span class="sidebar_archives-count">7</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/03/">三月 2018<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/02/">二月 2018<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/01/">一月 2018<span class="sidebar_archives-count">5</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/12/">十二月 2017<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/11/">十一月 2017<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/10/">十月 2017<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/09/">九月 2017<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/08/">八月 2017<span class="sidebar_archives-count">5</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/07/">七月 2017<span class="sidebar_archives-count">6</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/06/">六月 2017<span class="sidebar_archives-count">6</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/04/">四月 2017<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/03/">三月 2017<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/02/">二月 2017<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/01/">一月 2017<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2016/11/">十一月 2016<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2016/08/">八月 2016<span class="sidebar_archives-count">1</span></a>
             </ul>
         </li>
-        
-            <li class="divider"></li>
         
     
 
@@ -832,22 +838,20 @@ body {
             </a>
             <ul class="dropdown-menu">
                 <li>
-                <a class="sidebar_archives-link" href="/categories/APP/">APP<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/CSS/">CSS<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/HTML/">HTML<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/IDE/">IDE<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/JS/">JS<span class="sidebar_archives-count">5</span></a></li><li><a class="sidebar_archives-link" href="/categories/nodeJS/">nodeJS<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/categories/storage/">storage<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/vue/">vue<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/web前端/">web前端<span class="sidebar_archives-count">10</span></a></li><li><a class="sidebar_archives-link" href="/categories/web项目/">web项目<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/categories/代理/">代理<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/博客搭建/">博客搭建<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/安全/">安全<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/数据库/">数据库<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/服务器/">服务器<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/本地储存/">本地储存<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/版本管理/">版本管理<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/生活/">生活<span class="sidebar_archives-count">10</span></a></li><li><a class="sidebar_archives-link" href="/categories/阅读/">阅读<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/音乐/">音乐<span class="sidebar_archives-count">6</span></a>
+                <a class="sidebar_archives-link" href="/categories/CSS/">CSS<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/HTML/">HTML<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/IDE/">IDE<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/JS/">JS<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/categories/nodeJS/">nodeJS<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/categories/storage/">storage<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/vue/">vue<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/web前端/">web前端<span class="sidebar_archives-count">10</span></a></li><li><a class="sidebar_archives-link" href="/categories/web项目/">web项目<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/代理/">代理<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/博客搭建/">博客搭建<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/安全/">安全<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/数据库/">数据库<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/服务器/">服务器<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/本地储存/">本地储存<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/版本管理/">版本管理<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/生活/">生活<span class="sidebar_archives-count">9</span></a></li><li><a class="sidebar_archives-link" href="/categories/阅读/">阅读<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/音乐/">音乐<span class="sidebar_archives-count">6</span></a>
             </ul>
         </li>
-        
-            <li class="divider"></li>
         
     
 
     <!-- Pages  -->
     
         <li>
-            <a href="/gallery" title="图库">
+            <a href="/timeline" title="时间轴">
                 
-                    <i class="material-icons sidebar-material-icons">dashboard</i>
+                    <i class="material-icons sidebar-material-icons">calendar_today</i>
                 
-                图库
+                时间轴
             </a>
         </li>
         
@@ -863,7 +867,15 @@ body {
             </a>
         </li>
         
-            <li class="divider"></li>
+    
+        <li>
+            <a href="/gallery" title="图库">
+                
+                    <i class="material-icons sidebar-material-icons">dashboard</i>
+                
+                图库
+            </a>
+        </li>
         
     
         <li>
@@ -875,17 +887,17 @@ body {
             </a>
         </li>
         
-            <li class="divider"></li>
-        
     
         <li>
             <a href="/about" title="关于我">
                 
-                    <i class="material-icons sidebar-material-icons">face</i>
+                    <i class="material-icons sidebar-material-icons">sentiment_satisfied_alt</i>
                 
                 关于我
             </a>
         </li>
+        
+            <li class="divider"></li>
         
     
 
@@ -894,9 +906,11 @@ body {
         <li>
             <a href="/archives">
                 文章总数
-                <span class="sidebar-badge">61</span>
+                <span class="sidebar-badge">52</span>
             </a>
         </li>
+        
+            <li class="divider"></li>
         
     
 </ul>
@@ -953,12 +967,6 @@ It will not impact the appearance and can give developers a lot of support :)
 
     <!-- Sidebar Image -->
     
-    <span id="footer-image">
-        <a href="#" target="_blank" title="upyun_logo">
-            <img src="/img/favicon.ico" alt="upyun_logo"><!--
-     --></a>
-    </span>
-
 
 </aside>
 
@@ -1055,11 +1063,11 @@ It will not impact the appearance and can give developers a lot of support :)
 
         <!--Copyright-->
         <div id="copyright">
-            Copyright&nbsp;©&nbsp;2017&nbsp;-<script type="text/javascript">var fd = new Date();document.write("&nbsp;" + fd.getFullYear() + "&nbsp;");</script>Jzxer's Blog
+            Copyright&nbsp;©&nbsp;2017&nbsp;-<script type="text/javascript">var fd = new Date();document.write("&nbsp;" + fd.getFullYear() + "&nbsp;");</script>Feax's Blog
             
                 <br>
                 
-                    <a href="#" rel="nofollow">热爱生活，热爱生命！</a>
+                    <a href="/atom.xml" rel="nofollow">热爱生活，热爱生命！</a>
                 
             
         </div>

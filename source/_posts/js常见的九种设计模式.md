@@ -1,7 +1,7 @@
 ---
 title: js常见的九种设计模式
 date: 2018-03-09 10:31:48
-tags: [js methods]
+tags: [pattern, 未完成]
 categories: web前端
 ---
 ## 介绍
@@ -176,3 +176,5 @@ XHRH.prototype.createFactory = function () {
 #### 缺点
 
 当工厂增加到一定程度的时候，提高了代码的复杂度，可读性下降。而且没有解决对象的识别问题，既怎么知道一个对象的类型。
+
+未完待续。。。

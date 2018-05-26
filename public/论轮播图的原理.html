@@ -47,7 +47,7 @@
         
             解析卡片式轮播图 | 
         
-        Jzxer&#39;s Blog
+        Feax&#39;s Blog
     </title>
 
     <!-- Favicons -->
@@ -216,11 +216,11 @@
 
     <!-- WebAPP Icons -->
     <meta name="mobile-web-app-capable" content="yes">
-    <meta name="application-name" content="Jzxer&#39;s Blog">
-    <meta name="msapplication-starturl" content="/论轮播图的原理.html">
+    <meta name="application-name" content="Feax&#39;s Blog">
+    <meta name="msapplication-starturl" content="http://blog.jzxer.cn/论轮播图的原理.html">
     <meta name="msapplication-navbutton-color" content="#70c2cd">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-title" content="Jzxer&#39;s Blog">
+    <meta name="apple-mobile-web-app-title" content="Feax&#39;s Blog">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <link rel="apple-touch-icon" href="/img/favicon.png">
 
@@ -230,18 +230,22 @@
 
     <!-- RSS -->
     
+        
+            <link rel=alternate type="application/atom+xml" href="/atom.xml">
+        
+    
 
     <!-- The Open Graph protocol -->
-    <meta property="og:url" content="/论轮播图的原理.html">
+    <meta property="og:url" content="http://blog.jzxer.cn/论轮播图的原理.html">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="解析卡片式轮播图 | Jzxer&#39;s Blog">
+    <meta property="og:title" content="解析卡片式轮播图 | Feax&#39;s Blog">
     <meta property="og:image" content="/img/favicon.png">
     <meta property="og:description" content="web全栈工程师,摇滚,vue,vuex,react,webpack,git,koa2">
     <meta property="og:article:tag" content="轮播图"> 
 
     
         <meta property="article:published_time" content="Sat Jun 24 2017 23:18:35 GMT+0800">
-        <meta property="article:modified_time" content="Mon Jan 22 2018 14:43:23 GMT+0800">
+        <meta property="article:modified_time" content="Fri May 25 2018 15:48:52 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -249,7 +253,7 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="/论轮播图的原理.html" />
+        <link rel="canonical" href="http://blog.jzxer.cn/论轮播图的原理.html" />
     
 
     <!-- Structured-data for SEO -->
@@ -261,13 +265,13 @@
 {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    "mainEntityOfPage": "/论轮播图的原理.html",
+    "mainEntityOfPage": "http://blog.jzxer.cn/论轮播图的原理.html",
     "headline": "解析卡片式轮播图",
     "datePublished": "Sat Jun 24 2017 23:18:35 GMT+0800",
-    "dateModified": "Mon Jan 22 2018 14:43:23 GMT+0800",
+    "dateModified": "Fri May 25 2018 15:48:52 GMT+0800",
     "author": {
         "@type": "Person",
-        "name": "Jzxer",
+        "name": "Feax",
         "image": {
             "@type": "ImageObject",
             "url": "/img/avatar.png"
@@ -276,7 +280,7 @@
     },
     "publisher": {
         "@type": "Organization",
-        "name": "Jzxer&#39;s Blog",
+        "name": "Feax&#39;s Blog",
         "logo": {
             "@type":"ImageObject",
             "url": "/img/favicon.png"
@@ -357,7 +361,7 @@
     </button>
 
     <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
-        <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#原理"><span class="post-toc-number">1.</span> <span class="post-toc-text">原理</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#无限滚动"><span class="post-toc-number">2.</span> <span class="post-toc-text">无限滚动</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#小按钮切换"><span class="post-toc-number">3.</span> <span class="post-toc-text">小按钮切换</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#延迟动画函数"><span class="post-toc-number">4.</span> <span class="post-toc-text">延迟动画函数</span></a></li></ol>
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#原理"><span class="post-toc-number">1.</span> <span class="post-toc-text">原理</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#无限滚动"><span class="post-toc-number">2.</span> <span class="post-toc-text">无限滚动</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#小按钮切换"><span class="post-toc-number">3.</span> <span class="post-toc-text">小按钮切换</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#延迟动画函数"><span class="post-toc-number">4.</span> <span class="post-toc-text">延迟动画函数</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#自动播放"><span class="post-toc-number">5.</span> <span class="post-toc-text">自动播放</span></a></li></ol>
     </ul>
     
 
@@ -407,7 +411,7 @@
     </div>
     <!-- Author Name & Date -->
     <div>
-        <strong>Jzxer</strong>
+        <strong>Feax</strong>
         <span>6月 24, 2017</span>
     </div>
 
@@ -430,7 +434,7 @@
 <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-qrcode-button">
     <li class="mdl-menu__item">在其它设备中阅读本文章</li>
     
-        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAAB5ElEQVR42u3aO3LDMAwFQN//0kmbJswDIMUWuaw8E324Kl4Igq+vLcYLAwMDAwMDA+NjGK94JHf9/Gv1+vIcMDAwDmP8EW3LKeZPW3+UfA4YGBgnM64K0OSuC+aAgYGBETCiWPzl+RgYGBj3MZJJrKN5fRcGBgbGvIhNStNk4fjmWhwDA+OBjHxT/r7f/9rfwMDAeBRjdNwh3m7LWwtvODOCgYHx8YxqOE6o+fXR1h4GBsZhjMmmW++wV748LRexGBgYBzASZO9DXBvrGBgYpzHy10xitxeyzaP2GBgY2zHyx+Vl5ySmR0UsBgbGdowk2pKtsZxdbVsWWpgYGBibMnql5qQQzQ+Q/fEhMDAwDmMkD622JCf45B8ABgbGOYzqplg1ZKsxWrgGAwPjMMZVTc3J9lnebMDAwDiNMTk8UW1nzpuaGBgYZzLmS8Be+7N6wGLU38DAwHg4o/rKdUxPIvWCMyMYGBibMqojeU21DL6lFsfAwNiIMQnB+SHX6gIUAwPjZEavoVidei9wMTAwMHoNgHnUVtsAzVocAwPjSEavlO01FTAwMDCuCtz1grL3mUZFLAYGxtaMa4vYZCHYuxIDA+NMRl5Y9rb+1+x1KN/SwsTAwHgU47kDAwMDAwMDA+Ot4xvlgJxx+8L4+wAAAABJRU5ErkJggg==">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACT0lEQVR42u3aQW7DMAwEQP//0+0DihZLUqbdYHQK3CbS6GAJS15fHz0uPDw8PDw8PDy8l/GuePz2rcLEg1kK38LDw8Nb4SXLyp/3eD9/s7c2PDw8vE1ePuVkWX//wmRePDw8vP/Fi17ZxQs6Hh4e3ufx5nFG/gQPDw/vnbzkFV8NFKrh78NZCx4eHl7My1/r+59X63t4eHh4Aa/c0hRHtJN2gWNNV3h4eHg38KrX5WpQ22uu6q0HDw8Pb5N3NsCtls2qUW85xsXDw8M7yqvGqclRkV+Uky0rbxYeHh7eCq9aysrZV3FM2Hh4eHjP8vKl55vVi3rLG4qHh4d3M68aklbD2V671e2dEXh4eHjjrqTqazovj52NbpPrPh4eHt7dvF5AMNmOJCxO/jpqHcDDw8Mb8CZLr7YR5EdIr0EBDw8Pb583iWiTz3mprNfmhYeHh/cUL58mDybKjVPx9RoPDw9vn5csulrgny901F6Ah4eHt8Irl+fjMlX14p4fSIWDAQ8PD2+dlzdRVS/N1QJbtGV4eHh4K7yzDVj5sZEjExgeHh7es7xkgmpZq3pxb86Ih4eHt8ibtAL0ottTRxEeHh7eJq86JrFvtWErj3fx8PDwNnl3FMCS53lUcaDpCg8PD+8GXnIY9GLW3uFx+GDAw8PDu403f0H32rPyMCK6fOPh4eG9mHcWn3w3QeLh4eG9mZdcgueFtOQ/8fDw8J7iJWFEAvj7ea/tIG/MwsPDw9vh9SKAXqwwaVaINh0PDw/vZt7nDTw8PDw8PDw8vBeMbzufww/EY8SpAAAAAElFTkSuQmCC">
     
 </ul>
 
@@ -471,7 +475,7 @@
 
     <!-- Share Weibo -->
     
-        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=解析卡片式轮播图&url=/论轮播图的原理.html&pic=/img/favicon.ico&searchPic=false&style=simple" target="_blank">
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=解析卡片式轮播图&url=http://blog.jzxer.cn/论轮播图的原理.html&pic=http://blog.jzxer.cn/img/favicon.ico&searchPic=false&style=simple" target="_blank">
             <li class="mdl-menu__item">
                 分享到微博
             </li>
@@ -480,7 +484,7 @@
 
     <!-- Share Twitter -->
     
-        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=解析卡片式轮播图&url=/论轮播图的原理.html&via=Jzxer" target="_blank">
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=解析卡片式轮播图&url=http://blog.jzxer.cn/论轮播图的原理.html&via=Feax" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Twitter
             </li>
@@ -489,7 +493,7 @@
 
     <!-- Share Facebook -->
     
-        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=/论轮播图的原理.html" target="_blank">
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://blog.jzxer.cn/论轮播图的原理.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Facebook
             </li>
@@ -498,7 +502,7 @@
 
     <!-- Share Google+ -->
     
-        <a class="post_share-link" href="https://plus.google.com/share?url=/论轮播图的原理.html" target="_blank">
+        <a class="post_share-link" href="https://plus.google.com/share?url=http://blog.jzxer.cn/论轮播图的原理.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Google+
             </li>
@@ -507,7 +511,7 @@
 
     <!-- Share LinkedIn -->
     
-        <a class="post_share-link" href="https://www.linkedin.com/shareArticle?mini=true&url=/论轮播图的原理.html&title=解析卡片式轮播图" target="_blank">
+        <a class="post_share-link" href="https://www.linkedin.com/shareArticle?mini=true&url=http://blog.jzxer.cn/论轮播图的原理.html&title=解析卡片式轮播图" target="_blank">
             <li class="mdl-menu__item">
                 分享到 LinkedIn
             </li>
@@ -516,7 +520,7 @@
 
     <!-- Share QQ -->
     
-        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=Jzxer&#39;s Blog&title=解析卡片式轮播图&summary=web全栈工程师,摇滚,vue,vuex,react,webpack,git,koa2&pics=/img/favicon.ico&url=/论轮播图的原理.html" target="_blank">
+        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=Feax&#39;s Blog&title=解析卡片式轮播图&summary=web全栈工程师,摇滚,vue,vuex,react,webpack,git,koa2&pics=http://blog.jzxer.cn/img/favicon.ico&url=http://blog.jzxer.cn/论轮播图的原理.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 QQ
             </li>
@@ -542,37 +546,41 @@
 <ul>
 <li>图片（废话）</li>
 <li>左右两边的button</li>
-<li>可以跳转的小点<br><a href="http://jzxer.cn/card/" target="_blank" rel="noopener">demo</a></li>
+<li>可以跳转的小点</li>
 </ul>
+<p><a href="http://jzxer.cn/card/" target="_blank" rel="noopener">demo</a></p>
 <h3 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h3><ul>
 <li>轮播图的原理就是一个长图，里面有很多张图，外面包一层展示窗口，将属性设置成overflow：hidden，达到只显示一张的效果，当点击左右两边的按钮时会按照像素来跳转</li>
 </ul>
 <h3 id="无限滚动"><a href="#无限滚动" class="headerlink" title="无限滚动"></a>无限滚动</h3><ul>
-<li>我给两个按钮设为 <b>prev next</b> 一个在点击后，长图会增加一张图的宽度，一个是减少一个图的宽度,在图片的头和尾部加一张图，结构大概为：<pre><code>&lt;div id=&quot;list&quot; style=&quot;left:-200px&quot;&gt;
-    &lt;img src=&quot;./img/5.jpg&quot; alt=&quot;&quot;&gt;
-    &lt;img src=&quot;./img/1.jpg&quot; alt=&quot;&quot;&gt;
-    &lt;img src=&quot;./img/2.jpg&quot; alt=&quot;&quot;&gt;
-    &lt;img src=&quot;./img/3.jpg&quot; alt=&quot;&quot;&gt;
-    &lt;img src=&quot;./img/4.jpg&quot; alt=&quot;&quot;&gt;
-    &lt;img src=&quot;./img/5.jpg&quot; alt=&quot;&quot;&gt;
-    &lt;img src=&quot;./img/1.jpg&quot; alt=&quot;&quot;&gt;
-  &lt;/div&gt;
-</code></pre>当是最后一张图或第一张图时，将第一张上一张跳转为最后一张时的宽，最后一张跳转为第一张时的宽<pre><code>if (newList &lt; -1000) {
-        dot = 1
-        list.style.left = -200 + &#39;px&#39;
-      }
-      if (newList &gt; -200) {
-        dot = 5
-        list.style.left = -1000 + &#39;px&#39;
-      }
-</code></pre></li>
+<li>我给两个按钮设为 <b>prev next</b> 一个在点击后，长图会增加一张图的宽度，一个是减少一个图的宽度,在图片的头和尾部加一张图，结构大概为：</li>
 </ul>
+<pre><code class="html">&lt;div id=&quot;list&quot; style=&quot;left:-200px&quot;&gt;
+      &lt;img src=&quot;./img/5.jpg&quot; alt=&quot;&quot;&gt;
+      &lt;img src=&quot;./img/1.jpg&quot; alt=&quot;&quot;&gt;
+      &lt;img src=&quot;./img/2.jpg&quot; alt=&quot;&quot;&gt;
+      &lt;img src=&quot;./img/3.jpg&quot; alt=&quot;&quot;&gt;
+      &lt;img src=&quot;./img/4.jpg&quot; alt=&quot;&quot;&gt;
+      &lt;img src=&quot;./img/5.jpg&quot; alt=&quot;&quot;&gt;
+      &lt;img src=&quot;./img/1.jpg&quot; alt=&quot;&quot;&gt;
+    &lt;/div&gt;
+</code></pre>
+<p>当是最后一张图或第一张图时，将第一张上一张跳转为最后一张时的宽，最后一张跳转为第一张时的宽</p>
+<pre><code class="js">if (newList &lt; -1000) {
+          dot = 1
+          list.style.left = -200 + &#39;px&#39;
+        }
+        if (newList &gt; -200) {
+          dot = 5
+          list.style.left = -1000 + &#39;px&#39;
+        }
+</code></pre>
 <h3 id="小按钮切换"><a href="#小按钮切换" class="headerlink" title="小按钮切换"></a>小按钮切换</h3><p>这要实现的思想有</p>
 <ul>
 <li>点了小按钮，背景色会变</li>
 <li>当点击切换到其他按钮，图片切换，且上一个按钮会变回原来的颜色</li>
 </ul>
-<pre><code>function showBtn() {
+<pre><code class="js">function showBtn() {
         for (var i = 0; i &lt; btns.length; i++) {
           if (btns[i].className == &#39;show-btn&#39;) {
             btns[i].className = &#39;&#39;
@@ -596,30 +604,50 @@ for (var i = 0; i &lt; btns.length; i++) {
         }
       }
 //遍历数组，将每一个小按钮设了个index属性，这里用到 getAttribute 可以获取除了普通style 或 class 之外的一些属性，获取index值，点击时得到当前的index值，正好和当前的dot值相减，可得跳转的距离 
-</code></pre><blockquote>
+</code></pre>
+<blockquote>
 <p>这里要注意的是，当小按钮被重复按的时候，给他一个判断，不然重复点击同一个图标会重复发生相同事件，占内存，耗cpu</p>
 </blockquote>
 <h3 id="延迟动画函数"><a href="#延迟动画函数" class="headerlink" title="延迟动画函数"></a>延迟动画函数</h3><p>就是当用户点击时，有一个慢慢偏移的过程，而不是闪现的动作，我们来看看实现原理</p>
 <ul>
-<li><p>首先，定义参数</p>
-<pre><code>var time = 300  //位移总时间
+<li>首先，定义参数</li>
+</ul>
+<pre><code class="js">var time = 300  //位移总时间
 var interval = 10  //位移时间间隔
 var speed = leng/(time/interval)  //每次位移量，就是一共调用多少次的意思
-</code></pre></li>
-<li><p>设置递归函数</p>
-<pre><code>if ((speed &lt; 0 &amp;&amp; parseInt(list.style.left) &gt; newList) || (speed &gt; 0 &amp;&amp; parseInt(list.style.left) &lt; newList)) {
-          list.style.left = parseInt(list.style.left) + speed + &#39;px&#39;
-          setTimeout(go, interval)  //递归,调用自身函数
-</code></pre></li>
-<li><p>判断是否仍在动画<br>如果用户一直在点击切换图时，如果电脑配置不好，或是其他一些因素，可能会轮播卡顿，为了防止这一现象，就用一个判断来看上一次动画是否完成，若未完成就不能继续切换，等到这次动画跳转完为止<br><code>`</code><br>var animated = false   //设初值</p>
-</li>
+</code></pre>
+<ul>
+<li>设置递归函数</li>
 </ul>
-<p>if(!animated) {<br>  animate(200)<br>}    //如果为false，则继续动画</p>
-<pre><code>
-### 自动播放
-首先给个思路，当鼠标移入的时候，自动播放停止，移出的时候开始自动播放
-* 我们设两个函数，play（） 和 stop（） 
-</code></pre><p>function play() {<br>        timer = setTimeout(function() {<br>          next.onclick()<br>          play()<br>        },interval)<br>      }<br>      function stop() {<br>        clearTimeout(timer)<br>      }<br><code>`</code><br>给整个 container 容器添加该鼠标事件</p>
+<pre><code class="js">if ((speed &lt; 0 &amp;&amp; parseInt(list.style.left) &gt; newList) || (speed &gt; 0 &amp;&amp; parseInt(list.style.left) &lt; newList)) {
+            list.style.left = parseInt(list.style.left) + speed + &#39;px&#39;
+            setTimeout(go, interval)  //递归,调用自身函数
+</code></pre>
+<ul>
+<li>判断是否仍在动画</li>
+</ul>
+<p>如果用户一直在点击切换图时，如果电脑配置不好，或是其他一些因素，可能会轮播卡顿，为了防止这一现象，就用一个判断来看上一次动画是否完成，若未完成就不能继续切换，等到这次动画跳转完为止</p>
+<pre><code class="js">var animated = false   //设初值
+
+if(!animated) {
+  animate(200)
+}    //如果为false，则继续动画
+</code></pre>
+<h3 id="自动播放"><a href="#自动播放" class="headerlink" title="自动播放"></a>自动播放</h3><p>首先给个思路，当鼠标移入的时候，自动播放停止，移出的时候开始自动播放</p>
+<ul>
+<li>我们设两个函数，play（） 和 stop（）</li>
+</ul>
+<pre><code class="js">function play() {
+        timer = setTimeout(function() {
+          next.onclick()
+          play()
+        },interval)
+      }
+      function stop() {
+        clearTimeout(timer)
+      }
+</code></pre>
+<p>给整个 container 容器添加该鼠标事件</p>
 <p>这年头还是不能偷懒啊，说不定当时知道这个人家就把给我要了呢，好气哦…</p>
 <blockquote>
 <p>改天再研究下旋转木马的那种装个13…</p>
@@ -629,10 +657,10 @@ var speed = leng/(time/interval)  //每次位移量，就是一共调用多少�
                 <blockquote style="margin: 2em 0 0;padding: 0.5em 1em;border-left: 3px solid #F44336;background-color: #F5F5F5;list-style: none;">
                     <p><strong>
                          
-                            <a href="#" target="_blank">出自 Feax</a>
+                            <a href="#" target="_blank">转载请注明出处，谢谢！</a>
                         </strong>
                         <br>
-                        <strong>本文链接：</strong><a href="/论轮播图的原理.html">/论轮播图的原理.html</a>
+                        <strong>本文链接：</strong><a href="http://blog.jzxer.cn/论轮播图的原理.html">http://blog.jzxer.cn/论轮播图的原理.html</a>
                     </p>
                 </blockquote>
         
@@ -729,7 +757,7 @@ var speed = leng/(time/interval)  //每次位移量，就是一共调用多少�
 
     <!-- Sidebar Avatar -->
     <div class="sidebar-image">
-        <img src="/img/avatar.png" alt="Jzxer's avatar">
+        <img src="/img/avatar.png" alt="Feax's avatar">
     </div>
 
     <!-- Sidebar Email -->
@@ -769,8 +797,6 @@ var speed = leng/(time/interval)  //每次位移量，就是一共调用多少�
             </a>
         </li>
         
-            <li class="divider"></li>
-        
     
 
     <!-- Archives  -->
@@ -785,11 +811,9 @@ var speed = leng/(time/interval)  //每次位移量，就是一共调用多少�
             </a>
             <ul class="dropdown-menu">
             <li>
-                <a class="sidebar_archives-link" href="/archives/2018/04/">四月 2018<span class="sidebar_archives-count">8</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/03/">三月 2018<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/02/">二月 2018<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/01/">一月 2018<span class="sidebar_archives-count">6</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/12/">十二月 2017<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/11/">十一月 2017<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/10/">十月 2017<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/09/">九月 2017<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/08/">八月 2017<span class="sidebar_archives-count">5</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/07/">七月 2017<span class="sidebar_archives-count">8</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/06/">六月 2017<span class="sidebar_archives-count">8</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/04/">四月 2017<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/03/">三月 2017<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/02/">二月 2017<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/01/">一月 2017<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2016/11/">十一月 2016<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2016/08/">八月 2016<span class="sidebar_archives-count">1</span></a>
+                <a class="sidebar_archives-link" href="/archives/2018/04/">四月 2018<span class="sidebar_archives-count">7</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/03/">三月 2018<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/02/">二月 2018<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/01/">一月 2018<span class="sidebar_archives-count">5</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/12/">十二月 2017<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/11/">十一月 2017<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/10/">十月 2017<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/09/">九月 2017<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/08/">八月 2017<span class="sidebar_archives-count">5</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/07/">七月 2017<span class="sidebar_archives-count">6</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/06/">六月 2017<span class="sidebar_archives-count">6</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/04/">四月 2017<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/03/">三月 2017<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/02/">二月 2017<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/01/">一月 2017<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2016/11/">十一月 2016<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2016/08/">八月 2016<span class="sidebar_archives-count">1</span></a>
             </ul>
         </li>
-        
-            <li class="divider"></li>
         
     
 
@@ -805,22 +829,20 @@ var speed = leng/(time/interval)  //每次位移量，就是一共调用多少�
             </a>
             <ul class="dropdown-menu">
                 <li>
-                <a class="sidebar_archives-link" href="/categories/APP/">APP<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/CSS/">CSS<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/HTML/">HTML<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/IDE/">IDE<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/JS/">JS<span class="sidebar_archives-count">5</span></a></li><li><a class="sidebar_archives-link" href="/categories/nodeJS/">nodeJS<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/categories/storage/">storage<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/vue/">vue<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/web前端/">web前端<span class="sidebar_archives-count">10</span></a></li><li><a class="sidebar_archives-link" href="/categories/web项目/">web项目<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/categories/代理/">代理<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/博客搭建/">博客搭建<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/安全/">安全<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/数据库/">数据库<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/服务器/">服务器<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/本地储存/">本地储存<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/版本管理/">版本管理<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/生活/">生活<span class="sidebar_archives-count">10</span></a></li><li><a class="sidebar_archives-link" href="/categories/阅读/">阅读<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/音乐/">音乐<span class="sidebar_archives-count">6</span></a>
+                <a class="sidebar_archives-link" href="/categories/CSS/">CSS<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/HTML/">HTML<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/IDE/">IDE<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/JS/">JS<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/categories/nodeJS/">nodeJS<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/categories/storage/">storage<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/vue/">vue<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/web前端/">web前端<span class="sidebar_archives-count">10</span></a></li><li><a class="sidebar_archives-link" href="/categories/web项目/">web项目<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/代理/">代理<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/博客搭建/">博客搭建<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/安全/">安全<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/数据库/">数据库<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/服务器/">服务器<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/本地储存/">本地储存<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/版本管理/">版本管理<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/生活/">生活<span class="sidebar_archives-count">9</span></a></li><li><a class="sidebar_archives-link" href="/categories/阅读/">阅读<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/音乐/">音乐<span class="sidebar_archives-count">6</span></a>
             </ul>
         </li>
-        
-            <li class="divider"></li>
         
     
 
     <!-- Pages  -->
     
         <li>
-            <a href="/gallery" title="图库">
+            <a href="/timeline" title="时间轴">
                 
-                    <i class="material-icons sidebar-material-icons">dashboard</i>
+                    <i class="material-icons sidebar-material-icons">calendar_today</i>
                 
-                图库
+                时间轴
             </a>
         </li>
         
@@ -836,7 +858,15 @@ var speed = leng/(time/interval)  //每次位移量，就是一共调用多少�
             </a>
         </li>
         
-            <li class="divider"></li>
+    
+        <li>
+            <a href="/gallery" title="图库">
+                
+                    <i class="material-icons sidebar-material-icons">dashboard</i>
+                
+                图库
+            </a>
+        </li>
         
     
         <li>
@@ -848,17 +878,17 @@ var speed = leng/(time/interval)  //每次位移量，就是一共调用多少�
             </a>
         </li>
         
-            <li class="divider"></li>
-        
     
         <li>
             <a href="/about" title="关于我">
                 
-                    <i class="material-icons sidebar-material-icons">face</i>
+                    <i class="material-icons sidebar-material-icons">sentiment_satisfied_alt</i>
                 
                 关于我
             </a>
         </li>
+        
+            <li class="divider"></li>
         
     
 
@@ -867,9 +897,11 @@ var speed = leng/(time/interval)  //每次位移量，就是一共调用多少�
         <li>
             <a href="/archives">
                 文章总数
-                <span class="sidebar-badge">61</span>
+                <span class="sidebar-badge">52</span>
             </a>
         </li>
+        
+            <li class="divider"></li>
         
     
 </ul>
@@ -926,12 +958,6 @@ It will not impact the appearance and can give developers a lot of support :)
 
     <!-- Sidebar Image -->
     
-    <span id="footer-image">
-        <a href="#" target="_blank" title="upyun_logo">
-            <img src="/img/favicon.ico" alt="upyun_logo"><!--
-     --></a>
-    </span>
-
 
 </aside>
 
@@ -1028,11 +1054,11 @@ It will not impact the appearance and can give developers a lot of support :)
 
         <!--Copyright-->
         <div id="copyright">
-            Copyright&nbsp;©&nbsp;2017&nbsp;-<script type="text/javascript">var fd = new Date();document.write("&nbsp;" + fd.getFullYear() + "&nbsp;");</script>Jzxer's Blog
+            Copyright&nbsp;©&nbsp;2017&nbsp;-<script type="text/javascript">var fd = new Date();document.write("&nbsp;" + fd.getFullYear() + "&nbsp;");</script>Feax's Blog
             
                 <br>
                 
-                    <a href="#" rel="nofollow">热爱生活，热爱生命！</a>
+                    <a href="/atom.xml" rel="nofollow">热爱生活，热爱生命！</a>
                 
             
         </div>

@@ -6,7 +6,6 @@ categories: IDE
 ---
 # vscode 配置
 
-
 ## auto-Open Markdown
 
 markdown 预览插件

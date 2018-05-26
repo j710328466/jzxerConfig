@@ -3,18 +3,18 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Jzxer's Blog
+title: Feax's Blog
 subtitle:
 description: web全栈工程师,摇滚,vue,vuex,react,webpack,git,koa2
-author: Jzxer
+author: Feax
 language: zh-CN
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: blog.jzxer.cn
+url: http://blog.jzxer.cn
 root: /
-permalink: :year/:month/:day/:title.html
+permalink: :title.html
 permalink_defaults:
 
 # Directory
@@ -71,9 +71,8 @@ pagination_dir: page
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/
-## Themes: https://hexo.io/themes/
-theme: material
-
+plugin:
+- hexo-generator-feed
 feed:
   type: atom
   path: atom.xml
@@ -82,6 +81,8 @@ feed:
   content:
   content_limit: 140
   content_limit_delim: ' '
+## Themes: https://hexo.io/themes/
+theme: material
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
@@ -92,3 +93,11 @@ deploy:
 - type: git
   repo: https://github.com/j710328466/j710328466.github.io.git
   branch: master
+- type: baidu_url_submitter
+
+# 百度主动推送
+baidu_url_submit:
+  count: 10
+  host: blog.jzxer.cn
+  token: SSFG70EWxRbTjmuY
+  path: baidu_urls.txt

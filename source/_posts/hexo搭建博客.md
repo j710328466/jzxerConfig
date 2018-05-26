@@ -3,11 +3,11 @@ title: hexo 搭建博客初体验
 tags: [hexo]
 categories: 博客搭建
 ---
-
 # hexo 搭建博客初体验
 
 ## 安装 hexo
-```
+
+```js
 > cnpm i hexo-cli -g
 报错的话就输入
 > cnpm i hexo --save
@@ -18,7 +18,8 @@ categories: 博客搭建
 ## hexo配置
 
 ### hexo 初始化
-```
+
+```js
 > hexo init
 然后
 > cnpm install
@@ -26,9 +27,13 @@ categories: 博客搭建
 ```
 
 ### 连接 GitHub
+
 在根目录打开 vim _config.yml，翻到最下面，改成我这样子的
-* 如果你是用 github 仓库 
-> deploy: 
+
+* 如果你是用 github 仓库
+
+```json
+> deploy:
     type: git
     repo: https://git.coding.net/jzxer/jzxer.git
     branch: master
@@ -37,15 +42,17 @@ categories: 博客搭建
     type: coding
     repo: https://github.com/j710328466/j710328466.github.io.git
     branch: master
+```
 
 ### 安装依赖包
-```
+
+```js
 > npm install hexo-deployer-git --save
 ```
 
 ## 开始
 
-```
+```js
 创建一篇新文章
 $ hexo new "My New Post"
 
@@ -70,13 +77,16 @@ $ hexo deploy
 每个不同的主题会需要不同的配置，主题配置文件在主题目录下的 _config.yml。有两个比较好的主题推荐给大家。
 
 ### Yilia
-Yilia 是为 hexo 2.4+ 制作的主题。 
+
+Yilia 是为 hexo 2.4+ 制作的主题。
 崇尚简约优雅，以及极致的性能。
 
 ### NexT
-目前Github上Star最高的Hexo主题，支持几种不同的风格。 
+
+目前Github上Star最高的Hexo主题，支持几种不同的风格。
 作者提供了非常完善的配置说明。
 
 ### Material
+
 原之质，物之渊
 就是我现在用的这款，简洁大方，响应式设计。
