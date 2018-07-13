@@ -33,7 +33,7 @@ scheme: Paradox
 
 # UI & UX: slogan, color, effect
 uiux:
-    slogan: "对的，坚持！错的，放弃！"
+    slogan: "爱音乐！爱生活！"
     theme_color: "#77546f"
     theme_sub_color: ""
     hyperlink_color: "#679cc5"
@@ -164,23 +164,23 @@ sidebar:
     pages:
         时间轴:
             link: "/timeline"
-            icon: person
+            icon: schedule
             divider: true
         标签:
             link: "/tags"
-            icon: person
+            icon: label
             divider: false
         图库:
             link: "/gallery"
-            icon: person
+            icon: class
             divider: false  
         我的足迹:
             link: "/footprint"
-            icon: person
+            icon: flight_takeoff
             divider: true 
         About:
             link: "/about"
-            icon: person
+            icon: face
             divider: false
     article_num:
         use: true
