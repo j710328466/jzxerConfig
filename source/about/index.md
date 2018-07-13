@@ -12,37 +12,45 @@ comment: false
 ## 工作经历
 
 * 南昌·午逅科技
-    任务职责：H5 活动模块。
+    ①、H5 活动模块开发。
 > 2017.06 -- 2017.09
 
 * 杭州·机蜜
-    任务职责：各大平台模块、活动模块、协议模块、公共组件模块...
+    ①、各大类型平台、活动、协议模块合作开发
+    ②、基础组件开发
 > 2017.10 -- 至今
 
 ## 技术栈
 
-前端技术框架很多，取其精华，抛弃糟蹋，该处只介绍我目前比较青睐的，并且以后会深入研究的个人技术方案。
+前端技术框架很多，取其精华，抛弃糟蹋，目前只列出我目前比较青睐，并且会深入研究的个人技术方案。
 
 ### 前端
 
-* Vue.Js React.Js
-* JavaScript(ES5 ES6)
-* HTML5 CSS/CSS3
-* Stylus
+* Vue.Js (移动端)
+* React.Js (PC端)
+* RN (APP端)
+
+### SSR
+
+* Next（React）
+* Nuxt（Vue）
 
 ### 后端
 
-* Nodejs(Expres.Js、Koa2.Js)
+* Nodejs (Expres.Js、Koa2.Js)
+* eggJS（正在学习...）
+* python (准备学习...)
 
 ### 数据库
 
-* MongoDB
-* Redis
+* MongoDB（非关系型）
+* mySql（关系型）
+* Redis（缓存）
 
 ### 自动化工具
 
-* webpack
 * gulp
+* webpack
 * parcel
 
 ### 版本管理
@@ -51,7 +59,22 @@ comment: false
 
 ### 代码规范
 
-* ESlint
+* BEM（HTML风格）
+* Stylus（CSS风格）
+* ESlint（JS风格）
+
+### 测试
+
+* mocha
+
+### 集成部署
+
+* travisCI
+
+### 其他
+
+* axure 8（产品原型）
+* Xmind（思维导图）
 
 ## 兴趣爱好
 
@@ -65,8 +88,8 @@ comment: false
 
 ## 未来的目标
 
-* 专注于自己喜欢的领域，然后精通它。
-* 做一个能影响别人的人。
-* 世界这么大，我要亲自去看看。
+* 工作：专注于自己喜欢的领域，然后精通它。
+* 生活：世界很大，不要只是生活在自己的小小世界里。
+* 理想：做一件能改变他人、乃至影响世界的事。
 
 {% aplayer "日落大道" "梁博" "http://orjedzer5.bkt.clouddn.com/blog/song/%E6%A2%81%E5%8D%9A%20%E6%97%A5%E8%90%BD%E5%A4%A7%E9%81%93.mp3" "autoplay" %}

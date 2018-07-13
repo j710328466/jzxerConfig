@@ -3,6 +3,71 @@
   
     
     <entry>
+      <title>RBP</title>
+      <link href="/RBP.html"/>
+      <url>/RBP.html</url>
+      <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="摇滚音乐平台-1-0-版"><a href="#摇滚音乐平台-1-0-版" class="headerlink" title="摇滚音乐平台 1.0 版"></a>摇滚音乐平台 1.0 版</h1><h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><p>摇滚（rock music）这种音乐风格从古至今在中国一直都是一个比较小众的存在，国外接触摇滚比我们早了几十年，所以他们对于摇滚的接受度、喜爱程度肯定和我们是不一样的（具体我没去过不好轻易下定论），但至少我认为摇滚这一类的音乐风格在国内从来没有像流行歌曲那样广为流传（除了 beyond 的那几首烂大街的）！</p><p>有时候我在想，如果国内最早开始听的第一首歌是摇滚乐，会不会现在的情况就不是那样?我觉得答案是肯定的！</p><p>该平台目前只针对摇滚音乐做垂直细分，毕竟摇滚细分下来也有很多类型，像：pop rock、metal rock、folk rock…做好这一块就够了，无论你是哪一种，只要摇滚就行！最少相同的兴趣爱好，才能更好的走在一起。</p><h2 id="功能"><a href="#功能" class="headerlink" title="功能"></a>功能</h2><ul><li><p>注册登录</p></li><li><p>搜索（音乐、音乐人）</p></li></ul><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>我希望自己的人生，不应该只是平凡的过完就好，至少要做一件能对这个世界的进步有帮助的事情，不在乎数量，只在乎自己是否尽力。这就是我想开发这个平台的原因。</p>]]></content>
+      
+      <categories>
+          
+          <category> 音乐 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 摇滚 </tag>
+            
+            <tag> 乐队 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>travisCI 集成 gh-page 构建项目</title>
+      <link href="/travisCI-%E9%9B%86%E6%88%90-gh-page-%E6%9E%84%E5%BB%BA%E9%A1%B9%E7%9B%AE.html"/>
+      <url>/travisCI-%E9%9B%86%E6%88%90-gh-page-%E6%9E%84%E5%BB%BA%E9%A1%B9%E7%9B%AE.html</url>
+      <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="travisCI-持续集成-gh-page-并部署"><a href="#travisCI-持续集成-gh-page-并部署" class="headerlink" title="travisCI 持续集成 gh-page 并部署"></a>travisCI 持续集成 gh-page 并部署</h1><h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><p>我们大多数公司在做项目时，应该都碰到过，当代码被 push 上 git 或者是 svn 时，过几分钟就可以在线上实时看到我们的项目，就像看到亲生儿子一样，但是肯定很多人不知道这是怎么实现的（如果你知道，那可以不用往下看了，点个赞就去吃饭吧…），所以今天我就来给大家介绍一下其中的一款 travis-CI，请记住它的 face：<br><img src="https://user-gold-cdn.xitu.io/2018/6/13/163f71251406fc86?w=72&amp;h=55&amp;f=jpeg&amp;s=5120" alt=""></p><p>持续集成（Continuous integration）的核心思想，代码先自动化测试用例，通过后集成到主干。它细分的话有两个概念：</p><ul><li>持续交付</li><li>持续部署<blockquote><p>简单来说持续部署是持续交付的下一步，持续交付是测试阶段，部署就是测试通过阶段。,这个就有很多东西展开了，求我我就告诉你…</p></blockquote></li></ul><h2 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h2><ul><li>GitHub 账号（作为一个合格的程序员，你没有真的好吗？）</li><li>travis-CI 平台接入</li><li>GITHUB_TOKEN</li><li>给我点赞…</li></ul><h2 id="第一步"><a href="#第一步" class="headerlink" title="第一步"></a>第一步</h2><p>登录 CI 官网，然后连接自己的 gitHub，这个时候 Legacy Services Integration 应该默认显示了几个自己gitHub的项目<br><img src="https://user-gold-cdn.xitu.io/2018/6/13/163f6c4922b8c7a6?w=761&amp;h=546&amp;f=jpeg&amp;s=39527" alt=""><br>如果显示不全，可以按左边的 sync 同步一下<br><img src="https://user-gold-cdn.xitu.io/2018/6/13/163f6c6433ce6888?w=318&amp;h=204&amp;f=jpeg&amp;s=16141" alt=""><br>然后第一张图每个项目的边上有一个 switch 开关，你想要让哪个集成就打开哪个吧（不截图了，我懒…）</p><h2 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a>第二步</h2><p>进入自己的 gh 主页，依次：GitHub settings -&gt; developer settings -&gt; Personal access tokens，勾选权限，自由发挥，你要全勾也行…</p><p><img src="https://user-gold-cdn.xitu.io/2018/6/13/163f6d80fb076590?w=1050&amp;h=878&amp;f=jpeg&amp;s=133880" alt=""><br>将生成的 token 复制备用</p><h2 id="第三步"><a href="#第三步" class="headerlink" title="第三步"></a>第三步</h2><p>回到CI，打开你打开开关的那个项目的 settings（看到你很绕我就放心了…），进入配置页面，在 Environment Variables 里填入以下内容：<br><img src="https://user-gold-cdn.xitu.io/2018/6/13/163f6f783dbe0143?w=832&amp;h=374&amp;f=jpeg&amp;s=35978" alt=""></p><blockquote><p>分别对应：git项目、项目分支（我这里的分支是gh-pages）、token、Git-email、Git-username</p></blockquote><h2 id="第四步"><a href="#第四步" class="headerlink" title="第四步"></a>第四步</h2><p>在项目根目录配置个文件叫 .travis.yml,打包项目以vue-cli为例，内容如下：</p><pre><code class="txt">language: node_js# nodejs版本node_js:    - &#39;8.9.1&#39;# S: Build Lifecycleinstall:  - npm installscript:  - npm run build# 这个是不是看着很熟悉？after_script:  - cd ./dist  - git init  - git config user.name &quot;${USER_NAME}&quot;  - git config user.email &quot;${USER_EMAIL}&quot;  - git add .  - git commit -m &quot;blog.jzxer.cn&quot;  - git push --force --quiet &quot;https://${test_token}@${GH_REF}&quot; master:${P_BRANCH}# E: Build LifeCycle# 只对某个分支行为生效branches:  only:    - master</code></pre><h2 id="第四点五步"><a href="#第四点五步" class="headerlink" title="第四点五步"></a>第四点五步</h2><p>打开 CI，进入自己构建项目的那个页面，打开 job log，感受那生怕 error 的快感！（都是泪…）</p><p><img src="https://user-gold-cdn.xitu.io/2018/6/13/163f702606d46967?w=632&amp;h=420&amp;f=jpeg&amp;s=50737" alt=""><br>当然如果你通过的话，就会有一个 passing 在你的项目标题旁边。</p><p><img src="https://user-gold-cdn.xitu.io/2018/6/13/163f7035a73791e3?w=363&amp;h=148&amp;f=jpeg&amp;s=11294" alt=""><br>每次看到这个我都激动的热泪盈眶…</p><h2 id="第五步"><a href="#第五步" class="headerlink" title="第五步"></a>第五步</h2><p>看一下自己在git上的项目，是不是出现了这个分支，并且已经自动部署好了？成功的截图。<br><img src="https://user-gold-cdn.xitu.io/2018/6/13/163f706697e8aeb8?w=355&amp;h=306&amp;f=jpeg&amp;s=28047" alt=""></p><h3 id="部署好的页面"><a href="#部署好的页面" class="headerlink" title="部署好的页面"></a>部署好的页面</h3><p><img src="https://user-gold-cdn.xitu.io/2018/6/13/163f708677ae9c6d?w=797&amp;h=266&amp;f=jpeg&amp;s=42978" alt=""></p><h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><p>现在，你可以疯狂的 push 代码了，其他的事交给 CI 去做就行。</p><p>好了，码了这么久的字，你是不是应该：</p><p>点个赞？</p><p>个赞？</p><p>赞？</p><p>👍</p>]]></content>
+      
+      <categories>
+          
+          <category> 自动化 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> CI </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>nodeJS性能处理（二）</title>
+      <link href="/webPerformanceOptimization-2.html"/>
+      <url>/webPerformanceOptimization-2.html</url>
+      <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="nodeJs-性能处理"><a href="#nodeJs-性能处理" class="headerlink" title="nodeJs 性能处理"></a>nodeJs 性能处理</h1><h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><p>一个网站的体验，决定了用户是否愿意去了解网站的功能，而网站的功能，决定了用户是去还是留。特别是网站的性能，如果一个网页的时间打开超过 5s ，绝大部分用户会选择关闭它。</p><p>性能极致一直是作为 fea 的最高追求，所以在性能上我们更应关注以下指标：</p><ul><li>白屏时间</li><li>首屏时间</li><li>整页时间</li><li>DNS 时间</li><li>CPU 占用率</li></ul><p>本文将从以下三大模块展开介绍如何优化网站性能:</p><ol><li>网络传输性能优化</li><li>页面渲染性能</li><li>JS阻塞性能</li></ol><h2 id="1-网络传输性能优化"><a href="#1-网络传输性能优化" class="headerlink" title="1. 网络传输性能优化"></a>1. 网络传输性能优化</h2><p>首先我们需要了解页面输入 url 后，经历了哪几个阶段，如下：重定向 → 拉取缓存 → DNS 查询 → 建立TCP链接 → 发起请求 → 接收响应 → 处理html元素 → 元素加载完成。</p><h3 id="1-1-浏览器缓存"><a href="#1-1-浏览器缓存" class="headerlink" title="1.1 浏览器缓存"></a>1.1 浏览器缓存</h3><p>浏览器向服务器请求时，首先会查询本地是否有缓存文件。我们可以在服务器上设置 Etag 字段来控制缓存存放的位置，存在时便将数据存入硬盘。</p><blockquote><p>缓存有两种情况，分别为： from memory cache 和 from disk cache.</p></blockquote><p>以 nginx 为例，来配置nginx：</p><pre><code class="js">//首先，我们先进入nginx的配置文档$ vim nginxPath/conf/nginx.conf//在配置文档内插入如下两项：etag on;   //开启etag验证expires 7d;    //设置缓存过期时间为7天</code></pre><p>然后打开我们的网站，如果响应头部看见该字段则配置成功。</p><blockquote><p>注意是否为强缓存（本地缓存），该操作不会和服务端产生联系，所以需要给文件添加 hash 值。</p></blockquote><h3 id="1-2-资源打包压缩"><a href="#1-2-资源打包压缩" class="headerlink" title="1.2 资源打包压缩"></a>1.2 资源打包压缩</h3><p>缓存只是针对第二次访问页面，而首次打开页面的体验优化则需要对资源进行处理，可以分为以下几个方面：</p><ul><li>减少请求数</li><li>减少请求资源体积</li><li>提示网络传输速率</li></ul><p>在 webpack 配置时，注意以下几点：</p><h4 id="①-JS-压缩"><a href="#①-JS-压缩" class="headerlink" title="① JS 压缩"></a>① JS 压缩</h4><pre><code class="js">new webpack.optimize.UglifyJsPlugin()</code></pre><h4 id="②-HTML-压缩"><a href="#②-HTML-压缩" class="headerlink" title="② HTML 压缩"></a>② HTML 压缩</h4><pre><code class="js">new HtmlWebpackPlugin({  template: __dirname + &#39;/views/index.html&#39;, // new 一个这个插件的实例，并传入相关的参数  filename: &#39;../index.html&#39;,  minify: {    removeComments: true,    collapseWhitespace: true,    removeRedundantAttributes: true,    useShortDoctype: true,    removeEmptyAttributes: true,    removeStyleLinkTypeAttributes: true,    keepClosingSlash: true,    minifyJS: true,    minifyCSS: true,    minifyURLs: true,  },  chunksSortMode: &#39;dependency&#39;})</code></pre><h4 id="③-提取公共资源"><a href="#③-提取公共资源" class="headerlink" title="③ 提取公共资源"></a>③ 提取公共资源</h4><pre><code class="js">new webpack.optimize.CommonsChunkPlugin({            name: &#39;vendor&#39;,            filename: &#39;scripts/common/vendor-[hash:5].js&#39;        })</code></pre><blockquote><p>webpack3, 可能不适用 webpack4</p></blockquote><h4 id="④-提取-CSS-并压缩"><a href="#④-提取-CSS-并压缩" class="headerlink" title="④ 提取 CSS 并压缩"></a>④ 提取 CSS 并压缩</h4><p>这里我只截取部分片段</p><pre><code class="js">rules: [  {    test: /\.css$/,    use: ExtractTextPlugin.extract({      fallback: &#39;style-loader&#39;,      use: {        loader: &#39;css-loader&#39;,        options: {          minimize: true        }      }    })  }]</code></pre><h4 id="⑤-服务器端开启-GZIP-压缩"><a href="#⑤-服务器端开启-GZIP-压缩" class="headerlink" title="⑤ 服务器端开启 GZIP 压缩"></a>⑤ 服务器端开启 GZIP 压缩</h4><pre><code class="js">gzip on;gzip_types text/plain application/javascript application/x-javascripttext/css application/xml text/javascript application/x-httpd-php application/vnd.ms-fontobject font/ttf font/opentype font/x-woff image/svg+xml;</code></pre><blockquote><p>不要对图片进行压缩，个人理解为图片内存一般都比较大，服务器处理起来需要消耗 CPU 占内存，压缩后的图片还有可能失真，这样只会适得其反。</p></blockquote><h3 id="1-3-图片资源优化"><a href="#1-3-图片资源优化" class="headerlink" title="1.3 图片资源优化"></a>1.3 图片资源优化</h3><p>图片是真正占了传输资源的东西，如果能对这类资源处理极致，效果是显著的。</p><h4 id="①-不要在-html-里面缩放图像"><a href="#①-不要在-html-里面缩放图像" class="headerlink" title="① 不要在 html 里面缩放图像"></a>① 不要在 html 里面缩放图像</h4><p>比如在一个 200 * 200 的容器里面放入一个 400 * 400 的图片，事实上并不会增加它的清晰度，相反它会让网页加载的速度下降，造成带宽的浪费，所以按照自己的需求选择图片，然后放在服务器最佳。</p><blockquote><p>2M 和 200k 的图片传输是 12s 和 200ms 的差距。</p></blockquote><h4 id="②-使用雪碧图"><a href="#②-使用雪碧图" class="headerlink" title="② 使用雪碧图"></a>② 使用雪碧图</h4><p>就是将许多小的图片放在一张图里，从而来减少请求数。</p><h4 id="③-使用字体图标"><a href="#③-使用字体图标" class="headerlink" title="③ 使用字体图标"></a>③ 使用字体图标</h4><p>不管是压缩的图片，还是雪碧图，终归还是图片，都会占用比较大的资源，使用字体图标，可以更进一步优化这个局面。如果项目中有很多小图标，可以考虑使用字体图标。</p><h4 id="④-WebP-格式"><a href="#④-WebP-格式" class="headerlink" title="④ WebP 格式"></a>④ WebP 格式</h4><p>谷歌开发的一种加快图片加载的格式，压缩体积大约只有 JPEG的 2/3。</p><h3 id="1-4-网络传输性能检测工具–Page-Speed"><a href="#1-4-网络传输性能检测工具–Page-Speed" class="headerlink" title="1.4 网络传输性能检测工具–Page Speed"></a>1.4 网络传输性能检测工具–Page Speed</h3><p>谷歌网页测速工具</p><h3 id="1-5-使用-CDN"><a href="#1-5-使用-CDN" class="headerlink" title="1.5 使用 CDN"></a>1.5 使用 CDN</h3><p>一个项目从服务器到客户端，中间可能经过一大堆路由来转发，这就相当于直线能到家的路程，然而走了很多弯路，到达目的地的时间肯定是不一样的。CDN 就是用来处理这个问题。</p><p>cdn 一般不和网站主域名相同，为什么？往下看。</p><h4 id="①-便于CDN-业务独立，能够独立配置缓存。"><a href="#①-便于CDN-业务独立，能够独立配置缓存。" class="headerlink" title="① 便于CDN 业务独立，能够独立配置缓存。"></a>① 便于CDN 业务独立，能够独立配置缓存。</h4><p>为了减低 web 的压力，cnd 会遵循前面的 cache 和 expires 头标准来对返回的内容进行缓存，起到加速的功能。一般大型网站都会设置 expires 比较大，这样可以减少请求回源。</p><h4 id="②-抛开无用的-cookie，减少带宽占用。"><a href="#②-抛开无用的-cookie，减少带宽占用。" class="headerlink" title="② 抛开无用的 cookie，减少带宽占用。"></a>② 抛开无用的 cookie，减少带宽占用。</h4><p>cookie 可以通过服务器设置，如果资源同源的情况下，主域名的资源都是带 cookie 的，相对的子域名也会带 cookie。然而一般图片，css，js这一类资源请求是不需要带 cookie 的，带了也没卵用，这时候就是在浪费带宽。</p><p>处理了 CND 的问题，随之而来的是 DNS 对域名的解析产生的问题，这会花费额外的时间，增加网络延迟。这个时候 DNS Prefetch 闪亮登场。使用方法如下：</p><pre><code class="css">/* 放在 html 头部即可预解析 */&lt;link ref=&quot;dns-prefetch&quot; href=&quot;//blog.jzxer.cn&quot;&gt;</code></pre><h2 id="2-页面渲染性能优化"><a href="#2-页面渲染性能优化" class="headerlink" title="2. 页面渲染性能优化"></a>2. 页面渲染性能优化</h2><h3 id="2-1-浏览器渲染过程"><a href="#2-1-浏览器渲染过程" class="headerlink" title="2.1 浏览器渲染过程"></a>2.1 浏览器渲染过程</h3><p>渲染方面尽量减少重排和重绘，因为它们会影响浏览器的性能。</p><p>浏览器的渲染过程：User → 浏览器引擎 → 渲染引擎</p><blockquote><p>渲染引擎再ajax、js、css 进行解析。其中 js 解释器独立出来变成了 V8.</p></blockquote><h3 id="2-2-DOM-渲染层与-GPU-硬件加速"><a href="#2-2-DOM-渲染层与-GPU-硬件加速" class="headerlink" title="2.2 DOM 渲染层与 GPU 硬件加速"></a>2.2 DOM 渲染层与 GPU 硬件加速</h3><p>页面是由许多层级构建而成，3D 图就像一本书一样。它经历了以下的流程：</p><ol><li>浏览器获取 DOM 将其分割为多个独立渲染层。</li><li>CPU 将每个层绘制进绘图中。</li><li>将位图作为纹理上传至 GPU（显卡）绘制。</li><li>GPU 将所有渲染层缓存（如果下次上传的渲染层没有变化，GPU就不用重绘制），并复合成最终形成的我们的图像。<blockquote><p>布局由 CPU 处理，绘制由 GPU 处理。</p></blockquote></li></ol><p>此处用到 chorme tools 两个工具：Layers 和 Rendering。</p><h4 id="Layers"><a href="#Layers" class="headerlink" title="Layers"></a>Layers</h4><p>列出页面存在的所有渲染层。</p><h4 id="Rendering"><a href="#Rendering" class="headerlink" title="Rendering"></a>Rendering</h4><ol><li>paint flashing：对页面发生重绘的元素高亮。</li><li>Layer Borders：高亮边界突出页面中的各个渲染层。</li><li>FPS Meter：开启小黑窗，观察 GPU 占用率。</li></ol><pre><code class="css">/* 触发渲染层 */transform: translateZ(0);backface-visibility: hidden;</code></pre><p>把容易触发排版重绘的元素单独触发渲染层，让他与“静态”元素隔离，让 GPU 分担更多，就是所谓的硬件加速。</p><h3 id="2-3-重排和重绘"><a href="#2-3-重排和重绘" class="headerlink" title="2.3 重排和重绘"></a>2.3 重排和重绘</h3><h4 id="①-重排"><a href="#①-重排" class="headerlink" title="① 重排"></a>① 重排</h4><p>渲染层内部元素布局发生修改，都会导致重新排列，窗口的尺寸发生变化，删除或添加 DOM，影响了盒子大小的 css 属性。</p><h4 id="②-重绘"><a href="#②-重绘" class="headerlink" title="② 重绘"></a>② 重绘</h4><p>既渲染上色，对元素的视觉表现属性，就会引发重绘。</p><h3 id="2-4-优化策略"><a href="#2-4-优化策略" class="headerlink" title="2.4 优化策略"></a>2.4 优化策略</h3><ol><li><p>css 属性读写分离：浏览器每次对样式进行操作时，都要进行一次重新渲染（重排 + 重绘），所以我们用 js 对样式进行读写操作时，最好将两者分开，先读后写。</p></li><li><p>通过切换 class 或者用元素的 style.css(text) 属性去批量操作元素样式。</p></li><li><p>DOM 元素离线更新：</p></li><li><p>将没用的元素设置为 visibility: hidden，可以减小重绘压力。</p></li><li><p>压缩 DOM 深度，一个渲染层不要有过深的子元素，少用 DOM 完成页面样式，多使用伪元素或者 box-shadow。</p></li><li><p>图片在渲染前指定大小：因为 img 是内联元素，加载后会改变宽高，最好在渲染前就指定大小，或者让它脱离文档流。</p></li></ol><h2 id="3-JS阻塞性能"><a href="#3-JS阻塞性能" class="headerlink" title="3. JS阻塞性能"></a>3. JS阻塞性能</h2><p>如果使用了闭包而未将相关资源释放，或者引用了外部链接而将其制空，都会造成内存泄漏，进而大量占用 GPU，造成卡顿和死机。可以使用 chrome 的 JavaScript Profile 版块。</p><blockquote><p>服务端使用闭包需谨慎。</p></blockquote>]]></content>
+      
+      <categories>
+          
+          <category> nodeJS </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 性能优化 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>cookie和session</title>
       <link href="/cookie%E5%92%8Csession.html"/>
       <url>/cookie%E5%92%8Csession.html</url>
@@ -33,7 +98,7 @@
       
       <categories>
           
-          <category> nodeJS </category>
+          <category> 自动化 </category>
           
       </categories>
       
@@ -41,8 +106,6 @@
         <tags>
             
             <tag> heroku </tag>
-            
-            <tag> 自动化 </tag>
             
         </tags>
       
@@ -84,9 +147,7 @@
       
         <tags>
             
-            <tag> 性能 </tag>
-            
-            <tag> 安全 </tag>
+            <tag> 性能优化 </tag>
             
         </tags>
       
@@ -371,9 +432,9 @@
       
         <tags>
             
-            <tag> 未完成 </tag>
-            
             <tag> PWA </tag>
+            
+            <tag> 未完成 </tag>
             
         </tags>
       
@@ -654,9 +715,9 @@
       
         <tags>
             
-            <tag> commonjs </tag>
-            
             <tag> 未完成 </tag>
+            
+            <tag> commonjs </tag>
             
         </tags>
       
@@ -1149,10 +1210,10 @@
     </entry>
     
     <entry>
-      <title>links</title>
-      <link href="/links/index.html"/>
-      <url>/links/index.html</url>
-      <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
+      <title>个人简介</title>
+      <link href="/about/index.html"/>
+      <url>/about/index.html</url>
+      <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>姓名：江志雄<br>英文名：Feax<br>性别：你看我头像女的吗？<br>专业：软件工程</p><h2 id="工作经历"><a href="#工作经历" class="headerlink" title="工作经历"></a>工作经历</h2><ul><li><p>南昌·午逅科技<br>  ①、H5 活动模块开发。</p><blockquote><p>2017.06 – 2017.09</p></blockquote></li><li><p>杭州·机蜜<br>  ①、各大类型平台、活动、协议模块合作开发<br>  ②、基础组件开发</p><blockquote><p>2017.10 – 至今</p></blockquote></li></ul><h2 id="技术栈"><a href="#技术栈" class="headerlink" title="技术栈"></a>技术栈</h2><p>前端技术框架很多，取其精华，抛弃糟蹋，目前只列出我目前比较青睐，并且会深入研究的个人技术方案。</p><h3 id="前端"><a href="#前端" class="headerlink" title="前端"></a>前端</h3><ul><li>Vue.Js (移动端)</li><li>React.Js (PC端)</li><li>RN (APP端)</li></ul><h3 id="SSR"><a href="#SSR" class="headerlink" title="SSR"></a>SSR</h3><ul><li>Next（React）</li><li>Nuxt（Vue）</li></ul><h3 id="后端"><a href="#后端" class="headerlink" title="后端"></a>后端</h3><ul><li>Nodejs (Expres.Js、Koa2.Js)</li><li>eggJS（正在学习…）</li><li>python (准备学习…)</li></ul><h3 id="数据库"><a href="#数据库" class="headerlink" title="数据库"></a>数据库</h3><ul><li>MongoDB（非关系型）</li><li>mySql（关系型）</li><li>Redis（缓存）</li></ul><h3 id="自动化工具"><a href="#自动化工具" class="headerlink" title="自动化工具"></a>自动化工具</h3><ul><li>gulp</li><li>webpack</li><li>parcel</li></ul><h3 id="版本管理"><a href="#版本管理" class="headerlink" title="版本管理"></a>版本管理</h3><ul><li>GIT</li></ul><h3 id="代码规范"><a href="#代码规范" class="headerlink" title="代码规范"></a>代码规范</h3><ul><li>BEM（HTML风格）</li><li>Stylus（CSS风格）</li><li>ESlint（JS风格）</li></ul><h3 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h3><ul><li>mocha</li></ul><h3 id="集成部署"><a href="#集成部署" class="headerlink" title="集成部署"></a>集成部署</h3><ul><li>travisCI</li></ul><h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><ul><li>axure 8（产品原型）</li><li>Xmind（思维导图）</li></ul><h2 id="兴趣爱好"><a href="#兴趣爱好" class="headerlink" title="兴趣爱好"></a>兴趣爱好</h2><blockquote><p>看书<br>健身<br>摇滚</p></blockquote><h2 id="自我介绍"><a href="#自我介绍" class="headerlink" title="自我介绍"></a>自我介绍</h2><p>介绍这东西大都是虚的，你需要的是和我面对面的交流和长时间的相处。</p><h2 id="未来的目标"><a href="#未来的目标" class="headerlink" title="未来的目标"></a>未来的目标</h2><ul><li>工作：专注于自己喜欢的领域，然后精通它。</li><li>生活：世界很大，不要只是生活在自己的小小世界里。</li><li>理想：做一件能改变他人、乃至影响世界的事。</li></ul>        <div id="aplayer-CUPbbWuq" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">            <pre class="aplayer-lrc-content"></pre>        </div>        <script>          var ap = new APlayer({            element: document.getElementById("aplayer-CUPbbWuq"),            narrow: false,            autoplay: true,            showlrc: false,            music: {              title: "日落大道",              author: "梁博",              url: "http://orjedzer5.bkt.clouddn.com/blog/song/%E6%A2%81%E5%8D%9A%20%E6%97%A5%E8%90%BD%E5%A4%A7%E9%81%93.mp3",              pic: "",              lrc: ""            }          });          window.aplayers || (window.aplayers = []);          window.aplayers.push(ap);        </script>]]></content>
     </entry>
     
     <entry>
@@ -1163,10 +1224,10 @@
     </entry>
     
     <entry>
-      <title>个人简介</title>
-      <link href="/about/index.html"/>
-      <url>/about/index.html</url>
-      <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>姓名：江志雄<br>英文名：Feax<br>性别：你看我头像女的吗？<br>专业：软件工程</p><h2 id="工作经历"><a href="#工作经历" class="headerlink" title="工作经历"></a>工作经历</h2><ul><li><p>南昌·午逅科技<br>  任务职责：H5 活动模块。</p><blockquote><p>2017.06 – 2017.09</p></blockquote></li><li><p>杭州·机蜜<br>  任务职责：各大平台模块、活动模块、协议模块、公共组件模块…</p><blockquote><p>2017.10 – 至今</p></blockquote></li></ul><h2 id="技术栈"><a href="#技术栈" class="headerlink" title="技术栈"></a>技术栈</h2><p>前端技术框架很多，取其精华，抛弃糟蹋，该处只介绍我目前比较青睐的，并且以后会深入研究的个人技术方案。</p><h3 id="前端"><a href="#前端" class="headerlink" title="前端"></a>前端</h3><ul><li>Vue.Js React.Js</li><li>JavaScript(ES5 ES6)</li><li>HTML5 CSS/CSS3</li><li>Stylus</li></ul><h3 id="后端"><a href="#后端" class="headerlink" title="后端"></a>后端</h3><ul><li>Nodejs(Expres.Js、Koa2.Js)</li></ul><h3 id="数据库"><a href="#数据库" class="headerlink" title="数据库"></a>数据库</h3><ul><li>MongoDB</li><li>Redis</li></ul><h3 id="自动化工具"><a href="#自动化工具" class="headerlink" title="自动化工具"></a>自动化工具</h3><ul><li>webpack</li><li>gulp</li><li>parcel</li></ul><h3 id="版本管理"><a href="#版本管理" class="headerlink" title="版本管理"></a>版本管理</h3><ul><li>GIT</li></ul><h3 id="代码规范"><a href="#代码规范" class="headerlink" title="代码规范"></a>代码规范</h3><ul><li>ESlint</li></ul><h2 id="兴趣爱好"><a href="#兴趣爱好" class="headerlink" title="兴趣爱好"></a>兴趣爱好</h2><blockquote><p>看书<br>健身<br>摇滚</p></blockquote><h2 id="自我介绍"><a href="#自我介绍" class="headerlink" title="自我介绍"></a>自我介绍</h2><p>介绍这东西大都是虚的，你需要的是和我面对面的交流和长时间的相处。</p><h2 id="未来的目标"><a href="#未来的目标" class="headerlink" title="未来的目标"></a>未来的目标</h2><ul><li>专注于自己喜欢的领域，然后精通它。</li><li>做一个能影响别人的人。</li><li>世界这么大，我要亲自去看看。</li></ul>        <div id="aplayer-wjNOLgOA" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">            <pre class="aplayer-lrc-content"></pre>        </div>        <script>          var ap = new APlayer({            element: document.getElementById("aplayer-wjNOLgOA"),            narrow: false,            autoplay: true,            showlrc: false,            music: {              title: "日落大道",              author: "梁博",              url: "http://orjedzer5.bkt.clouddn.com/blog/song/%E6%A2%81%E5%8D%9A%20%E6%97%A5%E8%90%BD%E5%A4%A7%E9%81%93.mp3",              pic: "",              lrc: ""            }          });          window.aplayers || (window.aplayers = []);          window.aplayers.push(ap);        </script>]]></content>
+      <title>links</title>
+      <link href="/links/index.html"/>
+      <url>/links/index.html</url>
+      <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
     </entry>
     
     <entry>

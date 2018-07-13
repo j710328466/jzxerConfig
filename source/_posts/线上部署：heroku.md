@@ -1,8 +1,8 @@
 ---
 title: 线上部署：heroku
 date: 2018-04-26 14:57:25
-tags: [heroku, 自动化]
-categories: nodeJS
+tags: [heroku]
+categories: 自动化
 ---
 # 介绍
 
