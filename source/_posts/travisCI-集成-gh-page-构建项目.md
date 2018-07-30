@@ -49,7 +49,7 @@ categories: 自动化
 
 在项目根目录配置个文件叫 .travis.yml,打包项目以vue-cli为例，内容如下：
 
-```txt
+```js
 language: node_js
 # nodejs版本
 node_js:
@@ -59,23 +59,23 @@ node_js:
 install:
   - npm install
 script:
-  - npm run build
+  - npm run generate
 
 # 这个是不是看着很熟悉？
 after_script:
-  - cd ./dist
+  - cd ./public
   - git init
   - git config user.name "${USER_NAME}"
   - git config user.email "${USER_EMAIL}"
   - git add .
-  - git commit -m "blog.jzxer.cn"
-  - git push --force --quiet "https://${test_token}@${GH_REF}" master:${P_BRANCH}
+  - git commit -m "更新博客"
+  - git push --force --quiet "https://${TOKEN}@${GH_REF}" master
 # E: Build LifeCycle
 
 # 只对某个分支行为生效
 branches:
   only:
-    - master
+    - config
 ```
 
 ## 第四点五步
