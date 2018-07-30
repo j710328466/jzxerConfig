@@ -35,7 +35,7 @@ scheme: Paradox
 uiux:
     slogan: "爱音乐！爱生活！"
     theme_color: "#77546f"
-    theme_sub_color: ""
+    theme_sub_color: "#77546f"
     hyperlink_color: "#679cc5"
     button_color: "#1b1d3a"
     android_chrome_color: "#0097A7"
@@ -146,8 +146,8 @@ sns_share:
 # Sidebar Customize
 sidebar:
     dropdown:
-        Email Me:
-            link: "710328466@qq.com"
+        我的邮箱:
+            link: "#"
             icon: email
     homepage:
         use: true
@@ -162,14 +162,14 @@ sidebar:
         icon: chrome_reader_mode
         divider: false
     pages:
-        时间轴:
-            link: "/timeline"
-            icon: schedule
-            divider: true
         标签:
             link: "/tags"
             icon: label
             divider: false
+        时间轴:
+            link: "/timeline"
+            icon: schedule
+            divider: true
         图库:
             link: "/gallery"
             icon: class
@@ -177,11 +177,11 @@ sidebar:
         我的足迹:
             link: "/footprint"
             icon: flight_takeoff
-            divider: true 
-        About:
+            divider: false 
+        关于博主:
             link: "/about"
             icon: face
-            divider: false
+            divider: true
     article_num:
         use: true
         divider: false
@@ -214,6 +214,7 @@ comment:
     valine_notify: true
     valine_verify: true
     valine_placeholder: 说说你的感想~
+    valine_pageSize: 10
 
 # Search Systems
 # Available value:
