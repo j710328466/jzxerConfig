@@ -33,7 +33,8 @@ scheme: Paradox
 
 # UI & UX: slogan, color, effect
 uiux:
-    slogan: "爱音乐！爱生活！"
+    slogan: 
+      "坚持不一定成功，不坚持一定会失败"
     theme_color: "#77546f"
     theme_sub_color: "#77546f"
     hyperlink_color: "#679cc5"
