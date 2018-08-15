@@ -3,6 +3,84 @@
   
     
     <entry>
+      <title>谁的人生不迷茫</title>
+      <link href="/%E8%B0%81%E7%9A%84%E4%BA%BA%E7%94%9F%E4%B8%8D%E8%BF%B7%E8%8C%AB.html"/>
+      <url>/%E8%B0%81%E7%9A%84%E4%BA%BA%E7%94%9F%E4%B8%8D%E8%BF%B7%E8%8C%AB.html</url>
+      <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>从过年回来杭州过去将近五个月了，相比较去年下半年刚来杭州，多了很多迷茫，不知道是因为见到周围太多人与人之间的差距，转正后的不如意，还是真的是自己的意志正在被消磨殆尽，除了上班时间，一回到住所，就觉得好迷茫，我这样做的目的是为什么？明天在哪里？未来在哪里？</p><p>为了让自己重新振作起来，我想了很多办法：弹吉他、健身、花切、周末找人吃饭…但我做了这么多，也只有当时的时间是充实的，过了那个时间点又回到了原来的状态…痛苦延续…</p><h1 id="迷茫的主要原因"><a href="#迷茫的主要原因" class="headerlink" title="迷茫的主要原因"></a>迷茫的主要原因</h1><ul><li>目标不明确</li><li>好高骛远</li><li>总感觉壮志未酬</li></ul><h2 id="面对迷茫时怎么做？"><a href="#面对迷茫时怎么做？" class="headerlink" title="面对迷茫时怎么做？"></a>面对迷茫时怎么做？</h2><p>首先，我认为要给自己明确目标，朝着那个目标去做，切勿好高骛远，你说 5 年内要赚一个亿，除非你有非常非常非常大的决心和运气，否则还是建议把目标定的切合实际一点，每个时间点定不同的目标，直到最终的人生目标！</p><h3 id="我们应该这样做"><a href="#我们应该这样做" class="headerlink" title="我们应该这样做"></a>我们应该这样做</h3><p>1、前期积累，积累好能力、人脉和资源；<br>2、遇到机会，该放弃就放弃，不留后路去创业；<br>3、咬牙坚持，该啃的骨头一个个啃完；<br>4、目标可以远大，但要分成一个个小目标去实现；<br>5、不管如何，聚焦自己最擅长的东西。</p><h3 id="马云心得"><a href="#马云心得" class="headerlink" title="马云心得"></a>马云心得</h3><p>面对香港大学女学生的提问，马云给出了我挺赞同的几点：</p><ul><li>20 - 30 跟人干（我们处于这个阶段）</li><li>30 - 40 开始干</li><li>40 - 50 放手干</li><li>50 - 60 帮别人干</li><li>60 - 70 在家干</li></ul><blockquote><p>我们现在的这个时期，是处于积累人脉、资源、经验，开拓视野，学习为人处世的时期。你要去学习，探索一个体系结构的原因，并且在这个过程中形成一套自己的思维逻辑。为将来自己做事的风格打下基础。</p></blockquote><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>今天看了几篇文章，才发现，其实大多数毕业生很多都是我现在的状态，是否能够正确去处理这些问题，才是问题的关键。我不希望让自己的人生过的太平庸，所以总结了几点重要的信息来警示自己！同时也希望能帮助看到这篇文章的同学，共勉之~</p><p>最后送自己一句话：在拼搏的年纪里选择了安逸，也就为自己的人生选择了平庸。</p>]]></content>
+      
+      
+        <tags>
+            
+            <tag> 人生历程 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>前端性能优化清单</title>
+      <link href="/%E5%89%8D%E7%AB%AF%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E6%B8%85%E5%8D%95.html"/>
+      <url>/%E5%89%8D%E7%AB%AF%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E6%B8%85%E5%8D%95.html</url>
+      <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p>作为一个前端，总是希望自己做的网站比较酷炫，牛逼。所以它的性能需求就比较强烈，这可以让我在不改变原来的内容的情况下加更多有趣的东西进去。那么我们今天就来聊聊对于开发一个这样的网站，需要遵守的一些原则。</p><h2 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h2><h3 id="首屏-CSS-内联"><a href="#首屏-CSS-内联" class="headerlink" title="首屏 CSS 内联"></a>首屏 CSS 内联</h3><p>link 标签加载到 html 需要时间，在首屏 css 内容比较少的时候，可以考虑内联到 html 中。</p><h3 id="减少使用价格昂贵的属性"><a href="#减少使用价格昂贵的属性" class="headerlink" title="减少使用价格昂贵的属性"></a>减少使用价格昂贵的属性</h3><p>需要浏览器操作或者计算的属性代价都比较大，涉及的属性有：box-shadow / border-radius / filter / opacity / :nth-child。如果有其他方案可选择，尽量选择其它的方案。</p><h3 id="优化重排和重绘"><a href="#优化重排和重绘" class="headerlink" title="优化重排和重绘"></a>优化重排和重绘</h3><p>FPS 为 60 是用户感觉性能流畅的的最低帧数，也就表示每一帧的渲染时间不能超过 16.67ms。所以有以下操作尽量避免去操作：</p><h4 id="减少重排"><a href="#减少重排" class="headerlink" title="减少重排"></a>减少重排</h4><ul><li>改变 font-size 和 font-family</li><li>改变元素 margin 和 padding</li><li>通过 js 改变 css</li><li>通过 js 获取 DOM 的位置属性</li><li>css 伪类活动</li><li>重排性能方面可以优先考虑 flex（更快）</li></ul><h4 id="减少重绘"><a href="#减少重绘" class="headerlink" title="减少重绘"></a>减少重绘</h4><p>visibility / color / background / hover 尽量不要用。使用动画的情况下可以考虑硬件加速和 will-change 来提升动画性能。</p><blockquote><p>硬件加速属性：transform / filter / opacity , 新 ： will-change</p></blockquote><h2 id="其它"><a href="#其它" class="headerlink" title="其它"></a>其它</h2><h3 id="1-减少-DNS-的解析"><a href="#1-减少-DNS-的解析" class="headerlink" title="1. 减少 DNS 的解析"></a>1. 减少 DNS 的解析</h3><p>在页面加载的过程中，DNS 首先会对资源的域名进行解析，这需要耗费一定的时间，所以缩减这个时间对网站的性能有一定的帮助。</p><blockquote><p>可以使用 dns-prefetch 进行预解析</p></blockquote><h3 id="2-减少对象"><a href="#2-减少对象" class="headerlink" title="2. 减少对象"></a>2. 减少对象</h3><p>对象加载越少越好，最简单的页面，一个 js 文件，一个 css 文件，一个 html 文件。这在一定程度上加快了网页加载的速度，提升了网站的性能。</p>]]></content>
+      
+      <categories>
+          
+          <category> web前端 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 性能优化 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>node前后端自动部属方案</title>
+      <link href="/node%E5%89%8D%E5%90%8E%E7%AB%AF%E8%87%AA%E5%8A%A8%E9%83%A8%E5%B1%9E%E6%96%B9%E6%A1%88.html"/>
+      <url>/node%E5%89%8D%E5%90%8E%E7%AB%AF%E8%87%AA%E5%8A%A8%E9%83%A8%E5%B1%9E%E6%96%B9%E6%A1%88.html</url>
+      <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p>前后端分离的概念现在已经应用的比较广了，它使我们的工作更加的高效，也提升了后期代码的可维护性，减少人力成本。</p><p>近年来 nodeJS 的出现，更让 js 提升到了一个新的高度，同时衍生出了很多。grunt、gulp、webpack、parcel这些工具都是建立在 node 的基础上实现的，它们极大的提升了我们的开发的效率。</p><p>在一个公司，开发一般会分为几个阶段：</p><blockquote><p>开发 -&gt; 开发部署 -&gt; 开发测试  -&gt; 测试部署 -&gt; 测试测试 -&gt; 预发布部署 -&gt; 预发布测试 -&gt; 正式上线<br>基本上每次测试之前，我们都有一个部署阶段，而部署阶段，往往都依赖运维。那么问题来了，有没有一种简洁高效的方案，让我们从运维那个层面脱离出来，实现开发到上线，或者是开发至预上线的自动部署？答案是肯定的，在 node 的帮助下，这次我们可以装这波逼…</p></blockquote><h2 id="实现思路"><a href="#实现思路" class="headerlink" title="实现思路"></a>实现思路</h2><p>通过 push git 上的代码，webhooks 向你的 ECS 发送请求，ECS 接收到请求后，重新拉取 git 上的最新数据，实现自动部署。</p><h2 id="开发准备"><a href="#开发准备" class="headerlink" title="开发准备"></a>开发准备</h2><ul><li>腾讯云 ECS （centOS 7.2 64位）</li><li>GitHub 账号</li><li>node 基本知识</li><li>pm2、git</li></ul><h2 id="第一步"><a href="#第一步" class="headerlink" title="第一步"></a>第一步</h2><p>首先，需要有一个服务器来模拟场景，如果是新手，建议新建一个账号，不要直接在 root 权限下运行。然后在服务器上安装：git、pm2 和 node。新建一个项目文件夹，npm 初始化后，在里面创建 app.js 文件，内容如下：</p><pre><code class="js">var express = require(&#39;express&#39;)var app = express()var bodyParser = require(&#39;body-parser&#39;)var path = require(&#39;path&#39;)var { exec } = require(&#39;child_process&#39;)// var fetch = require(&#39;node-fetch&#39;)const PORT = 3008app.use(bodyParser.json())app.post(&#39;/CI&#39;, (req, res, next) =&gt; {    var project = &#39;travis_demo&#39;    let PATH = path.resolve(__dirname, &#39;../&#39; + project)    var cmd = `cd ${PATH} &amp;&amp; git reset --hard &amp;&amp; git pull &amp;&amp; pm2 restart ${project}`    // 将你想要运行的命令行代码输出运行    exec(cmd, (err, stdout, stderr) =&gt; {      if (err) {        res.writeHead(500)        res.end(&#39;Server Internal Error.&#39;)        throw err      }      console.log(`stdout: ${stdout}`);      console.log(`stderr: ${stderr}`);      res.writeHead(200)      res.end(&#39;this is good~&#39;)    })})app.listen(PORT, () =&gt; {  console.log(&#39;this app is running at port:&#39; + PORT)})</code></pre><h2 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a>第二步</h2><p>给云主机添加 ssh ，具体教程百度，我博客里面也有，好了之后将上面的接口暴露给你想自动部署的项目，位置在该项目下 setting 选项下的 Webhooks，你可以设置它在什么场景下才会调用这个接口。<br><img src="https://user-gold-cdn.xitu.io/2018/7/30/164ea0f044c8baf7?w=1018&amp;h=688&amp;f=png&amp;s=107311" alt=""></p><h2 id="第三步"><a href="#第三步" class="headerlink" title="第三步"></a>第三步</h2><p>将这个项目通过 git clone 拉取到 ECS，安装依赖后，在项目根目录新建一个 bash 脚本（建议以该项目的文件夹名称命名），然后用 pm2 将该项目通过 pm2 start bash.sh 跑起来。</p><h2 id="第四步"><a href="#第四步" class="headerlink" title="第四步"></a>第四步</h2><p>到了这一步，基本上已经 OK 了~</p><blockquote><p>但是！！！</p></blockquote><p>这样逼格还是不够高，不能满足我们的需求。我们捋一捋，一般情况下，项目是否部署成功，需要有个消息推送通知，这样我们可以及时的知道该项目目前的状态。钉钉为我们提供了这个功能，它可以让我们接入自定义的 webhooks。接下来我们将 ECS 的接口内容修改为：</p><pre><code class="js">app.post(&#39;/CI&#39;, (req, res, next) =&gt; {    var project = &#39;travis_demo&#39;    let PATH = path.resolve(__dirname, &#39;../&#39; + project)    var cmd = `cd ${PATH} &amp;&amp; git reset --hard &amp;&amp; git pull &amp;&amp; pm2 restart ${project}`    // 将你想要运行的命令行代码输出运行    exec(cmd, (err, stdout, stderr) =&gt; {      if (err) {        res.writeHead(500)        res.end(&#39;Server Internal Error.&#39;)        throw err      }      let mes = {        &quot;msgtype&quot;: &quot;text&quot;,        &quot;text&quot;: {          // 在钉钉上推送的自定义消息           &quot;content&quot;: `我就是我, @1825718XXXX 是不一样的烟火`        }      }    }    // access_token 是创建机器人的那个人才能看见    fetch(&#39;https://oapi.dingtalk.com/robot/send?access_token=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX&#39;,      {        method: &#39;POST&#39;,        headers: { &#39;Content-Type&#39;: &#39;application/json&#39; },        body: JSON.stringify(mes)      }    ).then(response =&gt; response.json())      .then(json =&gt; console.log(json));    console.log(`stdout: ${stdout}`);    console.log(`stderr: ${stderr}`);    res.writeHead(200)    res.end(&#39;this is good~&#39;)  })})</code></pre><p>现在就是见证奇迹的时刻，当你每次 push 代码到 git 的时候，ECS 会向钉钉推送消息，如下图所示：</p><p><img src="https://user-gold-cdn.xitu.io/2018/7/30/164ea148f4794ee1?w=964&amp;h=186&amp;f=png&amp;s=34196" alt=""></p><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>这篇文章总结的内容还只是从一个中端的角度思考的，对目前这种实现的方法唯一担心的地方就是安全，毕竟一万个人有一万种想法，所以才需要更深入的学习将它的坑位全部填满，待到技术成熟之日，就是抢后端饭碗之时~</p>]]></content>
+      
+      <categories>
+          
+          <category> 自动化 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> webhook </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>hexo 搭建博客初体验</title>
+      <link href="/hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2.html"/>
+      <url>/hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2.html</url>
+      <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="hexo-搭建博客初体验"><a href="#hexo-搭建博客初体验" class="headerlink" title="hexo 搭建博客初体验"></a>hexo 搭建博客初体验</h1><h2 id="安装-hexo"><a href="#安装-hexo" class="headerlink" title="安装 hexo"></a>安装 hexo</h2><pre><code class="js">&gt; cnpm i hexo-cli -g报错的话就输入&gt; cnpm i hexo --save查看安装是否成功&gt; hexo -v</code></pre><h2 id="hexo配置"><a href="#hexo配置" class="headerlink" title="hexo配置"></a>hexo配置</h2><h3 id="hexo-初始化"><a href="#hexo-初始化" class="headerlink" title="hexo 初始化"></a>hexo 初始化</h3><pre><code class="js">&gt; hexo init然后&gt; cnpm install到这里你差不多就可以看到效果了，如果你要连接 GitHub，就要往下继续 </code></pre><h3 id="连接-GitHub"><a href="#连接-GitHub" class="headerlink" title="连接 GitHub"></a>连接 GitHub</h3><p>在根目录打开 vim _config.yml，翻到最下面，改成我这样子的</p><ul><li>如果你是用 github 仓库</li></ul><pre><code class="json">&gt; deploy:    type: git    repo: https://git.coding.net/jzxer/jzxer.git    branch: master* 如果你是用 coding 仓库&gt; deploy:    type: coding    repo: https://github.com/j710328466/j710328466.github.io.git    branch: master</code></pre><h3 id="安装依赖包"><a href="#安装依赖包" class="headerlink" title="安装依赖包"></a>安装依赖包</h3><pre><code class="js">&gt; npm install hexo-deployer-git --save</code></pre><h2 id="开始"><a href="#开始" class="headerlink" title="开始"></a>开始</h2><pre><code class="js">创建一篇新文章$ hexo new &quot;My New Post&quot;监听$ hexo server打包$ hexo generate上传$ hexo deploy</code></pre><h2 id="主题配置"><a href="#主题配置" class="headerlink" title="主题配置"></a>主题配置</h2><ul><li>打开根目录下的vim _config.yml<blockquote><p>theme: material<br>将主题改成你喜欢的</p></blockquote></li></ul><h2 id="主题推荐"><a href="#主题推荐" class="headerlink" title="主题推荐"></a>主题推荐</h2><p>每个不同的主题会需要不同的配置，主题配置文件在主题目录下的 _config.yml。有两个比较好的主题推荐给大家。</p><h3 id="Yilia"><a href="#Yilia" class="headerlink" title="Yilia"></a>Yilia</h3><p>Yilia 是为 hexo 2.4+ 制作的主题。<br>崇尚简约优雅，以及极致的性能。</p><h3 id="NexT"><a href="#NexT" class="headerlink" title="NexT"></a>NexT</h3><p>目前Github上Star最高的Hexo主题，支持几种不同的风格。<br>作者提供了非常完善的配置说明。</p><h3 id="Material"><a href="#Material" class="headerlink" title="Material"></a>Material</h3><p>原之质，物之渊<br>就是我现在用的这款，简洁大方，响应式设计。</p>]]></content>
+      
+      <categories>
+          
+          <category> 博客搭建 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>RBP</title>
       <link href="/RBP.html"/>
       <url>/RBP.html</url>
@@ -29,7 +107,7 @@
       <title>travisCI 集成 gh-page 构建项目</title>
       <link href="/travisCI-%E9%9B%86%E6%88%90-gh-page-%E6%9E%84%E5%BB%BA%E9%A1%B9%E7%9B%AE.html"/>
       <url>/travisCI-%E9%9B%86%E6%88%90-gh-page-%E6%9E%84%E5%BB%BA%E9%A1%B9%E7%9B%AE.html</url>
-      <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="travisCI-持续集成-gh-page-并部署"><a href="#travisCI-持续集成-gh-page-并部署" class="headerlink" title="travisCI 持续集成 gh-page 并部署"></a>travisCI 持续集成 gh-page 并部署</h1><h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><p>我们大多数公司在做项目时，应该都碰到过，当代码被 push 上 git 或者是 svn 时，过几分钟就可以在线上实时看到我们的项目，就像看到亲生儿子一样，但是肯定很多人不知道这是怎么实现的（如果你知道，那可以不用往下看了，点个赞就去吃饭吧…），所以今天我就来给大家介绍一下其中的一款 travis-CI，请记住它的 face：<br><img src="https://user-gold-cdn.xitu.io/2018/6/13/163f71251406fc86?w=72&amp;h=55&amp;f=jpeg&amp;s=5120" alt=""></p><p>持续集成（Continuous integration）的核心思想，代码先自动化测试用例，通过后集成到主干。它细分的话有两个概念：</p><ul><li>持续交付</li><li>持续部署<blockquote><p>简单来说持续部署是持续交付的下一步，持续交付是测试阶段，部署就是测试通过阶段。,这个就有很多东西展开了，求我我就告诉你…</p></blockquote></li></ul><h2 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h2><ul><li>GitHub 账号（作为一个合格的程序员，你没有真的好吗？）</li><li>travis-CI 平台接入</li><li>GITHUB_TOKEN</li><li>给我点赞…</li></ul><h2 id="第一步"><a href="#第一步" class="headerlink" title="第一步"></a>第一步</h2><p>登录 CI 官网，然后连接自己的 gitHub，这个时候 Legacy Services Integration 应该默认显示了几个自己gitHub的项目<br><img src="https://user-gold-cdn.xitu.io/2018/6/13/163f6c4922b8c7a6?w=761&amp;h=546&amp;f=jpeg&amp;s=39527" alt=""><br>如果显示不全，可以按左边的 sync 同步一下<br><img src="https://user-gold-cdn.xitu.io/2018/6/13/163f6c6433ce6888?w=318&amp;h=204&amp;f=jpeg&amp;s=16141" alt=""><br>然后第一张图每个项目的边上有一个 switch 开关，你想要让哪个集成就打开哪个吧（不截图了，我懒…）</p><h2 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a>第二步</h2><p>进入自己的 gh 主页，依次：GitHub settings -&gt; developer settings -&gt; Personal access tokens，勾选权限，自由发挥，你要全勾也行…</p><p><img src="https://user-gold-cdn.xitu.io/2018/6/13/163f6d80fb076590?w=1050&amp;h=878&amp;f=jpeg&amp;s=133880" alt=""><br>将生成的 token 复制备用</p><h2 id="第三步"><a href="#第三步" class="headerlink" title="第三步"></a>第三步</h2><p>回到CI，打开你打开开关的那个项目的 settings（看到你很绕我就放心了…），进入配置页面，在 Environment Variables 里填入以下内容：<br><img src="https://user-gold-cdn.xitu.io/2018/6/13/163f6f783dbe0143?w=832&amp;h=374&amp;f=jpeg&amp;s=35978" alt=""></p><blockquote><p>分别对应：git项目、项目分支（我这里的分支是gh-pages）、token、Git-email、Git-username</p></blockquote><h2 id="第四步"><a href="#第四步" class="headerlink" title="第四步"></a>第四步</h2><p>在项目根目录配置个文件叫 .travis.yml,打包项目以vue-cli为例，内容如下：</p><pre><code class="txt">language: node_js# nodejs版本node_js:    - &#39;8.9.1&#39;# S: Build Lifecycleinstall:  - npm installscript:  - npm run build# 这个是不是看着很熟悉？after_script:  - cd ./dist  - git init  - git config user.name &quot;${USER_NAME}&quot;  - git config user.email &quot;${USER_EMAIL}&quot;  - git add .  - git commit -m &quot;blog.jzxer.cn&quot;  - git push --force --quiet &quot;https://${test_token}@${GH_REF}&quot; master:${P_BRANCH}# E: Build LifeCycle# 只对某个分支行为生效branches:  only:    - master</code></pre><h2 id="第四点五步"><a href="#第四点五步" class="headerlink" title="第四点五步"></a>第四点五步</h2><p>打开 CI，进入自己构建项目的那个页面，打开 job log，感受那生怕 error 的快感！（都是泪…）</p><p><img src="https://user-gold-cdn.xitu.io/2018/6/13/163f702606d46967?w=632&amp;h=420&amp;f=jpeg&amp;s=50737" alt=""><br>当然如果你通过的话，就会有一个 passing 在你的项目标题旁边。</p><p><img src="https://user-gold-cdn.xitu.io/2018/6/13/163f7035a73791e3?w=363&amp;h=148&amp;f=jpeg&amp;s=11294" alt=""><br>每次看到这个我都激动的热泪盈眶…</p><h2 id="第五步"><a href="#第五步" class="headerlink" title="第五步"></a>第五步</h2><p>看一下自己在git上的项目，是不是出现了这个分支，并且已经自动部署好了？成功的截图。<br><img src="https://user-gold-cdn.xitu.io/2018/6/13/163f706697e8aeb8?w=355&amp;h=306&amp;f=jpeg&amp;s=28047" alt=""></p><h3 id="部署好的页面"><a href="#部署好的页面" class="headerlink" title="部署好的页面"></a>部署好的页面</h3><p><img src="https://user-gold-cdn.xitu.io/2018/6/13/163f708677ae9c6d?w=797&amp;h=266&amp;f=jpeg&amp;s=42978" alt=""></p><h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><p>现在，你可以疯狂的 push 代码了，其他的事交给 CI 去做就行。</p><p>好了，码了这么久的字，你是不是应该：</p><p>点个赞？</p><p>个赞？</p><p>赞？</p><p>👍</p>]]></content>
+      <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="travisCI-持续集成-gh-page-并部署"><a href="#travisCI-持续集成-gh-page-并部署" class="headerlink" title="travisCI 持续集成 gh-page 并部署"></a>travisCI 持续集成 gh-page 并部署</h1><h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><p>我们大多数公司在做项目时，应该都碰到过，当代码被 push 上 git 或者是 svn 时，过几分钟就可以在线上实时看到我们的项目，就像看到亲生儿子一样，但是肯定很多人不知道这是怎么实现的（如果你知道，那可以不用往下看了，点个赞就去吃饭吧…），所以今天我就来给大家介绍一下其中的一款 travis-CI，请记住它的 face：<br><img src="https://user-gold-cdn.xitu.io/2018/6/13/163f71251406fc86?w=72&amp;h=55&amp;f=jpeg&amp;s=5120" alt=""></p><p>持续集成（Continuous integration）的核心思想，代码先自动化测试用例，通过后集成到主干。它细分的话有两个概念：</p><ul><li>持续交付</li><li>持续部署<blockquote><p>简单来说持续部署是持续交付的下一步，持续交付是测试阶段，部署就是测试通过阶段。,这个就有很多东西展开了，求我我就告诉你…</p></blockquote></li></ul><h2 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h2><ul><li>GitHub 账号（作为一个合格的程序员，你没有真的好吗？）</li><li>travis-CI 平台接入</li><li>GITHUB_TOKEN</li><li>给我点赞…</li></ul><h2 id="第一步"><a href="#第一步" class="headerlink" title="第一步"></a>第一步</h2><p>登录 CI 官网，然后连接自己的 gitHub，这个时候 Legacy Services Integration 应该默认显示了几个自己gitHub的项目<br><img src="https://user-gold-cdn.xitu.io/2018/6/13/163f6c4922b8c7a6?w=761&amp;h=546&amp;f=jpeg&amp;s=39527" alt=""><br>如果显示不全，可以按左边的 sync 同步一下<br><img src="https://user-gold-cdn.xitu.io/2018/6/13/163f6c6433ce6888?w=318&amp;h=204&amp;f=jpeg&amp;s=16141" alt=""><br>然后第一张图每个项目的边上有一个 switch 开关，你想要让哪个集成就打开哪个吧（不截图了，我懒…）</p><h2 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a>第二步</h2><p>进入自己的 gh 主页，依次：GitHub settings -&gt; developer settings -&gt; Personal access tokens，勾选权限，自由发挥，你要全勾也行…</p><p><img src="https://user-gold-cdn.xitu.io/2018/6/13/163f6d80fb076590?w=1050&amp;h=878&amp;f=jpeg&amp;s=133880" alt=""><br>将生成的 token 复制备用</p><h2 id="第三步"><a href="#第三步" class="headerlink" title="第三步"></a>第三步</h2><p>回到CI，打开你打开开关的那个项目的 settings（看到你很绕我就放心了…），进入配置页面，在 Environment Variables 里填入以下内容：<br><img src="https://user-gold-cdn.xitu.io/2018/6/13/163f6f783dbe0143?w=832&amp;h=374&amp;f=jpeg&amp;s=35978" alt=""></p><blockquote><p>分别对应：git项目、项目分支（我这里的分支是gh-pages）、token、Git-email、Git-username</p></blockquote><h2 id="第四步"><a href="#第四步" class="headerlink" title="第四步"></a>第四步</h2><p>在项目根目录配置个文件叫 .travis.yml,打包项目以vue-cli为例，内容如下：</p><pre><code class="js">language: node_js# nodejs版本node_js:    - &#39;8.9.1&#39;# S: Build Lifecycleinstall:  - npm installscript:  - npm run generate# 这个是不是看着很熟悉？after_script:  - cd ./public  - git init  - git config user.name &quot;${USER_NAME}&quot;  - git config user.email &quot;${USER_EMAIL}&quot;  - git add .  - git commit -m &quot;更新博客&quot;  - git push --force --quiet &quot;https://${TOKEN}@${GH_REF}&quot; master# E: Build LifeCycle# 只对某个分支行为生效branches:  only:    - config</code></pre><h2 id="第四点五步"><a href="#第四点五步" class="headerlink" title="第四点五步"></a>第四点五步</h2><p>打开 CI，进入自己构建项目的那个页面，打开 job log，感受那生怕 error 的快感！（都是泪…）</p><p><img src="https://user-gold-cdn.xitu.io/2018/6/13/163f702606d46967?w=632&amp;h=420&amp;f=jpeg&amp;s=50737" alt=""><br>当然如果你通过的话，就会有一个 passing 在你的项目标题旁边。</p><p><img src="https://user-gold-cdn.xitu.io/2018/6/13/163f7035a73791e3?w=363&amp;h=148&amp;f=jpeg&amp;s=11294" alt=""><br>每次看到这个我都激动的热泪盈眶…</p><h2 id="第五步"><a href="#第五步" class="headerlink" title="第五步"></a>第五步</h2><p>看一下自己在git上的项目，是不是出现了这个分支，并且已经自动部署好了？成功的截图。<br><img src="https://user-gold-cdn.xitu.io/2018/6/13/163f706697e8aeb8?w=355&amp;h=306&amp;f=jpeg&amp;s=28047" alt=""></p><h3 id="部署好的页面"><a href="#部署好的页面" class="headerlink" title="部署好的页面"></a>部署好的页面</h3><p><img src="https://user-gold-cdn.xitu.io/2018/6/13/163f708677ae9c6d?w=797&amp;h=266&amp;f=jpeg&amp;s=42978" alt=""></p><h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><p>现在，你可以疯狂的 push 代码了，其他的事交给 CI 去做就行。</p><p>好了，码了这么久的字，你是不是应该：</p><p>点个赞？</p><p>个赞？</p><p>赞？</p><p>👍</p>]]></content>
       
       <categories>
           
@@ -191,7 +269,7 @@
       
         <tags>
             
-            <tag> 学生思维 </tag>
+            <tag> 人生历程 </tag>
             
         </tags>
       
@@ -222,7 +300,7 @@
       <title>如何规划自己的工作和生活</title>
       <link href="/%E5%A6%82%E4%BD%95%E8%A7%84%E5%88%92%E8%87%AA%E5%B7%B1%E7%9A%84%E5%B7%A5%E4%BD%9C%E5%92%8C%E7%94%9F%E6%B4%BB.html"/>
       <url>/%E5%A6%82%E4%BD%95%E8%A7%84%E5%88%92%E8%87%AA%E5%B7%B1%E7%9A%84%E5%B7%A5%E4%BD%9C%E5%92%8C%E7%94%9F%E6%B4%BB.html</url>
-      <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>人人都在说工作-生活平衡，但好像都不敢真正拥有它，移动互联网，正在让工作和生活的边界变得越来越模糊…</p><p>人生短暂，如何才能真正的规划好自己的一生？在有限的时间迸发出无限的生命力？其实我目前也不是很了解，以下是我结合阅读的知识总结的一些规律。</p><h2 id="1·-花时间做规划"><a href="#1·-花时间做规划" class="headerlink" title="1· 花时间做规划"></a>1· 花时间做规划</h2><p>给自己的时间做规划，不意味着你可以更放松，反而需要更严格的时间规划，尝试对时间概念有一个精准的定位。</p><ul><li>明确目标：包括工作目标，生活目标。</li><li>给事情做优先级：按重要程度划分。</li><li>细化目标所需时间：精确目标实现所需时间，大到年月、小到分时。<blockquote><p>s越忙越乱，越乱越忙</p></blockquote></li></ul><h2 id="2·-形成日常惯例，减少意志力的损耗"><a href="#2·-形成日常惯例，减少意志力的损耗" class="headerlink" title="2· 形成日常惯例，减少意志力的损耗"></a>2· 形成日常惯例，减少意志力的损耗</h2><p>给自己每周、每月、每年定下固定活动时间分配，让它自然而然的形成惯例。</p><blockquote><p>越来越多的人认为，只有不断工作才能证明自己有能力、有责任心</p></blockquote><h2 id="3·-有效地休闲"><a href="#3·-有效地休闲" class="headerlink" title="3· 有效地休闲"></a>3· 有效地休闲</h2><p>休闲时间不在长短，而在于质量。高质量的休闲让你体验到的是放松，而不是无聊和空虚。</p><p>休闲的必要性：放松可以让人们正在接下来的工作中效率更高。并且放松可以用更宽广的思路与抽象的方式去思考，容易产生有创造力的洞察力。</p><blockquote><p>长时间的工作会降低人们的创造力，提高心脏病、抑郁症的发生率。</p></blockquote>]]></content>
+      <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>人人都在说工作-生活平衡，但好像都不敢真正拥有它，移动互联网，正在让工作和生活的边界变得越来越模糊…</p><p>人生短暂，如何才能真正的规划好自己的一生？在有限的时间迸发出有意义的生命力？以下是我结合阅读的知识总结的一些规律。</p><h2 id="1·-花时间做规划"><a href="#1·-花时间做规划" class="headerlink" title="1· 花时间做规划"></a>1· 花时间做规划</h2><p>给自己的时间做规划，不意味着你可以更放松，反而需要更严格的时间规划，尝试对时间概念有一个精准的定位。</p><ul><li>明确目标：包括工作目标，生活目标。</li><li>给事情做优先级：按重要程度划分。</li><li>细化目标所需时间：精确目标实现所需时间，大到年月、小到分时。<blockquote><p>文章结尾有我对未来的一个时间规划。</p></blockquote></li></ul><h2 id="2·-形成日常惯例，减少意志力的损耗"><a href="#2·-形成日常惯例，减少意志力的损耗" class="headerlink" title="2· 形成日常惯例，减少意志力的损耗"></a>2· 形成日常惯例，减少意志力的损耗</h2><p>给自己每周、每月、每年定下固定活动时间分配，让它自然而然的形成惯例。这点对于刚毕业的大学生很重要，在我的另外一篇文章 <a href="./%E8%B0%81%E7%9A%84%E4%BA%BA%E7%94%9F%E4%B8%8D%E8%BF%B7%E8%8C%AB.html">&lt;谁的人生不迷茫&gt;</a> 中提到了这点，时间的充分利用，可以防止你的意志随着时间的推移而消耗殆尽！</p><blockquote><p>越来越多的人认为，只有不断工作才能证明自己有能力、有责任心</p></blockquote><h2 id="3·-有效地休闲"><a href="#3·-有效地休闲" class="headerlink" title="3· 有效地休闲"></a>3· 有效地休闲</h2><p>休闲时间不在长短，而在于质量。高质量的休闲让你体验到的是放松，而不是无聊和空虚。</p><p>科学研究表明休闲的必要性：放松可以让人们正在接下来的工作中效率更高。并且放松可以用更宽广的思路与抽象的方式去思考，容易产生有创造力的洞察力。</p><blockquote><p>长时间的工作会降低人们的创造力，提高心脏病、抑郁症的发生率。</p></blockquote><h2 id="Feax-人生蓝图"><a href="#Feax-人生蓝图" class="headerlink" title="Feax 人生蓝图"></a>Feax 人生蓝图</h2><p>我对自己的一个规划是每 5 年一个的大阶段，列出了未来 20 年的计划，具体细分保密。</p><ul><li>2017 - 2022<blockquote><p>需要锻炼自己的口才，思维，技术然后带领一个团队（P7+）！</p></blockquote></li><li>2022 - 2027<blockquote><p>懂得了取舍，寻找一个机会，而这个机会值得我放弃现在的一切！</p></blockquote></li><li>2027 - 2032<blockquote><p>如果上一个阶段就已经找到了机会，巩固！如果没有，这个时候必须去实现！</p></blockquote></li><li>2032 - 2037<blockquote><p>在自己喜欢的领域里干到极致！</p></blockquote></li></ul>]]></content>
       
       <categories>
           
@@ -233,7 +311,7 @@
       
         <tags>
             
-            <tag> 哲理 </tag>
+            <tag> 人生历程 </tag>
             
         </tags>
       
@@ -298,7 +376,7 @@
       
         <tags>
             
-            <tag> 幸福 </tag>
+            <tag> 人生历程 </tag>
             
         </tags>
       
@@ -365,7 +443,7 @@
       
         <tags>
             
-            <tag> 狼性 </tag>
+            <tag> 人生历程 </tag>
             
         </tags>
       
@@ -379,7 +457,7 @@
       
       <categories>
           
-          <category> 安全 </category>
+          <category> web前端 </category>
           
       </categories>
       
@@ -614,7 +692,7 @@
       
         <tags>
             
-            <tag> 哲理 </tag>
+            <tag> 人生历程 </tag>
             
         </tags>
       
@@ -670,10 +748,16 @@
       <url>/%E5%A6%82%E4%BD%95%E6%88%90%E4%B8%BA%E4%B8%80%E5%90%8D%E5%90%88%E6%A0%BC%E7%9A%84CEO.html</url>
       <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="集中精力抓到要害问题"><a href="#集中精力抓到要害问题" class="headerlink" title="集中精力抓到要害问题"></a>集中精力抓到要害问题</h3><ul><li>好的ceo善于俯视整个公司，确定最优先要做的事前，然后重点突破，一两件事就能使公司发生巨大的变化。如果你能抓住公司面临问题的要害之处，人们才会洗耳恭听</li></ul><h3 id="销售能力"><a href="#销售能力" class="headerlink" title="销售能力"></a>销售能力</h3><ul><li>ceo 必须具备推销能力，把东西推销给客户和投资者，或者把革命思想推荐给公司</li></ul><h3 id="对财务的敏感"><a href="#对财务的敏感" class="headerlink" title="对财务的敏感"></a>对财务的敏感</h3><ul><li>读懂数据，把纸上的东西和实际的公司情况结合起来，不仅仅是预算问题，也需要思考盈利的驱动力问题。</li></ul><h3 id="有策略头脑"><a href="#有策略头脑" class="headerlink" title="有策略头脑"></a>有策略头脑</h3><ul><li>策略就是选择公司将参与角逐的竞技场，然后建立与这场竞争想关的优势。这样会考验你如何适应游戏规则并在游戏中获胜</li></ul><h3 id="管理变革的能力"><a href="#管理变革的能力" class="headerlink" title="管理变革的能力"></a>管理变革的能力</h3><ul><li>在整个公司的变革，犹如管理一个部门，但要困难的多，你的行动要有号召力。你必须为人们树立一个榜样，挑选真确的管理团队，确定可能妨碍或阻止你的层层挑战</li></ul><h3 id="领导能力"><a href="#领导能力" class="headerlink" title="领导能力"></a>领导能力</h3><ul><li>领导需要精力和激情。你必须先感召你自己，然后感召其他人。但激情也不是无根无据的滥用，一个坚定的长远目标很重要。</li></ul><h3 id="个性魅力"><a href="#个性魅力" class="headerlink" title="个性魅力"></a>个性魅力</h3><ul><li>伟大的ceo知道什么时候用逻辑推理，什么时候相信自己的直觉，他们知道什么时候应该采取什么措施，什么时候听之任之，他知道什么时候管什么时候不要管。</li></ul>]]></content>
       
+      <categories>
+          
+          <category> 工作 </category>
+          
+      </categories>
+      
       
         <tags>
             
-            <tag> 职场 </tag>
+            <tag> 人生历程 </tag>
             
         </tags>
       
@@ -731,14 +815,14 @@
       
       <categories>
           
-          <category> 生活 </category>
+          <category> 公司 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 哲理 </tag>
+            <tag> 人生历程 </tag>
             
         </tags>
       
@@ -820,7 +904,7 @@
       
         <tags>
             
-            <tag> 哲理 </tag>
+            <tag> 人生历程 </tag>
             
         </tags>
       
@@ -872,7 +956,7 @@
       <title>我向往的明天</title>
       <link href="/%E6%88%91%E5%90%91%E5%BE%80%E7%9A%84%E6%98%8E%E5%A4%A9.html"/>
       <url>/%E6%88%91%E5%90%91%E5%BE%80%E7%9A%84%E6%98%8E%E5%A4%A9.html</url>
-      <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="欲望"><a href="#欲望" class="headerlink" title="欲望"></a>欲望</h1><ul><li><p>我很希望，自己的未来能不一样</p></li><li><p>我想要的，就是在平凡中不断的改变自己</p></li><li><p>路上的人，有人嘲笑，有人鼓励</p></li><li><p>我全都笑纳</p></li><li><p>好的留在心里</p></li><li><p>坏的随风飘逝</p></li><li><p>展现真正的自己，表达的更简单一些</p></li><li><p>在机会来临时</p></li><li><p>奋不顾身的抓牢它</p></li><li><p>不要被眼前的利益所迷惑</p></li><li><p>放眼更广阔的未来</p></li><li><p>做好自己</p></li><li><p>抓住身边一切的美好</p></li><li><p>当有一天对一切都无所畏惧</p></li><li><p>那就是</p></li><li><p>重生</p></li></ul><h4 id="谈谈今天"><a href="#谈谈今天" class="headerlink" title="谈谈今天"></a>谈谈今天</h4><blockquote><p>人有时候真的挺纠结，就像我今天看了 《龙飞凤舞》，觉得上流社会的生活有时候即糜烂，又觉得美好<br>有的人花了一生时间，去挤进那样的生活圈，有的人甘愿过着平凡的生活<br>殊不知，彼此之间都存在着羡慕与无奈<br>我也不例外<br>如果哪天，我能够进入这样的世界<br>我是否能够保持清醒，不被外界所干扰，任然保持初心？<br>我也不敢保证，所以我一直在努力<br>为了不亏欠曾经的自己<br>我不敢停下脚步<br>我怕我停下来<br>就找不到回去的路<br>我也舍弃了太多<br>只因为我曾经欠下太多<br>但我不后悔<br>明天的路， 我想自己走<br>即使错了，那也是个经历，我会记在心中<br>将来成功的那天，回忆，何不是一种财富？</p></blockquote><h4 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h4><ul><li>每个人都不一样，早点实战，可能更快明白自己想要什么</li><li>我不认为一定会混技术职场，现在做的是为了我将来的梦想</li><li>我要做一款只属于自己的产品</li><li>即使时间再怎么磨砺</li><li>我也希望不要忘对自己的承诺</li><li>给自己定一个期限</li><li>6 年</li><li>即使以后再有钱，我也会把健康看做第一位</li><li>我希望那时我有房 有车 还有她</li><li>不想以后不顾家</li><li>未来我还是想闯出自己的一片天地</li><li>结婚的话在30-35之间吧，真希望她是个艺术家</li><li>6 年，努力点，足以在一个行业小有所成</li><li>那时候就是我想要的未来</li></ul>]]></content>
+      <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><ul><li><p>我很希望，自己的未来能不一样</p></li><li><p>我想要的，就是在平凡中不断的改变自己</p></li><li><p>路上的人，有人嘲笑，有人鼓励</p></li><li><p>我全都笑纳</p></li><li><p>好的留在心里</p></li><li><p>坏的随风飘逝</p></li><li><p>展现真正的自己，表达的更简单一些</p></li><li><p>在机会来临时</p></li><li><p>奋不顾身的抓牢它</p></li><li><p>不要被眼前的利益所迷惑</p></li><li><p>放眼更广阔的未来</p></li><li><p>做好自己</p></li><li><p>抓住身边一切的美好</p></li><li><p>当有一天对一切都无所畏惧</p></li><li><p>那就是</p></li><li><p>重生</p></li></ul><h4 id="谈谈今天"><a href="#谈谈今天" class="headerlink" title="谈谈今天"></a>谈谈今天</h4><blockquote><p>人有时候真的挺纠结，就像我今天看了 《龙飞凤舞》，觉得上流社会的生活有时候即糜烂，又觉得美好<br>有的人花了一生时间，去挤进那样的生活圈，有的人甘愿过着平凡的生活<br>殊不知，彼此之间都存在着羡慕与无奈<br>我也不例外<br>如果哪天，我能够进入这样的世界<br>我是否能够保持清醒，不被外界所干扰，任然保持初心？<br>我也不敢保证，所以我一直在努力<br>为了不亏欠曾经的自己<br>我不敢停下脚步<br>我怕我停下来<br>就找不到回去的路<br>我也舍弃了太多<br>只因为我曾经欠下太多<br>但我不后悔<br>明天的路， 我想自己走<br>即使错了，那也是个经历，我会记在心中<br>将来成功的那天，回忆，何不是一种财富？</p></blockquote><h4 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h4><ul><li>每个人都不一样，早点实战，可能更快明白自己想要什么</li><li>我不认为一定会混技术职场，现在做的是为了我将来的梦想</li><li>我要做一款只属于自己的产品</li><li>即使时间再怎么磨砺</li><li>我也希望不要忘对自己的承诺</li><li>给自己定一个期限</li><li>5 年</li><li>5 年，努力点，足以在一个行业小有所成</li><li>那时候就是我想要的未来</li><li>2022, 等我！</li></ul>]]></content>
       
       <categories>
           
@@ -883,7 +967,7 @@
       
         <tags>
             
-            <tag> 人生感悟 </tag>
+            <tag> 人生历程 </tag>
             
         </tags>
       
@@ -958,7 +1042,7 @@
       <title>搭一个windows云服务器</title>
       <link href="/%E6%90%AD%E4%B8%80%E4%B8%AAwindows%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8.html"/>
       <url>/%E6%90%AD%E4%B8%80%E4%B8%AAwindows%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8.html</url>
-      <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>前段时间看到腾讯云服务器对学生有优惠，而且很大一坨，就买了一个回来研究，废话不多说，开搞咯~</p><h2 id="买服务器"><a href="#买服务器" class="headerlink" title="买服务器"></a>买服务器</h2><ul><li>首先你得入手一个服务器，学生特惠8元/月，还有一块的，不过难抢，机不可失，失不再来，毕业你就没机会了，<blockquote><p>地方的话就近原则，访问应该会快点</p></blockquote></li></ul><h2 id="配置服务器"><a href="#配置服务器" class="headerlink" title="配置服务器"></a>配置服务器</h2><ul><li><p>我这里是配了 Windows2012 64位系统，1核1G内存</p><blockquote><p>Linux的系统，听说比较好用，但目前我还没用过，Windows我觉得也还行</p></blockquote></li><li><p>进入云服务器控制中心，打开安全组，按需求开放端口</p><blockquote><p>我是开放了全部端口的，你可以随意</p></blockquote></li></ul><h2 id="远程连接服务器"><a href="#远程连接服务器" class="headerlink" title="远程连接服务器"></a>远程连接服务器</h2><ul><li>在命令行输入 mstcs 输入你的电脑信息，邮箱查看电脑的默认密码，请及时修改，账号一般默认是administritor，不是的话请先确认</li></ul><h2 id="设置主页"><a href="#设置主页" class="headerlink" title="设置主页"></a>设置主页</h2><ul><li><p>进入云服务器之后，打开服务器管理器，[新建角色] =&gt; [基于角色和功能的安装] =&gt; [从服务器池中选择服务器] =&gt; [web服务器应用程序开发，勾选.net4.5 和CGI] =&gt; [IIS可承载的web核心] =&gt; [确认安装]</p><blockquote><p>中间如果碰到什么问题，仔细看流程，如果还报错，我也帮不了你了</p></blockquote></li><li><p>安装完成之后就可以通过ip地址访问到一个有IIS提示的蓝色网站，该项目的默认地址是 C:inetpub/wwwroot 你想更改的话可以直接拿你的html（htm）文件放在该目录下，一定要保证根目录有个html（htm）文件</p></li></ul><h2 id="设置分页"><a href="#设置分页" class="headerlink" title="设置分页"></a>设置分页</h2><ul><li>如果你想通过类似 localhost/about 路径访问你的about项目，你可以在IIS管理的的 default website添加你的项目路径</li></ul><blockquote><p>右键 添加应用程序，将该项目的物理路径填上去就可以了 </p></blockquote>]]></content>
+      <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>前段时间看到腾讯云服务器对学生有优惠，而且很大一坨，就买了一个回来研究，废话不多说，开搞咯~</p><h2 id="买服务器"><a href="#买服务器" class="headerlink" title="买服务器"></a>买服务器</h2><ul><li>首先你得入手一个服务器，学生特惠8元/月，还有一块的，不过难抢，机不可失，失不再来，毕业你就没机会了，<blockquote><p>地方的话就近原则，访问应该会快点</p></blockquote></li></ul><h2 id="配置服务器"><a href="#配置服务器" class="headerlink" title="配置服务器"></a>配置服务器</h2><ul><li><p>我这里是配了 Windows2012 64位系统，1核1G内存</p><blockquote><p>Linux的系统，听说比较好用，但目前我还没用过，Windows我觉得也还行</p></blockquote></li><li><p>进入云服务器控制中心，打开安全组，按需求开放端口</p><blockquote><p>我是开放了全部端口的，你可以随意</p></blockquote></li></ul><h2 id="远程连接服务器"><a href="#远程连接服务器" class="headerlink" title="远程连接服务器"></a>远程连接服务器</h2><ul><li>在命令行输入 mstcs 输入你的电脑信息，邮箱查看电脑的默认密码，请及时修改，账号一般默认是administritor，不是的话请先确认</li></ul><h2 id="设置主页"><a href="#设置主页" class="headerlink" title="设置主页"></a>设置主页</h2><ul><li><p>进入云服务器之后，打开服务器管理器，[新建角色] =&gt; [基于角色和功能的安装] =&gt; [从服务器池中选择服务器] =&gt; [web服务器应用程序开发，勾选.net4.5 和CGI] =&gt; [IIS可承载的web核心] =&gt; [确认安装]</p><blockquote><p>中间如果碰到什么问题，仔细看流程，如果还报错，我也帮不了你了</p></blockquote></li><li><p>安装完成之后就可以通过ip地址访问到一个有IIS提示的蓝色网站，该项目的默认地址是 C:inetpub/wwwroot 你想更改的话可以直接拿你的html（htm）文件放在该目录下，一定要保证根目录有个html（htm）文件</p></li></ul><h2 id="设置分页"><a href="#设置分页" class="headerlink" title="设置分页"></a>设置分页</h2><ul><li>如果你想通过类似 localhost/about 路径访问你的about项目，你可以在IIS管理的的 default website添加你的项目路径</li></ul><blockquote><p>右键 添加应用程序，将该项目的物理路径填上去就可以了</p></blockquote>]]></content>
       
       <categories>
           
@@ -972,27 +1056,6 @@
             <tag> windows </tag>
             
             <tag> 腾讯云 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    <entry>
-      <title>hexo 搭建博客初体验</title>
-      <link href="/hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2.html"/>
-      <url>/hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2.html</url>
-      <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="hexo-搭建博客初体验"><a href="#hexo-搭建博客初体验" class="headerlink" title="hexo 搭建博客初体验"></a>hexo 搭建博客初体验</h1><h2 id="安装-hexo"><a href="#安装-hexo" class="headerlink" title="安装 hexo"></a>安装 hexo</h2><pre><code class="js">&gt; cnpm i hexo-cli -g报错的话就输入&gt; cnpm i hexo --save查看安装是否成功&gt; hexo -v</code></pre><h2 id="hexo配置"><a href="#hexo配置" class="headerlink" title="hexo配置"></a>hexo配置</h2><h3 id="hexo-初始化"><a href="#hexo-初始化" class="headerlink" title="hexo 初始化"></a>hexo 初始化</h3><pre><code class="js">&gt; hexo init然后&gt; cnpm install到这里你差不多就可以看到效果了，如果你要连接 GitHub，就要往下继续 </code></pre><h3 id="连接-GitHub"><a href="#连接-GitHub" class="headerlink" title="连接 GitHub"></a>连接 GitHub</h3><p>在根目录打开 vim _config.yml，翻到最下面，改成我这样子的</p><ul><li>如果你是用 github 仓库</li></ul><pre><code class="json">&gt; deploy:    type: git    repo: https://git.coding.net/jzxer/jzxer.git    branch: master* 如果你是用 coding 仓库&gt; deploy:    type: coding    repo: https://github.com/j710328466/j710328466.github.io.git    branch: master</code></pre><h3 id="安装依赖包"><a href="#安装依赖包" class="headerlink" title="安装依赖包"></a>安装依赖包</h3><pre><code class="js">&gt; npm install hexo-deployer-git --save</code></pre><h2 id="开始"><a href="#开始" class="headerlink" title="开始"></a>开始</h2><pre><code class="js">创建一篇新文章$ hexo new &quot;My New Post&quot;监听$ hexo server打包$ hexo generate上传$ hexo deploy</code></pre><h2 id="主题配置"><a href="#主题配置" class="headerlink" title="主题配置"></a>主题配置</h2><ul><li>打开根目录下的vim _config.yml<blockquote><p>theme: material<br>将主题改成你喜欢的</p></blockquote></li></ul><h2 id="主题推荐"><a href="#主题推荐" class="headerlink" title="主题推荐"></a>主题推荐</h2><p>每个不同的主题会需要不同的配置，主题配置文件在主题目录下的 _config.yml。有两个比较好的主题推荐给大家。</p><h3 id="Yilia"><a href="#Yilia" class="headerlink" title="Yilia"></a>Yilia</h3><p>Yilia 是为 hexo 2.4+ 制作的主题。<br>崇尚简约优雅，以及极致的性能。</p><h3 id="NexT"><a href="#NexT" class="headerlink" title="NexT"></a>NexT</h3><p>目前Github上Star最高的Hexo主题，支持几种不同的风格。<br>作者提供了非常完善的配置说明。</p><h3 id="Material"><a href="#Material" class="headerlink" title="Material"></a>Material</h3><p>原之质，物之渊<br>就是我现在用的这款，简洁大方，响应式设计。</p>]]></content>
-      
-      <categories>
-          
-          <category> 博客搭建 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> hexo </tag>
             
         </tags>
       
@@ -1073,7 +1136,7 @@
       
       <categories>
           
-          <category> web前端 </category>
+          <category> 工作 </category>
           
       </categories>
       
@@ -1090,7 +1153,7 @@
       <title>一些不可思议的的事</title>
       <link href="/%E4%B8%80%E4%BA%9B%E4%B8%8D%E5%8F%AF%E6%80%9D%E8%AE%AE%E7%9A%84%E7%9A%84%E4%BA%8B.html"/>
       <url>/%E4%B8%80%E4%BA%9B%E4%B8%8D%E5%8F%AF%E6%80%9D%E8%AE%AE%E7%9A%84%E7%9A%84%E4%BA%8B.html</url>
-      <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><ol><li>没有一张纸可对折超过7次</li><li>根据统计每年骡仔所杀的人比飞机失事所死的人还多</li><li>人睡觉比坐着看电视所消耗的卡路里还多</li><li>Wright’sBrother发明飞机后第一次试飞的路程比一架波音747飞机的飞机翼还短</li><li>很多人每朝起来都喝一杯咖啡提神，但其实一个苹果比一杯咖啡还有效</li><li>你的家中多数尘埃都是你的死皮</li><li>洋娃娃Barbie 全名是Barabra Millicent Roberts</li><li>希特拉的妈妈在怀有希特拉曾认真地考虑堕胎，不过被医说服，结果把他生下来</li><li>玛丽莲梦露有6只脚趾</li><li>降落伞的发明人把第一次乘坐降落伞的机会让给了一只狗</li><li>印度尼西亚竹节虫是全世界最大的昆虫，有些光是身长就有一呎长</li><li>其实，河马跑得比人快</li><li>珍珠在醋中会溶</li><li>一只70磅的章鱼可以穿过一个仅一枚银币大小的洞，因为他们没有脊椎</li><li>你有可能将一只牛拉上楼梯，但牛是不懂下楼梯的</li><li>猪不能仰头望天空</li><li>‘quick brown fox jumps over the lazy dog’可以用尽26个字母</li><li>鸭的叫声是不会有回音的，暂时没有人知何解</li><li>蜗牛可不吃东西睡3年</li><li>著名影星Tommy Lee Jones与美国副总统曾经是哈佛大学同房</li><li>如果一个月中，第一天是星期日，那个月便出现黑色星期五</li><li>把石头放在微波炉中加热会爆炸</li><li>1,111,111 x 1,111,111 = 1234567654321</li><li>唯一一个有15英文字母而又不会重复是的英文字’uncopyrightable’</li><li>猫可发出超过100个音，狗却只能发10个音</li><li>愈黑的环境下，猫的排尿次数会增加</li><li>将一个硬币向上抛1000次，字向上的次数是495次，不是500次，因为公较重</li><li>根据牛津字典世界上最长的英文字是’pneumonoultramicroscopicsilicovolcanoconiosis’</li><li>人体的胃每2个星期便会更新一次分泌物，否则它会自我消化</li><li>可乐原是绿色的</li><li>虎鲨的胚胎在母亲的子宫里需经过激烈的搏斗，胜利者就是可以活着出生的小虎鲨</li><li>走路上班的人最高比率的省是阿拉斯加</li><li>如果Barbie是人类，她是身形是39-23-33</li><li>美国平均每小时在空中的人有61000人</li><li>只有一种食物不会变坏:蜜糖</li><li>在加勒比海附近有一种蚝是会爬榭的</li><li>世界上最年轻的父母在1910年出现，一个8岁及另一个9岁的中国人</li><li>人顃的鼻及耳是毕生都不断长大</li><li>下午摘下的玫瑰比清晨摘下的玫瑰更能持久不枯萎</li><li>乳牛听音乐时可以供应更多牛奶</li><li>一条长颈鹿的舌头有2尺长</li><li>大象可用头来站立</li><li>蚂蚁早上醒来会抓痒</li><li>伟大发明家爱迪生是怕黑的</li><li>世上最老的金鱼是41岁，名叫Fred</li><li>爱因斯坦9岁时不能流利说话，他妈妈曾经一度以为他是弱智</li><li>阿拉伯的女人可以因为丈夫不为她倒咖啡而提出离婚</li><li>只有55%的美国人知道太阳是一个星体</li><li>多数唇膏是有鱼鳞的</li><li>长颈鹿没办法咳嗽</li><li>猫头鹰是唯一能够分辨蓝色的鸟类</li><li>一只鲸鱼一分钟心跳只有九下</li><li>我们喝到肚子里头的水已经有三亿岁了</li><li>只有百分之三十的人可以放大缩小自己的鼻孔</li><li>一只牡蛎的性别会由男变女，此后一生中还会变个几次</li><li>根据一项1845年由英国通过的法律，自杀是非常严重的罪，最重可以处以吊死的极刑</li><li>在太空中航天员是没办法哭的，因为没有地心引力，眼泪流不出来</li><li>一只变色龙的舌头是它自己身体的两倍长</li><li>最常用牙签的人是美国人</li><li>一个正常人的眼部肌肉一天平均要动上一万到一万五千次</li><li>大象死后还会保持站立姿势</li><li>有些昆虫没有头还可以再活上一年</li><li>达尔文光是画蒙那莉萨的嘴唇就花上十二年</li><li>玻璃破掉时，玻璃碎片的时速最高可达每小时三千英哩</li></ol><blockquote><p>世间真是无奇不有….</p></blockquote>]]></content>
+      <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><ol><li>没有一张纸可对折超过7次</li><li>根据统计每年骡仔所杀的人比飞机失事所死的人还多</li><li>人睡觉比坐着看电视所消耗的卡路里还多</li><li>Wright’sBrother发明飞机后第一次试飞的路程比一架波音747飞机的飞机翼还短</li><li>很多人每朝起来都喝一杯咖啡提神，但其实一个苹果比一杯咖啡还有效</li><li>你的家中多数尘埃都是你的死皮</li><li>洋娃娃Barbie 全名是Barabra Millicent Roberts</li><li>希特拉的妈妈在怀有希特拉曾认真地考虑堕胎，不过被医说服，结果把他生下来</li><li>玛丽莲梦露有6只脚趾</li><li>降落伞的发明人把第一次乘坐降落伞的机会让给了一只狗</li><li>印度尼西亚竹节虫是全世界最大的昆虫，有些光是身长就有一呎长</li><li>其实，河马跑得比人快</li><li>珍珠在醋中会溶</li><li>一只70磅的章鱼可以穿过一个仅一枚银币大小的洞，因为他们没有脊椎</li><li>你有可能将一只牛拉上楼梯，但牛是不懂下楼梯的</li><li>猪不能仰头望天空</li><li>‘quick brown fox jumps over the lazy dog’可以用尽26个字母</li><li>鸭的叫声是不会有回音的，暂时没有人知何解</li><li>蜗牛可不吃东西睡3年</li><li>著名影星Tommy Lee Jones与美国副总统曾经是哈佛大学同房</li><li>如果一个月中，第一天是星期日，那个月便出现黑色星期五</li><li>把石头放在微波炉中加热会爆炸</li><li>1,111,111 x 1,111,111 = 1234567654321</li><li>唯一一个有15英文字母而又不会重复是的英文字’uncopyrightable’</li><li>猫可发出超过100个音，狗却只能发10个音</li><li>愈黑的环境下，猫的排尿次数会增加</li><li>将一个硬币向上抛1000次，字向上的次数是495次，不是500次，因为公较重</li><li>根据牛津字典世界上最长的英文字是’pneumonoultramicroscopicsilicovolcanoconiosis’</li><li>人体的胃每2个星期便会更新一次分泌物，否则它会自我消化</li><li>可乐原是绿色的</li><li>虎鲨的胚胎在母亲的子宫里需经过激烈的搏斗，胜利者就是可以活着出生的小虎鲨</li><li>走路上班的人最高比率的省是阿拉斯加</li><li>如果Barbie是人类，她是身形是39-23-33</li><li>美国平均每小时在空中的人有61000人</li><li>只有一种食物不会变坏:蜜糖</li><li>在加勒比海附近有一种蚝是会爬榭的</li><li>世界上最年轻的父母在1910年出现，一个8岁及另一个9岁的中国人</li><li>人顃的鼻及耳是毕生都不断长大</li><li>下午摘下的玫瑰比清晨摘下的玫瑰更能持久不枯萎</li><li>乳牛听音乐时可以供应更多牛奶</li><li>一条长颈鹿的舌头有2尺长</li><li>大象可用头来站立</li><li>蚂蚁早上醒来会抓痒</li><li>伟大发明家爱迪生是怕黑的</li><li>世上最老的金鱼是41岁，名叫Fred</li><li>爱因斯坦9岁时不能流利说话，他妈妈曾经一度以为他是弱智</li><li>阿拉伯的女人可以因为丈夫不为她倒咖啡而提出离婚</li><li>只有55%的美国人知道太阳是一个星体</li><li>多数唇膏是有鱼鳞的</li><li>长颈鹿没办法咳嗽</li><li>猫头鹰是唯一能够分辨蓝色的鸟类</li><li>一只鲸鱼一分钟心跳只有九下</li><li>我们喝到肚子里头的水已经有三亿岁了</li><li>只有百分之三十的人可以放大缩小自己的鼻孔</li><li>一只牡蛎的性别会由男变女，此后一生中还会变个几次</li><li>根据一项1845年由英国通过的法律，自杀是非常严重的罪，最重可以处以吊死的极刑</li><li>在太空中航天员是没办法哭的，因为没有地心引力，眼泪流不出来</li><li>一只变色龙的舌头是它自己身体的两倍长</li><li>最常用牙签的人是美国人</li><li>一个正常人的眼部肌肉一天平均要动上一万到一万五千次</li><li>大象死后还会保持站立姿势</li><li>有些昆虫没有头还可以再活上一年</li><li>达尔文光是画蒙那莉萨的嘴唇就花上十二年</li><li>玻璃破掉时，玻璃碎片的时速最高可达每小时三千英哩</li></ol><blockquote><p>世间真是无奇不有…</p></blockquote>]]></content>
       
       <categories>
           
@@ -1213,7 +1276,7 @@
       <title>个人简介</title>
       <link href="/about/index.html"/>
       <url>/about/index.html</url>
-      <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>姓名：江志雄<br>英文名：Feax<br>性别：你看我头像女的吗？<br>专业：软件工程</p><h2 id="工作经历"><a href="#工作经历" class="headerlink" title="工作经历"></a>工作经历</h2><ul><li><p>南昌·午逅科技<br>  ①、H5 活动模块开发。</p><blockquote><p>2017.06 – 2017.09</p></blockquote></li><li><p>杭州·机蜜<br>  ①、各大类型平台、活动、协议模块合作开发<br>  ②、基础组件开发</p><blockquote><p>2017.10 – 至今</p></blockquote></li></ul><h2 id="技术栈"><a href="#技术栈" class="headerlink" title="技术栈"></a>技术栈</h2><p>前端技术框架很多，取其精华，抛弃糟蹋，目前只列出我目前比较青睐，并且会深入研究的个人技术方案。</p><h3 id="前端"><a href="#前端" class="headerlink" title="前端"></a>前端</h3><ul><li>Vue.Js (移动端)</li><li>React.Js (PC端)</li><li>RN (APP端)</li></ul><h3 id="SSR"><a href="#SSR" class="headerlink" title="SSR"></a>SSR</h3><ul><li>Next（React）</li><li>Nuxt（Vue）</li></ul><h3 id="后端"><a href="#后端" class="headerlink" title="后端"></a>后端</h3><ul><li>Nodejs (Expres.Js、Koa2.Js)</li><li>eggJS（正在学习…）</li><li>python (准备学习…)</li></ul><h3 id="数据库"><a href="#数据库" class="headerlink" title="数据库"></a>数据库</h3><ul><li>MongoDB（非关系型）</li><li>mySql（关系型）</li><li>Redis（缓存）</li></ul><h3 id="自动化工具"><a href="#自动化工具" class="headerlink" title="自动化工具"></a>自动化工具</h3><ul><li>gulp</li><li>webpack</li><li>parcel</li></ul><h3 id="版本管理"><a href="#版本管理" class="headerlink" title="版本管理"></a>版本管理</h3><ul><li>GIT</li></ul><h3 id="代码规范"><a href="#代码规范" class="headerlink" title="代码规范"></a>代码规范</h3><ul><li>BEM（HTML风格）</li><li>Stylus（CSS风格）</li><li>ESlint（JS风格）</li></ul><h3 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h3><ul><li>mocha</li></ul><h3 id="集成部署"><a href="#集成部署" class="headerlink" title="集成部署"></a>集成部署</h3><ul><li>travisCI</li></ul><h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><ul><li>axure 8（产品原型）</li><li>Xmind（思维导图）</li></ul><h2 id="兴趣爱好"><a href="#兴趣爱好" class="headerlink" title="兴趣爱好"></a>兴趣爱好</h2><blockquote><p>看书<br>健身<br>摇滚</p></blockquote><h2 id="自我介绍"><a href="#自我介绍" class="headerlink" title="自我介绍"></a>自我介绍</h2><p>介绍这东西大都是虚的，你需要的是和我面对面的交流和长时间的相处。</p><h2 id="未来的目标"><a href="#未来的目标" class="headerlink" title="未来的目标"></a>未来的目标</h2><ul><li>工作：专注于自己喜欢的领域，然后精通它。</li><li>生活：世界很大，不要只是生活在自己的小小世界里。</li><li>理想：做一件能改变他人、乃至影响世界的事。</li></ul>        <div id="aplayer-bsTTVMlP" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">            <pre class="aplayer-lrc-content"></pre>        </div>        <script>          var ap = new APlayer({            element: document.getElementById("aplayer-bsTTVMlP"),            narrow: false,            autoplay: true,            showlrc: false,            music: {              title: "日落大道",              author: "梁博",              url: "http://orjedzer5.bkt.clouddn.com/blog/song/%E6%A2%81%E5%8D%9A%20%E6%97%A5%E8%90%BD%E5%A4%A7%E9%81%93.mp3",              pic: "",              lrc: ""            }          });          window.aplayers || (window.aplayers = []);          window.aplayers.push(ap);        </script>]]></content>
+      <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>姓名：江志雄<br>英文名：Feax<br>性别：你看我头像女的吗？<br>专业：软件工程</p><h2 id="工作经历"><a href="#工作经历" class="headerlink" title="工作经历"></a>工作经历</h2><ul><li><p>南昌·午逅科技<br>  ①、H5 活动开发</p><blockquote><p>2017.06 – 2017.09</p></blockquote></li><li><p>杭州·机蜜<br>  ①、各大类型平台、活动、协议模块的合作开发<br>  ②、基础组件开发</p><blockquote><p>2017.10 – 至今</p></blockquote></li></ul><h2 id="技术栈"><a href="#技术栈" class="headerlink" title="技术栈"></a>技术栈</h2><p>前端技术框架很多，取其精华，目前只列出我目前比较青睐，并且未来会深入研究的技术方案。</p><h3 id="前端"><a href="#前端" class="headerlink" title="前端"></a>前端</h3><ul><li>Vue.Js (移动端)</li><li>React.Js (PC端)</li><li>RN (APP端)</li></ul><h3 id="SSR"><a href="#SSR" class="headerlink" title="SSR"></a>SSR</h3><ul><li>Next（React）</li><li>Nuxt（Vue）</li></ul><h3 id="后端"><a href="#后端" class="headerlink" title="后端"></a>后端</h3><ul><li>Nodejs (Expres.Js、Koa2.Js)</li><li>eggJS（正在学习…）</li><li>python (准备学习…)</li></ul><h3 id="数据库"><a href="#数据库" class="headerlink" title="数据库"></a>数据库</h3><ul><li>MongoDB（非关系型）</li><li>mySql（关系型）</li><li>Redis（缓存）</li></ul><h3 id="自动化工具"><a href="#自动化工具" class="headerlink" title="自动化工具"></a>自动化工具</h3><ul><li>webpack</li><li>parcel</li></ul><h3 id="版本管理"><a href="#版本管理" class="headerlink" title="版本管理"></a>版本管理</h3><ul><li>GIT</li></ul><h3 id="代码规范"><a href="#代码规范" class="headerlink" title="代码规范"></a>代码规范</h3><ul><li>BEM（HTML风格）</li><li>Stylus（CSS风格）</li><li>ESlint（JS风格）</li></ul><h3 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h3><ul><li>mocha</li></ul><h3 id="集成部署"><a href="#集成部署" class="headerlink" title="集成部署"></a>集成部署</h3><ul><li>travisCI</li></ul><h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><ul><li>axure 8（产品原型）</li><li>Xmind（思维导图）</li></ul><h2 id="兴趣爱好"><a href="#兴趣爱好" class="headerlink" title="兴趣爱好"></a>兴趣爱好</h2><blockquote><p>看书<br>健身<br>音乐</p></blockquote><h2 id="自我介绍"><a href="#自我介绍" class="headerlink" title="自我介绍"></a>自我介绍</h2><p>介绍这东西挺虚的，你需要的是和我面对面的交流和长时间的相处。</p><h2 id="未来的目标"><a href="#未来的目标" class="headerlink" title="未来的目标"></a>未来的目标</h2><ul><li>工作：专注于自己喜欢的领域，然后精通它。</li><li>生活：世界很大，不要只生活在自己的小小世界里。</li><li>理想：至少做一件能改变他人、乃至影响世界的事。</li></ul>        <div id="aplayer-BrYoWMWJ" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">            <pre class="aplayer-lrc-content"></pre>        </div>        <script>          var ap = new APlayer({            element: document.getElementById("aplayer-BrYoWMWJ"),            narrow: false,            autoplay: true,            showlrc: false,            music: {              title: "日落大道",              author: "梁博",              url: "http://orjedzer5.bkt.clouddn.com/blog/song/%E6%A2%81%E5%8D%9A%20%E6%97%A5%E8%90%BD%E5%A4%A7%E9%81%93.mp3",              pic: "",              lrc: ""            }          });          window.aplayers || (window.aplayers = []);          window.aplayers.push(ap);        </script>]]></content>
     </entry>
     
     <entry>

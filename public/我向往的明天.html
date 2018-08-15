@@ -38,7 +38,7 @@
     <meta name="theme-color" content="#0097A7">
     <meta name="author" content="Feax">
     <meta name="description" itemprop="description" content="web全栈工程师,摇滚,vue,vuex,react,webpack,git,koa2">
-    <meta name="keywords" content="web全栈工程师,摇滚,vue,vuex,react,webpack,git,koa2,人生感悟">
+    <meta name="keywords" content="web全栈工程师,摇滚,vue,vuex,react,webpack,git,koa2,人生历程">
 
     <!-- Site Verification -->
     
@@ -70,11 +70,11 @@
     <meta property="og:title" content="我向往的明天 | Feax&#39;s Blog">
     <meta property="og:image" content="/img/favicon.png" />
     <meta property="og:description" content="web全栈工程师,摇滚,vue,vuex,react,webpack,git,koa2">
-    <meta property="og:article:tag" content="人生感悟"> 
+    <meta property="og:article:tag" content="人生历程"> 
 
     
         <meta property="article:published_time" content="7月 01, 2017" />
-        <meta property="article:modified_time" content="5月 25, 2018" />
+        <meta property="article:modified_time" content="8月 11, 2018" />
     
 
     <!-- The Twitter Card protocol -->
@@ -110,12 +110,12 @@
             "@type": "ImageObject",
             "url": "/img/favicon.png"
         },
-        "description": "对的，坚持！错的，放弃！"
+        "description": "坚持不一定成功，不坚持一定会失败"
     },
     "headline": "我向往的明天",
     "url": "http://blog.jzxer.cn/我向往的明天.html",
     "datePublished": "7月 01, 2017",
-    "dateModified": "5月 25, 2018",
+    "dateModified": "8月 11, 2018",
     "description": "web全栈工程师,摇滚,vue,vuex,react,webpack,git,koa2",
     "mainEntityOfPage": {
         "@type": "WebPage",
@@ -352,7 +352,7 @@
 
     
     <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
-        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#欲望"><span class="post-toc-number">1.</span> <span class="post-toc-text">欲望</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#谈谈今天"><span class="post-toc-number">1.0.0.1.</span> <span class="post-toc-text">谈谈今天</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#总结"><span class="post-toc-number">1.0.0.2.</span> <span class="post-toc-text">总结</span></a></li></ol></li></ol></li></ol></li></ol>
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#谈谈今天"><span class="post-toc-number">1.</span> <span class="post-toc-text">谈谈今天</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#总结"><span class="post-toc-number">2.</span> <span class="post-toc-text">总结</span></a></li></ol>
         <!--
         <li class="mdl-menu__item">
             Some Action
@@ -444,7 +444,7 @@
     </button>
     <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
         <li class="mdl-menu__item">
-        <a class="post_tag-link" href="/tags/人生感悟/">人生感悟</a>
+        <a class="post_tag-link" href="/tags/人生历程/">人生历程</a>
     </ul>
     
 
@@ -539,7 +539,7 @@
                 <!-- Post Content -->
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-        <h1 id="欲望"><a href="#欲望" class="headerlink" title="欲望"></a>欲望</h1><ul>
+        <ul>
 <li><p>我很希望，自己的未来能不一样</p>
 </li>
 <li><p>我想要的，就是在平凡中不断的改变自己</p>
@@ -583,14 +583,10 @@
 <li>即使时间再怎么磨砺</li>
 <li>我也希望不要忘对自己的承诺</li>
 <li>给自己定一个期限</li>
-<li>6 年</li>
-<li>即使以后再有钱，我也会把健康看做第一位</li>
-<li>我希望那时我有房 有车 还有她</li>
-<li>不想以后不顾家</li>
-<li>未来我还是想闯出自己的一片天地</li>
-<li>结婚的话在30-35之间吧，真希望她是个艺术家</li>
-<li>6 年，努力点，足以在一个行业小有所成</li>
+<li>5 年</li>
+<li>5 年，努力点，足以在一个行业小有所成</li>
 <li>那时候就是我想要的未来</li>
+<li>2022, 等我！</li>
 </ul>
 
     
@@ -604,7 +600,30 @@
                 <!-- Post Comments -->
                 
                     
-    
+    <div id="comment" style='padding:10px;' class="vcomment"></div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+    var GUEST_INFO = ['nick','mail','link'];
+    var guest_info = ''.split(',').filter(function(item){
+        return GUEST_INFO.indexOf(item) > -1
+    });
+    var notify = 'true' == true;
+    var verify = 'true' == true;
+    new Valine({
+        el: '.vcomment',
+        notify: notify,
+        verify: verify,
+        appId: "ONAFtjxhaBqrA7LGAQFYsmUx-gzGzoHsz",
+        appKey: "hUSwCACEEbPBcGUh42RMzy6P",
+        placeholder: "说说你的感想~",
+        pageSize:'10',
+        avatar:'',
+        lang:'',
+        guest_info: guest_info
+    });
+</script>
+
 
                 
             </div>
@@ -683,11 +702,11 @@
         <ul id="settings-dropdown" class="dropdown-menu">
             
                 <li>
-                    <a href="710328466@qq.com" target="_blank" title="Email Me">
+                    <a href="#" target="_blank" title="我的邮箱">
                         
                             <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
                         
-                        Email Me
+                        我的邮箱
                     </a>
                 </li>
             
@@ -719,7 +738,7 @@
             </a>
             <ul class="dropdown-menu">
             <li>
-                <a class="sidebar_archives-link" href="/archives/2018/06/">六月 2018<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/05/">五月 2018<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/04/">四月 2018<span class="sidebar_archives-count">7</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/03/">三月 2018<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/02/">二月 2018<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/01/">一月 2018<span class="sidebar_archives-count">5</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/12/">十二月 2017<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/11/">十一月 2017<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/10/">十月 2017<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/09/">九月 2017<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/08/">八月 2017<span class="sidebar_archives-count">5</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/07/">七月 2017<span class="sidebar_archives-count">6</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/06/">六月 2017<span class="sidebar_archives-count">6</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/04/">四月 2017<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/03/">三月 2017<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/02/">二月 2017<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/01/">一月 2017<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2016/11/">十一月 2016<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2016/08/">八月 2016<span class="sidebar_archives-count">1</span></a>
+                <a class="sidebar_archives-link" href="/archives/2018/08/">八月 2018<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/07/">七月 2018<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/06/">六月 2018<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/05/">五月 2018<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/04/">四月 2018<span class="sidebar_archives-count">7</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/03/">三月 2018<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/02/">二月 2018<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/01/">一月 2018<span class="sidebar_archives-count">5</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/12/">十二月 2017<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/11/">十一月 2017<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/10/">十月 2017<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/09/">九月 2017<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/08/">八月 2017<span class="sidebar_archives-count">5</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/07/">七月 2017<span class="sidebar_archives-count">6</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/06/">六月 2017<span class="sidebar_archives-count">5</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/04/">四月 2017<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/03/">三月 2017<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/02/">二月 2017<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/01/">一月 2017<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2016/11/">十一月 2016<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2016/08/">八月 2016<span class="sidebar_archives-count">1</span></a>
             </ul>
         </li>
         
@@ -731,9 +750,19 @@
     <!-- Pages  -->
     
         <li>
+            <a href="/tags" title="标签">
+                
+                    <i class="material-icons sidebar-material-icons">label</i>
+                
+                标签
+            </a>
+        </li>
+        
+    
+        <li>
             <a href="/timeline" title="时间轴">
                 
-                    <i class="material-icons sidebar-material-icons">person</i>
+                    <i class="material-icons sidebar-material-icons">schedule</i>
                 
                 时间轴
             </a>
@@ -743,19 +772,9 @@
         
     
         <li>
-            <a href="/tags" title="标签">
-                
-                    <i class="material-icons sidebar-material-icons">person</i>
-                
-                标签
-            </a>
-        </li>
-        
-    
-        <li>
             <a href="/gallery" title="图库">
                 
-                    <i class="material-icons sidebar-material-icons">person</i>
+                    <i class="material-icons sidebar-material-icons">class</i>
                 
                 图库
             </a>
@@ -765,23 +784,23 @@
         <li>
             <a href="/footprint" title="我的足迹">
                 
-                    <i class="material-icons sidebar-material-icons">person</i>
+                    <i class="material-icons sidebar-material-icons">flight_takeoff</i>
                 
                 我的足迹
             </a>
         </li>
         
-            <li class="divider"></li>
-        
     
         <li>
-            <a href="/about" title="About">
+            <a href="/about" title="关于博主">
                 
-                    <i class="material-icons sidebar-material-icons">person</i>
+                    <i class="material-icons sidebar-material-icons">face</i>
                 
-                About
+                关于博主
             </a>
         </li>
+        
+            <li class="divider"></li>
         
     
 
@@ -790,7 +809,7 @@
         <li>
             <a href="/archives">
                 文章总数
-                <span class="sidebar-badge">55</span>
+                <span class="sidebar-badge">58</span>
             </a>
         </li>
         
@@ -957,7 +976,7 @@ It will not impact the appearance and can give developers a lot of support :)
         <div class="mdl-mini-footer--right-section">
             <div>
                 <div class="footer-develop-div">Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a></div>
-                <div class="footer-develop-div">Theme - <a href="https://github.com/viosey/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a></div>
+                <!-- <div class="footer-develop-div">Theme - <a href="https://github.com/viosey/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a></div> -->
             </div>
         </div>
     
