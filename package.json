@@ -1,6 +1,6 @@
 {
   "name": "hexo-site",
-  "version": "2.0.1",
+  "version": "3.0.0",
   "author": "Feax",
   "description": "博客备份",
   "main": "index.js",
@@ -49,11 +49,7 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog",
       "ghooks": {
-        "commit-msg": "./validate-commit-msg.js",
-        "pre-commit": "gulp lint",
-        "pre-push": "make test",
-        "post-merge": "npm install",
-        "post-rewrite": "npm install"
+        "commit-msg": "./validate-commit-msg.js"
       }
     }
   },
