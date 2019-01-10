@@ -14,15 +14,16 @@ categories: web前端
 * 每次提交 commit 信息能够更直观，形成一定规范。
 * 自动记录更新后重要的内容同步到 changeLog.md。
 
-## log 相关工具
+## LOG 相关工具
 
 该文章主要介绍以下几款工具的组合使用：
 
 * conventional-changelog-cli 核心命令行工具
 * commitizen 简单的 commit 格式工具
+* validate-commit-msg 格式检查工具
 * standard-version 版本管理工具
 
-##  GIT commit 格式介绍
+## GIT commit 格式介绍
 
 ```html
 <type>(<scope>): <subject>
@@ -108,3 +109,5 @@ revert: feat(pencil): add 'graphiteWidth' option
 
 This reverts commit 667ecc1654a317a13331b17617d973392f415f02.
 ```
+
+## 
