@@ -1,6 +1,6 @@
 {
   "name": "hexo-site",
-  "version": "1.0.1",
+  "version": "2.0.1",
   "author": "Feax",
   "description": "博客备份",
   "main": "index.js",
