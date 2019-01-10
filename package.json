@@ -13,7 +13,7 @@
     "s": "hexo s",
     "g": "hexo g",
     "init": "commitizen init cz-conventional-changelog --save --save-exact",
-    "commit": "git cz",
+    "cz": "git add . && git cz",
     "log": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md",
     "release": "./scripts/release.sh",
     "changeissueurl": "replace 'https://github.com/myproject/issues/' 'https://redmine.example.com/' CHANGELOG.md",
@@ -45,6 +45,18 @@
     "conventional-changelog-cli": "^2.0.11",
     "cz-conventional-changelog": "^2.1.0",
     "standard-version": "^4.4.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog",
+      "ghooks": {
+        "commit-msg": "./validate-commit-msg.js",
+        "pre-commit": "gulp lint",
+        "pre-push": "make test",
+        "post-merge": "npm install",
+        "post-rewrite": "npm install"
+      }
+    }
   },
   "repository": "ssh://git@github.com/j710328466/j710328466.github.io.git",
   "license": "MIT"
