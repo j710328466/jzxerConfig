@@ -1,12 +1,20 @@
 {
   "name": "hexo-site",
-  "version": "0.0.0",
+  "version": "1.0.1",
   "private": true,
+  "author": "Feax",
   "hexo": {
     "version": "3.7.1"
   },
   "scripts": {
-    "generate": "hexo generate"
+    "new": "hexo new ${title}",
+    "s": "hexo s",
+    "generate": "hexo generate",
+    "commit": "git cz",
+    "log": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md",
+    "release": "./scripts/release.sh",
+    "changeissueurl": "replace 'https://github.com/myproject/issues/' 'https://redmine.example.com/' CHANGELOG.md",
+    "version": "standard-version"
   },
   "dependencies": {
     "hexo": "^3.2.0",
@@ -28,5 +36,10 @@
     "hexo-server": "^0.2.0",
     "hexo-tag-aplayer": "^3.0.3",
     "hexo-tag-dplayer": "^0.3.3"
+  },
+  "devDependencies": {
+    "commitizen": "^3.0.5",
+    "conventional-changelog-cli": "^2.0.11",
+    "standard-version": "^4.4.0"
   }
 }
