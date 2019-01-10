@@ -14,7 +14,7 @@
     "g": "hexo g",
     "init": "commitizen init cz-conventional-changelog --save --save-exact",
     "cz": "git add . && git cz",
-    "log": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
+    "log": "conventional-changelog -p angular -i CHANGELOG.md -s",
     "release": "./scripts/release.sh",
     "changeissueurl": "replace 'https://github.com/myproject/issues/' 'https://redmine.example.com/' CHANGELOG.md",
     "setv": "standard-version"
