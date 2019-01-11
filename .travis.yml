@@ -18,6 +18,8 @@ before_script:
 script:
   - npm run g
 
+
+  
 after_script:
   - cd ./public
   - git init
