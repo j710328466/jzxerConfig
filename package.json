@@ -1,6 +1,6 @@
 {
   "name": "hexo-site",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "author": "Feax",
   "description": "博客备份",
   "main": "index.js",
@@ -14,10 +14,10 @@
     "stand": "standard-changelog --first-release",
     "init": "commitizen init cz-conventional-changelog --save --save-exact",
     "cz": "git add . && git cz",
-    "log": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
+    "log": "conventional-changelog -p jimi -i CHANGELOG.md -s -r 0",
     "release": "./scripts/release.sh",
     "changeissueurl": "replace 'https://github.com/myproject/issues/' 'https://redmine.example.com/' CHANGELOG.md",
-    "setv": "standard-version"
+    "v": "standard-version"
   },
   "dependencies": {
     "hexo": "^3.2.0",
