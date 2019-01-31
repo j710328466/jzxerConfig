@@ -1,7 +1,8 @@
 ---
 title: badboy
 date: 2017-07-30 10:29:30
-tags: [badBoy]
+tags: [领悟]
+categories: 生活
 ---
 
 ## 关于坏男人的定义

@@ -2,6 +2,7 @@
 title: hexo 搭建博客初体验
 tags: [hexo]
 categories: 博客搭建
+date: 2017-05-01 19:59:16
 ---
 # hexo 搭建博客初体验
 

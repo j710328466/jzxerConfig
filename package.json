@@ -3,19 +3,15 @@
   "version": "0.0.0",
   "private": true,
   "hexo": {
-    "version": "3.7.1"
+    "version": "3.8.0"
   },
   "scripts": {
     "new": "hexo new ${title}",
     "s": "hexo s",
     "g": "hexo g",
-    "stand": "standard-changelog --first-release",
-    "init": "commitizen init cz-conventional-changelog --save --save-exact",
     "cz": "git add . && git cz",
-    "log": "conventional-changelog -p jimi -i CHANGELOG.md -s -r 0",
-    "release": "./scripts/release.sh",
-    "changeissueurl": "replace 'https://github.com/myproject/issues/' 'https://redmine.example.com/' CHANGELOG.md",
-    "v": "standard-version"
+    "log": "conventional-changelog --config node_modules/jimi-web-changelog/lib/log -i CHANGELOG.md -s -r 0",
+    "v": "standard-version -r patch"
   },
   "dependencies": {
     "hexo": "^3.2.0",
@@ -38,21 +34,16 @@
     "hexo-tag-aplayer": "^3.0.3",
     "hexo-tag-dplayer": "^0.3.3"
   },
-  "devDependencies": {
-    "commitizen": "^3.0.5",
-    "conventional-changelog-cli": "^2.0.11",
-    "cz-conventional-changelog": "^2.1.0",
-    "standard-changelog": "^2.0.6",
-    "standard-version": "^4.4.0"
-  },
   "config": {
     "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog",
-      "ghooks": {
-        "commit-msg": "./validate-commit-msg.js"
-      }
+      "path": "./node_modules/jimi-web-changelog/lib/cz"
     }
   },
   "repository": "ssh://git@github.com/j710328466/j710328466.github.io.git",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "commitizen": "^3.0.5",
+    "conventional-changelog-cli": "^2.0.11",
+    "jimi-web-changelog": "^0.1.6"
+  }
 }
