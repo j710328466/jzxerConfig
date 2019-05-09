@@ -1,0 +1,40 @@
+language: node_js
+# nodejs版本
+node_js: 
+    - '8.9.1'
+
+# Travis-CI Caching
+cache:
+  directories:
+    - node_modules
+
+# S: Build Lifecycle
+install:
+  - npm install
+
+before_script:
+
+# 无其他依赖项所以执行npm run build 构建就行了
+script:
+  - npm run g
+
+after_script:
+  - cd ./public
+  - git init
+  - git config user.name "${USER_NAME}"
+  - git config user.email "${USER_EMAIL}"
+  - git add .
+  - git commit -m "更新博客"
+  - git push --force --quiet "https://${TOKEN}@${GH_REF}" master
+# E: Build LifeCycle
+
+notifications:
+   webhooks: https://oapi.dingtalk.com/robot/send?access_token=3cd055ae02b3668c004f7bea8126f6ea1952561f316914cde519fbf3efb9e9fc
+
+branches:
+  only:
+    - config
+
+env:
+ global:
+  # 我将其添加到了travis-ci的环境变量中
