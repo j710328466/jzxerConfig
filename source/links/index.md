@@ -1,5 +1,5 @@
 ---
-title: links
+title: categories
 date:
-layout: links
+layout: categories
 ---
