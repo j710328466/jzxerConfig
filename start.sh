@@ -2,6 +2,6 @@ curl 'https://oapi.dingtalk.com/robot/send?access_token=200a5dd7f595b5afee3e7fe4
    -H 'Content-Type: application/json' \
    -d '{"msgtype": "text", 
         "text": {
-             "content": "我就是我, 是不一样的烟火"
+             "content": GIT_PREVIOUS_COMMIT
         }
       }'
