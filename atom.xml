@@ -1,27 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Feax&#39;s Blog</title>
+  <title>极简.teddy</title>
   
   
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.jzxer.cn/"/>
-  <updated>2020-02-20T03:41:54.157Z</updated>
+  <updated>2020-02-20T06:11:08.175Z</updated>
   <id>http://blog.jzxer.cn/</id>
   
   <author>
-    <name>Feax</name>
+    <name>teddy</name>
     
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>成为一个minimalismer</title>
+    <link href="http://blog.jzxer.cn/2020/02/%E6%88%90%E4%B8%BA%E4%B8%80%E4%B8%AAminimalismer.html"/>
+    <id>http://blog.jzxer.cn/2020/02/成为一个minimalismer.html</id>
+    <published>2020-02-20T06:06:05.000Z</published>
+    <updated>2020-02-20T06:11:08.175Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="生活" scheme="http://blog.jzxer.cn/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+      <category term="极简主义" scheme="http://blog.jzxer.cn/tags/%E6%9E%81%E7%AE%80%E4%B8%BB%E4%B9%89/"/>
+    
+  </entry>
+  
+  <entry>
     <title>2018 年前总结</title>
-    <link href="http://blog.jzxer.cn/2018%E5%B9%B4%E5%89%8D%E6%80%BB%E7%BB%93.html"/>
-    <id>http://blog.jzxer.cn/2018年前总结.html</id>
+    <link href="http://blog.jzxer.cn/2019/01/2018%E5%B9%B4%E5%89%8D%E6%80%BB%E7%BB%93.html"/>
+    <id>http://blog.jzxer.cn/2019/01/2018年前总结.html</id>
     <published>2019-01-31T07:44:52.000Z</published>
-    <updated>2020-02-20T03:41:54.157Z</updated>
+    <updated>2020-02-20T04:52:19.417Z</updated>
     
     <summary type="html">
     
@@ -44,10 +70,10 @@
   
   <entry>
     <title>changelog 自动化入门</title>
-    <link href="http://blog.jzxer.cn/changelog-%E8%87%AA%E5%8A%A8%E5%8C%96%E5%85%A5%E9%97%A8.html"/>
-    <id>http://blog.jzxer.cn/changelog-自动化入门.html</id>
+    <link href="http://blog.jzxer.cn/2019/01/changelog-%E8%87%AA%E5%8A%A8%E5%8C%96%E5%85%A5%E9%97%A8.html"/>
+    <id>http://blog.jzxer.cn/2019/01/changelog-自动化入门.html</id>
     <published>2019-01-10T02:40:03.000Z</published>
-    <updated>2020-02-20T03:41:54.161Z</updated>
+    <updated>2020-02-20T04:59:09.840Z</updated>
     
     <summary type="html">
     
@@ -72,10 +98,10 @@
   
   <entry>
     <title>网站seo入门</title>
-    <link href="http://blog.jzxer.cn/%E7%BD%91%E7%AB%99seo%E5%85%A5%E9%97%A8.html"/>
-    <id>http://blog.jzxer.cn/网站seo入门.html</id>
+    <link href="http://blog.jzxer.cn/2018/12/%E7%BD%91%E7%AB%99seo%E5%85%A5%E9%97%A8.html"/>
+    <id>http://blog.jzxer.cn/2018/12/网站seo入门.html</id>
     <published>2018-12-31T04:17:13.000Z</published>
-    <updated>2020-02-20T03:41:54.200Z</updated>
+    <updated>2020-02-20T04:56:40.720Z</updated>
     
     <summary type="html">
     
@@ -98,10 +124,10 @@
   
   <entry>
     <title>初级基金教程</title>
-    <link href="http://blog.jzxer.cn/%E5%88%9D%E7%BA%A7%E5%9F%BA%E9%87%91%E6%95%99%E7%A8%8B.html"/>
-    <id>http://blog.jzxer.cn/初级基金教程.html</id>
+    <link href="http://blog.jzxer.cn/2018/12/%E5%88%9D%E7%BA%A7%E5%9F%BA%E9%87%91%E6%95%99%E7%A8%8B.html"/>
+    <id>http://blog.jzxer.cn/2018/12/初级基金教程.html</id>
     <published>2018-12-01T08:05:30.000Z</published>
-    <updated>2020-02-20T03:41:54.195Z</updated>
+    <updated>2020-02-20T04:52:57.001Z</updated>
     
     <summary type="html">
     
@@ -124,10 +150,10 @@
   
   <entry>
     <title>长投14日理财（小白班）</title>
-    <link href="http://blog.jzxer.cn/%E9%95%BF%E6%8A%9514%E6%97%A5%E7%90%86%E8%B4%A2%EF%BC%88%E5%B0%8F%E7%99%BD%E7%8F%AD%EF%BC%89.html"/>
-    <id>http://blog.jzxer.cn/长投14日理财（小白班）.html</id>
+    <link href="http://blog.jzxer.cn/2018/11/%E9%95%BF%E6%8A%9514%E6%97%A5%E7%90%86%E8%B4%A2%EF%BC%88%E5%B0%8F%E7%99%BD%E7%8F%AD%EF%BC%89.html"/>
+    <id>http://blog.jzxer.cn/2018/11/长投14日理财（小白班）.html</id>
     <published>2018-11-26T11:30:31.000Z</published>
-    <updated>2020-02-20T03:41:54.201Z</updated>
+    <updated>2020-02-20T04:58:40.615Z</updated>
     
     <summary type="html">
     
@@ -150,10 +176,10 @@
   
   <entry>
     <title>谁的人生不迷茫</title>
-    <link href="http://blog.jzxer.cn/%E8%B0%81%E7%9A%84%E4%BA%BA%E7%94%9F%E4%B8%8D%E8%BF%B7%E8%8C%AB.html"/>
-    <id>http://blog.jzxer.cn/谁的人生不迷茫.html</id>
+    <link href="http://blog.jzxer.cn/2018/08/%E8%B0%81%E7%9A%84%E4%BA%BA%E7%94%9F%E4%B8%8D%E8%BF%B7%E8%8C%AB.html"/>
+    <id>http://blog.jzxer.cn/2018/08/谁的人生不迷茫.html</id>
     <published>2018-08-11T07:11:46.000Z</published>
-    <updated>2020-02-20T03:41:54.201Z</updated>
+    <updated>2020-02-20T06:28:41.236Z</updated>
     
     <summary type="html">
     
@@ -167,6 +193,8 @@
     
     </summary>
     
+      <category term="生活" scheme="http://blog.jzxer.cn/categories/%E7%94%9F%E6%B4%BB/"/>
+    
     
       <category term="人生历程" scheme="http://blog.jzxer.cn/tags/%E4%BA%BA%E7%94%9F%E5%8E%86%E7%A8%8B/"/>
     
@@ -174,10 +202,10 @@
   
   <entry>
     <title>前端性能优化清单</title>
-    <link href="http://blog.jzxer.cn/%E5%89%8D%E7%AB%AF%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E6%B8%85%E5%8D%95.html"/>
-    <id>http://blog.jzxer.cn/前端性能优化清单.html</id>
+    <link href="http://blog.jzxer.cn/2018/08/%E5%89%8D%E7%AB%AF%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E6%B8%85%E5%8D%95.html"/>
+    <id>http://blog.jzxer.cn/2018/08/前端性能优化清单.html</id>
     <published>2018-08-02T01:34:51.000Z</published>
-    <updated>2020-02-20T03:41:54.196Z</updated>
+    <updated>2020-02-20T04:55:54.657Z</updated>
     
     <summary type="html">
     
@@ -200,10 +228,10 @@
   
   <entry>
     <title>node前后端自动部属方案</title>
-    <link href="http://blog.jzxer.cn/node%E5%89%8D%E5%90%8E%E7%AB%AF%E8%87%AA%E5%8A%A8%E9%83%A8%E5%B1%9E%E6%96%B9%E6%A1%88.html"/>
-    <id>http://blog.jzxer.cn/node前后端自动部属方案.html</id>
+    <link href="http://blog.jzxer.cn/2018/07/node%E5%89%8D%E5%90%8E%E7%AB%AF%E8%87%AA%E5%8A%A8%E9%83%A8%E5%B1%9E%E6%96%B9%E6%A1%88.html"/>
+    <id>http://blog.jzxer.cn/2018/07/node前后端自动部属方案.html</id>
     <published>2018-07-30T03:41:57.000Z</published>
-    <updated>2020-02-20T03:41:54.164Z</updated>
+    <updated>2020-02-20T05:01:20.637Z</updated>
     
     <summary type="html">
     
@@ -226,10 +254,10 @@
   
   <entry>
     <title>RBP</title>
-    <link href="http://blog.jzxer.cn/RBP.html"/>
-    <id>http://blog.jzxer.cn/RBP.html</id>
+    <link href="http://blog.jzxer.cn/2018/06/RBP.html"/>
+    <id>http://blog.jzxer.cn/2018/06/RBP.html</id>
     <published>2018-06-24T03:02:43.000Z</published>
-    <updated>2020-02-20T03:41:54.160Z</updated>
+    <updated>2020-02-20T05:02:08.644Z</updated>
     
     <summary type="html">
     
@@ -254,10 +282,10 @@
   
   <entry>
     <title>travisCI 集成 gh-page 构建项目</title>
-    <link href="http://blog.jzxer.cn/travisCI-%E9%9B%86%E6%88%90-gh-page-%E6%9E%84%E5%BB%BA%E9%A1%B9%E7%9B%AE.html"/>
-    <id>http://blog.jzxer.cn/travisCI-集成-gh-page-构建项目.html</id>
+    <link href="http://blog.jzxer.cn/2018/06/travisCI-%E9%9B%86%E6%88%90-gh-page-%E6%9E%84%E5%BB%BA%E9%A1%B9%E7%9B%AE.html"/>
+    <id>http://blog.jzxer.cn/2018/06/travisCI-集成-gh-page-构建项目.html</id>
     <published>2018-06-12T03:02:12.000Z</published>
-    <updated>2020-02-20T03:41:54.165Z</updated>
+    <updated>2020-02-20T05:03:10.744Z</updated>
     
     <summary type="html">
     
@@ -280,10 +308,10 @@
   
   <entry>
     <title>nodeJS性能处理（二）</title>
-    <link href="http://blog.jzxer.cn/webPerformanceOptimization-2.html"/>
-    <id>http://blog.jzxer.cn/webPerformanceOptimization-2.html</id>
+    <link href="http://blog.jzxer.cn/2018/05/webPerformanceOptimization-2.html"/>
+    <id>http://blog.jzxer.cn/2018/05/webPerformanceOptimization-2.html</id>
     <published>2018-05-30T02:53:33.000Z</published>
-    <updated>2020-02-20T03:41:54.189Z</updated>
+    <updated>2020-02-20T05:04:24.740Z</updated>
     
     <summary type="html">
     
@@ -306,10 +334,10 @@
   
   <entry>
     <title>cookie和session</title>
-    <link href="http://blog.jzxer.cn/cookie%E5%92%8Csession.html"/>
-    <id>http://blog.jzxer.cn/cookie和session.html</id>
+    <link href="http://blog.jzxer.cn/2018/04/cookie%E5%92%8Csession.html"/>
+    <id>http://blog.jzxer.cn/2018/04/cookie和session.html</id>
     <published>2018-04-26T09:30:38.000Z</published>
-    <updated>2020-02-20T03:41:54.161Z</updated>
+    <updated>2020-02-20T04:59:23.868Z</updated>
     
     <summary type="html">
     
@@ -334,10 +362,10 @@
   
   <entry>
     <title>线上部署：heroku</title>
-    <link href="http://blog.jzxer.cn/%E7%BA%BF%E4%B8%8A%E9%83%A8%E7%BD%B2%EF%BC%9Aheroku.html"/>
-    <id>http://blog.jzxer.cn/线上部署：heroku.html</id>
+    <link href="http://blog.jzxer.cn/2018/04/%E7%BA%BF%E4%B8%8A%E9%83%A8%E7%BD%B2%EF%BC%9Aheroku.html"/>
+    <id>http://blog.jzxer.cn/2018/04/线上部署：heroku.html</id>
     <published>2018-04-26T06:57:25.000Z</published>
-    <updated>2020-02-20T03:41:54.200Z</updated>
+    <updated>2020-02-20T04:57:50.380Z</updated>
     
     <summary type="html">
     
@@ -360,10 +388,10 @@
   
   <entry>
     <title>nginx配置和问题处理</title>
-    <link href="http://blog.jzxer.cn/nginx%E9%85%8D%E7%BD%AE%E5%92%8C%E9%97%AE%E9%A2%98%E5%A4%84%E7%90%86.html"/>
-    <id>http://blog.jzxer.cn/nginx配置和问题处理.html</id>
+    <link href="http://blog.jzxer.cn/2018/04/nginx%E9%85%8D%E7%BD%AE%E5%92%8C%E9%97%AE%E9%A2%98%E5%A4%84%E7%90%86.html"/>
+    <id>http://blog.jzxer.cn/2018/04/nginx配置和问题处理.html</id>
     <published>2018-04-26T03:16:23.000Z</published>
-    <updated>2020-02-20T03:41:54.163Z</updated>
+    <updated>2020-02-20T05:01:03.664Z</updated>
     
     <summary type="html">
     
@@ -386,10 +414,10 @@
   
   <entry>
     <title>nodeJS性能处理（一）</title>
-    <link href="http://blog.jzxer.cn/nodeJS%E6%80%A7%E8%83%BD%E5%A4%84%E7%90%86%E4%B8%80.html"/>
-    <id>http://blog.jzxer.cn/nodeJS性能处理一.html</id>
+    <link href="http://blog.jzxer.cn/2018/04/nodeJS%E6%80%A7%E8%83%BD%E5%A4%84%E7%90%86%E4%B8%80.html"/>
+    <id>http://blog.jzxer.cn/2018/04/nodeJS性能处理一.html</id>
     <published>2018-04-25T01:56:24.000Z</published>
-    <updated>2020-02-20T03:41:54.163Z</updated>
+    <updated>2020-02-20T05:01:33.826Z</updated>
     
     <summary type="html">
     
@@ -412,10 +440,10 @@
   
   <entry>
     <title>node连接阿里云redis</title>
-    <link href="http://blog.jzxer.cn/node%E8%BF%9E%E6%8E%A5%E9%98%BF%E9%87%8C%E4%BA%91redis.html"/>
-    <id>http://blog.jzxer.cn/node连接阿里云redis.html</id>
+    <link href="http://blog.jzxer.cn/2018/04/node%E8%BF%9E%E6%8E%A5%E9%98%BF%E9%87%8C%E4%BA%91redis.html"/>
+    <id>http://blog.jzxer.cn/2018/04/node连接阿里云redis.html</id>
     <published>2018-04-24T10:45:42.000Z</published>
-    <updated>2020-02-20T03:41:54.164Z</updated>
+    <updated>2020-02-20T05:01:09.015Z</updated>
     
     <summary type="html">
     
@@ -440,10 +468,10 @@
   
   <entry>
     <title>学生思维</title>
-    <link href="http://blog.jzxer.cn/%E5%AD%A6%E7%94%9F%E6%80%9D%E7%BB%B4.html"/>
-    <id>http://blog.jzxer.cn/学生思维.html</id>
+    <link href="http://blog.jzxer.cn/2018/04/%E5%AD%A6%E7%94%9F%E6%80%9D%E7%BB%B4.html"/>
+    <id>http://blog.jzxer.cn/2018/04/学生思维.html</id>
     <published>2018-04-10T01:38:11.000Z</published>
-    <updated>2020-02-20T03:41:54.198Z</updated>
+    <updated>2020-02-20T04:57:55.318Z</updated>
     
     <summary type="html">
     
@@ -466,10 +494,10 @@
   
   <entry>
     <title>正则表达式</title>
-    <link href="http://blog.jzxer.cn/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F.html"/>
-    <id>http://blog.jzxer.cn/正则表达式.html</id>
+    <link href="http://blog.jzxer.cn/2018/04/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F.html"/>
+    <id>http://blog.jzxer.cn/2018/04/正则表达式.html</id>
     <published>2018-04-04T03:45:43.000Z</published>
-    <updated>2020-02-20T03:41:54.199Z</updated>
+    <updated>2020-02-20T04:58:45.683Z</updated>
     
     <summary type="html">
     
@@ -492,8 +520,8 @@
   
   <entry>
     <title>如何规划自己的工作和生活</title>
-    <link href="http://blog.jzxer.cn/%E5%A6%82%E4%BD%95%E8%A7%84%E5%88%92%E8%87%AA%E5%B7%B1%E7%9A%84%E5%B7%A5%E4%BD%9C%E5%92%8C%E7%94%9F%E6%B4%BB.html"/>
-    <id>http://blog.jzxer.cn/如何规划自己的工作和生活.html</id>
+    <link href="http://blog.jzxer.cn/2018/03/%E5%A6%82%E4%BD%95%E8%A7%84%E5%88%92%E8%87%AA%E5%B7%B1%E7%9A%84%E5%B7%A5%E4%BD%9C%E5%92%8C%E7%94%9F%E6%B4%BB.html"/>
+    <id>http://blog.jzxer.cn/2018/03/如何规划自己的工作和生活.html</id>
     <published>2018-03-19T01:33:22.000Z</published>
     <updated>2018-08-11T08:08:00.000Z</updated>
     
@@ -513,34 +541,6 @@
     
     
       <category term="人生历程" scheme="http://blog.jzxer.cn/tags/%E4%BA%BA%E7%94%9F%E5%8E%86%E7%A8%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>js常见的九种设计模式</title>
-    <link href="http://blog.jzxer.cn/js%E5%B8%B8%E8%A7%81%E7%9A%84%E4%B9%9D%E7%A7%8D%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F.html"/>
-    <id>http://blog.jzxer.cn/js常见的九种设计模式.html</id>
-    <published>2018-03-09T02:31:48.000Z</published>
-    <updated>2020-02-20T03:41:54.162Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="web前端" scheme="http://blog.jzxer.cn/categories/web%E5%89%8D%E7%AB%AF/"/>
-    
-    
-      <category term="未完成" scheme="http://blog.jzxer.cn/tags/%E6%9C%AA%E5%AE%8C%E6%88%90/"/>
-    
-      <category term="pattern" scheme="http://blog.jzxer.cn/tags/pattern/"/>
     
   </entry>
   
