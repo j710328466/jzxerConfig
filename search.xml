@@ -1554,7 +1554,7 @@
       <link href="/%E6%88%91%E6%98%AF%E6%84%A4%E6%80%92.html"/>
       <url>/%E6%88%91%E6%98%AF%E6%84%A4%E6%80%92.html</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><div id="dplayer3" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer3"),"autoplay":true,"theme":"#fff","loop":true,"video":{"url":"http://orjedzer5.bkt.clouddn.com/blog/video/music/%E6%88%91%E6%98%AF%E6%84%A4%E6%80%92.mp4"},"danmaku":{"id":"3","api":"http://dplayer.daoapp.io","token":"tokendemo"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><div id="dplayer4" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer4"),"autoplay":true,"theme":"#fff","loop":true,"video":{"url":"http://orjedzer5.bkt.clouddn.com/blog/video/music/%E6%88%91%E6%98%AF%E6%84%A4%E6%80%92.mp4"},"danmaku":{"id":"3","api":"http://dplayer.daoapp.io","token":"tokendemo"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>]]></content>
       
       
       <categories>
@@ -1608,7 +1608,7 @@
       <link href="/%E6%A2%A6%E4%B8%AD%E7%9A%84%E5%A9%9A%E7%A4%BC.html"/>
       <url>/%E6%A2%A6%E4%B8%AD%E7%9A%84%E5%A9%9A%E7%A4%BC.html</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><div id="dplayer4" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer4"),"autoplay":true,"theme":"#fff","loop":true,"video":{"url":"http://orjedzer5.bkt.clouddn.com/blog/video/music/%E6%A2%A6%E4%B8%AD%E7%9A%84%E5%A9%9A%E7%A4%BC.mp4"},"danmaku":{"id":"4","api":"http://dplayer.daoapp.io","token":"tokendemo"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><div id="dplayer3" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer3"),"autoplay":true,"theme":"#fff","loop":true,"video":{"url":"http://orjedzer5.bkt.clouddn.com/blog/video/music/%E6%A2%A6%E4%B8%AD%E7%9A%84%E5%A9%9A%E7%A4%BC.mp4"},"danmaku":{"id":"4","api":"http://dplayer.daoapp.io","token":"tokendemo"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>]]></content>
       
       
       <categories>
@@ -1634,11 +1634,22 @@
     
     
     <entry>
+      <title></title>
+      <link href="/googlec841984147bd55ec.html"/>
+      <url>/googlec841984147bd55ec.html</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script>google-site-verification: googlec841984147bd55ec.html]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>个人简介</title>
       <link href="/about/index.html"/>
       <url>/about/index.html</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>姓名：江志雄<br>英文名：Feax<br>专业：软件工程</p><h2 id="工作经历"><a href="#工作经历" class="headerlink" title="工作经历"></a>工作经历</h2><ul><li><p>南昌·午逅科技<br>  ①、H5 活动开发</p><blockquote><p>2017.06 – 2017.09</p></blockquote></li><li><p>杭州·机蜜<br>  ①、各大类型平台、活动、协议模块的合作开发<br>  ②、基础组件开发</p><blockquote><p>2017.10 – 至今</p></blockquote></li></ul><h2 id="技术栈"><a href="#技术栈" class="headerlink" title="技术栈"></a>技术栈</h2><p>前端技术框架很多，取其精华，目前只列出我目前比较青睐，并且未来会深入研究的技术方案。</p><h3 id="前端"><a href="#前端" class="headerlink" title="前端"></a>前端</h3><ul><li>Vue.Js (移动端)</li><li>React.Js (PC端)</li><li>RN (APP端)</li></ul><h3 id="SSR"><a href="#SSR" class="headerlink" title="SSR"></a>SSR</h3><ul><li>Next（React）</li><li>Nuxt（Vue）</li></ul><h3 id="后端"><a href="#后端" class="headerlink" title="后端"></a>后端</h3><ul><li>Nodejs (Expres.Js、Koa2.Js)</li><li>eggJS（正在学习…）</li><li>python (准备学习…)</li></ul><h3 id="数据库"><a href="#数据库" class="headerlink" title="数据库"></a>数据库</h3><ul><li>MongoDB（非关系型）</li><li>mySql（关系型）</li><li>Redis（缓存）</li></ul><h3 id="自动化工具"><a href="#自动化工具" class="headerlink" title="自动化工具"></a>自动化工具</h3><ul><li>webpack</li><li>parcel</li></ul><h3 id="版本管理"><a href="#版本管理" class="headerlink" title="版本管理"></a>版本管理</h3><ul><li>GIT</li></ul><h3 id="代码规范"><a href="#代码规范" class="headerlink" title="代码规范"></a>代码规范</h3><ul><li>BEM（HTML风格）</li><li>Stylus（CSS风格）</li><li>ESlint（JS风格）</li></ul><h3 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h3><ul><li>mocha</li></ul><h3 id="集成部署"><a href="#集成部署" class="headerlink" title="集成部署"></a>集成部署</h3><ul><li>travisCI</li></ul><h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><ul><li>axure 8（产品原型）</li><li>Xmind（思维导图）</li></ul><h2 id="兴趣爱好"><a href="#兴趣爱好" class="headerlink" title="兴趣爱好"></a>兴趣爱好</h2><blockquote><p>看书<br>健身<br>音乐</p></blockquote><h2 id="自我介绍"><a href="#自我介绍" class="headerlink" title="自我介绍"></a>自我介绍</h2><p>介绍这东西挺虚的，你需要的是和我面对面的交流和长时间的相处。</p><h2 id="未来的目标"><a href="#未来的目标" class="headerlink" title="未来的目标"></a>未来的目标</h2><ul><li>工作：专注于自己喜欢的领域，然后精通它。</li><li>生活：世界很大，不要只生活在自己的小小世界里。</li><li>理想：至少做一件能改变他人、乃至影响世界的事。</li></ul>        <div id="aplayer-CtQxFWrc" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">            <pre class="aplayer-lrc-content"></pre>        </div>        <script>          var ap = new APlayer({            element: document.getElementById("aplayer-CtQxFWrc"),            narrow: false,            autoplay: true,            showlrc: false,            music: {              title: "日落大道",              author: "梁博",              url: "http://orjedzer5.bkt.clouddn.com/blog/song/%E6%A2%81%E5%8D%9A%20%E6%97%A5%E8%90%BD%E5%A4%A7%E9%81%93.mp3",              pic: "",              lrc: ""            }          });          window.aplayers || (window.aplayers = []);          window.aplayers.push(ap);        </script>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>姓名：江志雄<br>英文名：Feax<br>专业：软件工程</p><h2 id="工作经历"><a href="#工作经历" class="headerlink" title="工作经历"></a>工作经历</h2><ul><li><p>南昌·午逅科技<br>  ①、H5 活动开发</p><blockquote><p>2017.06 – 2017.09</p></blockquote></li><li><p>杭州·机蜜<br>  ①、各大类型平台、活动、协议模块的合作开发<br>  ②、基础组件开发</p><blockquote><p>2017.10 – 至今</p></blockquote></li></ul><h2 id="技术栈"><a href="#技术栈" class="headerlink" title="技术栈"></a>技术栈</h2><p>前端技术框架很多，取其精华，目前只列出我目前比较青睐，并且未来会深入研究的技术方案。</p><h3 id="前端"><a href="#前端" class="headerlink" title="前端"></a>前端</h3><ul><li>Vue.Js (移动端)</li><li>React.Js (PC端)</li><li>RN (APP端)</li></ul><h3 id="SSR"><a href="#SSR" class="headerlink" title="SSR"></a>SSR</h3><ul><li>Next（React）</li><li>Nuxt（Vue）</li></ul><h3 id="后端"><a href="#后端" class="headerlink" title="后端"></a>后端</h3><ul><li>Nodejs (Expres.Js、Koa2.Js)</li><li>eggJS（正在学习…）</li><li>python (准备学习…)</li></ul><h3 id="数据库"><a href="#数据库" class="headerlink" title="数据库"></a>数据库</h3><ul><li>MongoDB（非关系型）</li><li>mySql（关系型）</li><li>Redis（缓存）</li></ul><h3 id="自动化工具"><a href="#自动化工具" class="headerlink" title="自动化工具"></a>自动化工具</h3><ul><li>webpack</li><li>parcel</li></ul><h3 id="版本管理"><a href="#版本管理" class="headerlink" title="版本管理"></a>版本管理</h3><ul><li>GIT</li></ul><h3 id="代码规范"><a href="#代码规范" class="headerlink" title="代码规范"></a>代码规范</h3><ul><li>BEM（HTML风格）</li><li>Stylus（CSS风格）</li><li>ESlint（JS风格）</li></ul><h3 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h3><ul><li>mocha</li></ul><h3 id="集成部署"><a href="#集成部署" class="headerlink" title="集成部署"></a>集成部署</h3><ul><li>travisCI</li></ul><h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><ul><li>axure 8（产品原型）</li><li>Xmind（思维导图）</li></ul><h2 id="兴趣爱好"><a href="#兴趣爱好" class="headerlink" title="兴趣爱好"></a>兴趣爱好</h2><blockquote><p>看书<br>健身<br>音乐</p></blockquote><h2 id="自我介绍"><a href="#自我介绍" class="headerlink" title="自我介绍"></a>自我介绍</h2><p>介绍这东西挺虚的，你需要的是和我面对面的交流和长时间的相处。</p><h2 id="未来的目标"><a href="#未来的目标" class="headerlink" title="未来的目标"></a>未来的目标</h2><ul><li>工作：专注于自己喜欢的领域，然后精通它。</li><li>生活：世界很大，不要只生活在自己的小小世界里。</li><li>理想：至少做一件能改变他人、乃至影响世界的事。</li></ul>        <div id="aplayer-hopLBUMS" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">            <pre class="aplayer-lrc-content"></pre>        </div>        <script>          var ap = new APlayer({            element: document.getElementById("aplayer-hopLBUMS"),            narrow: false,            autoplay: true,            showlrc: false,            music: {              title: "日落大道",              author: "梁博",              url: "http://orjedzer5.bkt.clouddn.com/blog/song/%E6%A2%81%E5%8D%9A%20%E6%97%A5%E8%90%BD%E5%A4%A7%E9%81%93.mp3",              pic: "",              lrc: ""            }          });          window.aplayers || (window.aplayers = []);          window.aplayers.push(ap);        </script>]]></content>
       
     </entry>
     
@@ -1650,17 +1661,6 @@
       <url>/gallery/index.html</url>
       
         <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="/googlec841984147bd55ec.html"/>
-      <url>/googlec841984147bd55ec.html</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script>google-site-verification: googlec841984147bd55ec.html]]></content>
       
     </entry>
     
