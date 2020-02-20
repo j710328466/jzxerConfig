@@ -3,12 +3,13 @@
   "version": "0.0.0",
   "private": true,
   "hexo": {
-    "version": "3.8.0"
+    "version": "3.9.0"
   },
   "scripts": {
     "new": "hexo new ${title}",
     "s": "hexo s",
     "g": "hexo g",
+    "d": "hexo g && hexo d",
     "cz": "git add . && git cz",
     "log": "conventional-changelog --config node_modules/jimi-web-changelog/lib/log -i CHANGELOG.md -s -r 0",
     "v": "standard-version -r patch"

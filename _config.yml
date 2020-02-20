@@ -3,10 +3,10 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Feax's Blog
+title: 极简.teddy
 subtitle:
 description: web,vue,react,webpack,node
-author: Feax
+author: teddy
 language: zh-CN
 timezone:
 
@@ -88,7 +88,7 @@ theme: material
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:  
 - type: git
-  repo: https://git.coding.net/jzxer/jzxer.git
+  repo: git@gitee.com:kox_baba/kox_baba.git
   branch: master
 - type: git
   repo: https://github.com/j710328466/j710328466.github.io.git
