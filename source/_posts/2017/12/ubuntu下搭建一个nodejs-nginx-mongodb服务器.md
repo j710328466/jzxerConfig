@@ -1,7 +1,7 @@
 ---
 title: ubuntu下搭建一个nodejs+nginx+mongodb服务器
 date: 2017-12-27 11:53:22
-tags: [nodejs, ubuntu]
+tags: [node, ubuntu]
 categories: 服务器
 ---
 
